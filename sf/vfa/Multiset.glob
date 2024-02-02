@@ -1,0 +1,286 @@
+DIGEST 666943f7237fceb46417638601833fd2
+FVFA.Multiset
+R1078:1091 Coq.Strings.String <> <> lib
+R1144:1167 Coq.Logic.FunctionalExtensionality <> <> lib
+R1194:1197 VFA.Perm <> <> lib
+R1224:1227 VFA.Sort <> <> lib
+def 1719:1723 <> value
+R1728:1730 Coq.Init.Datatypes <> nat ind
+def 1745:1752 <> multiset
+R1762:1765 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1757:1761 VFA.Multiset <> value def
+R1766:1768 Coq.Init.Datatypes <> nat ind
+def 1850:1854 <> empty
+R1858:1865 VFA.Multiset <> multiset def
+binder 1876:1876 <> x:1
+def 1964:1972 <> singleton
+R1978:1982 VFA.Multiset <> value def
+binder 1975:1975 <> v:2
+R1987:1994 VFA.Multiset <> multiset def
+binder 2005:2005 <> x:3
+R2014:2017 Coq.Arith.PeanoNat <> ::nat_scope:x_'=?'_x not
+R2013:2013 VFA.Multiset <> x:3 var
+R2018:2018 VFA.Multiset <> v:2 var
+def 2108:2112 <> union
+R2121:2128 VFA.Multiset <> multiset def
+binder 2115:2115 <> a:4
+binder 2117:2117 <> b:5
+R2133:2140 VFA.Multiset <> multiset def
+binder 2151:2151 <> x:6
+R2159:2161 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R2156:2156 VFA.Multiset <> a:4 var
+R2158:2158 VFA.Multiset <> x:6 var
+R2162:2162 VFA.Multiset <> b:5 var
+R2164:2164 VFA.Multiset <> x:6 var
+prf 2507:2517 <> union_assoc
+R2535:2542 VFA.Multiset <> multiset def
+binder 2527:2527 <> a:7
+binder 2529:2529 <> b:8
+binder 2531:2531 <> c:9
+R2567:2569 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2548:2552 VFA.Multiset <> union def
+R2554:2554 VFA.Multiset <> a:7 var
+R2557:2561 VFA.Multiset <> union def
+R2563:2563 VFA.Multiset <> b:8 var
+R2565:2565 VFA.Multiset <> c:9 var
+R2570:2574 VFA.Multiset <> union def
+R2577:2581 VFA.Multiset <> union def
+R2583:2583 VFA.Multiset <> a:7 var
+R2585:2585 VFA.Multiset <> b:8 var
+R2588:2588 VFA.Multiset <> c:9 var
+prf 2780:2789 <> union_comm
+R2805:2812 VFA.Multiset <> multiset def
+binder 2799:2799 <> a:10
+binder 2801:2801 <> b:11
+R2827:2829 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2818:2822 VFA.Multiset <> union def
+R2824:2824 VFA.Multiset <> a:10 var
+R2826:2826 VFA.Multiset <> b:11 var
+R2830:2834 VFA.Multiset <> union def
+R2836:2836 VFA.Multiset <> b:11 var
+R2838:2838 VFA.Multiset <> a:10 var
+prf 3094:3103 <> union_swap
+R3122:3129 VFA.Multiset <> multiset def
+binder 3114:3114 <> a:12
+binder 3116:3116 <> b:13
+binder 3118:3118 <> c:14
+R3155:3157 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3136:3140 VFA.Multiset <> union def
+R3142:3142 VFA.Multiset <> a:12 var
+R3145:3149 VFA.Multiset <> union def
+R3151:3151 VFA.Multiset <> b:13 var
+R3153:3153 VFA.Multiset <> c:14 var
+R3158:3162 VFA.Multiset <> union def
+R3164:3164 VFA.Multiset <> b:13 var
+R3167:3171 VFA.Multiset <> union def
+R3173:3173 VFA.Multiset <> a:12 var
+R3175:3175 VFA.Multiset <> c:14 var
+def 4181:4188 <> contents
+R4195:4198 Coq.Init.Datatypes <> list ind
+R4200:4204 VFA.Multiset <> value def
+binder 4191:4192 <> al:15
+R4209:4216 VFA.Multiset <> multiset def
+R4229:4230 VFA.Multiset <> al:15 var
+R4241:4242 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R4247:4251 VFA.Multiset <> empty def
+R4258:4261 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4268:4272 VFA.Multiset <> union def
+R4275:4283 VFA.Multiset <> singleton def
+R4289:4296 VFA.Multiset <> contents:16 def
+def 4438:4458 <> sort_pi_same_contents
+R4502:4504 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4463:4470 VFA.Multiset <> contents def
+R4473:4476 VFA.Sort <> sort def
+R4478:4478 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4480:4480 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4482:4482 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4484:4484 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4486:4486 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4488:4488 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4490:4490 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4492:4492 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4494:4494 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4496:4496 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4498:4498 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4500:4500 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4505:4512 VFA.Multiset <> contents def
+R4514:4514 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4516:4516 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4518:4518 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4520:4520 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4522:4522 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4524:4524 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4526:4526 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4528:4528 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4530:4530 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4532:4532 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4534:4534 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4536:4536 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+def 4773:4795 <> is_a_sorting_algorithm'
+R4809:4812 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4801:4804 Coq.Init.Datatypes <> list ind
+R4806:4808 Coq.Init.Datatypes <> nat ind
+R4813:4816 Coq.Init.Datatypes <> list ind
+R4818:4820 Coq.Init.Datatypes <> nat ind
+binder 4798:4798 <> f:18
+binder 4833:4834 <> al:19
+R4870:4873 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4852:4854 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4841:4848 VFA.Multiset <> contents def
+R4850:4851 VFA.Multiset <> al:19 var
+R4855:4862 VFA.Multiset <> contents def
+R4865:4865 VFA.Multiset <> f:18 var
+R4867:4868 VFA.Multiset <> al:19 var
+R4874:4879 VFA.Sort <> sorted ind
+R4882:4882 VFA.Multiset <> f:18 var
+R4884:4885 VFA.Multiset <> al:19 var
+prf 5604:5618 <> insert_contents
+binder 5628:5628 <> x:20
+binder 5630:5630 <> l:21
+R5659:5661 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5638:5645 VFA.Multiset <> contents def
+R5648:5653 VFA.Sort <> insert def
+R5655:5655 VFA.Multiset <> x:20 var
+R5657:5657 VFA.Multiset <> l:21 var
+R5662:5669 VFA.Multiset <> contents def
+R5673:5676 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5672:5672 VFA.Multiset <> x:20 var
+R5677:5677 VFA.Multiset <> l:21 var
+prf 5908:5920 <> sort_contents
+binder 5930:5930 <> l:22
+R5947:5949 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5937:5944 VFA.Multiset <> contents def
+R5946:5946 VFA.Multiset <> l:22 var
+R5950:5957 VFA.Multiset <> contents def
+R5960:5963 VFA.Sort <> sort def
+R5965:5965 VFA.Multiset <> l:22 var
+prf 6133:6154 <> insertion_sort_correct
+R6160:6182 VFA.Multiset <> is_a_sorting_algorithm' def
+R6184:6187 VFA.Sort <> sort def
+def 6766:6806 <> manual_grade_for_permutations_vs_multiset
+R6810:6815 Coq.Init.Datatypes <> option ind
+R6821:6821 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R6818:6820 Coq.Init.Datatypes <> nat ind
+R6822:6827 Coq.Strings.String <> string ind
+R6833:6836 Coq.Init.Datatypes <> None constr
+prf 7838:7850 <> perm_contents
+R7868:7871 Coq.Init.Datatypes <> list ind
+R7873:7875 Coq.Init.Datatypes <> nat ind
+binder 7860:7861 <> al:23
+binder 7863:7864 <> bl:24
+R7899:7902 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7882:7892 Coq.Sorting.Permutation <> Permutation ind
+R7897:7898 VFA.Multiset <> bl:24 var
+R7894:7895 VFA.Multiset <> al:23 var
+R7914:7916 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7903:7910 VFA.Multiset <> contents def
+R7912:7913 VFA.Multiset <> al:23 var
+R7917:7924 VFA.Multiset <> contents def
+R7926:7927 VFA.Multiset <> bl:24 var
+prf 8451:8466 <> contents_nil_inv
+binder 8477:8477 <> l:25
+R8480:8480 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8507:8511 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 8488:8488 <> x:26
+R8492:8494 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8495:8502 VFA.Multiset <> contents def
+R8504:8504 VFA.Multiset <> l:25 var
+R8506:8506 VFA.Multiset <> x:26 var
+R8513:8515 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8512:8512 VFA.Multiset <> l:25 var
+R8516:8518 Coq.Init.Datatypes <> nil constr
+prf 8636:8652 <> contents_cons_inv
+binder 8663:8663 <> l:27
+binder 8665:8665 <> x:28
+binder 8667:8667 <> n:29
+R8692:8699 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8677:8679 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8674:8674 Coq.Init.Datatypes <> S constr
+R8676:8676 VFA.Multiset <> n:29 var
+R8680:8687 VFA.Multiset <> contents def
+R8689:8689 VFA.Multiset <> l:27 var
+R8691:8691 VFA.Multiset <> x:28 var
+R8700:8706 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8712:8719 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 8707:8708 <> l1:30
+binder 8710:8711 <> l2:31
+R8737:8746 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R8721:8723 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8720:8720 VFA.Multiset <> l:27 var
+R8726:8729 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R8724:8725 VFA.Multiset <> l1:30 var
+R8731:8734 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8730:8730 VFA.Multiset <> x:28 var
+R8735:8736 VFA.Multiset <> l2:31 var
+R8768:8770 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8747:8754 VFA.Multiset <> contents def
+R8759:8762 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R8757:8758 VFA.Multiset <> l1:30 var
+R8763:8764 VFA.Multiset <> l2:31 var
+R8767:8767 VFA.Multiset <> x:28 var
+R8771:8771 VFA.Multiset <> n:29 var
+prf 8893:8913 <> contents_insert_other
+binder 8924:8925 <> l1:32
+binder 8927:8928 <> l2:33
+binder 8930:8930 <> x:34
+binder 8932:8932 <> y:35
+R8945:8948 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8940:8943 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R8939:8939 VFA.Multiset <> y:35 var
+R8944:8944 VFA.Multiset <> x:34 var
+R8975:8977 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8949:8956 VFA.Multiset <> contents def
+R8961:8964 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R8959:8960 VFA.Multiset <> l1:32 var
+R8966:8969 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8965:8965 VFA.Multiset <> x:34 var
+R8970:8971 VFA.Multiset <> l2:33 var
+R8974:8974 VFA.Multiset <> y:35 var
+R8978:8985 VFA.Multiset <> contents def
+R8990:8993 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R8988:8989 VFA.Multiset <> l1:32 var
+R8994:8995 VFA.Multiset <> l2:33 var
+R8998:8998 VFA.Multiset <> y:35 var
+prf 9112:9124 <> contents_perm
+binder 9134:9135 <> al:36
+binder 9137:9138 <> bl:37
+R9170:9173 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9156:9158 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9145:9152 VFA.Multiset <> contents def
+R9154:9155 VFA.Multiset <> al:36 var
+R9159:9166 VFA.Multiset <> contents def
+R9168:9169 VFA.Multiset <> bl:37 var
+R9174:9184 Coq.Sorting.Permutation <> Permutation ind
+R9189:9190 VFA.Multiset <> bl:37 var
+R9186:9187 VFA.Multiset <> al:36 var
+binder 9239:9239 <> x:38
+R9255:9257 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9242:9249 VFA.Multiset <> contents def
+R9254:9254 VFA.Multiset <> x:38 var
+R9258:9265 VFA.Multiset <> contents def
+R9270:9270 VFA.Multiset <> x:38 var
+binder 9239:9239 <> x:39
+R9255:9257 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9242:9249 VFA.Multiset <> contents def
+R9254:9254 VFA.Multiset <> x:39 var
+R9258:9265 VFA.Multiset <> contents def
+R9270:9270 VFA.Multiset <> x:39 var
+prf 9782:9803 <> same_contents_iff_perm
+binder 9813:9814 <> al:40
+binder 9816:9817 <> bl:41
+R9849:9853 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R9835:9837 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9824:9831 VFA.Multiset <> contents def
+R9833:9834 VFA.Multiset <> al:40 var
+R9838:9845 VFA.Multiset <> contents def
+R9847:9848 VFA.Multiset <> bl:41 var
+R9854:9864 Coq.Sorting.Permutation <> Permutation ind
+R9869:9870 VFA.Multiset <> bl:41 var
+R9866:9867 VFA.Multiset <> al:40 var
+prf 10062:10091 <> sort_specifications_equivalent
+binder 10101:10104 <> sort:42
+R10138:10142 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R10111:10132 VFA.Sort <> is_a_sorting_algorithm def
+R10134:10137 VFA.Multiset <> sort:42 var
+R10143:10165 VFA.Multiset <> is_a_sorting_algorithm' def
+R10167:10170 VFA.Multiset <> sort:42 var

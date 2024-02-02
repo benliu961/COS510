@@ -1,0 +1,484 @@
+DIGEST fbee67b9e6b84dd1103488a64992b488
+FVFA.MultisetTest
+R70:75 Coq.Strings.String <> <> lib
+R102:109 VFA.Multiset <> <> lib
+ax 123:129 <> MISSING
+mod 146:150 <> Check
+R216:222 VFA.MultisetTest <> MISSING defax
+R216:222 VFA.MultisetTest <> MISSING defax
+R415:418 Coq.Init.Datatypes <> Some constr
+R415:418 Coq.Init.Datatypes <> Some constr
+R598:601 Coq.Init.Datatypes <> None constr
+R598:601 Coq.Init.Datatypes <> None constr
+R683:687 VFA.MultisetTest Check <> mod
+R715:722 VFA.Multiset <> <> lib
+R732:736 VFA.MultisetTest Check <> mod
+def 740:748 <> Unnamed_thm
+R745:748 Coq.Init.Logic <> True ind
+R892:902 VFA.Multiset <> union_assoc prfax
+R922:929 VFA.Multiset <> multiset def
+binder 914:914 <> a:2
+binder 916:916 <> b:3
+binder 918:918 <> c:4
+R951:953 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R932:936 VFA.Multiset <> union def
+R938:938 VFA.MultisetTest <> a:2 var
+R941:945 VFA.Multiset <> union def
+R947:947 VFA.MultisetTest <> b:3 var
+R949:949 VFA.MultisetTest <> c:4 var
+R954:958 VFA.Multiset <> union def
+R961:965 VFA.Multiset <> union def
+R967:967 VFA.MultisetTest <> a:2 var
+R969:969 VFA.MultisetTest <> b:3 var
+R972:972 VFA.MultisetTest <> c:4 var
+R892:902 VFA.Multiset <> union_assoc prfax
+R922:929 VFA.Multiset <> multiset def
+binder 914:914 <> a:5
+binder 916:916 <> b:6
+binder 918:918 <> c:7
+R951:953 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R932:936 VFA.Multiset <> union def
+R938:938 VFA.MultisetTest <> a:5 var
+R941:945 VFA.Multiset <> union def
+R947:947 VFA.MultisetTest <> b:6 var
+R949:949 VFA.MultisetTest <> c:7 var
+R954:958 VFA.Multiset <> union def
+R961:965 VFA.Multiset <> union def
+R967:967 VFA.MultisetTest <> a:5 var
+R969:969 VFA.MultisetTest <> b:6 var
+R972:972 VFA.MultisetTest <> c:7 var
+R1024:1034 VFA.Multiset <> union_assoc prfax
+def 1037:1045 <> Unnamed_thm
+R1042:1045 Coq.Init.Logic <> True ind
+R1198:1207 VFA.Multiset <> union_comm prfax
+R1224:1231 VFA.Multiset <> multiset def
+binder 1218:1218 <> a:8
+binder 1220:1220 <> b:9
+R1243:1245 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1234:1238 VFA.Multiset <> union def
+R1240:1240 VFA.MultisetTest <> a:8 var
+R1242:1242 VFA.MultisetTest <> b:9 var
+R1246:1250 VFA.Multiset <> union def
+R1252:1252 VFA.MultisetTest <> b:9 var
+R1254:1254 VFA.MultisetTest <> a:8 var
+R1198:1207 VFA.Multiset <> union_comm prfax
+R1224:1231 VFA.Multiset <> multiset def
+binder 1218:1218 <> a:10
+binder 1220:1220 <> b:11
+R1243:1245 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1234:1238 VFA.Multiset <> union def
+R1240:1240 VFA.MultisetTest <> a:10 var
+R1242:1242 VFA.MultisetTest <> b:11 var
+R1246:1250 VFA.Multiset <> union def
+R1252:1252 VFA.MultisetTest <> b:11 var
+R1254:1254 VFA.MultisetTest <> a:10 var
+R1306:1315 VFA.Multiset <> union_comm prfax
+def 1318:1326 <> Unnamed_thm
+R1323:1326 Coq.Init.Logic <> True ind
+R1479:1488 VFA.Multiset <> union_swap prfax
+R1508:1515 VFA.Multiset <> multiset def
+binder 1500:1500 <> a:12
+binder 1502:1502 <> b:13
+binder 1504:1504 <> c:14
+R1537:1539 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1518:1522 VFA.Multiset <> union def
+R1524:1524 VFA.MultisetTest <> a:12 var
+R1527:1531 VFA.Multiset <> union def
+R1533:1533 VFA.MultisetTest <> b:13 var
+R1535:1535 VFA.MultisetTest <> c:14 var
+R1540:1544 VFA.Multiset <> union def
+R1546:1546 VFA.MultisetTest <> b:13 var
+R1549:1553 VFA.Multiset <> union def
+R1555:1555 VFA.MultisetTest <> a:12 var
+R1557:1557 VFA.MultisetTest <> c:14 var
+R1479:1488 VFA.Multiset <> union_swap prfax
+R1508:1515 VFA.Multiset <> multiset def
+binder 1500:1500 <> a:15
+binder 1502:1502 <> b:16
+binder 1504:1504 <> c:17
+R1537:1539 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1518:1522 VFA.Multiset <> union def
+R1524:1524 VFA.MultisetTest <> a:15 var
+R1527:1531 VFA.Multiset <> union def
+R1533:1533 VFA.MultisetTest <> b:16 var
+R1535:1535 VFA.MultisetTest <> c:17 var
+R1540:1544 VFA.Multiset <> union def
+R1546:1546 VFA.MultisetTest <> b:16 var
+R1549:1553 VFA.Multiset <> union def
+R1555:1555 VFA.MultisetTest <> a:15 var
+R1557:1557 VFA.MultisetTest <> c:17 var
+R1610:1619 VFA.Multiset <> union_swap prfax
+def 1622:1630 <> Unnamed_thm
+R1627:1630 Coq.Init.Logic <> True ind
+R1793:1807 VFA.Multiset <> insert_contents prfax
+R1824:1826 Coq.Init.Datatypes <> nat ind
+binder 1820:1820 <> x:18
+R1834:1837 Coq.Init.Datatypes <> list ind
+R1839:1841 Coq.Init.Datatypes <> nat ind
+binder 1830:1830 <> l:19
+R1872:1874 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1846:1853 VFA.Multiset <> contents def
+R1856:1866 VFA.Sort <> insert def
+R1868:1868 VFA.MultisetTest <> x:18 var
+R1870:1870 VFA.MultisetTest <> l:19 var
+R1875:1882 VFA.Multiset <> contents def
+R1886:1889 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1885:1885 VFA.MultisetTest <> x:18 var
+R1890:1890 VFA.MultisetTest <> l:19 var
+R1793:1807 VFA.Multiset <> insert_contents prfax
+R1824:1826 Coq.Init.Datatypes <> nat ind
+binder 1820:1820 <> x:20
+R1834:1837 Coq.Init.Datatypes <> list ind
+R1839:1841 Coq.Init.Datatypes <> nat ind
+binder 1830:1830 <> l:21
+R1872:1874 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1846:1853 VFA.Multiset <> contents def
+R1856:1866 VFA.Sort <> insert def
+R1868:1868 VFA.MultisetTest <> x:20 var
+R1870:1870 VFA.MultisetTest <> l:21 var
+R1875:1882 VFA.Multiset <> contents def
+R1886:1889 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1885:1885 VFA.MultisetTest <> x:20 var
+R1890:1890 VFA.MultisetTest <> l:21 var
+R1943:1957 VFA.Multiset <> insert_contents prfax
+def 1960:1968 <> Unnamed_thm
+R1965:1968 Coq.Init.Logic <> True ind
+R2127:2139 VFA.Multiset <> sort_contents prfax
+R2154:2157 Coq.Init.Datatypes <> list ind
+R2159:2163 VFA.Multiset <> value def
+binder 2150:2150 <> l:22
+R2176:2178 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2166:2173 VFA.Multiset <> contents def
+R2175:2175 VFA.MultisetTest <> l:22 var
+R2179:2186 VFA.Multiset <> contents def
+R2189:2197 VFA.Sort <> sort def
+R2199:2199 VFA.MultisetTest <> l:22 var
+R2127:2139 VFA.Multiset <> sort_contents prfax
+R2154:2157 Coq.Init.Datatypes <> list ind
+R2159:2163 VFA.Multiset <> value def
+binder 2150:2150 <> l:23
+R2176:2178 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2166:2173 VFA.Multiset <> contents def
+R2175:2175 VFA.MultisetTest <> l:23 var
+R2179:2186 VFA.Multiset <> contents def
+R2189:2197 VFA.Sort <> sort def
+R2199:2199 VFA.MultisetTest <> l:23 var
+R2252:2264 VFA.Multiset <> sort_contents prfax
+def 2267:2275 <> Unnamed_thm
+R2272:2275 Coq.Init.Logic <> True ind
+R2452:2473 VFA.Multiset <> insertion_sort_correct prfax
+R2477:2499 VFA.Multiset <> is_a_sorting_algorithm' def
+R2501:2509 VFA.Sort <> sort def
+R2452:2473 VFA.Multiset <> insertion_sort_correct prfax
+R2477:2499 VFA.Multiset <> is_a_sorting_algorithm' def
+R2501:2509 VFA.Sort <> sort def
+R2561:2582 VFA.Multiset <> insertion_sort_correct prfax
+def 2585:2593 <> Unnamed_thm
+R2590:2593 Coq.Init.Logic <> True ind
+R2798:2838 VFA.Multiset <> manual_grade_for_permutations_vs_multiset def
+R2997:3009 VFA.Multiset <> perm_contents prfax
+R3029:3032 Coq.Init.Datatypes <> list ind
+R3034:3036 Coq.Init.Datatypes <> nat ind
+binder 3021:3022 <> al:24
+binder 3024:3025 <> bl:25
+R3074:3077 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3041:3063 Coq.Sorting.Permutation <> Permutation ind
+R3065:3067 Coq.Init.Datatypes <> nat ind
+R3069:3070 VFA.MultisetTest <> al:24 var
+R3072:3073 VFA.MultisetTest <> bl:25 var
+R3089:3091 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3078:3085 VFA.Multiset <> contents def
+R3087:3088 VFA.MultisetTest <> al:24 var
+R3092:3099 VFA.Multiset <> contents def
+R3101:3102 VFA.MultisetTest <> bl:25 var
+R2997:3009 VFA.Multiset <> perm_contents prfax
+R3029:3032 Coq.Init.Datatypes <> list ind
+R3034:3036 Coq.Init.Datatypes <> nat ind
+binder 3021:3022 <> al:26
+binder 3024:3025 <> bl:27
+R3074:3077 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3041:3063 Coq.Sorting.Permutation <> Permutation ind
+R3065:3067 Coq.Init.Datatypes <> nat ind
+R3069:3070 VFA.MultisetTest <> al:26 var
+R3072:3073 VFA.MultisetTest <> bl:27 var
+R3089:3091 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3078:3085 VFA.Multiset <> contents def
+R3087:3088 VFA.MultisetTest <> al:26 var
+R3092:3099 VFA.Multiset <> contents def
+R3101:3102 VFA.MultisetTest <> bl:27 var
+R3154:3166 VFA.Multiset <> perm_contents prfax
+def 3169:3177 <> Unnamed_thm
+R3174:3177 Coq.Init.Logic <> True ind
+R3360:3375 VFA.Multiset <> contents_nil_inv prfax
+R3391:3394 Coq.Init.Datatypes <> list ind
+R3396:3400 VFA.Multiset <> value def
+binder 3387:3387 <> l:28
+R3404:3404 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3439:3443 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3416:3420 VFA.Multiset <> value def
+binder 3412:3412 <> x:29
+R3424:3426 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3427:3434 VFA.Multiset <> contents def
+R3436:3436 VFA.MultisetTest <> l:28 var
+R3438:3438 VFA.MultisetTest <> x:29 var
+R3445:3447 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3444:3444 VFA.MultisetTest <> l:28 var
+R3449:3451 Coq.Init.Datatypes <> nil constr
+R3453:3457 VFA.Multiset <> value def
+R3360:3375 VFA.Multiset <> contents_nil_inv prfax
+R3391:3394 Coq.Init.Datatypes <> list ind
+R3396:3400 VFA.Multiset <> value def
+binder 3387:3387 <> l:30
+R3404:3404 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3439:3443 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3416:3420 VFA.Multiset <> value def
+binder 3412:3412 <> x:31
+R3424:3426 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3427:3434 VFA.Multiset <> contents def
+R3436:3436 VFA.MultisetTest <> l:30 var
+R3438:3438 VFA.MultisetTest <> x:31 var
+R3445:3447 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3444:3444 VFA.MultisetTest <> l:30 var
+R3449:3451 Coq.Init.Datatypes <> nil constr
+R3453:3457 VFA.Multiset <> value def
+R3509:3524 VFA.Multiset <> contents_nil_inv prfax
+def 3527:3535 <> Unnamed_thm
+R3532:3535 Coq.Init.Logic <> True ind
+R3720:3736 VFA.Multiset <> contents_cons_inv prfax
+R3753:3756 Coq.Init.Datatypes <> list ind
+R3758:3762 VFA.Multiset <> value def
+binder 3749:3749 <> l:32
+R3770:3774 VFA.Multiset <> value def
+binder 3766:3766 <> x:33
+R3782:3784 Coq.Init.Datatypes <> nat ind
+binder 3778:3778 <> n:34
+R3807:3811 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3792:3794 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3789:3789 Coq.Init.Datatypes <> S constr
+R3791:3791 VFA.MultisetTest <> n:34 var
+R3795:3802 VFA.Multiset <> contents def
+R3804:3804 VFA.MultisetTest <> l:32 var
+R3806:3806 VFA.MultisetTest <> x:33 var
+R3812:3818 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3837:3841 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3827:3830 Coq.Init.Datatypes <> list ind
+R3832:3836 VFA.Multiset <> value def
+binder 3819:3820 <> l1:35
+R3827:3830 Coq.Init.Datatypes <> list ind
+R3832:3836 VFA.Multiset <> value def
+binder 3822:3823 <> l2:36
+R3866:3869 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3843:3845 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3842:3842 VFA.MultisetTest <> l:32 var
+R3849:3852 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R3847:3848 VFA.MultisetTest <> l1:35 var
+R3854:3857 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3853:3853 VFA.MultisetTest <> x:33 var
+R3858:3859 VFA.MultisetTest <> l2:36 var
+R3891:3893 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3870:3877 VFA.Multiset <> contents def
+R3882:3885 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R3880:3881 VFA.MultisetTest <> l1:35 var
+R3886:3887 VFA.MultisetTest <> l2:36 var
+R3890:3890 VFA.MultisetTest <> x:33 var
+R3894:3894 VFA.MultisetTest <> n:34 var
+R3720:3736 VFA.Multiset <> contents_cons_inv prfax
+R3753:3756 Coq.Init.Datatypes <> list ind
+R3758:3762 VFA.Multiset <> value def
+binder 3749:3749 <> l:37
+R3770:3774 VFA.Multiset <> value def
+binder 3766:3766 <> x:38
+R3782:3784 Coq.Init.Datatypes <> nat ind
+binder 3778:3778 <> n:39
+R3807:3811 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3792:3794 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3789:3789 Coq.Init.Datatypes <> S constr
+R3791:3791 VFA.MultisetTest <> n:39 var
+R3795:3802 VFA.Multiset <> contents def
+R3804:3804 VFA.MultisetTest <> l:37 var
+R3806:3806 VFA.MultisetTest <> x:38 var
+R3812:3818 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3837:3841 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3827:3830 Coq.Init.Datatypes <> list ind
+R3832:3836 VFA.Multiset <> value def
+binder 3819:3820 <> l1:40
+R3827:3830 Coq.Init.Datatypes <> list ind
+R3832:3836 VFA.Multiset <> value def
+binder 3822:3823 <> l2:41
+R3866:3869 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3843:3845 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3842:3842 VFA.MultisetTest <> l:37 var
+R3849:3852 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R3847:3848 VFA.MultisetTest <> l1:40 var
+R3854:3857 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3853:3853 VFA.MultisetTest <> x:38 var
+R3858:3859 VFA.MultisetTest <> l2:41 var
+R3891:3893 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3870:3877 VFA.Multiset <> contents def
+R3882:3885 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R3880:3881 VFA.MultisetTest <> l1:40 var
+R3886:3887 VFA.MultisetTest <> l2:41 var
+R3890:3890 VFA.MultisetTest <> x:38 var
+R3894:3894 VFA.MultisetTest <> n:39 var
+R3946:3962 VFA.Multiset <> contents_cons_inv prfax
+def 3965:3973 <> Unnamed_thm
+R3970:3973 Coq.Init.Logic <> True ind
+R4166:4186 VFA.Multiset <> contents_insert_other prfax
+R4207:4210 Coq.Init.Datatypes <> list ind
+R4212:4216 VFA.Multiset <> value def
+binder 4199:4200 <> l1:42
+binder 4202:4203 <> l2:43
+R4226:4230 VFA.Multiset <> value def
+binder 4220:4220 <> x:44
+binder 4222:4222 <> y:45
+R4241:4244 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4236:4239 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R4235:4235 VFA.MultisetTest <> y:45 var
+R4240:4240 VFA.MultisetTest <> x:44 var
+R4271:4273 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4245:4252 VFA.Multiset <> contents def
+R4257:4260 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R4255:4256 VFA.MultisetTest <> l1:42 var
+R4262:4265 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4261:4261 VFA.MultisetTest <> x:44 var
+R4266:4267 VFA.MultisetTest <> l2:43 var
+R4270:4270 VFA.MultisetTest <> y:45 var
+R4274:4281 VFA.Multiset <> contents def
+R4286:4289 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R4284:4285 VFA.MultisetTest <> l1:42 var
+R4290:4291 VFA.MultisetTest <> l2:43 var
+R4294:4294 VFA.MultisetTest <> y:45 var
+R4166:4186 VFA.Multiset <> contents_insert_other prfax
+R4207:4210 Coq.Init.Datatypes <> list ind
+R4212:4216 VFA.Multiset <> value def
+binder 4199:4200 <> l1:46
+binder 4202:4203 <> l2:47
+R4226:4230 VFA.Multiset <> value def
+binder 4220:4220 <> x:48
+binder 4222:4222 <> y:49
+R4241:4244 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4236:4239 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R4235:4235 VFA.MultisetTest <> y:49 var
+R4240:4240 VFA.MultisetTest <> x:48 var
+R4271:4273 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4245:4252 VFA.Multiset <> contents def
+R4257:4260 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R4255:4256 VFA.MultisetTest <> l1:46 var
+R4262:4265 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4261:4261 VFA.MultisetTest <> x:48 var
+R4266:4267 VFA.MultisetTest <> l2:47 var
+R4270:4270 VFA.MultisetTest <> y:49 var
+R4274:4281 VFA.Multiset <> contents def
+R4286:4289 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R4284:4285 VFA.MultisetTest <> l1:46 var
+R4290:4291 VFA.MultisetTest <> l2:47 var
+R4294:4294 VFA.MultisetTest <> y:49 var
+R4346:4366 VFA.Multiset <> contents_insert_other prfax
+def 4369:4377 <> Unnamed_thm
+R4374:4377 Coq.Init.Logic <> True ind
+R4554:4566 VFA.Multiset <> contents_perm prfax
+R4586:4589 Coq.Init.Datatypes <> list ind
+R4591:4595 VFA.Multiset <> value def
+binder 4578:4579 <> al:50
+binder 4581:4582 <> bl:51
+R4624:4627 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4610:4612 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4599:4606 VFA.Multiset <> contents def
+R4608:4609 VFA.MultisetTest <> al:50 var
+R4613:4620 VFA.Multiset <> contents def
+R4622:4623 VFA.MultisetTest <> bl:51 var
+R4629:4651 Coq.Sorting.Permutation <> Permutation ind
+R4653:4657 VFA.Multiset <> value def
+R4659:4660 VFA.MultisetTest <> al:50 var
+R4662:4663 VFA.MultisetTest <> bl:51 var
+R4554:4566 VFA.Multiset <> contents_perm prfax
+R4586:4589 Coq.Init.Datatypes <> list ind
+R4591:4595 VFA.Multiset <> value def
+binder 4578:4579 <> al:52
+binder 4581:4582 <> bl:53
+R4624:4627 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4610:4612 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4599:4606 VFA.Multiset <> contents def
+R4608:4609 VFA.MultisetTest <> al:52 var
+R4613:4620 VFA.Multiset <> contents def
+R4622:4623 VFA.MultisetTest <> bl:53 var
+R4629:4651 Coq.Sorting.Permutation <> Permutation ind
+R4653:4657 VFA.Multiset <> value def
+R4659:4660 VFA.MultisetTest <> al:52 var
+R4662:4663 VFA.MultisetTest <> bl:53 var
+R4715:4727 VFA.Multiset <> contents_perm prfax
+def 4730:4738 <> Unnamed_thm
+R4735:4738 Coq.Init.Logic <> True ind
+R4915:4936 VFA.Multiset <> same_contents_iff_perm prfax
+R4956:4959 Coq.Init.Datatypes <> list ind
+R4961:4965 VFA.Multiset <> value def
+binder 4948:4949 <> al:54
+binder 4951:4952 <> bl:55
+R4994:4998 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R4980:4982 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4969:4976 VFA.Multiset <> contents def
+R4978:4979 VFA.MultisetTest <> al:54 var
+R4983:4990 VFA.Multiset <> contents def
+R4992:4993 VFA.MultisetTest <> bl:55 var
+R5000:5022 Coq.Sorting.Permutation <> Permutation ind
+R5024:5028 VFA.Multiset <> value def
+R5030:5031 VFA.MultisetTest <> al:54 var
+R5033:5034 VFA.MultisetTest <> bl:55 var
+R4915:4936 VFA.Multiset <> same_contents_iff_perm prfax
+R4956:4959 Coq.Init.Datatypes <> list ind
+R4961:4965 VFA.Multiset <> value def
+binder 4948:4949 <> al:56
+binder 4951:4952 <> bl:57
+R4994:4998 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R4980:4982 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4969:4976 VFA.Multiset <> contents def
+R4978:4979 VFA.MultisetTest <> al:56 var
+R4983:4990 VFA.Multiset <> contents def
+R4992:4993 VFA.MultisetTest <> bl:57 var
+R5000:5022 Coq.Sorting.Permutation <> Permutation ind
+R5024:5028 VFA.Multiset <> value def
+R5030:5031 VFA.MultisetTest <> al:56 var
+R5033:5034 VFA.MultisetTest <> bl:57 var
+R5086:5107 VFA.Multiset <> same_contents_iff_perm prfax
+def 5110:5118 <> Unnamed_thm
+R5115:5118 Coq.Init.Logic <> True ind
+R5311:5340 VFA.Multiset <> sort_specifications_equivalent prfax
+R5367:5370 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5359:5362 Coq.Init.Datatypes <> list ind
+R5364:5366 Coq.Init.Datatypes <> nat ind
+R5371:5374 Coq.Init.Datatypes <> list ind
+R5376:5378 Coq.Init.Datatypes <> nat ind
+binder 5352:5355 <> sort:58
+R5414:5418 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R5382:5408 VFA.Sort <> is_a_sorting_algorithm def
+R5410:5413 VFA.MultisetTest <> sort:58 var
+R5419:5441 VFA.Multiset <> is_a_sorting_algorithm' def
+R5443:5446 VFA.MultisetTest <> sort:58 var
+R5311:5340 VFA.Multiset <> sort_specifications_equivalent prfax
+R5367:5370 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5359:5362 Coq.Init.Datatypes <> list ind
+R5364:5366 Coq.Init.Datatypes <> nat ind
+R5371:5374 Coq.Init.Datatypes <> list ind
+R5376:5378 Coq.Init.Datatypes <> nat ind
+binder 5352:5355 <> sort:59
+R5414:5418 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R5382:5408 VFA.Sort <> is_a_sorting_algorithm def
+R5410:5413 VFA.MultisetTest <> sort:59 var
+R5419:5441 VFA.Multiset <> is_a_sorting_algorithm' def
+R5443:5446 VFA.MultisetTest <> sort:59 var
+R5498:5527 VFA.Multiset <> sort_specifications_equivalent prfax
+def 5530:5538 <> Unnamed_thm
+R5535:5538 Coq.Init.Logic <> True ind
+R6689:6699 VFA.Multiset <> union_assoc prfax
+R6761:6770 VFA.Multiset <> union_comm prfax
+R6832:6841 VFA.Multiset <> union_swap prfax
+R6908:6922 VFA.Multiset <> insert_contents prfax
+R6987:6999 VFA.Multiset <> sort_contents prfax
+R7073:7094 VFA.Multiset <> insertion_sort_correct prfax
+R7230:7242 VFA.Multiset <> perm_contents prfax
+R7316:7337 VFA.Multiset <> same_contents_iff_perm prfax
+R7419:7448 VFA.Multiset <> sort_specifications_equivalent prfax
+R7566:7581 VFA.Multiset <> contents_nil_inv prfax
+R7650:7666 VFA.Multiset <> contents_cons_inv prfax
+R7739:7759 VFA.Multiset <> contents_insert_other prfax
+R7824:7836 VFA.Multiset <> contents_perm prfax

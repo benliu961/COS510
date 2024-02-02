@@ -1,0 +1,49 @@
+DIGEST 1070949ae0f8fb4bd9b7e3f47f31d27c
+FVC.Spec_triang
+R1738:1756 VST.floyd.proofauto <> <> lib
+R1774:1783 VC.triang2 <> <> lib
+R1801:1814 VC.Spec_stdlib <> <> lib
+R1832:1844 VC.Spec_stack <> <> lib
+sec 2520:2528 <> TriangASI
+var 2663:2663 TriangASI M
+R2666:2678 VC.Spec_stdlib <> MallocFreeAPD rec
+def 3213:3223 <> triang_spec
+R3232:3234 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R3227:3231 compcert.common.AST <> ident def
+R3235:3241 VST.veric.mpred <> funspec ind
+R3247:3254 VST.floyd.client_lemmas <> :::'DECLARE'_x_x not
+R3262:3263 VST.floyd.client_lemmas <> :::'DECLARE'_x_x not
+R3255:3261 VC.triang2 <> _triang def
+R3264:3268 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_']'_x_'POST'_'['_x_']'_x not
+R3271:3272 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_']'_x_'POST'_'['_x_']'_x not
+R3280:3372 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_']'_x_'POST'_'['_x_']'_x not
+R3486:3494 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_']'_x_'POST'_'['_x_']'_x not
+R3499:3612 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_']'_x_'POST'_'['_x_']'_x not
+R3495:3498 compcert.export.Ctypesdefs <> tint def
+R3273:3279 VST.veric.SeparationLogic <> globals def
+binder 3269:3270 <> gv:2
+R3373:3410 VST.floyd.canon <> ::assert:'PROP'_'('_')'_x not
+R3411:3450 VST.floyd.canon <> ::assert3:'PARAMS'_'('_')'_x not
+R3451:3458 VST.floyd.canon <> ::assert4:'GLOBALS'_'('_x_';'_'..'_';'_x_')'_x not
+R3461:3467 VST.floyd.canon <> ::assert4:'GLOBALS'_'('_x_';'_'..'_';'_x_')'_x not
+R3459:3460 VC.Spec_triang <> gv:2 var
+R3468:3472 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R3485:3485 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R3473:3479 VC.Spec_stdlib <> mem_mgr proj
+R3481:3481 VC.Spec_triang <> TriangASI.M var
+R3483:3484 VC.Spec_triang <> gv:2 var
+binder 3269:3270 <> gv:3
+R3613:3650 VST.floyd.canon <> ::assert:'PROP'_'('_')'_x not
+R3651:3689 VST.floyd.canon <> ::assert3:'RETURN'_'('_')'_x not
+R3690:3694 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R3707:3707 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R3695:3701 VC.Spec_stdlib <> mem_mgr proj
+R3703:3703 VC.Spec_triang <> TriangASI.M var
+R3705:3706 VC.Spec_triang <> gv:3 var
+def 4387:4395 <> TriangASI
+R4399:4406 VST.veric.mpred <> funspecs def
+R4411:4413 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R4425:4426 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R4414:4424 VC.Spec_triang <> triang_spec def
+R4434:4442 VC.Spec_triang TriangASI <> sec
+R4536:4544 VC.Spec_triang <> TriangASI def

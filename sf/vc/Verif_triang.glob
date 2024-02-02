@@ -1,0 +1,999 @@
+DIGEST e69ac20c440f303e8cf9717def5ead04
+FVC.Verif_triang
+R64:73 VC.Preface <> <> lib
+R132:150 VST.floyd.proofauto <> <> lib
+R168:184 VST.floyd.library <> <> lib
+R202:209 VC.stack <> <> lib
+inst 231:239 <> CompSpecs
+R243:251 VST.veric.compspecs <> compspecs class
+R269:272 VC.stack <> prog def
+def 295:299 <> Vprog
+R303:310 VST.veric.mpred <> varspecs def
+R326:329 VC.stack <> prog def
+prf 1265:1280 <> nat_sub_add_yuck
+R1285:1286 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1300:1302 Coq.Init.Datatypes <> nat ind
+binder 1295:1295 <> a:1
+binder 1297:1297 <> b:2
+R1310:1310 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1308:1308 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R1306:1306 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R1305:1305 VC.Verif_triang <> a:1 var
+R1307:1307 VC.Verif_triang <> b:2 var
+R1309:1309 VC.Verif_triang <> b:2 var
+R1311:1311 VC.Verif_triang <> a:1 var
+prf 1643:1654 <> Z_sub_add_ok
+R1672:1672 Coq.Numbers.BinNums <> Z ind
+binder 1666:1666 <> a:3
+binder 1668:1668 <> b:4
+R1680:1680 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1678:1678 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R1676:1676 Coq.ZArith.BinInt <> ::Z_scope:x_'-'_x not
+R1675:1675 VC.Verif_triang <> a:3 var
+R1677:1677 VC.Verif_triang <> b:4 var
+R1679:1679 VC.Verif_triang <> b:4 var
+R1681:1681 VC.Verif_triang <> a:3 var
+R1774:1774 Coq.Numbers.BinNums <> Z ind
+def 2331:2344 <> decreasing_nat
+R2350:2352 Coq.Init.Datatypes <> nat ind
+binder 2347:2347 <> n:5
+R2357:2360 Coq.Init.Datatypes <> list ind
+R2362:2364 Coq.Init.Datatypes <> nat ind
+R2377:2377 VC.Verif_triang <> n:5 var
+R2384:2384 Coq.Init.Datatypes <> S constr
+R2393:2396 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2392:2392 VC.Verif_triang <> n:5 var
+R2397:2410 VC.Verif_triang <> decreasing_nat:6 def
+R2417:2417 Coq.Init.Datatypes <> O constr
+R2422:2424 Coq.Init.Datatypes <> nil constr
+def 2526:2537 <> decreasing_Z
+R2543:2543 Coq.Numbers.BinNums <> Z ind
+binder 2540:2540 <> n:8
+R2548:2551 Coq.Init.Datatypes <> list ind
+R2553:2553 Coq.Numbers.BinNums <> Z ind
+R2566:2566 VC.Verif_triang <> n:8 var
+R2573:2578 Coq.ZArith.BinInt Z succ def
+def 2832:2848 <> decreasing_Z1_aux
+R2854:2856 Coq.Init.Datatypes <> nat ind
+binder 2851:2851 <> n:11
+R2861:2864 Coq.Init.Datatypes <> list ind
+R2866:2866 Coq.Numbers.BinNums <> Z ind
+R2880:2880 VC.Verif_triang <> n:11 var
+R2891:2891 Coq.Init.Datatypes <> S constr
+R2909:2912 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2899:2906 Coq.ZArith.BinInt Z of_nat def
+R2908:2908 VC.Verif_triang <> n:11 var
+R2913:2929 VC.Verif_triang <> decreasing_Z1_aux:12 def
+R2938:2938 Coq.Init.Datatypes <> O constr
+R2943:2945 Coq.Init.Datatypes <> nil constr
+def 2965:2977 <> decreasing_Z1
+R2983:2983 Coq.Numbers.BinNums <> Z ind
+binder 2980:2980 <> n:14
+R2988:2991 Coq.Init.Datatypes <> list ind
+R2993:2993 Coq.Numbers.BinNums <> Z ind
+R3003:3019 VC.Verif_triang <> decreasing_Z1_aux def
+R3022:3029 Coq.ZArith.BinInt Z to_nat def
+R3031:3031 VC.Verif_triang <> n:14 var
+R3244:3251 Coq.ZArith.ZArith_dec <> Z_gt_dec def
+R3325:3325 Coq.Numbers.BinNums <> Z ind
+binder 3322:3322 <> n:15
+R3356:3363 Coq.ZArith.ZArith_dec <> Z_gt_dec def
+R3365:3365 VC.Verif_triang <> n:15 var
+R3401:3403 Coq.Init.Datatypes <> nil constr
+R3375:3378 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3374:3374 VC.Verif_triang <> n:15 var
+R3379:3388 VC.Verif_triang <> decreasing:16 def
+R3392:3392 Coq.ZArith.BinInt <> ::Z_scope:x_'-'_x not
+R3391:3391 VC.Verif_triang <> n:15 var
+binder 3322:3322 <> n:17
+binder 3322:3322 <> n:18
+binder 3322:3322 <> n:20
+R3356:3363 Coq.ZArith.ZArith_dec <> Z_gt_dec def
+R3365:3365 VC.Verif_triang <> n:20 var
+R3401:3403 Coq.Init.Datatypes <> nil constr
+R3375:3378 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3374:3374 VC.Verif_triang <> n:20 var
+R3379:3388 VC.Verif_triang <> decreasing:19 def
+R3392:3392 Coq.ZArith.BinInt <> ::Z_scope:x_'-'_x not
+R3391:3391 VC.Verif_triang <> n:20 var
+binder 3322:3322 <> n:21
+binder 3322:3322 <> n:22
+R3356:3363 Coq.ZArith.ZArith_dec <> Z_gt_dec def
+R3365:3365 VC.Verif_triang <> n:22 var
+R3401:3403 Coq.Init.Datatypes <> nil constr
+R3375:3378 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3374:3374 VC.Verif_triang <> n:22 var
+R3379:3388 VC.Verif_triang <> decreasing:19 def
+R3392:3392 Coq.ZArith.BinInt <> ::Z_scope:x_'-'_x not
+R3391:3391 VC.Verif_triang <> n:22 var
+R3337:3344 Coq.ZArith.BinInt Z to_nat def
+prf 4172:4181 <> Zinduction
+R4197:4200 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4196:4196 Coq.Numbers.BinNums <> Z ind
+binder 4193:4193 <> P:33
+R4213:4218 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4210:4210 VC.Verif_triang <> P:33 var
+R4219:4219 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4253:4259 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 4227:4227 <> i:34
+R4235:4238 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4231:4233 Coq.ZArith.BinInt <> ::Z_scope:x_'<'_x not
+R4234:4234 VC.Verif_triang <> i:34 var
+R4246:4249 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4239:4239 VC.Verif_triang <> P:33 var
+R4243:4243 Coq.ZArith.BinInt <> ::Z_scope:x_'-'_x not
+R4242:4242 VC.Verif_triang <> i:34 var
+R4250:4250 VC.Verif_triang <> P:33 var
+R4252:4252 VC.Verif_triang <> i:34 var
+binder 4267:4267 <> n:35
+R4276:4279 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4271:4274 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x not
+R4275:4275 VC.Verif_triang <> n:35 var
+R4280:4280 VC.Verif_triang <> P:33 var
+R4282:4282 VC.Verif_triang <> n:35 var
+R4312:4319 Coq.ZArith.Znat Z2Nat id thm
+R4312:4319 Coq.ZArith.Znat Z2Nat id thm
+R4312:4319 Coq.ZArith.Znat Z2Nat id thm
+R4347:4354 Coq.ZArith.BinInt Z to_nat def
+R4347:4354 Coq.ZArith.BinInt Z to_nat def
+R4384:4388 Coq.ZArith.Znat <> inj_S abbrev
+R4430:4435 Coq.ZArith.BinInt Z succ def
+def 4658:4665 <> add_list
+R4674:4677 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4668:4671 Coq.Init.Datatypes <> list ind
+R4673:4673 Coq.Numbers.BinNums <> Z ind
+R4678:4678 Coq.Numbers.BinNums <> Z ind
+R4683:4692 Coq.Lists.List <> fold_right def
+R4694:4698 Coq.ZArith.BinInt Z add def
+prf 4855:4880 <> add_list_decreasing_eq_alt
+binder 4890:4890 <> n:36
+R4901:4906 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4896:4899 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x not
+R4900:4900 VC.Verif_triang <> n:36 var
+R4940:4942 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4909:4912 Coq.ZArith.BinInt <> ::Z_scope:x_'*'_x not
+R4936:4936 Coq.ZArith.BinInt <> ::Z_scope:x_'*'_x not
+R4913:4920 VC.Verif_triang <> add_list def
+R4923:4932 VC.Verif_triang <> decreasing thm
+R4934:4934 VC.Verif_triang <> n:36 var
+R4945:4948 Coq.ZArith.BinInt <> ::Z_scope:x_'*'_x not
+R4952:4952 Coq.ZArith.BinInt <> ::Z_scope:x_'*'_x not
+R4944:4944 VC.Verif_triang <> n:36 var
+R4950:4950 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R4949:4949 VC.Verif_triang <> n:36 var
+R4994:5003 VC.Verif_triang <> Zinduction prfax
+R4994:5003 VC.Verif_triang <> Zinduction prfax
+R5499:5517 VC.Verif_triang <> decreasing_equation def
+R5533:5551 VC.Verif_triang <> decreasing_equation def
+R5533:5551 VC.Verif_triang <> decreasing_equation def
+R5533:5551 VC.Verif_triang <> decreasing_equation def
+prf 5919:5940 <> add_list_decreasing_eq
+binder 5950:5950 <> n:37
+R5961:5966 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5956:5959 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x not
+R5960:5960 VC.Verif_triang <> n:37 var
+R5990:5992 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5967:5974 VC.Verif_triang <> add_list def
+R5977:5986 VC.Verif_triang <> decreasing thm
+R5988:5988 VC.Verif_triang <> n:37 var
+R6002:6004 Coq.ZArith.BinInt <> ::Z_scope:x_'/'_x not
+R5994:5997 Coq.ZArith.BinInt <> ::Z_scope:x_'*'_x not
+R6001:6001 Coq.ZArith.BinInt <> ::Z_scope:x_'*'_x not
+R5993:5993 VC.Verif_triang <> n:37 var
+R5999:5999 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R5998:5998 VC.Verif_triang <> n:37 var
+R6033:6050 Coq.ZArith.BinInt Z div_unique_exact thm
+R6033:6050 Coq.ZArith.BinInt Z div_unique_exact thm
+def 6577:6583 <> listrep
+R6590:6593 Coq.Init.Datatypes <> list ind
+R6595:6595 Coq.Numbers.BinNums <> Z ind
+binder 6586:6587 <> il:38
+R6602:6604 compcert.common.Values <> val ind
+binder 6599:6599 <> p:39
+R6609:6613 VST.veric.mpred <> mpred def
+R6625:6626 VC.Verif_triang <> il:38 var
+R6637:6638 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6646:6648 VST.msl.seplog <> ::logic:'EX'_x_'..'_x_','_x not
+R6655:6665 VST.msl.seplog <> ::logic:'EX'_x_'..'_x_','_x not
+R6652:6654 compcert.common.Values <> val ind
+binder 6649:6649 <> y:42
+R6776:6786 VST.msl.seplog <> ::logic:x_'*'_x not
+R6707:6717 VST.msl.seplog <> ::logic:x_'*'_x not
+R6666:6677 VST.floyd.library <> malloc_token defax
+R6706:6706 VC.Verif_triang <> p:39 var
+R6684:6690 compcert.cfrontend.Ctypes <> Tstruct constr
+R6692:6696 VC.stack <> _cons def
+R6698:6703 compcert.cfrontend.Ctypes <> noattr def
+R6679:6681 VST.veric.shares <> Ews def
+R6718:6724 VST.floyd.field_at <> data_at def
+R6726:6728 VST.veric.shares <> Ews def
+R6731:6737 compcert.cfrontend.Ctypes <> Tstruct constr
+R6739:6743 VC.stack <> _cons def
+R6745:6750 compcert.cfrontend.Ctypes <> noattr def
+R6753:6753 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6771:6771 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6773:6773 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6754:6757 compcert.common.Values <> Vint constr
+R6760:6767 compcert.lib.Integers Int repr def
+R6772:6772 VC.Verif_triang <> y:42 var
+R6775:6775 VC.Verif_triang <> p:39 var
+R6787:6793 VC.Verif_triang <> listrep:40 def
+R6799:6799 VC.Verif_triang <> y:42 var
+R6804:6806 Coq.Init.Datatypes <> nil constr
+R6827:6830 VST.msl.seplog <> ::logic:x_'&&'_x not
+R6811:6814 VST.msl.seplog <> ::logic:'!!'_x not
+R6826:6826 VST.msl.seplog <> ::logic:'!!'_x not
+R6816:6818 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6815:6815 VC.Verif_triang <> p:39 var
+R6819:6825 VST.veric.base <> nullval def
+R6831:6833 VST.msl.seplog <> emp meth
+prf 6848:6865 <> listrep_local_prop
+binder 6875:6876 <> il:43
+binder 6878:6878 <> p:44
+R6893:6905 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R6881:6887 VC.Verif_triang <> listrep def
+R6889:6890 VC.Verif_triang <> il:43 var
+R6892:6892 VC.Verif_triang <> p:44 var
+R6906:6909 VST.msl.seplog <> ::logic:'!!'_x not
+R6957:6957 VST.msl.seplog <> ::logic:'!!'_x not
+R6930:6935 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6956:6956 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6910:6927 VST.veric.val_lemmas <> is_pointer_or_null def
+R6929:6929 VC.Verif_triang <> p:44 var
+R6945:6949 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R6937:6937 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6936:6936 VC.Verif_triang <> p:44 var
+R6938:6944 VST.veric.base <> nullval def
+R6952:6952 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6950:6951 VC.Verif_triang <> il:43 var
+R6953:6955 Coq.Init.Datatypes <> nil constr
+R7067:7090 VST.floyd.nested_field_lemmas <> field_compatible_nullval thm
+R7067:7090 VST.floyd.nested_field_lemmas <> field_compatible_nullval thm
+prf 7186:7206 <> listrep_valid_pointer
+binder 7218:7219 <> il:45
+binder 7221:7221 <> p:46
+R7239:7243 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R7227:7233 VC.Verif_triang <> listrep def
+R7235:7236 VC.Verif_triang <> il:45 var
+R7238:7238 VC.Verif_triang <> p:46 var
+R7244:7256 VST.veric.expr <> valid_pointer def
+R7258:7258 VC.Verif_triang <> p:46 var
+def 7417:7421 <> stack
+R7428:7431 Coq.Init.Datatypes <> list ind
+R7433:7433 Coq.Numbers.BinNums <> Z ind
+binder 7424:7425 <> il:47
+R7440:7442 compcert.common.Values <> val ind
+binder 7437:7437 <> p:48
+R7449:7451 VST.msl.seplog <> ::logic:'EX'_x_'..'_x_','_x not
+R7458:7461 VST.msl.seplog <> ::logic:'EX'_x_'..'_x_','_x not
+R7455:7457 compcert.common.Values <> val ind
+binder 7452:7452 <> q:49
+R7549:7551 VST.msl.seplog <> ::logic:x_'*'_x not
+R7504:7509 VST.msl.seplog <> ::logic:x_'*'_x not
+R7462:7473 VST.floyd.library <> malloc_token defax
+R7503:7503 VC.Verif_triang <> p:48 var
+R7480:7486 compcert.cfrontend.Ctypes <> Tstruct constr
+R7488:7493 VC.stack <> _stack def
+R7495:7500 compcert.cfrontend.Ctypes <> noattr def
+R7475:7477 VST.veric.shares <> Ews def
+R7510:7516 VST.floyd.field_at <> data_at def
+R7518:7520 VST.veric.shares <> Ews def
+R7523:7529 compcert.cfrontend.Ctypes <> Tstruct constr
+R7531:7536 VC.stack <> _stack def
+R7538:7543 compcert.cfrontend.Ctypes <> noattr def
+R7546:7546 VC.Verif_triang <> q:49 var
+R7548:7548 VC.Verif_triang <> p:48 var
+R7552:7558 VC.Verif_triang <> listrep def
+R7560:7561 VC.Verif_triang <> il:47 var
+R7563:7563 VC.Verif_triang <> q:49 var
+prf 7573:7588 <> stack_local_prop
+binder 7598:7599 <> il:50
+binder 7601:7601 <> p:51
+R7614:7619 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R7604:7608 VC.Verif_triang <> stack def
+R7610:7611 VC.Verif_triang <> il:50 var
+R7613:7613 VC.Verif_triang <> p:51 var
+R7620:7623 VST.msl.seplog <> ::logic:'!!'_x not
+R7631:7631 VST.msl.seplog <> ::logic:'!!'_x not
+R7624:7628 VST.veric.val_lemmas <> isptr def
+R7630:7630 VC.Verif_triang <> p:51 var
+prf 7735:7753 <> stack_valid_pointer
+binder 7765:7766 <> il:52
+binder 7768:7768 <> p:53
+R7784:7788 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R7774:7778 VC.Verif_triang <> stack def
+R7780:7781 VC.Verif_triang <> il:52 var
+R7783:7783 VC.Verif_triang <> p:53 var
+R7789:7801 VST.veric.expr <> valid_pointer def
+R7803:7803 VC.Verif_triang <> p:53 var
+def 7914:7926 <> newstack_spec
+R7935:7937 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R7930:7934 compcert.common.AST <> ident def
+R7938:7944 VST.veric.mpred <> funspec ind
+R7950:7957 VST.floyd.client_lemmas <> :::'DECLARE'_x_x not
+R7967:7968 VST.floyd.client_lemmas <> :::'DECLARE'_x_x not
+R7958:7966 VC.stack <> _newstack def
+R7969:7973 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_']'_x_'POST'_'['_x_']'_x not
+R7976:7977 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_']'_x_'POST'_'['_x_']'_x not
+R7985:7999 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_']'_x_'POST'_'['_x_']'_x not
+R8045:8053 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_']'_x_'POST'_'['_x_']'_x not
+R8082:8089 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_']'_x_'POST'_'['_x_']'_x not
+R8054:8057 compcert.export.Ctypesdefs <> tptr def
+R8060:8066 compcert.cfrontend.Ctypes <> Tstruct constr
+R8068:8073 VC.stack <> _stack def
+R8075:8080 compcert.cfrontend.Ctypes <> noattr def
+R7978:7984 VST.veric.SeparationLogic <> globals def
+binder 7974:7975 <> gv:54
+R8000:8007 VST.floyd.canon <> ::assert:'PROP'_'()'_x not
+R8008:8016 VST.floyd.canon <> ::assert3:'PARAMS'_'()'_x not
+R8017:8024 VST.floyd.canon <> ::assert4:'GLOBALS'_'('_x_';'_'..'_';'_x_')'_x not
+R8027:8028 VST.floyd.canon <> ::assert4:'GLOBALS'_'('_x_';'_'..'_';'_x_')'_x not
+R8025:8026 VC.Verif_triang <> gv:54 var
+R8029:8033 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R8044:8044 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R8034:8040 VST.floyd.library <> mem_mgr defax
+R8042:8043 VC.Verif_triang <> gv:54 var
+binder 7974:7975 <> gv:55
+R8090:8092 VST.floyd.canon <> ::assert:'EX'_x_'..'_x_','_x not
+R8099:8100 VST.floyd.canon <> ::assert:'EX'_x_'..'_x_','_x not
+R8096:8098 compcert.common.Values <> val ind
+binder 8093:8093 <> p:56
+R8101:8109 VST.floyd.canon <> ::assert:'PROP'_'('_')'_x not
+R8110:8117 VST.floyd.canon <> ::assert3:'RETURN'_'('_x_')'_x not
+R8119:8120 VST.floyd.canon <> ::assert3:'RETURN'_'('_x_')'_x not
+R8118:8118 VC.Verif_triang <> p:56 var
+R8121:8125 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R8137:8138 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R8149:8149 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R8126:8130 VC.Verif_triang <> stack def
+R8132:8134 Coq.Init.Datatypes <> nil constr
+R8136:8136 VC.Verif_triang <> p:56 var
+R8139:8145 VST.floyd.library <> mem_mgr defax
+R8147:8148 VC.Verif_triang <> gv:55 var
+def 8164:8172 <> push_spec
+R8181:8183 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R8176:8180 compcert.common.AST <> ident def
+R8184:8190 VST.veric.mpred <> funspec ind
+R8196:8203 VST.floyd.client_lemmas <> :::'DECLARE'_x_x not
+R8209:8210 VST.floyd.client_lemmas <> :::'DECLARE'_x_x not
+R8204:8208 VC.stack <> _push def
+R8211:8215 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R8217:8218 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R8222:8223 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R8225:8226 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R8228:8229 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R8232:8233 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R8240:8241 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R8244:8245 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R8253:8260 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R8289:8290 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R8295:8302 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R8428:8436 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R8442:8449 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R8261:8264 compcert.export.Ctypesdefs <> tptr def
+R8267:8273 compcert.cfrontend.Ctypes <> Tstruct constr
+R8275:8280 VC.stack <> _stack def
+R8282:8287 compcert.cfrontend.Ctypes <> noattr def
+R8291:8294 compcert.export.Ctypesdefs <> tint def
+R8437:8441 compcert.export.Ctypesdefs <> tvoid def
+R8219:8221 compcert.common.Values <> val ind
+R8227:8227 Coq.Numbers.BinNums <> Z ind
+R8234:8237 Coq.Init.Datatypes <> list ind
+R8239:8239 Coq.Numbers.BinNums <> Z ind
+R8246:8252 VST.veric.SeparationLogic <> globals def
+binder 8216:8216 <> p:57
+binder 8224:8224 <> i:58
+binder 8230:8231 <> il:59
+binder 8242:8243 <> gv:60
+R8303:8308 VST.floyd.canon <> ::assert:'PROP'_'('_x_';'_'..'_';'_x_')'_x not
+R8346:8352 VST.floyd.canon <> ::assert:'PROP'_'('_x_';'_'..'_';'_x_')'_x not
+R8323:8326 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R8328:8331 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R8309:8322 compcert.lib.Integers Int min_signed def
+R8327:8327 VC.Verif_triang <> i:58 var
+R8327:8327 VC.Verif_triang <> i:58 var
+R8332:8345 compcert.lib.Integers Int max_signed def
+R8353:8360 VST.floyd.canon <> ::assert3:'PARAMS'_'('_x_';'_'..'_';'_x_')'_x not
+R8362:8363 VST.floyd.canon <> ::assert3:'PARAMS'_'('_x_';'_'..'_';'_x_')'_x not
+R8381:8382 VST.floyd.canon <> ::assert3:'PARAMS'_'('_x_';'_'..'_';'_x_')'_x not
+R8361:8361 VC.Verif_triang <> p:57 var
+R8364:8367 compcert.common.Values <> Vint constr
+R8370:8377 compcert.lib.Integers Int repr def
+R8379:8379 VC.Verif_triang <> i:58 var
+R8383:8390 VST.floyd.canon <> ::assert4:'GLOBALS'_'('_x_';'_'..'_';'_x_')'_x not
+R8393:8399 VST.floyd.canon <> ::assert4:'GLOBALS'_'('_x_';'_'..'_';'_x_')'_x not
+R8391:8392 VC.Verif_triang <> gv:60 var
+R8400:8404 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R8415:8416 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R8427:8427 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R8405:8409 VC.Verif_triang <> stack def
+R8411:8412 VC.Verif_triang <> il:59 var
+R8414:8414 VC.Verif_triang <> p:57 var
+R8417:8423 VST.floyd.library <> mem_mgr defax
+R8425:8426 VC.Verif_triang <> gv:60 var
+binder 8216:8216 <> p:61
+binder 8224:8224 <> i:62
+binder 8230:8231 <> il:63
+binder 8242:8243 <> gv:64
+R8450:8458 VST.floyd.canon <> ::assert:'PROP'_'('_')'_x not
+R8459:8467 VST.floyd.canon <> ::assert3:'RETURN'_'()'_x not
+R8468:8472 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R8488:8489 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R8500:8500 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R8473:8477 VC.Verif_triang <> stack def
+R8481:8482 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8480:8480 VC.Verif_triang <> i:62 var
+R8483:8484 VC.Verif_triang <> il:63 var
+R8487:8487 VC.Verif_triang <> p:61 var
+R8490:8496 VST.floyd.library <> mem_mgr defax
+R8498:8499 VC.Verif_triang <> gv:64 var
+def 8515:8522 <> pop_spec
+R8531:8533 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R8526:8530 compcert.common.AST <> ident def
+R8534:8540 VST.veric.mpred <> funspec ind
+R8546:8553 VST.floyd.client_lemmas <> :::'DECLARE'_x_x not
+R8558:8559 VST.floyd.client_lemmas <> :::'DECLARE'_x_x not
+R8554:8557 VC.stack <> _pop def
+R8560:8564 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R8566:8567 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R8571:8572 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R8574:8575 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R8577:8578 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R8581:8582 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R8589:8590 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R8593:8594 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R8602:8609 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R8638:8645 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R8720:8728 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R8733:8740 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R8610:8613 compcert.export.Ctypesdefs <> tptr def
+R8616:8622 compcert.cfrontend.Ctypes <> Tstruct constr
+R8624:8629 VC.stack <> _stack def
+R8631:8636 compcert.cfrontend.Ctypes <> noattr def
+R8729:8732 compcert.export.Ctypesdefs <> tint def
+R8568:8570 compcert.common.Values <> val ind
+R8576:8576 Coq.Numbers.BinNums <> Z ind
+R8583:8586 Coq.Init.Datatypes <> list ind
+R8588:8588 Coq.Numbers.BinNums <> Z ind
+R8595:8601 VST.veric.SeparationLogic <> globals def
+binder 8565:8565 <> p:65
+binder 8573:8573 <> i:66
+binder 8579:8580 <> il:67
+binder 8591:8592 <> gv:68
+R8646:8658 VST.floyd.canon <> ::assert:'PROP'_'()'_x not
+R8659:8666 VST.floyd.canon <> ::assert3:'PARAMS'_'('_x_';'_'..'_';'_x_')'_x not
+R8668:8669 VST.floyd.canon <> ::assert3:'PARAMS'_'('_x_';'_'..'_';'_x_')'_x not
+R8667:8667 VC.Verif_triang <> p:65 var
+R8670:8677 VST.floyd.canon <> ::assert4:'GLOBALS'_'('_x_';'_'..'_';'_x_')'_x not
+R8680:8686 VST.floyd.canon <> ::assert4:'GLOBALS'_'('_x_';'_'..'_';'_x_')'_x not
+R8678:8679 VC.Verif_triang <> gv:68 var
+R8687:8691 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R8707:8708 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R8719:8719 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R8692:8696 VC.Verif_triang <> stack def
+R8700:8701 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8699:8699 VC.Verif_triang <> i:66 var
+R8702:8703 VC.Verif_triang <> il:67 var
+R8706:8706 VC.Verif_triang <> p:65 var
+R8709:8715 VST.floyd.library <> mem_mgr defax
+R8717:8718 VC.Verif_triang <> gv:68 var
+binder 8565:8565 <> p:69
+binder 8573:8573 <> i:70
+binder 8579:8580 <> il:71
+binder 8591:8592 <> gv:72
+R8741:8749 VST.floyd.canon <> ::assert:'PROP'_'('_')'_x not
+R8750:8757 VST.floyd.canon <> ::assert3:'RETURN'_'('_x_')'_x not
+R8775:8776 VST.floyd.canon <> ::assert3:'RETURN'_'('_x_')'_x not
+R8758:8761 compcert.common.Values <> Vint constr
+R8764:8771 compcert.lib.Integers Int repr def
+R8773:8773 VC.Verif_triang <> i:70 var
+R8777:8781 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R8792:8793 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R8804:8804 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R8782:8786 VC.Verif_triang <> stack def
+R8788:8789 VC.Verif_triang <> il:71 var
+R8791:8791 VC.Verif_triang <> p:69 var
+R8794:8800 VST.floyd.library <> mem_mgr defax
+R8802:8803 VC.Verif_triang <> gv:72 var
+def 9176:9195 <> push_increasing_spec
+R9201:9208 VST.floyd.client_lemmas <> :::'DECLARE'_x_x not
+R9225:9226 VST.floyd.client_lemmas <> :::'DECLARE'_x_x not
+R9209:9224 VC.stack <> _push_increasing def
+R9227:9231 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R9234:9235 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R9239:9240 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R9242:9243 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R9245:9246 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R9249:9250 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R9258:9265 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R9294:9295 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R9300:9305 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R9417:9425 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R9431:9436 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R9266:9269 compcert.export.Ctypesdefs <> tptr def
+R9272:9278 compcert.cfrontend.Ctypes <> Tstruct constr
+R9280:9285 VC.stack <> _stack def
+R9287:9292 compcert.cfrontend.Ctypes <> noattr def
+R9296:9299 compcert.export.Ctypesdefs <> tint def
+R9426:9430 compcert.export.Ctypesdefs <> tvoid def
+R9236:9238 compcert.common.Values <> val ind
+R9244:9244 Coq.Numbers.BinNums <> Z ind
+R9251:9257 VST.veric.SeparationLogic <> globals def
+binder 9232:9233 <> st:73
+binder 9241:9241 <> n:74
+binder 9247:9248 <> gv:75
+R9306:9311 VST.floyd.canon <> ::assert:'PROP'_'('_x_';'_'..'_';'_x_')'_x not
+R9336:9340 VST.floyd.canon <> ::assert:'PROP'_'('_x_';'_'..'_';'_x_')'_x not
+R9313:9316 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R9318:9321 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R9317:9317 VC.Verif_triang <> n:74 var
+R9317:9317 VC.Verif_triang <> n:74 var
+R9322:9335 compcert.lib.Integers Int max_signed def
+R9341:9348 VST.floyd.canon <> ::assert3:'PARAMS'_'('_x_';'_'..'_';'_x_')'_x not
+R9351:9352 VST.floyd.canon <> ::assert3:'PARAMS'_'('_x_';'_'..'_';'_x_')'_x not
+R9370:9371 VST.floyd.canon <> ::assert3:'PARAMS'_'('_x_';'_'..'_';'_x_')'_x not
+R9349:9350 VC.Verif_triang <> st:73 var
+R9353:9356 compcert.common.Values <> Vint constr
+R9359:9366 compcert.lib.Integers Int repr def
+R9368:9368 VC.Verif_triang <> n:74 var
+R9372:9379 VST.floyd.canon <> ::assert4:'GLOBALS'_'('_x_';'_'..'_';'_x_')'_x not
+R9382:9386 VST.floyd.canon <> ::assert4:'GLOBALS'_'('_x_';'_'..'_';'_x_')'_x not
+R9380:9381 VC.Verif_triang <> gv:75 var
+R9387:9391 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R9404:9405 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R9416:9416 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R9392:9396 VC.Verif_triang <> stack def
+R9398:9400 Coq.Init.Datatypes <> nil constr
+R9402:9403 VC.Verif_triang <> st:73 var
+R9406:9412 VST.floyd.library <> mem_mgr defax
+R9414:9415 VC.Verif_triang <> gv:75 var
+binder 9232:9233 <> st:76
+binder 9241:9241 <> n:77
+binder 9247:9248 <> gv:78
+R9437:9443 VST.floyd.canon <> ::assert:'PROP'_'()'_x not
+R9444:9452 VST.floyd.canon <> ::assert3:'RETURN'_'()'_x not
+R9453:9457 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R9481:9482 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R9493:9493 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R9458:9462 VC.Verif_triang <> stack def
+R9465:9474 VC.Verif_triang <> decreasing thm
+R9476:9476 VC.Verif_triang <> n:77 var
+R9479:9480 VC.Verif_triang <> st:76 var
+R9483:9489 VST.floyd.library <> mem_mgr defax
+R9491:9492 VC.Verif_triang <> gv:78 var
+def 9508:9523 <> pop_and_add_spec
+R9529:9536 VST.floyd.client_lemmas <> :::'DECLARE'_x_x not
+R9549:9550 VST.floyd.client_lemmas <> :::'DECLARE'_x_x not
+R9537:9548 VC.stack <> _pop_and_add def
+R9551:9555 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R9558:9559 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R9563:9564 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R9567:9568 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R9575:9576 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R9579:9580 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R9588:9595 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R9624:9625 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R9630:9635 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R9830:9838 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R9843:9848 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R9596:9599 compcert.export.Ctypesdefs <> tptr def
+R9602:9608 compcert.cfrontend.Ctypes <> Tstruct constr
+R9610:9615 VC.stack <> _stack def
+R9617:9622 compcert.cfrontend.Ctypes <> noattr def
+R9626:9629 compcert.export.Ctypesdefs <> tint def
+R9839:9842 compcert.export.Ctypesdefs <> tint def
+R9560:9562 compcert.common.Values <> val ind
+R9569:9572 Coq.Init.Datatypes <> list ind
+R9574:9574 Coq.Numbers.BinNums <> Z ind
+R9581:9587 VST.veric.SeparationLogic <> globals def
+binder 9556:9557 <> st:79
+binder 9565:9566 <> il:80
+binder 9577:9578 <> gv:81
+R9636:9641 VST.floyd.canon <> ::assert:'PROP'_'('_x_';'_'..'_';'_x_')'_x not
+R9670:9680 VST.floyd.canon <> ::assert:'PROP'_'('_x_';'_'..'_';'_x_')'_x not
+R9699:9709 VST.floyd.canon <> ::assert:'PROP'_'('_x_';'_'..'_';'_x_')'_x not
+R9739:9743 VST.floyd.canon <> ::assert:'PROP'_'('_x_';'_'..'_';'_x_')'_x not
+R9652:9655 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x not
+R9642:9648 Coq.ZArith.Zcomplements <> Zlength def
+R9650:9651 VC.Verif_triang <> il:80 var
+R9656:9669 compcert.lib.Integers Int max_signed def
+R9681:9686 Coq.Lists.List <> Forall ind
+R9697:9698 VC.Verif_triang <> il:80 var
+R9689:9692 Coq.ZArith.BinInt Z le def
+R9721:9724 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x not
+R9710:9717 VC.Verif_triang <> add_list def
+R9719:9720 VC.Verif_triang <> il:80 var
+R9725:9738 compcert.lib.Integers Int max_signed def
+R9744:9751 VST.floyd.canon <> ::assert3:'PARAMS'_'('_x_';'_'..'_';'_x_')'_x not
+R9754:9755 VST.floyd.canon <> ::assert3:'PARAMS'_'('_x_';'_'..'_';'_x_')'_x not
+R9784:9785 VST.floyd.canon <> ::assert3:'PARAMS'_'('_x_';'_'..'_';'_x_')'_x not
+R9752:9753 VC.Verif_triang <> st:79 var
+R9756:9759 compcert.common.Values <> Vint constr
+R9762:9769 compcert.lib.Integers Int repr def
+R9772:9778 Coq.ZArith.Zcomplements <> Zlength def
+R9780:9781 VC.Verif_triang <> il:80 var
+R9786:9793 VST.floyd.canon <> ::assert4:'GLOBALS'_'('_x_';'_'..'_';'_x_')'_x not
+R9796:9800 VST.floyd.canon <> ::assert4:'GLOBALS'_'('_x_';'_'..'_';'_x_')'_x not
+R9794:9795 VC.Verif_triang <> gv:81 var
+R9801:9805 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R9817:9818 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R9829:9829 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R9806:9810 VC.Verif_triang <> stack def
+R9812:9813 VC.Verif_triang <> il:80 var
+R9815:9816 VC.Verif_triang <> st:79 var
+R9819:9825 VST.floyd.library <> mem_mgr defax
+R9827:9828 VC.Verif_triang <> gv:81 var
+binder 9556:9557 <> st:82
+binder 9565:9566 <> il:83
+binder 9577:9578 <> gv:84
+R9849:9859 VST.floyd.canon <> ::assert:'PROP'_'()'_x not
+R9860:9867 VST.floyd.canon <> ::assert3:'RETURN'_'('_x_')'_x not
+R9897:9901 VST.floyd.canon <> ::assert3:'RETURN'_'('_x_')'_x not
+R9868:9871 compcert.common.Values <> Vint constr
+R9874:9881 compcert.lib.Integers Int repr def
+R9884:9891 VC.Verif_triang <> add_list def
+R9893:9894 VC.Verif_triang <> il:83 var
+R9902:9906 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R9919:9920 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R9931:9931 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R9907:9911 VC.Verif_triang <> stack def
+R9913:9915 Coq.Init.Datatypes <> nil constr
+R9917:9918 VC.Verif_triang <> st:82 var
+R9921:9927 VST.floyd.library <> mem_mgr defax
+R9929:9930 VC.Verif_triang <> gv:84 var
+def 9946:9954 <> main_spec
+R9960:9967 VST.floyd.client_lemmas <> :::'DECLARE'_x_x not
+R9973:9974 VST.floyd.client_lemmas <> :::'DECLARE'_x_x not
+R9968:9972 VC.stack <> _main def
+R9975:9979 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_']'_x_'POST'_'['_x_']'_x not
+R9982:9983 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_']'_x_'POST'_'['_x_']'_x not
+R9991:10000 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_']'_x_'POST'_'['_x_']'_x not
+R10020:10028 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_']'_x_'POST'_'['_x_']'_x not
+R10033:10039 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_']'_x_'POST'_'['_x_']'_x not
+R10029:10032 compcert.export.Ctypesdefs <> tint def
+R9984:9990 VST.veric.SeparationLogic <> globals def
+binder 9980:9981 <> gv:85
+R10001:10008 VST.veric.SeparationLogic <> main_pre def
+R10018:10019 VC.Verif_triang <> gv:85 var
+R10015:10016 Coq.Init.Datatypes <> tt constr
+R10010:10013 VC.stack <> prog def
+binder 9980:9981 <> gv:86
+R10040:10047 VST.floyd.canon <> ::assert:'PROP'_'('_')'_x not
+R10048:10055 VST.floyd.canon <> ::assert3:'RETURN'_'('_x_')'_x not
+R10074:10075 VST.floyd.canon <> ::assert3:'RETURN'_'('_x_')'_x not
+R10056:10059 compcert.common.Values <> Vint constr
+R10062:10069 compcert.lib.Integers Int repr def
+R10076:10080 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R10083:10084 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R10081:10082 VST.msl.seplog <> TT meth
+def 10141:10145 <> Gprog
+R10149:10156 VST.veric.mpred <> funspecs def
+R10193:10213 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10227:10228 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10238:10239 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10248:10269 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10290:10291 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10308:10309 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10319:10321 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10214:10226 VC.Verif_triang <> newstack_spec def
+R10229:10237 VC.Verif_triang <> push_spec def
+R10240:10247 VC.Verif_triang <> pop_spec def
+R10270:10289 VC.Verif_triang <> push_increasing_spec def
+R10292:10307 VC.Verif_triang <> pop_and_add_spec def
+R10310:10318 VC.Verif_triang <> main_spec def
+R10188:10191 VC.stack <> prog def
+R10193:10213 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10227:10228 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10238:10239 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10248:10269 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10290:10291 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10308:10309 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10319:10321 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10214:10226 VC.Verif_triang <> newstack_spec def
+R10229:10237 VC.Verif_triang <> push_spec def
+R10240:10247 VC.Verif_triang <> pop_spec def
+R10270:10289 VC.Verif_triang <> push_increasing_spec def
+R10292:10307 VC.Verif_triang <> pop_and_add_spec def
+R10310:10318 VC.Verif_triang <> main_spec def
+prf 10521:10540 <> body_push_increasing
+R10543:10552 VST.floyd.SeparationLogicAsLogicSoundness MainTheorem.CSHL_PracticalLogic.CSHL_MinimumLogic.CSHL_Defs semax_body def
+R10609:10628 VC.Verif_triang <> push_increasing_spec def
+R10591:10607 VC.stack <> f_push_increasing def
+R10560:10564 VC.Verif_triang <> Gprog def
+R10554:10558 VC.Verif_triang <> Vprog def
+prf 10735:10746 <> add_list_app
+binder 10758:10759 <> al:87
+binder 10761:10762 <> bl:88
+R10782:10784 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10765:10772 VC.Verif_triang <> add_list def
+R10777:10778 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R10775:10776 VC.Verif_triang <> al:87 var
+R10779:10780 VC.Verif_triang <> bl:88 var
+R10796:10798 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R10785:10792 VC.Verif_triang <> add_list def
+R10794:10795 VC.Verif_triang <> al:87 var
+R10799:10806 VC.Verif_triang <> add_list def
+R10808:10809 VC.Verif_triang <> bl:88 var
+prf 10848:10862 <> add_list_nonneg
+binder 10873:10874 <> il:89
+R10897:10902 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10879:10884 Coq.Lists.List <> Forall ind
+R10895:10896 VC.Verif_triang <> il:89 var
+R10887:10890 Coq.ZArith.BinInt Z le def
+R10904:10907 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x not
+R10908:10915 VC.Verif_triang <> add_list def
+R10917:10918 VC.Verif_triang <> il:89 var
+prf 11033:11055 <> add_list_sublist_bounds
+binder 11066:11067 <> lo:90
+binder 11069:11070 <> hi:91
+binder 11072:11072 <> K:92
+binder 11074:11075 <> il:93
+R11093:11098 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11081:11084 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R11087:11090 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R11085:11086 VC.Verif_triang <> lo:90 var
+R11085:11086 VC.Verif_triang <> lo:90 var
+R11091:11092 VC.Verif_triang <> hi:91 var
+R11115:11120 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11101:11104 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x not
+R11099:11100 VC.Verif_triang <> hi:91 var
+R11105:11111 Coq.ZArith.Zcomplements <> Zlength def
+R11113:11114 VC.Verif_triang <> il:93 var
+R11139:11144 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11121:11126 Coq.Lists.List <> Forall ind
+R11137:11138 VC.Verif_triang <> il:93 var
+R11129:11132 Coq.ZArith.BinInt Z le def
+R11166:11171 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11146:11149 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R11161:11164 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R11150:11157 VC.Verif_triang <> add_list def
+R11159:11160 VC.Verif_triang <> il:93 var
+R11150:11157 VC.Verif_triang <> add_list def
+R11159:11160 VC.Verif_triang <> il:93 var
+R11165:11165 VC.Verif_triang <> K:92 var
+R11173:11176 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R11204:11207 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R11177:11184 VC.Verif_triang <> add_list def
+R11187:11193 VST.zlist.sublist <> sublist def
+R11201:11202 VC.Verif_triang <> il:93 var
+R11198:11199 VC.Verif_triang <> hi:91 var
+R11195:11196 VC.Verif_triang <> lo:90 var
+R11177:11184 VC.Verif_triang <> add_list def
+R11187:11193 VST.zlist.sublist <> sublist def
+R11201:11202 VC.Verif_triang <> il:93 var
+R11198:11199 VC.Verif_triang <> hi:91 var
+R11195:11196 VC.Verif_triang <> lo:90 var
+R11208:11208 VC.Verif_triang <> K:92 var
+prf 12222:12232 <> add_another
+binder 12243:12244 <> il:94
+R12269:12275 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12251:12256 Coq.Lists.List <> Forall ind
+R12267:12268 VC.Verif_triang <> il:94 var
+R12259:12262 Coq.ZArith.BinInt Z le def
+R12305:12310 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12287:12290 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x not
+R12276:12283 VC.Verif_triang <> add_list def
+R12285:12286 VC.Verif_triang <> il:94 var
+R12291:12304 compcert.lib.Integers Int max_signed def
+R12322:12322 Coq.Numbers.BinNums <> Z ind
+binder 12318:12318 <> i:95
+R12346:12351 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12328:12331 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<'_x not
+R12333:12335 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<'_x not
+R12332:12332 VC.Verif_triang <> i:95 var
+R12332:12332 VC.Verif_triang <> i:95 var
+R12336:12342 Coq.ZArith.Zcomplements <> Zlength def
+R12344:12345 VC.Verif_triang <> il:94 var
+R12366:12369 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R12466:12469 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R12352:12365 compcert.lib.Integers Int min_signed def
+R12419:12432 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R12370:12379 compcert.lib.Integers Int signed def
+R12382:12389 compcert.lib.Integers Int repr def
+R12392:12399 VC.Verif_triang <> add_list def
+R12402:12408 VST.zlist.sublist <> sublist def
+R12414:12415 VC.Verif_triang <> il:94 var
+R12412:12412 VC.Verif_triang <> i:95 var
+R12433:12442 compcert.lib.Integers Int signed def
+R12445:12452 compcert.lib.Integers Int repr def
+R12455:12458 VST.zlist.sublist <> Znth def
+R12462:12463 VC.Verif_triang <> il:94 var
+R12460:12460 VC.Verif_triang <> i:95 var
+R12419:12432 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R12370:12379 compcert.lib.Integers Int signed def
+R12382:12389 compcert.lib.Integers Int repr def
+R12392:12399 VC.Verif_triang <> add_list def
+R12402:12408 VST.zlist.sublist <> sublist def
+R12414:12415 VC.Verif_triang <> il:94 var
+R12412:12412 VC.Verif_triang <> i:95 var
+R12433:12442 compcert.lib.Integers Int signed def
+R12445:12452 compcert.lib.Integers Int repr def
+R12455:12458 VST.zlist.sublist <> Znth def
+R12462:12463 VC.Verif_triang <> il:94 var
+R12460:12460 VC.Verif_triang <> i:95 var
+R12470:12483 compcert.lib.Integers Int max_signed def
+R12510:12513 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x not
+R12514:12521 VC.Verif_triang <> add_list def
+R12510:12513 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x not
+R12514:12521 VC.Verif_triang <> add_list def
+R12571:12574 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R12600:12603 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R12575:12582 VC.Verif_triang <> add_list def
+R12585:12591 VST.zlist.sublist <> sublist def
+R12575:12582 VC.Verif_triang <> add_list def
+R12585:12591 VST.zlist.sublist <> sublist def
+R12604:12617 compcert.lib.Integers Int max_signed def
+R12571:12574 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R12600:12603 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R12575:12582 VC.Verif_triang <> add_list def
+R12585:12591 VST.zlist.sublist <> sublist def
+R12575:12582 VC.Verif_triang <> add_list def
+R12585:12591 VST.zlist.sublist <> sublist def
+R12604:12617 compcert.lib.Integers Int max_signed def
+R12669:12672 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R12702:12705 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R12673:12680 VC.Verif_triang <> add_list def
+R12683:12689 VST.zlist.sublist <> sublist def
+R12695:12695 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R12673:12680 VC.Verif_triang <> add_list def
+R12683:12689 VST.zlist.sublist <> sublist def
+R12695:12695 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R12706:12719 compcert.lib.Integers Int max_signed def
+R12669:12672 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R12702:12705 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R12673:12680 VC.Verif_triang <> add_list def
+R12683:12689 VST.zlist.sublist <> sublist def
+R12695:12695 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R12673:12680 VC.Verif_triang <> add_list def
+R12683:12689 VST.zlist.sublist <> sublist def
+R12695:12695 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R12706:12719 compcert.lib.Integers Int max_signed def
+R12767:12770 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R12780:12783 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R12771:12774 VST.zlist.sublist <> Znth def
+R12771:12774 VST.zlist.sublist <> Znth def
+R12784:12797 compcert.lib.Integers Int max_signed def
+R12767:12770 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R12780:12783 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R12771:12774 VST.zlist.sublist <> Znth def
+R12771:12774 VST.zlist.sublist <> Znth def
+R12784:12797 compcert.lib.Integers Int max_signed def
+R12814:12817 VST.zlist.sublist <> Znth def
+R12831:12838 VC.Verif_triang <> add_list def
+R12841:12847 VST.zlist.sublist <> sublist def
+R12853:12853 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R12814:12817 VST.zlist.sublist <> Znth def
+R12831:12838 VC.Verif_triang <> add_list def
+R12841:12847 VST.zlist.sublist <> sublist def
+R12853:12853 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R13090:13104 compcert.lib.Integers Int signed_repr thm
+R13235:13249 compcert.lib.Integers Int signed_repr thm
+R13235:13249 compcert.lib.Integers Int signed_repr thm
+R13235:13249 compcert.lib.Integers Int signed_repr thm
+R13409:13423 compcert.lib.Integers Int signed_repr thm
+R13409:13423 compcert.lib.Integers Int signed_repr thm
+R13409:13423 compcert.lib.Integers Int signed_repr thm
+R13447:13459 VST.zlist.sublist <> sublist_split thm
+R13467:13467 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R13447:13459 VST.zlist.sublist <> sublist_split thm
+R13467:13467 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R13447:13459 VST.zlist.sublist <> sublist_split thm
+R13467:13467 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R13501:13512 VC.Verif_triang <> add_list_app prfax
+R13501:13512 VC.Verif_triang <> add_list_app prfax
+R13501:13512 VC.Verif_triang <> add_list_app prfax
+R13529:13541 VST.zlist.sublist <> sublist_len_1 thm
+R13529:13541 VST.zlist.sublist <> sublist_len_1 thm
+R13529:13541 VST.zlist.sublist <> sublist_len_1 thm
+prf 13691:13706 <> body_pop_and_add
+R13709:13718 VST.floyd.SeparationLogicAsLogicSoundness MainTheorem.CSHL_PracticalLogic.CSHL_MinimumLogic.CSHL_Defs semax_body def
+R13746:13761 VC.Verif_triang <> pop_and_add_spec def
+R13732:13744 VC.stack <> f_pop_and_add def
+R13726:13730 VC.Verif_triang <> Gprog def
+R13720:13724 VC.Verif_triang <> Vprog def
+R13820:13822 VST.msl.seplog <> ::logic:'EX'_x_'..'_x_','_x not
+R13826:13831 VST.msl.seplog <> ::logic:'EX'_x_'..'_x_','_x not
+R13825:13825 Coq.Numbers.BinNums <> Z ind
+binder 13823:13823 <> i:96
+R13832:13836 VST.floyd.canon <> :::'PROP'_'('_x_';'_'..'_';'_x_')'_x not
+R13857:13862 VST.floyd.canon <> :::'PROP'_'('_x_';'_'..'_';'_x_')'_x not
+R13838:13841 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R13843:13846 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R13842:13842 VC.Verif_triang <> i:96 var
+R13842:13842 VC.Verif_triang <> i:96 var
+R13847:13853 Coq.ZArith.Zcomplements <> Zlength def
+R13863:13869 VST.floyd.canon <> ::assert3:'LOCAL'_'('_x_';'_'..'_';'_x_')'_x not
+R13881:13893 VST.floyd.canon <> ::assert3:'LOCAL'_'('_x_';'_'..'_';'_x_')'_x not
+R13921:13933 VST.floyd.canon <> ::assert3:'LOCAL'_'('_x_';'_'..'_';'_x_')'_x not
+R13972:13982 VST.floyd.canon <> ::assert3:'LOCAL'_'('_x_';'_'..'_';'_x_')'_x not
+R13991:13995 VST.floyd.canon <> ::assert3:'LOCAL'_'('_x_';'_'..'_';'_x_')'_x not
+R13870:13873 VST.floyd.canon <> temp constr
+R13875:13877 VC.stack <> _st def
+R13894:13897 VST.floyd.canon <> temp constr
+R13899:13900 VC.stack <> _i def
+R13903:13906 compcert.common.Values <> Vint constr
+R13909:13916 compcert.lib.Integers Int repr def
+R13918:13918 VC.Verif_triang <> i:96 var
+R13934:13937 VST.floyd.canon <> temp constr
+R13939:13940 VC.stack <> _n def
+R13943:13946 compcert.common.Values <> Vint constr
+R13949:13956 compcert.lib.Integers Int repr def
+R13959:13965 Coq.ZArith.Zcomplements <> Zlength def
+R13983:13987 VST.floyd.canon <> gvars constr
+R13996:14000 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R14037:14038 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R14049:14049 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R14001:14005 VC.Verif_triang <> stack def
+R14008:14014 VST.zlist.sublist <> sublist def
+R14019:14025 Coq.ZArith.Zcomplements <> Zlength def
+R14016:14016 VC.Verif_triang <> i:96 var
+R14039:14045 VST.floyd.library <> mem_mgr defax
+R13820:13822 VST.msl.seplog <> ::logic:'EX'_x_'..'_x_','_x not
+R13826:13831 VST.msl.seplog <> ::logic:'EX'_x_'..'_x_','_x not
+R13825:13825 Coq.Numbers.BinNums <> Z ind
+binder 13823:13823 <> i:97
+R13832:13836 VST.floyd.canon <> :::'PROP'_'('_x_';'_'..'_';'_x_')'_x not
+R13857:13862 VST.floyd.canon <> :::'PROP'_'('_x_';'_'..'_';'_x_')'_x not
+R13838:13841 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R13843:13846 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R13842:13842 VC.Verif_triang <> i:97 var
+R13842:13842 VC.Verif_triang <> i:97 var
+R13847:13853 Coq.ZArith.Zcomplements <> Zlength def
+R13863:13869 VST.floyd.canon <> ::assert3:'LOCAL'_'('_x_';'_'..'_';'_x_')'_x not
+R13881:13893 VST.floyd.canon <> ::assert3:'LOCAL'_'('_x_';'_'..'_';'_x_')'_x not
+R13921:13933 VST.floyd.canon <> ::assert3:'LOCAL'_'('_x_';'_'..'_';'_x_')'_x not
+R13972:13982 VST.floyd.canon <> ::assert3:'LOCAL'_'('_x_';'_'..'_';'_x_')'_x not
+R13991:13995 VST.floyd.canon <> ::assert3:'LOCAL'_'('_x_';'_'..'_';'_x_')'_x not
+R13870:13873 VST.floyd.canon <> temp constr
+R13875:13877 VC.stack <> _st def
+R13894:13897 VST.floyd.canon <> temp constr
+R13899:13900 VC.stack <> _i def
+R13903:13906 compcert.common.Values <> Vint constr
+R13909:13916 compcert.lib.Integers Int repr def
+R13918:13918 VC.Verif_triang <> i:97 var
+R13934:13937 VST.floyd.canon <> temp constr
+R13939:13940 VC.stack <> _n def
+R13943:13946 compcert.common.Values <> Vint constr
+R13949:13956 compcert.lib.Integers Int repr def
+R13959:13965 Coq.ZArith.Zcomplements <> Zlength def
+R13983:13987 VST.floyd.canon <> gvars constr
+R13996:14000 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R14037:14038 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R14049:14049 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R14001:14005 VC.Verif_triang <> stack def
+R14008:14014 VST.zlist.sublist <> sublist def
+R14019:14025 Coq.ZArith.Zcomplements <> Zlength def
+R14016:14016 VC.Verif_triang <> i:97 var
+R14039:14045 VST.floyd.library <> mem_mgr defax
+R14290:14290 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R14293:14294 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R14304:14305 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R14335:14336 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R14339:14339 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R14295:14298 VST.zlist.sublist <> Znth def
+R14306:14312 VST.zlist.sublist <> sublist def
+R14321:14327 Coq.ZArith.Zcomplements <> Zlength def
+R14316:14316 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R14290:14290 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R14293:14294 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R14304:14305 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R14335:14336 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R14339:14339 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R14295:14298 VST.zlist.sublist <> Znth def
+R14306:14312 VST.zlist.sublist <> sublist def
+R14321:14327 Coq.ZArith.Zcomplements <> Zlength def
+R14316:14316 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+prf 15542:15557 <> body_pop_and_add
+R15560:15569 VST.floyd.SeparationLogicAsLogicSoundness MainTheorem.CSHL_PracticalLogic.CSHL_MinimumLogic.CSHL_Defs semax_body def
+R15597:15612 VC.Verif_triang <> pop_and_add_spec def
+R15583:15595 VC.stack <> f_pop_and_add def
+R15577:15581 VC.Verif_triang <> Gprog def
+R15571:15575 VC.Verif_triang <> Vprog def
+prf 15839:15847 <> body_main
+R15850:15859 VST.floyd.SeparationLogicAsLogicSoundness MainTheorem.CSHL_PracticalLogic.CSHL_MinimumLogic.CSHL_Defs semax_body def
+R15880:15888 VC.Verif_triang <> main_spec def
+R15873:15878 VC.stack <> f_main def
+R15867:15871 VC.Verif_triang <> Gprog def
+R15861:15865 VC.Verif_triang <> Vprog def
+R16344:16357 VST.floyd.library <> create_mem_mgr prfax
+R16344:16357 VST.floyd.library <> create_mem_mgr prfax

@@ -1,0 +1,490 @@
+DIGEST fb9d910022ff19f9efdf06262c6028b4
+FVFA.Merge
+R97:100 VFA.Perm <> <> lib
+R127:130 VFA.Sort <> <> lib
+R157:162 Coq.funind.Recdef <> <> lib
+def 1870:1874 <> split
+binder 1877:1877 <> X:1
+R1888:1891 Coq.Init.Datatypes <> list ind
+R1893:1893 VFA.Merge <> X:1 var
+binder 1886:1886 <> l:2
+R1905:1907 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1899:1902 Coq.Init.Datatypes <> list ind
+R1904:1904 VFA.Merge <> X:1 var
+R1908:1911 Coq.Init.Datatypes <> list ind
+R1913:1913 VFA.Merge <> X:1 var
+R1927:1927 VFA.Merge <> l:2 var
+R1938:1939 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R1944:1944 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1947:1947 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1950:1950 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1945:1946 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R1948:1949 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R1956:1956 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R1958:1958 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R1963:1963 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1967:1967 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1970:1970 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1964:1964 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R1966:1966 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R1968:1969 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R1978:1979 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1982:1983 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2009:2013 VFA.Merge <> split:3 def
+binder 1999:2000 <> l1:5
+binder 2002:2003 <> l2:6
+R2025:2025 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2032:2032 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2039:2039 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2028:2029 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2030:2031 VFA.Merge <> l1:5 var
+R2035:2036 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2037:2038 VFA.Merge <> l2:6 var
+prf 2373:2391 <> split_len_first_try
+binder 2402:2402 <> X:7
+R2408:2411 Coq.Init.Datatypes <> list ind
+R2413:2413 VFA.Merge <> X:7 var
+binder 2406:2406 <> l:8
+R2424:2427 Coq.Init.Datatypes <> list ind
+R2429:2429 VFA.Merge <> X:7 var
+binder 2417:2418 <> l1:9
+binder 2420:2421 <> l2:10
+R2454:2461 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2444:2446 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2437:2441 VFA.Merge <> split def
+R2443:2443 VFA.Merge <> l:8 var
+R2447:2447 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2450:2450 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2453:2453 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2448:2449 VFA.Merge <> l1:9 var
+R2451:2452 VFA.Merge <> l2:10 var
+R2483:2490 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R2471:2474 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R2462:2467 Coq.Init.Datatypes <> length def
+R2469:2470 VFA.Merge <> l1:9 var
+R2475:2480 Coq.Init.Datatypes <> length def
+R2482:2482 VFA.Merge <> l:8 var
+R2500:2503 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R2491:2496 Coq.Init.Datatypes <> length def
+R2498:2499 VFA.Merge <> l2:10 var
+R2504:2509 Coq.Init.Datatypes <> length def
+R2511:2511 VFA.Merge <> l:8 var
+R2660:2664 VFA.Merge <> split def
+R2660:2664 VFA.Merge <> split def
+def 3281:3299 <> list_ind2_principle
+binder 3315:3315 <> A:11
+R3336:3339 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3330:3333 Coq.Init.Datatypes <> list ind
+R3335:3335 VFA.Merge <> A:11 var
+binder 3326:3326 <> P:12
+R3357:3366 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3353:3353 VFA.Merge <> P:12 var
+R3355:3356 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R3367:3367 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3387:3397 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3378:3378 VFA.Merge <> A:11 var
+binder 3376:3376 <> a:13
+R3382:3382 VFA.Merge <> P:12 var
+R3384:3384 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R3386:3386 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R3385:3385 VFA.Merge <> a:13 var
+R3398:3398 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3452:3462 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3413:3413 VFA.Merge <> A:11 var
+binder 3407:3407 <> a:14
+binder 3409:3409 <> b:15
+R3421:3424 Coq.Init.Datatypes <> list ind
+R3426:3426 VFA.Merge <> A:11 var
+binder 3417:3417 <> l:16
+R3433:3436 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3430:3430 VFA.Merge <> P:12 var
+R3432:3432 VFA.Merge <> l:16 var
+R3437:3437 VFA.Merge <> P:12 var
+R3441:3444 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3440:3440 VFA.Merge <> a:14 var
+R3446:3449 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3445:3445 VFA.Merge <> b:15 var
+R3450:3450 VFA.Merge <> l:16 var
+R3474:3477 Coq.Init.Datatypes <> list ind
+R3479:3479 VFA.Merge <> A:11 var
+binder 3470:3470 <> l:17
+R3482:3482 VFA.Merge <> P:12 var
+R3484:3484 VFA.Merge <> l:17 var
+prf 3709:3718 <> split_len'
+R3740:3748 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3721:3739 VFA.Merge <> list_ind2_principle def
+binder 3757:3757 <> X:18
+R3763:3766 Coq.Init.Datatypes <> list ind
+R3768:3768 VFA.Merge <> X:18 var
+binder 3761:3761 <> l:19
+R3779:3782 Coq.Init.Datatypes <> list ind
+R3784:3784 VFA.Merge <> X:18 var
+binder 3772:3773 <> l1:20
+binder 3775:3776 <> l2:21
+R3809:3816 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3799:3801 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3792:3796 VFA.Merge <> split def
+R3798:3798 VFA.Merge <> l:19 var
+R3802:3802 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3805:3805 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3808:3808 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3803:3804 VFA.Merge <> l1:20 var
+R3806:3807 VFA.Merge <> l2:21 var
+R3838:3845 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3826:3829 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R3817:3822 Coq.Init.Datatypes <> length def
+R3824:3825 VFA.Merge <> l1:20 var
+R3830:3835 Coq.Init.Datatypes <> length def
+R3837:3837 VFA.Merge <> l:19 var
+R3855:3858 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R3846:3851 Coq.Init.Datatypes <> length def
+R3853:3854 VFA.Merge <> l2:21 var
+R3859:3864 Coq.Init.Datatypes <> length def
+R3866:3866 VFA.Merge <> l:19 var
+R3885:3903 VFA.Merge <> list_ind2_principle def
+R4008:4012 VFA.Merge <> split def
+R4008:4012 VFA.Merge <> split def
+def 4278:4286 <> list_ind2
+binder 4300:4300 <> A:22
+R4321:4324 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4315:4318 Coq.Init.Datatypes <> list ind
+R4320:4320 VFA.Merge <> A:22 var
+binder 4311:4311 <> P:23
+R4342:4351 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4338:4338 VFA.Merge <> P:23 var
+R4340:4341 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R4352:4352 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4372:4382 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4363:4363 VFA.Merge <> A:22 var
+binder 4361:4361 <> a:24
+R4367:4367 VFA.Merge <> P:23 var
+R4369:4369 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R4371:4371 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R4370:4370 VFA.Merge <> a:24 var
+R4383:4383 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4437:4447 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4398:4398 VFA.Merge <> A:22 var
+binder 4392:4392 <> a:25
+binder 4394:4394 <> b:26
+R4406:4409 Coq.Init.Datatypes <> list ind
+R4411:4411 VFA.Merge <> A:22 var
+binder 4402:4402 <> l:27
+R4418:4421 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4415:4415 VFA.Merge <> P:23 var
+R4417:4417 VFA.Merge <> l:27 var
+R4422:4422 VFA.Merge <> P:23 var
+R4426:4429 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4425:4425 VFA.Merge <> a:25 var
+R4431:4434 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4430:4430 VFA.Merge <> b:26 var
+R4435:4435 VFA.Merge <> l:27 var
+R4459:4462 Coq.Init.Datatypes <> list ind
+R4464:4464 VFA.Merge <> A:22 var
+binder 4455:4455 <> l:28
+R4467:4467 VFA.Merge <> P:23 var
+R4469:4469 VFA.Merge <> l:28 var
+binder 4481:4481 <> A:29
+R4508:4511 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4502:4505 Coq.Init.Datatypes <> list ind
+R4507:4507 VFA.Merge <> A:29 var
+binder 4498:4498 <> P:30
+R4529:4529 VFA.Merge <> P:30 var
+R4531:4532 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+binder 4525:4525 <> H:31
+R4558:4558 VFA.Merge <> A:29 var
+binder 4554:4554 <> a:32
+R4561:4561 VFA.Merge <> P:30 var
+R4563:4563 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R4565:4565 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R4564:4564 VFA.Merge <> a:32 var
+binder 4542:4543 <> H0:33
+R4594:4594 VFA.Merge <> A:29 var
+binder 4588:4588 <> a:34
+binder 4590:4590 <> b:35
+R4602:4605 Coq.Init.Datatypes <> list ind
+R4607:4607 VFA.Merge <> A:29 var
+binder 4598:4598 <> l:36
+R4614:4617 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4611:4611 VFA.Merge <> P:30 var
+R4613:4613 VFA.Merge <> l:36 var
+R4618:4618 VFA.Merge <> P:30 var
+R4622:4625 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4621:4621 VFA.Merge <> a:34 var
+R4627:4630 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4626:4626 VFA.Merge <> b:35 var
+R4631:4631 VFA.Merge <> l:36 var
+binder 4575:4576 <> H1:37
+R4656:4659 Coq.Init.Datatypes <> list ind
+R4661:4661 VFA.Merge <> A:29 var
+binder 4652:4652 <> l:38
+R4667:4667 VFA.Merge <> P:30 var
+R4669:4669 VFA.Merge <> l:38 var
+R4684:4684 VFA.Merge <> l:38 var
+R4697:4698 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R4703:4703 VFA.Merge <> H:31 var
+R4711:4711 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R4713:4713 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R4718:4719 VFA.Merge <> H0:33 var
+R4730:4731 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4733:4734 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4741:4742 VFA.Merge <> H1:37 var
+R4752:4753 VFA.Merge <> IH:39 var
+prf 5294:5302 <> split_len
+binder 5313:5313 <> X:41
+R5319:5322 Coq.Init.Datatypes <> list ind
+R5324:5324 VFA.Merge <> X:41 var
+binder 5317:5317 <> l:42
+R5335:5338 Coq.Init.Datatypes <> list ind
+R5340:5340 VFA.Merge <> X:41 var
+binder 5328:5329 <> l1:43
+binder 5331:5332 <> l2:44
+R5365:5372 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5355:5357 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5348:5352 VFA.Merge <> split def
+R5354:5354 VFA.Merge <> l:42 var
+R5358:5358 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5361:5361 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5364:5364 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5359:5360 VFA.Merge <> l1:43 var
+R5362:5363 VFA.Merge <> l2:44 var
+R5394:5401 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5382:5385 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R5373:5378 Coq.Init.Datatypes <> length def
+R5380:5381 VFA.Merge <> l1:43 var
+R5386:5391 Coq.Init.Datatypes <> length def
+R5393:5393 VFA.Merge <> l:42 var
+R5411:5414 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R5402:5407 Coq.Init.Datatypes <> length def
+R5409:5410 VFA.Merge <> l2:44 var
+R5415:5420 Coq.Init.Datatypes <> length def
+R5422:5422 VFA.Merge <> l:42 var
+R5441:5450 VFA.Merge <> split_len' thm
+R5452:5460 VFA.Merge <> list_ind2 def
+R5441:5450 VFA.Merge <> split_len' thm
+R5452:5460 VFA.Merge <> list_ind2 def
+prf 5609:5618 <> split_perm
+binder 5630:5630 <> X:45
+R5648:5651 Coq.Init.Datatypes <> list ind
+R5653:5653 VFA.Merge <> X:45 var
+binder 5639:5639 <> l:46
+binder 5641:5642 <> l1:47
+binder 5644:5645 <> l2:48
+R5678:5681 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5668:5670 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5661:5665 VFA.Merge <> split def
+R5667:5667 VFA.Merge <> l:46 var
+R5671:5671 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5674:5674 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5677:5677 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5672:5673 VFA.Merge <> l1:47 var
+R5675:5676 VFA.Merge <> l2:48 var
+R5682:5692 Coq.Sorting.Permutation <> Permutation ind
+R5699:5702 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R5697:5698 VFA.Merge <> l1:47 var
+R5703:5704 VFA.Merge <> l2:48 var
+R5694:5694 VFA.Merge <> l:46 var
+R5761:5769 VFA.Merge <> list_ind2 def
+R5761:5769 VFA.Merge <> list_ind2 def
+def 7433:7437 <> merge
+binder 7439:7440 <> l1:49
+binder 7442:7443 <> l2:50
+binder 7481:7482 <> l2:52
+R7499:7500 VFA.Merge <> l2:52 var
+R7495:7496 VFA.Merge <> l1:49 var
+R7511:7512 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R7520:7521 VFA.Merge <> l2:52 var
+R7530:7531 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R7536:7537 VFA.Merge <> l1:49 var
+R7545:7546 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R7554:7555 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R7574:7578 Coq.Arith.PeanoNat <> ::nat_scope:x_'<=?'_x not
+R7613:7616 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R7617:7625 VFA.Merge <> merge_aux:53 var
+R7589:7592 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R7593:7597 VFA.Merge <> merge:51 def
+R7603:7604 VFA.Merge <> l2:52 var
+binder 7471:7479 <> merge_aux:56
+R7642:7650 VFA.Merge <> merge_aux:56 var
+R7652:7653 VFA.Merge <> l2:50 var
+R8409:8413 VFA.Merge <> merge def
+prf 8960:8965 <> merge2
+R8983:8985 Coq.Init.Datatypes <> nat ind
+binder 8977:8978 <> x1:57
+binder 8980:8981 <> x2:58
+binder 8988:8989 <> r1:59
+binder 8991:8992 <> r2:60
+R9007:9014 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9001:9004 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R8999:9000 VFA.Merge <> x1:57 var
+R9005:9006 VFA.Merge <> x2:58 var
+R9038:9044 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9015:9019 VFA.Merge <> merge def
+R9024:9025 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9022:9023 VFA.Merge <> x1:57 var
+R9026:9027 VFA.Merge <> r1:59 var
+R9033:9034 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9031:9032 VFA.Merge <> x2:58 var
+R9035:9036 VFA.Merge <> r2:60 var
+R9047:9048 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9045:9046 VFA.Merge <> x1:57 var
+R9049:9053 VFA.Merge <> merge def
+R9055:9056 VFA.Merge <> r1:59 var
+R9061:9062 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9059:9060 VFA.Merge <> x2:58 var
+R9063:9064 VFA.Merge <> r2:60 var
+R9704:9708 Coq.Arith.PeanoNat <> ::nat_scope:x_'<=?'_x not
+R9704:9708 Coq.Arith.PeanoNat <> ::nat_scope:x_'<=?'_x not
+prf 10057:10067 <> merge_nil_l
+binder 10078:10078 <> l:61
+R10091:10093 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10081:10085 VFA.Merge <> merge def
+R10087:10088 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R10090:10090 VFA.Merge <> l:61 var
+R10094:10094 VFA.Merge <> l:61 var
+R12703:12706 Coq.Init.Datatypes <> list ind
+R12708:12710 Coq.Init.Datatypes <> nat ind
+binder 12700:12700 <> l:62
+R12735:12738 Coq.Init.Datatypes <> list ind
+R12740:12742 Coq.Init.Datatypes <> nat ind
+R12755:12755 VFA.Merge <> l:62 var
+R12766:12767 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R12772:12773 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R12779:12779 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12781:12781 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12786:12786 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12788:12788 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12814:12818 VFA.Merge <> split def
+R12820:12820 VFA.Merge <> l:62 var
+binder 12804:12805 <> l1:65
+binder 12807:12808 <> l2:66
+R12834:12838 VFA.Merge <> merge def
+R12841:12849 VFA.Merge <> mergesort:63 def
+R12851:12852 VFA.Merge <> l1:65 var
+R12856:12864 VFA.Merge <> mergesort:63 def
+R12866:12867 VFA.Merge <> l2:66 var
+binder 12700:12700 <> l:67
+binder 12700:12700 <> l:68
+binder 12700:12700 <> l:70
+R12755:12755 VFA.Merge <> l:70 var
+R12766:12767 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R12772:12773 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R12779:12779 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12781:12781 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12786:12786 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12788:12788 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12814:12818 VFA.Merge <> split def
+R12820:12820 VFA.Merge <> l:70 var
+binder 12804:12805 <> l1:72
+binder 12807:12808 <> l2:73
+R12834:12838 VFA.Merge <> merge def
+R12841:12849 VFA.Merge <> mergesort:69 def
+R12851:12852 VFA.Merge <> l1:72 var
+R12856:12864 VFA.Merge <> mergesort:69 def
+R12866:12867 VFA.Merge <> l2:73 var
+binder 12700:12700 <> l:74
+binder 12700:12700 <> l:75
+R12755:12755 VFA.Merge <> l:75 var
+R12766:12767 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R12772:12773 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R12779:12779 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12781:12781 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12786:12786 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12788:12788 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R12814:12818 VFA.Merge <> split def
+R12820:12820 VFA.Merge <> l:75 var
+binder 12804:12805 <> l1:77
+binder 12807:12808 <> l2:78
+R12834:12838 VFA.Merge <> merge def
+R12841:12849 VFA.Merge <> mergesort:69 def
+R12851:12852 VFA.Merge <> l1:77 var
+R12856:12864 VFA.Merge <> mergesort:69 def
+R12866:12867 VFA.Merge <> l2:78 var
+R12722:12727 Coq.Init.Datatypes <> length def
+R13394:13398 VFA.Merge <> split def
+R13394:13398 VFA.Merge <> split def
+R13456:13464 VFA.Merge <> split_len thm
+R13456:13464 VFA.Merge <> split_len thm
+R13554:13558 VFA.Merge <> split def
+R13554:13558 VFA.Merge <> split def
+R13616:13624 VFA.Merge <> split_len thm
+R13616:13624 VFA.Merge <> split_len thm
+R14124:14141 VFA.Merge <> mergesort_equation def
+R14795:14807 VFA.Merge <> mergesort_ind scheme
+prf 15978:15990 <> sorted_merge1
+binder 16001:16001 <> x:94
+binder 16003:16004 <> x1:95
+binder 16006:16007 <> l1:96
+binder 16009:16010 <> x2:97
+binder 16012:16013 <> l2:98
+R16027:16030 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16021:16024 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R16020:16020 VFA.Merge <> x:94 var
+R16025:16026 VFA.Merge <> x1:95 var
+R16038:16046 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16032:16035 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R16031:16031 VFA.Merge <> x:94 var
+R16036:16037 VFA.Merge <> x2:97 var
+R16079:16086 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16047:16052 VFA.Sort <> sorted ind
+R16055:16059 VFA.Merge <> merge def
+R16064:16065 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R16062:16063 VFA.Merge <> x1:95 var
+R16066:16067 VFA.Merge <> l1:96 var
+R16073:16074 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R16071:16072 VFA.Merge <> x2:97 var
+R16075:16076 VFA.Merge <> l2:98 var
+R16087:16092 VFA.Sort <> sorted ind
+R16096:16099 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R16095:16095 VFA.Merge <> x:94 var
+R16100:16104 VFA.Merge <> merge def
+R16109:16110 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R16107:16108 VFA.Merge <> x1:95 var
+R16111:16112 VFA.Merge <> l1:96 var
+R16118:16119 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R16116:16117 VFA.Merge <> x2:97 var
+R16120:16121 VFA.Merge <> l2:98 var
+prf 16234:16245 <> sorted_merge
+binder 16256:16257 <> l1:99
+R16269:16293 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16260:16265 VFA.Sort <> sorted ind
+R16267:16268 VFA.Merge <> l1:99 var
+binder 16301:16302 <> l2:100
+R16314:16338 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16305:16310 VFA.Sort <> sorted ind
+R16312:16313 VFA.Merge <> l2:100 var
+R16339:16344 VFA.Sort <> sorted ind
+R16347:16351 VFA.Merge <> merge def
+R16353:16354 VFA.Merge <> l1:99 var
+R16356:16357 VFA.Merge <> l2:100 var
+prf 16654:16668 <> mergesort_sorts
+binder 16678:16678 <> l:101
+R16681:16686 VFA.Sort <> sorted ind
+R16689:16697 VFA.Merge <> mergesort thm
+R16699:16699 VFA.Merge <> l:101 var
+R16719:16731 VFA.Merge <> mergesort_ind scheme
+R16719:16731 VFA.Merge <> mergesort_ind scheme
+prf 17375:17384 <> merge_perm
+R17402:17405 Coq.Init.Datatypes <> list ind
+R17407:17409 Coq.Init.Datatypes <> nat ind
+binder 17395:17396 <> l1:102
+binder 17398:17399 <> l2:103
+R17417:17427 Coq.Sorting.Permutation <> Permutation ind
+R17441:17445 VFA.Merge <> merge def
+R17447:17448 VFA.Merge <> l1:102 var
+R17450:17451 VFA.Merge <> l2:103 var
+R17432:17435 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R17430:17431 VFA.Merge <> l1:102 var
+R17436:17437 VFA.Merge <> l2:103 var
+prf 17622:17635 <> mergesort_perm
+binder 17645:17645 <> l:104
+R17648:17658 Coq.Sorting.Permutation <> Permutation ind
+R17663:17671 VFA.Merge <> mergesort thm
+R17673:17673 VFA.Merge <> l:104 var
+R17660:17660 VFA.Merge <> l:104 var
+prf 17767:17783 <> mergesort_correct
+R17788:17809 VFA.Sort <> is_a_sorting_algorithm def
+R17811:17819 VFA.Merge <> mergesort thm
+R17846:17859 VFA.Merge <> mergesort_perm prfax
+R17846:17859 VFA.Merge <> mergesort_perm prfax
+R17870:17884 VFA.Merge <> mergesort_sorts prfax
+R17870:17884 VFA.Merge <> mergesort_sorts prfax

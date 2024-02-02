@@ -1,0 +1,398 @@
+DIGEST 4141d6f4a8de85bbd4972101bd4cd160
+FVFA.BagPermTest
+R70:75 Coq.Strings.String <> <> lib
+R102:108 VFA.BagPerm <> <> lib
+ax 122:128 <> MISSING
+mod 145:149 <> Check
+R215:221 VFA.BagPermTest <> MISSING defax
+R215:221 VFA.BagPermTest <> MISSING defax
+R414:417 Coq.Init.Datatypes <> Some constr
+R414:417 Coq.Init.Datatypes <> Some constr
+R597:600 Coq.Init.Datatypes <> None constr
+R597:600 Coq.Init.Datatypes <> None constr
+R682:686 VFA.BagPermTest Check <> mod
+R714:720 VFA.BagPerm <> <> lib
+R730:734 VFA.BagPermTest Check <> mod
+def 738:746 <> Unnamed_thm
+R743:746 Coq.Init.Logic <> True ind
+R900:911 VFA.BagPerm <> bag_eqv_refl prfax
+R926:928 VFA.BagPerm <> bag def
+binder 922:922 <> b:2
+R931:937 VFA.BagPerm <> bag_eqv def
+R939:939 VFA.BagPermTest <> b:2 var
+R941:941 VFA.BagPermTest <> b:2 var
+R900:911 VFA.BagPerm <> bag_eqv_refl prfax
+R926:928 VFA.BagPerm <> bag def
+binder 922:922 <> b:3
+R931:937 VFA.BagPerm <> bag_eqv def
+R939:939 VFA.BagPermTest <> b:3 var
+R941:941 VFA.BagPermTest <> b:3 var
+R993:1004 VFA.BagPerm <> bag_eqv_refl prfax
+def 1007:1015 <> Unnamed_thm
+R1012:1015 Coq.Init.Logic <> True ind
+R1096:1106 VFA.BagPerm <> bag_eqv_sym prfax
+R1125:1127 VFA.BagPerm <> bag def
+binder 1117:1118 <> b1:4
+binder 1120:1121 <> b2:5
+R1143:1146 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1130:1136 VFA.BagPerm <> bag_eqv def
+R1138:1139 VFA.BagPermTest <> b1:4 var
+R1141:1142 VFA.BagPermTest <> b2:5 var
+R1147:1153 VFA.BagPerm <> bag_eqv def
+R1155:1156 VFA.BagPermTest <> b2:5 var
+R1158:1159 VFA.BagPermTest <> b1:4 var
+R1096:1106 VFA.BagPerm <> bag_eqv_sym prfax
+R1125:1127 VFA.BagPerm <> bag def
+binder 1117:1118 <> b1:6
+binder 1120:1121 <> b2:7
+R1143:1146 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1130:1136 VFA.BagPerm <> bag_eqv def
+R1138:1139 VFA.BagPermTest <> b1:6 var
+R1141:1142 VFA.BagPermTest <> b2:7 var
+R1147:1153 VFA.BagPerm <> bag_eqv def
+R1155:1156 VFA.BagPermTest <> b2:7 var
+R1158:1159 VFA.BagPermTest <> b1:6 var
+R1211:1221 VFA.BagPerm <> bag_eqv_sym prfax
+def 1224:1232 <> Unnamed_thm
+R1229:1232 Coq.Init.Logic <> True ind
+R1315:1327 VFA.BagPerm <> bag_eqv_trans prfax
+R1350:1352 VFA.BagPerm <> bag def
+binder 1339:1340 <> b1:8
+binder 1342:1343 <> b2:9
+binder 1345:1346 <> b3:10
+R1368:1371 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1355:1361 VFA.BagPerm <> bag_eqv def
+R1363:1364 VFA.BagPermTest <> b1:8 var
+R1366:1367 VFA.BagPermTest <> b2:9 var
+R1385:1388 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1372:1378 VFA.BagPerm <> bag_eqv def
+R1380:1381 VFA.BagPermTest <> b2:9 var
+R1383:1384 VFA.BagPermTest <> b3:10 var
+R1389:1395 VFA.BagPerm <> bag_eqv def
+R1397:1398 VFA.BagPermTest <> b1:8 var
+R1400:1401 VFA.BagPermTest <> b3:10 var
+R1315:1327 VFA.BagPerm <> bag_eqv_trans prfax
+R1350:1352 VFA.BagPerm <> bag def
+binder 1339:1340 <> b1:11
+binder 1342:1343 <> b2:12
+binder 1345:1346 <> b3:13
+R1368:1371 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1355:1361 VFA.BagPerm <> bag_eqv def
+R1363:1364 VFA.BagPermTest <> b1:11 var
+R1366:1367 VFA.BagPermTest <> b2:12 var
+R1385:1388 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1372:1378 VFA.BagPerm <> bag_eqv def
+R1380:1381 VFA.BagPermTest <> b2:12 var
+R1383:1384 VFA.BagPermTest <> b3:13 var
+R1389:1395 VFA.BagPerm <> bag_eqv def
+R1397:1398 VFA.BagPermTest <> b1:11 var
+R1400:1401 VFA.BagPermTest <> b3:13 var
+R1453:1465 VFA.BagPerm <> bag_eqv_trans prfax
+def 1468:1476 <> Unnamed_thm
+R1473:1476 Coq.Init.Logic <> True ind
+R1558:1569 VFA.BagPerm <> bag_eqv_cons prfax
+R1586:1588 Coq.Init.Datatypes <> nat ind
+binder 1582:1582 <> x:14
+R1600:1602 VFA.BagPerm <> bag def
+binder 1592:1593 <> b1:15
+binder 1595:1596 <> b2:16
+R1620:1623 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1607:1613 VFA.BagPerm <> bag_eqv def
+R1615:1616 VFA.BagPermTest <> b1:15 var
+R1618:1619 VFA.BagPermTest <> b2:16 var
+R1624:1630 VFA.BagPerm <> bag_eqv def
+R1634:1637 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1633:1633 VFA.BagPermTest <> x:14 var
+R1638:1639 VFA.BagPermTest <> b1:15 var
+R1649:1652 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1648:1648 VFA.BagPermTest <> x:14 var
+R1653:1654 VFA.BagPermTest <> b2:16 var
+R1558:1569 VFA.BagPerm <> bag_eqv_cons prfax
+R1586:1588 Coq.Init.Datatypes <> nat ind
+binder 1582:1582 <> x:17
+R1600:1602 VFA.BagPerm <> bag def
+binder 1592:1593 <> b1:18
+binder 1595:1596 <> b2:19
+R1620:1623 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1607:1613 VFA.BagPerm <> bag_eqv def
+R1615:1616 VFA.BagPermTest <> b1:18 var
+R1618:1619 VFA.BagPermTest <> b2:19 var
+R1624:1630 VFA.BagPerm <> bag_eqv def
+R1634:1637 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1633:1633 VFA.BagPermTest <> x:17 var
+R1638:1639 VFA.BagPermTest <> b1:18 var
+R1649:1652 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1648:1648 VFA.BagPermTest <> x:17 var
+R1653:1654 VFA.BagPermTest <> b2:19 var
+R1712:1723 VFA.BagPerm <> bag_eqv_cons prfax
+def 1726:1734 <> Unnamed_thm
+R1731:1734 Coq.Init.Logic <> True ind
+R1887:1896 VFA.BagPerm <> insert_bag prfax
+R1913:1915 Coq.Init.Datatypes <> nat ind
+binder 1909:1909 <> x:20
+R1923:1926 Coq.Init.Datatypes <> list ind
+R1928:1930 Coq.Init.Datatypes <> nat ind
+binder 1919:1919 <> l:21
+R1934:1940 VFA.BagPerm <> bag_eqv def
+R1944:1947 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1943:1943 VFA.BagPermTest <> x:20 var
+R1948:1948 VFA.BagPermTest <> l:21 var
+R1957:1967 VFA.Sort <> insert def
+R1969:1969 VFA.BagPermTest <> x:20 var
+R1971:1971 VFA.BagPermTest <> l:21 var
+R1887:1896 VFA.BagPerm <> insert_bag prfax
+R1913:1915 Coq.Init.Datatypes <> nat ind
+binder 1909:1909 <> x:22
+R1923:1926 Coq.Init.Datatypes <> list ind
+R1928:1930 Coq.Init.Datatypes <> nat ind
+binder 1919:1919 <> l:23
+R1934:1940 VFA.BagPerm <> bag_eqv def
+R1944:1947 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1943:1943 VFA.BagPermTest <> x:22 var
+R1948:1948 VFA.BagPermTest <> l:23 var
+R1957:1967 VFA.Sort <> insert def
+R1969:1969 VFA.BagPermTest <> x:22 var
+R1971:1971 VFA.BagPermTest <> l:23 var
+R2024:2033 VFA.BagPerm <> insert_bag prfax
+def 2036:2044 <> Unnamed_thm
+R2041:2044 Coq.Init.Logic <> True ind
+R2193:2200 VFA.BagPerm <> sort_bag prfax
+R2215:2217 VFA.BagPerm <> bag def
+binder 2211:2211 <> l:24
+R2220:2226 VFA.BagPerm <> bag_eqv def
+R2228:2228 VFA.BagPermTest <> l:24 var
+R2231:2239 VFA.Sort <> sort def
+R2241:2241 VFA.BagPermTest <> l:24 var
+R2193:2200 VFA.BagPerm <> sort_bag prfax
+R2215:2217 VFA.BagPerm <> bag def
+binder 2211:2211 <> l:25
+R2220:2226 VFA.BagPerm <> bag_eqv def
+R2228:2228 VFA.BagPermTest <> l:25 var
+R2231:2239 VFA.Sort <> sort def
+R2241:2241 VFA.BagPermTest <> l:25 var
+R2294:2301 VFA.BagPerm <> sort_bag prfax
+def 2304:2312 <> Unnamed_thm
+R2309:2312 Coq.Init.Logic <> True ind
+R2517:2557 VFA.BagPerm <> manual_grade_for_permutations_vs_multiset def
+R2706:2713 VFA.BagPerm <> perm_bag prfax
+R2733:2736 Coq.Init.Datatypes <> list ind
+R2738:2740 Coq.Init.Datatypes <> nat ind
+binder 2725:2726 <> al:26
+binder 2728:2729 <> bl:27
+R2777:2780 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2744:2766 Coq.Sorting.Permutation <> Permutation ind
+R2768:2770 Coq.Init.Datatypes <> nat ind
+R2772:2773 VFA.BagPermTest <> al:26 var
+R2775:2776 VFA.BagPermTest <> bl:27 var
+R2781:2787 VFA.BagPerm <> bag_eqv def
+R2789:2790 VFA.BagPermTest <> al:26 var
+R2792:2793 VFA.BagPermTest <> bl:27 var
+R2706:2713 VFA.BagPerm <> perm_bag prfax
+R2733:2736 Coq.Init.Datatypes <> list ind
+R2738:2740 Coq.Init.Datatypes <> nat ind
+binder 2725:2726 <> al:28
+binder 2728:2729 <> bl:29
+R2777:2780 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2744:2766 Coq.Sorting.Permutation <> Permutation ind
+R2768:2770 Coq.Init.Datatypes <> nat ind
+R2772:2773 VFA.BagPermTest <> al:28 var
+R2775:2776 VFA.BagPermTest <> bl:29 var
+R2781:2787 VFA.BagPerm <> bag_eqv def
+R2789:2790 VFA.BagPermTest <> al:28 var
+R2792:2793 VFA.BagPermTest <> bl:29 var
+R2845:2852 VFA.BagPerm <> perm_bag prfax
+def 2855:2863 <> Unnamed_thm
+R2860:2863 Coq.Init.Logic <> True ind
+R3036:3046 VFA.BagPerm <> bag_nil_inv prfax
+R3061:3063 VFA.BagPerm <> bag def
+binder 3057:3057 <> b:30
+R3086:3089 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3066:3072 VFA.BagPerm <> bag_eqv def
+R3076:3078 Coq.Init.Datatypes <> nil constr
+R3080:3082 Coq.Init.Datatypes <> nat ind
+R3085:3085 VFA.BagPermTest <> b:30 var
+R3091:3093 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3090:3090 VFA.BagPermTest <> b:30 var
+R3095:3097 Coq.Init.Datatypes <> nil constr
+R3099:3101 Coq.Init.Datatypes <> nat ind
+R3036:3046 VFA.BagPerm <> bag_nil_inv prfax
+R3061:3063 VFA.BagPerm <> bag def
+binder 3057:3057 <> b:31
+R3086:3089 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3066:3072 VFA.BagPerm <> bag_eqv def
+R3076:3078 Coq.Init.Datatypes <> nil constr
+R3080:3082 Coq.Init.Datatypes <> nat ind
+R3085:3085 VFA.BagPermTest <> b:31 var
+R3091:3093 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3090:3090 VFA.BagPermTest <> b:31 var
+R3095:3097 Coq.Init.Datatypes <> nil constr
+R3099:3101 Coq.Init.Datatypes <> nat ind
+R3153:3163 VFA.BagPerm <> bag_nil_inv prfax
+def 3166:3174 <> Unnamed_thm
+R3171:3174 Coq.Init.Logic <> True ind
+R3349:3360 VFA.BagPerm <> bag_cons_inv prfax
+R3377:3379 VFA.BagPerm <> bag def
+binder 3373:3373 <> l:32
+R3389:3391 Coq.Init.Datatypes <> nat ind
+binder 3383:3383 <> x:33
+binder 3385:3385 <> n:34
+R3411:3415 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3399:3401 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3396:3396 Coq.Init.Datatypes <> S constr
+R3398:3398 VFA.BagPermTest <> n:34 var
+R3402:3406 VFA.BagPerm <> count def
+R3408:3408 VFA.BagPermTest <> x:33 var
+R3410:3410 VFA.BagPermTest <> l:32 var
+R3416:3422 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3439:3443 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3431:3434 Coq.Init.Datatypes <> list ind
+R3436:3438 Coq.Init.Datatypes <> nat ind
+binder 3423:3424 <> l1:35
+R3431:3434 Coq.Init.Datatypes <> list ind
+R3436:3438 Coq.Init.Datatypes <> nat ind
+binder 3426:3427 <> l2:36
+R3468:3471 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3445:3447 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3444:3444 VFA.BagPermTest <> l:32 var
+R3451:3454 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R3449:3450 VFA.BagPermTest <> l1:35 var
+R3456:3459 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3455:3455 VFA.BagPermTest <> x:33 var
+R3460:3461 VFA.BagPermTest <> l2:36 var
+R3495:3497 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3472:3476 VFA.BagPerm <> count def
+R3478:3478 VFA.BagPermTest <> x:33 var
+R3483:3486 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R3481:3482 VFA.BagPermTest <> l1:35 var
+R3487:3488 VFA.BagPermTest <> l2:36 var
+R3498:3498 VFA.BagPermTest <> n:34 var
+R3349:3360 VFA.BagPerm <> bag_cons_inv prfax
+R3377:3379 VFA.BagPerm <> bag def
+binder 3373:3373 <> l:37
+R3389:3391 Coq.Init.Datatypes <> nat ind
+binder 3383:3383 <> x:38
+binder 3385:3385 <> n:39
+R3411:3415 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3399:3401 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3396:3396 Coq.Init.Datatypes <> S constr
+R3398:3398 VFA.BagPermTest <> n:39 var
+R3402:3406 VFA.BagPerm <> count def
+R3408:3408 VFA.BagPermTest <> x:38 var
+R3410:3410 VFA.BagPermTest <> l:37 var
+R3416:3422 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3439:3443 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3431:3434 Coq.Init.Datatypes <> list ind
+R3436:3438 Coq.Init.Datatypes <> nat ind
+binder 3423:3424 <> l1:40
+R3431:3434 Coq.Init.Datatypes <> list ind
+R3436:3438 Coq.Init.Datatypes <> nat ind
+binder 3426:3427 <> l2:41
+R3468:3471 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3445:3447 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3444:3444 VFA.BagPermTest <> l:37 var
+R3451:3454 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R3449:3450 VFA.BagPermTest <> l1:40 var
+R3456:3459 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3455:3455 VFA.BagPermTest <> x:38 var
+R3460:3461 VFA.BagPermTest <> l2:41 var
+R3495:3497 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3472:3476 VFA.BagPerm <> count def
+R3478:3478 VFA.BagPermTest <> x:38 var
+R3483:3486 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R3481:3482 VFA.BagPermTest <> l1:40 var
+R3487:3488 VFA.BagPermTest <> l2:41 var
+R3498:3498 VFA.BagPermTest <> n:39 var
+R3550:3561 VFA.BagPerm <> bag_cons_inv prfax
+def 3564:3572 <> Unnamed_thm
+R3569:3572 Coq.Init.Logic <> True ind
+R3759:3776 VFA.BagPerm <> count_insert_other prfax
+R3797:3800 Coq.Init.Datatypes <> list ind
+R3802:3804 Coq.Init.Datatypes <> nat ind
+binder 3789:3790 <> l1:42
+binder 3792:3793 <> l2:43
+R3814:3816 Coq.Init.Datatypes <> nat ind
+binder 3808:3808 <> x:44
+binder 3810:3810 <> y:45
+R3827:3830 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3822:3825 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R3821:3821 VFA.BagPermTest <> y:45 var
+R3826:3826 VFA.BagPermTest <> x:44 var
+R3859:3861 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3831:3835 VFA.BagPerm <> count def
+R3837:3837 VFA.BagPermTest <> y:45 var
+R3842:3845 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R3840:3841 VFA.BagPermTest <> l1:42 var
+R3847:3850 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3846:3846 VFA.BagPermTest <> x:44 var
+R3851:3852 VFA.BagPermTest <> l2:43 var
+R3862:3866 VFA.BagPerm <> count def
+R3868:3868 VFA.BagPermTest <> y:45 var
+R3873:3876 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R3871:3872 VFA.BagPermTest <> l1:42 var
+R3877:3878 VFA.BagPermTest <> l2:43 var
+R3759:3776 VFA.BagPerm <> count_insert_other prfax
+R3797:3800 Coq.Init.Datatypes <> list ind
+R3802:3804 Coq.Init.Datatypes <> nat ind
+binder 3789:3790 <> l1:46
+binder 3792:3793 <> l2:47
+R3814:3816 Coq.Init.Datatypes <> nat ind
+binder 3808:3808 <> x:48
+binder 3810:3810 <> y:49
+R3827:3830 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3822:3825 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R3821:3821 VFA.BagPermTest <> y:49 var
+R3826:3826 VFA.BagPermTest <> x:48 var
+R3859:3861 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3831:3835 VFA.BagPerm <> count def
+R3837:3837 VFA.BagPermTest <> y:49 var
+R3842:3845 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R3840:3841 VFA.BagPermTest <> l1:46 var
+R3847:3850 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3846:3846 VFA.BagPermTest <> x:48 var
+R3851:3852 VFA.BagPermTest <> l2:47 var
+R3862:3866 VFA.BagPerm <> count def
+R3868:3868 VFA.BagPermTest <> y:49 var
+R3873:3876 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R3871:3872 VFA.BagPermTest <> l1:46 var
+R3877:3878 VFA.BagPermTest <> l2:47 var
+R3936:3953 VFA.BagPerm <> count_insert_other prfax
+def 3956:3964 <> Unnamed_thm
+R3961:3964 Coq.Init.Logic <> True ind
+R4131:4138 VFA.BagPerm <> bag_perm prfax
+R4158:4160 VFA.BagPerm <> bag def
+binder 4150:4151 <> al:50
+binder 4153:4154 <> bl:51
+R4176:4179 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4163:4169 VFA.BagPerm <> bag_eqv def
+R4171:4172 VFA.BagPermTest <> al:50 var
+R4174:4175 VFA.BagPermTest <> bl:51 var
+R4181:4203 Coq.Sorting.Permutation <> Permutation ind
+R4205:4207 Coq.Init.Datatypes <> nat ind
+R4209:4210 VFA.BagPermTest <> al:50 var
+R4212:4213 VFA.BagPermTest <> bl:51 var
+R4131:4138 VFA.BagPerm <> bag_perm prfax
+R4158:4160 VFA.BagPerm <> bag def
+binder 4150:4151 <> al:52
+binder 4153:4154 <> bl:53
+R4176:4179 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4163:4169 VFA.BagPerm <> bag_eqv def
+R4171:4172 VFA.BagPermTest <> al:52 var
+R4174:4175 VFA.BagPermTest <> bl:53 var
+R4181:4203 Coq.Sorting.Permutation <> Permutation ind
+R4205:4207 Coq.Init.Datatypes <> nat ind
+R4209:4210 VFA.BagPermTest <> al:52 var
+R4212:4213 VFA.BagPermTest <> bl:53 var
+R4265:4272 VFA.BagPerm <> bag_perm prfax
+def 4275:4283 <> Unnamed_thm
+R4280:4283 Coq.Init.Logic <> True ind
+R5435:5446 VFA.BagPerm <> bag_eqv_refl prfax
+R5509:5519 VFA.BagPerm <> bag_eqv_sym prfax
+R5584:5596 VFA.BagPerm <> bag_eqv_trans prfax
+R5660:5671 VFA.BagPerm <> bag_eqv_cons prfax
+R5733:5742 VFA.BagPerm <> insert_bag prfax
+R5802:5809 VFA.BagPerm <> sort_bag prfax
+R5940:5947 VFA.BagPerm <> perm_bag prfax
+R6060:6070 VFA.BagPerm <> bag_nil_inv prfax
+R6134:6145 VFA.BagPerm <> bag_cons_inv prfax
+R6215:6232 VFA.BagPerm <> count_insert_other prfax
+R6292:6299 VFA.BagPerm <> bag_perm prfax

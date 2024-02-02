@@ -1,0 +1,134 @@
+DIGEST 6f4a434af12e0f890c58029726214ee6
+FVC.VSU_main2
+R1135:1153 VST.floyd.proofauto <> <> lib
+R1171:1183 VST.floyd.VSU <> <> lib
+R1201:1208 VC.main2 <> <> lib
+R1219:1228 VC.stdlib2 <> <> lib
+R1230:1238 VC.stack2 <> <> lib
+R1240:1249 VC.triang2 <> <> lib
+R1260:1273 VC.Spec_stdlib <> <> lib
+R1275:1287 VC.Spec_stack <> <> lib
+R1289:1302 VC.Spec_triang <> <> lib
+R1314:1327 VC.VSU_stdlib2 <> <> lib
+R1329:1340 VC.VSU_stack <> <> lib
+R1342:1354 VC.VSU_triang <> <> lib
+inst 1376:1384 <> Compspecs
+R1387:1395 VST.veric.compspecs <> compspecs class
+R1413:1425 VC.main2 <> prog def
+def 1449:1449 <> M
+R1453:1477 VC.Spec_stdlib <> MallocFreeAPD rec
+R1482:1494 VC.VSU_stdlib2 <> M def
+def 1508:1512 <> STACK
+R1516:1534 VC.Spec_stack <> StackAPD rec
+R1539:1553 VC.VSU_stack <> STACK def
+R1555:1555 VC.VSU_main2 <> M def
+def 1575:1589 <> stacktriangVSU1
+R1620:1637 VC.VSU_stack <> StackVSU thm
+R1639:1639 VC.VSU_main2 <> M def
+R1643:1662 VC.VSU_triang <> TriangVSU prfax
+R1666:1670 VC.VSU_main2 <> STACK def
+R1664:1664 VC.VSU_main2 <> M def
+R1620:1637 VC.VSU_stack <> StackVSU thm
+R1639:1639 VC.VSU_main2 <> M def
+R1643:1662 VC.VSU_triang <> TriangVSU prfax
+R1666:1670 VC.VSU_main2 <> STACK def
+R1664:1664 VC.VSU_main2 <> M def
+R2320:2334 VST.floyd.VSU <> restrictExports def
+R2400:2420 VST.floyd.VSU <> prove_restrictExports thm
+R3116:3126 VST.floyd.Component <> VSU_Exports def
+R3128:3142 VC.VSU_main2 <> stacktriangVSU1 def
+prf 3187:3200 <> stacktriangVSU
+R3207:3221 VST.floyd.VSU <> restrictExports def
+R3243:3263 VC.Spec_triang <> TriangASI def
+R3265:3265 VC.VSU_main2 <> M def
+R3223:3237 VC.VSU_main2 <> stacktriangVSU1 def
+R3628:3643 VST.veric.SeparationLogic <> funspec_sub_refl thm
+R3628:3643 VST.veric.SeparationLogic <> funspec_sub_refl thm
+R3664:3674 VST.floyd.Component <> VSU_Exports def
+R3676:3689 VC.VSU_main2 <> stacktriangVSU thm
+def 4009:4015 <> coreVSU
+R4024:4039 VST.floyd.VSU <> privatizeExports thm
+R4103:4103 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4118:4119 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4132:4133 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4146:4146 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4104:4117 VC.stdlib <> _malloc def
+R4120:4131 VC.stdlib <> _free def
+R4134:4145 VC.stdlib <> _exit def
+R4059:4072 VC.VSU_main2 <> stacktriangVSU thm
+R4074:4098 VC.VSU_stdlib2 <> MallocFreeVSU def
+def 4167:4176 <> whole_prog
+R4201:4206 VST.floyd.VSU <> QPprog def
+R4208:4211 VC.main2 <> prog def
+R4215:4222 VST.floyd.Component <> VSU_prog def
+R4224:4230 VC.VSU_main2 <> coreVSU def
+R4201:4206 VST.floyd.VSU <> QPprog def
+R4208:4211 VC.main2 <> prog def
+R4215:4222 VST.floyd.Component <> VSU_prog def
+R4224:4230 VC.VSU_main2 <> coreVSU def
+def 4310:4318 <> main_spec
+R4324:4331 VST.floyd.client_lemmas <> :::'DECLARE'_x_x not
+R4337:4338 VST.floyd.client_lemmas <> :::'DECLARE'_x_x not
+R4332:4336 VC.main2 <> _main def
+R4339:4343 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_']'_x_'POST'_'['_x_']'_x not
+R4346:4347 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_']'_x_'POST'_'['_x_']'_x not
+R4355:4364 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_']'_x_'POST'_'['_x_']'_x not
+R4390:4397 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_']'_x_'POST'_'['_x_']'_x not
+R4402:4408 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_']'_x_'POST'_'['_x_']'_x not
+R4398:4401 compcert.export.Ctypesdefs <> tint def
+R4348:4354 VST.veric.SeparationLogic <> globals def
+binder 4344:4345 <> gv:1
+R4365:4372 VST.floyd.VSU <> main_pre def
+R4388:4389 VC.VSU_main2 <> gv:1 var
+R4385:4386 Coq.Init.Datatypes <> tt constr
+R4374:4383 VC.VSU_main2 <> whole_prog def
+binder 4344:4345 <> gv:2
+R4409:4419 VST.floyd.canon <> ::assert:'PROP'_'()'_x not
+R4420:4427 VST.floyd.canon <> ::assert3:'RETURN'_'('_x_')'_x not
+R4446:4451 VST.floyd.canon <> ::assert3:'RETURN'_'('_x_')'_x not
+R4428:4431 compcert.common.Values <> Vint constr
+R4434:4441 compcert.lib.Integers Int repr def
+R4452:4455 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R4458:4458 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R4456:4457 VST.msl.seplog <> TT meth
+def 4473:4477 <> Vprog
+R4480:4487 VST.veric.mpred <> varspecs def
+R4492:4501 VST.floyd.Component <> QPvarspecs def
+R4503:4512 VC.VSU_main2 <> whole_prog def
+def 4527:4538 <> Main_imports
+R4541:4548 VST.veric.mpred <> funspecs def
+R4553:4573 VC.Spec_triang <> TriangASI def
+R4575:4575 VC.VSU_main2 <> M def
+def 4589:4598 <> Main_Gprog
+R4602:4609 VST.veric.mpred <> funspecs def
+R4623:4626 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4614:4622 VC.VSU_main2 <> main_spec def
+R4627:4638 VC.VSU_main2 <> Main_imports def
+prf 4648:4656 <> body_main
+R4659:4668 VST.floyd.SeparationLogicAsLogicSoundness MainTheorem.CSHL_PracticalLogic.CSHL_MinimumLogic.CSHL_Defs semax_body def
+R4694:4702 VC.VSU_main2 <> main_spec def
+R4687:4692 VC.main2 <> f_main def
+R4676:4685 VC.VSU_main2 <> Main_Gprog def
+R4670:4674 VC.VSU_main2 <> Vprog def
+def 4806:4813 <> MainComp
+R4817:4828 VST.floyd.VSU <> MainCompType def
+R4888:4890 VST.msl.seplog <> emp meth
+R4873:4875 Coq.Init.Datatypes <> snd def
+R4877:4885 VC.VSU_main2 <> main_spec def
+R4861:4870 VC.VSU_main2 <> whole_prog def
+R4853:4859 VC.VSU_main2 <> coreVSU def
+R4830:4832 Coq.Init.Datatypes <> nil constr
+R4847:4850 VC.main2 <> prog def
+R4912:4915 VC.main2 <> prog def
+R4936:4944 VC.VSU_main2 <> body_main prfax
+prf 4959:4967 <> WholeComp
+R4970:4982 VST.floyd.VSU <> WholeCompType def
+R4992:4999 VC.VSU_main2 <> MainComp def
+R4984:4990 VC.VSU_main2 <> coreVSU def
+prf 5042:5054 <> WholeProgSafe
+R5057:5073 VST.floyd.VSU <> WholeProgSafeType def
+R5085:5086 Coq.Init.Datatypes <> tt constr
+R5075:5083 VC.VSU_main2 <> WholeComp thm
+R5134:5150 VST.floyd.VSU <> WholeProgSafeType def
+R5162:5163 Coq.Init.Datatypes <> tt constr
+R5152:5160 VC.VSU_main2 <> WholeComp thm

@@ -1,0 +1,136 @@
+DIGEST 9e45daead3c7aac632b69ec4a1b07d1f
+FVFA.PermTest
+R70:75 Coq.Strings.String <> <> lib
+R102:105 VFA.Perm <> <> lib
+ax 119:125 <> MISSING
+mod 142:146 <> Check
+R212:218 VFA.PermTest <> MISSING defax
+R212:218 VFA.PermTest <> MISSING defax
+R411:414 Coq.Init.Datatypes <> Some constr
+R411:414 Coq.Init.Datatypes <> Some constr
+R594:597 Coq.Init.Datatypes <> None constr
+R594:597 Coq.Init.Datatypes <> None constr
+R679:683 VFA.PermTest Check <> mod
+R711:714 VFA.Perm <> <> lib
+R724:728 VFA.PermTest Check <> mod
+def 732:740 <> Unnamed_thm
+R737:740 Coq.Init.Logic <> True ind
+R930:968 VFA.Perm <> manual_grade_for_Permutation_properties def
+R1129:1142 VFA.Perm <> permut_example prfax
+R1160:1163 Coq.Init.Datatypes <> list ind
+R1165:1167 Coq.Init.Datatypes <> nat ind
+binder 1154:1154 <> a:2
+binder 1156:1156 <> b:3
+R1172:1182 Coq.Sorting.Permutation <> Permutation ind
+R1184:1186 Coq.Init.Datatypes <> nat ind
+R1190:1193 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1195:1198 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1200:1203 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1199:1199 VFA.PermTest <> a:2 var
+R1204:1204 VFA.PermTest <> b:3 var
+R1208:1208 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1215:1219 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1210:1213 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1214:1214 VFA.PermTest <> b:3 var
+R1221:1224 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1226:1229 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1225:1225 VFA.PermTest <> a:2 var
+R1230:1231 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R1129:1142 VFA.Perm <> permut_example prfax
+R1160:1163 Coq.Init.Datatypes <> list ind
+R1165:1167 Coq.Init.Datatypes <> nat ind
+binder 1154:1154 <> a:4
+binder 1156:1156 <> b:5
+R1172:1182 Coq.Sorting.Permutation <> Permutation ind
+R1184:1186 Coq.Init.Datatypes <> nat ind
+R1190:1193 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1195:1198 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1200:1203 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1199:1199 VFA.PermTest <> a:4 var
+R1204:1204 VFA.PermTest <> b:5 var
+R1208:1208 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1215:1219 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1210:1213 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1214:1214 VFA.PermTest <> b:5 var
+R1221:1224 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1226:1229 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1225:1225 VFA.PermTest <> a:4 var
+R1230:1231 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R1284:1297 VFA.Perm <> permut_example prfax
+def 1300:1308 <> Unnamed_thm
+R1305:1308 Coq.Init.Logic <> True ind
+R1475:1491 VFA.Perm <> not_a_permutation prfax
+R1495:1496 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1498:1508 Coq.Sorting.Permutation <> Permutation ind
+R1510:1512 Coq.Init.Datatypes <> nat ind
+R1514:1514 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R1516:1517 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R1519:1519 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R1521:1521 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R1523:1524 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R1526:1526 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R1475:1491 VFA.Perm <> not_a_permutation prfax
+R1495:1496 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1498:1508 Coq.Sorting.Permutation <> Permutation ind
+R1510:1512 Coq.Init.Datatypes <> nat ind
+R1514:1514 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R1516:1517 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R1519:1519 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R1521:1521 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R1523:1524 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R1526:1526 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R1578:1594 VFA.Perm <> not_a_permutation prfax
+def 1597:1605 <> Unnamed_thm
+R1602:1605 Coq.Init.Logic <> True ind
+R1760:1770 VFA.Perm <> Forall_perm prfax
+binder 1783:1783 <> A:6
+R1799:1802 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1798:1798 VFA.PermTest <> A:6 var
+binder 1794:1794 <> f:7
+R1818:1821 Coq.Init.Datatypes <> list ind
+R1823:1823 VFA.PermTest <> A:6 var
+binder 1810:1811 <> al:8
+binder 1813:1814 <> bl:9
+R1848:1851 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1829:1839 Coq.Sorting.Permutation <> Permutation ind
+R1841:1841 VFA.PermTest <> A:6 var
+R1843:1844 VFA.PermTest <> al:8 var
+R1846:1847 VFA.PermTest <> bl:9 var
+R1866:1869 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1853:1858 Coq.Lists.List <> Forall ind
+R1860:1860 VFA.PermTest <> A:6 var
+R1862:1862 VFA.PermTest <> f:7 var
+R1864:1865 VFA.PermTest <> al:8 var
+R1871:1876 Coq.Lists.List <> Forall ind
+R1878:1878 VFA.PermTest <> A:6 var
+R1880:1880 VFA.PermTest <> f:7 var
+R1882:1883 VFA.PermTest <> bl:9 var
+R1760:1770 VFA.Perm <> Forall_perm prfax
+binder 1783:1783 <> A:10
+R1799:1802 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1798:1798 VFA.PermTest <> A:10 var
+binder 1794:1794 <> f:11
+R1818:1821 Coq.Init.Datatypes <> list ind
+R1823:1823 VFA.PermTest <> A:10 var
+binder 1810:1811 <> al:12
+binder 1813:1814 <> bl:13
+R1848:1851 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1829:1839 Coq.Sorting.Permutation <> Permutation ind
+R1841:1841 VFA.PermTest <> A:10 var
+R1843:1844 VFA.PermTest <> al:12 var
+R1846:1847 VFA.PermTest <> bl:13 var
+R1866:1869 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1853:1858 Coq.Lists.List <> Forall ind
+R1860:1860 VFA.PermTest <> A:10 var
+R1862:1862 VFA.PermTest <> f:11 var
+R1864:1865 VFA.PermTest <> al:12 var
+R1871:1876 Coq.Lists.List <> Forall ind
+R1878:1878 VFA.PermTest <> A:10 var
+R1880:1880 VFA.PermTest <> f:11 var
+R1882:1883 VFA.PermTest <> bl:13 var
+R1935:1945 VFA.Perm <> Forall_perm prfax
+def 1948:1956 <> Unnamed_thm
+R1953:1956 Coq.Init.Logic <> True ind
+R3179:3192 VFA.Perm <> permut_example prfax
+R3261:3277 VFA.Perm <> not_a_permutation prfax
+R3340:3350 VFA.Perm <> Forall_perm prfax

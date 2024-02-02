@@ -1,0 +1,1528 @@
+DIGEST b9fc007efe28d0d32520c2732811dd02
+FVFA.Redblack
+R1457:1462 Coq.Strings.String <> <> lib
+R1489:1518 Coq.Logic.FunctionalExtensionality <> <> lib
+R1545:1550 Coq.ZArith.ZArith <> <> lib
+R1577:1580 VFA.Perm <> <> lib
+R1607:1613 VFA.Extract <> <> lib
+def 1820:1822 <> key
+R1827:1829 VFA.Extract <> int defax
+ind 1843:1847 <> color
+constr 1852:1854 <> Red
+constr 1858:1862 <> Black
+ind 1876:1879 <> tree
+constr 1904:1904 <> E
+constr 1917:1917 <> T
+binder 1882:1882 <> V:3
+R1908:1911 VFA.Redblack <> tree:4 ind
+R1913:1913 VFA.Redblack <> V:3 var
+R1926:1929 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1921:1925 VFA.Redblack <> color ind
+R1936:1939 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1930:1933 VFA.Redblack <> tree:4 ind
+R1935:1935 VFA.Redblack <> V:3 var
+R1943:1946 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1940:1942 VFA.Redblack <> key def
+R1948:1951 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1947:1947 VFA.Redblack <> V:3 var
+R1958:1961 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1952:1955 VFA.Redblack <> tree:4 ind
+R1957:1957 VFA.Redblack <> V:3 var
+R1962:1965 VFA.Redblack <> tree:4 ind
+R1967:1967 VFA.Redblack <> V:3 var
+R1981:1981 VFA.Redblack <> E constr
+R1981:1981 VFA.Redblack <> E constr
+R1998:1998 VFA.Redblack <> T constr
+R1998:1998 VFA.Redblack <> T constr
+def 2017:2026 <> empty_tree
+binder 2029:2029 <> V:6
+R2041:2044 VFA.Redblack <> tree ind
+R2046:2046 VFA.Redblack <> V:6 var
+R2053:2053 VFA.Redblack <> E constr
+def 2253:2258 <> lookup
+binder 2261:2261 <> V:7
+R2276:2276 VFA.Redblack <> V:7 var
+binder 2272:2272 <> d:8
+R2283:2285 VFA.Redblack <> key def
+binder 2280:2280 <> x:9
+R2293:2296 VFA.Redblack <> tree ind
+R2298:2298 VFA.Redblack <> V:7 var
+binder 2289:2289 <> t:10
+R2303:2303 VFA.Redblack <> V:7 var
+R2316:2316 VFA.Redblack <> t:10 var
+R2327:2327 VFA.Redblack <> E constr
+R2332:2332 VFA.Redblack <> d:8 var
+R2338:2338 VFA.Redblack <> T constr
+R2342:2343 Coq.Lists.List <> tl def
+R2358:2360 VFA.Extract <> ltb defax
+R2362:2362 VFA.Redblack <> x:9 var
+R2413:2415 VFA.Extract <> ltb defax
+R2419:2419 VFA.Redblack <> x:9 var
+R2426:2431 VFA.Redblack <> lookup:11 def
+R2435:2435 VFA.Redblack <> x:9 var
+R2433:2433 VFA.Redblack <> d:8 var
+R2371:2376 VFA.Redblack <> lookup:11 def
+R2380:2380 VFA.Redblack <> x:9 var
+R2378:2378 VFA.Redblack <> d:8 var
+def 2945:2951 <> balance
+binder 2965:2965 <> V:13
+R2980:2984 VFA.Redblack <> color ind
+binder 2976:2976 <> c:14
+R2993:2996 VFA.Redblack <> tree ind
+R2998:2998 VFA.Redblack <> V:13 var
+binder 2988:2989 <> t1:15
+R3006:3008 VFA.Redblack <> key def
+binder 3002:3002 <> k:16
+R3017:3017 VFA.Redblack <> V:13 var
+binder 3012:3013 <> vk:17
+R3037:3040 VFA.Redblack <> tree ind
+R3042:3042 VFA.Redblack <> V:13 var
+binder 3032:3033 <> t2:18
+R3047:3050 VFA.Redblack <> tree ind
+R3052:3052 VFA.Redblack <> V:13 var
+R3065:3065 VFA.Redblack <> c:14 var
+R3076:3078 VFA.Redblack <> Red constr
+R3083:3083 VFA.Redblack <> T constr
+R3097:3098 VFA.Redblack <> t2:18 var
+R3094:3095 VFA.Redblack <> vk:17 var
+R3092:3092 VFA.Redblack <> k:16 var
+R3089:3090 VFA.Redblack <> t1:15 var
+R3085:3087 VFA.Redblack <> Red constr
+R3115:3116 VFA.Redblack <> t1:15 var
+R3133:3133 VFA.Redblack <> T constr
+R3140:3140 VFA.Redblack <> T constr
+R3142:3144 VFA.Redblack <> Red constr
+R3135:3137 VFA.Redblack <> Red constr
+R3178:3178 VFA.Redblack <> T constr
+R3209:3209 VFA.Redblack <> T constr
+R3224:3225 VFA.Redblack <> t2:18 var
+R3221:3222 VFA.Redblack <> vk:17 var
+R3219:3219 VFA.Redblack <> k:16 var
+R3217:3217 VFA.Redblack <> c:14 var
+R3211:3215 VFA.Redblack <> Black constr
+R3185:3185 VFA.Redblack <> T constr
+R3187:3191 VFA.Redblack <> Black constr
+R3180:3182 VFA.Redblack <> Red constr
+R3238:3238 VFA.Redblack <> T constr
+R3252:3252 VFA.Redblack <> T constr
+R3254:3256 VFA.Redblack <> Red constr
+R3240:3242 VFA.Redblack <> Red constr
+R3283:3283 VFA.Redblack <> T constr
+R3314:3314 VFA.Redblack <> T constr
+R3329:3330 VFA.Redblack <> t2:18 var
+R3326:3327 VFA.Redblack <> vk:17 var
+R3324:3324 VFA.Redblack <> k:16 var
+R3322:3322 VFA.Redblack <> c:14 var
+R3316:3320 VFA.Redblack <> Black constr
+R3290:3290 VFA.Redblack <> T constr
+R3292:3296 VFA.Redblack <> Black constr
+R3285:3287 VFA.Redblack <> Red constr
+R3354:3355 VFA.Redblack <> t2:18 var
+R3378:3378 VFA.Redblack <> T constr
+R3385:3385 VFA.Redblack <> T constr
+R3387:3389 VFA.Redblack <> Red constr
+R3380:3382 VFA.Redblack <> Red constr
+R3422:3422 VFA.Redblack <> T constr
+R3454:3454 VFA.Redblack <> T constr
+R3462:3462 VFA.Redblack <> c:14 var
+R3456:3460 VFA.Redblack <> Black constr
+R3429:3429 VFA.Redblack <> T constr
+R3442:3443 VFA.Redblack <> vk:17 var
+R3440:3440 VFA.Redblack <> k:16 var
+R3437:3438 VFA.Redblack <> t1:15 var
+R3431:3435 VFA.Redblack <> Black constr
+R3424:3426 VFA.Redblack <> Red constr
+R3488:3488 VFA.Redblack <> T constr
+R3502:3502 VFA.Redblack <> T constr
+R3504:3506 VFA.Redblack <> Red constr
+R3490:3492 VFA.Redblack <> Red constr
+R3533:3533 VFA.Redblack <> T constr
+R3565:3565 VFA.Redblack <> T constr
+R3573:3573 VFA.Redblack <> c:14 var
+R3567:3571 VFA.Redblack <> Black constr
+R3540:3540 VFA.Redblack <> T constr
+R3553:3554 VFA.Redblack <> vk:17 var
+R3551:3551 VFA.Redblack <> k:16 var
+R3548:3549 VFA.Redblack <> t1:15 var
+R3542:3546 VFA.Redblack <> Black constr
+R3535:3537 VFA.Redblack <> Red constr
+R3604:3604 VFA.Redblack <> T constr
+R3620:3621 VFA.Redblack <> t2:18 var
+R3617:3618 VFA.Redblack <> vk:17 var
+R3615:3615 VFA.Redblack <> k:16 var
+R3612:3613 VFA.Redblack <> t1:15 var
+R3606:3610 VFA.Redblack <> Black constr
+def 3670:3672 <> ins
+binder 3675:3675 <> V:22
+R3690:3692 VFA.Redblack <> key def
+binder 3686:3686 <> x:23
+R3701:3701 VFA.Redblack <> V:22 var
+binder 3696:3697 <> vx:24
+R3709:3712 VFA.Redblack <> tree ind
+R3714:3714 VFA.Redblack <> V:22 var
+binder 3705:3705 <> t:25
+R3719:3722 VFA.Redblack <> tree ind
+R3724:3724 VFA.Redblack <> V:22 var
+R3737:3737 VFA.Redblack <> t:25 var
+R3748:3748 VFA.Redblack <> E constr
+R3753:3753 VFA.Redblack <> T constr
+R3766:3766 VFA.Redblack <> E constr
+R3763:3764 VFA.Redblack <> vx:24 var
+R3761:3761 VFA.Redblack <> x:23 var
+R3759:3759 VFA.Redblack <> E constr
+R3755:3757 VFA.Redblack <> Red constr
+R3772:3772 VFA.Redblack <> T constr
+R3791:3793 VFA.Extract <> ltb defax
+R3795:3795 VFA.Redblack <> x:23 var
+R3861:3863 VFA.Extract <> ltb defax
+R3867:3867 VFA.Redblack <> x:23 var
+R3933:3933 VFA.Redblack <> T constr
+R3941:3942 VFA.Redblack <> vx:24 var
+R3939:3939 VFA.Redblack <> x:23 var
+R3874:3880 VFA.Redblack <> balance def
+R3892:3894 VFA.Redblack <> ins:26 def
+R3898:3899 VFA.Redblack <> vx:24 var
+R3896:3896 VFA.Redblack <> x:23 var
+R3804:3810 VFA.Redblack <> balance def
+R3815:3817 VFA.Redblack <> ins:26 def
+R3821:3822 VFA.Redblack <> vx:24 var
+R3819:3819 VFA.Redblack <> x:23 var
+def 3965:3974 <> make_black
+binder 3977:3977 <> V:28
+R3992:3995 VFA.Redblack <> tree ind
+R3997:3997 VFA.Redblack <> V:28 var
+binder 3988:3988 <> t:29
+R4002:4005 VFA.Redblack <> tree ind
+R4007:4007 VFA.Redblack <> V:28 var
+R4020:4020 VFA.Redblack <> t:29 var
+R4031:4031 VFA.Redblack <> E constr
+R4036:4036 VFA.Redblack <> E constr
+R4042:4042 VFA.Redblack <> T constr
+R4058:4058 VFA.Redblack <> T constr
+R4060:4064 VFA.Redblack <> Black constr
+def 4094:4099 <> insert
+binder 4102:4102 <> V:31
+R4117:4119 VFA.Redblack <> key def
+binder 4113:4113 <> x:32
+R4128:4128 VFA.Redblack <> V:31 var
+binder 4123:4124 <> vx:33
+R4136:4139 VFA.Redblack <> tree ind
+R4141:4141 VFA.Redblack <> V:31 var
+binder 4132:4132 <> t:34
+R4149:4158 VFA.Redblack <> make_black def
+R4161:4163 VFA.Redblack <> ins def
+R4170:4170 VFA.Redblack <> t:34 var
+R4167:4168 VFA.Redblack <> vx:33 var
+R4165:4165 VFA.Redblack <> x:32 var
+def 4282:4293 <> elements_aux
+binder 4296:4296 <> V:35
+R4311:4314 VFA.Redblack <> tree ind
+R4316:4316 VFA.Redblack <> V:35 var
+binder 4307:4307 <> t:36
+R4325:4328 Coq.Init.Datatypes <> list ind
+R4334:4336 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R4331:4333 VFA.Redblack <> key def
+R4337:4337 VFA.Redblack <> V:35 var
+binder 4320:4322 <> acc:37
+R4345:4348 Coq.Init.Datatypes <> list ind
+R4354:4356 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R4351:4353 VFA.Redblack <> key def
+R4357:4357 VFA.Redblack <> V:35 var
+R4371:4371 VFA.Redblack <> t:36 var
+R4382:4382 VFA.Redblack <> E constr
+R4387:4389 VFA.Redblack <> acc:37 var
+R4395:4395 VFA.Redblack <> T constr
+R4410:4421 VFA.Redblack <> elements_aux:38 def
+R4432:4435 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4426:4426 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4428:4429 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4431:4431 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4436:4447 VFA.Redblack <> elements_aux:38 def
+R4451:4453 VFA.Redblack <> acc:37 var
+def 4475:4482 <> elements
+binder 4485:4485 <> V:40
+R4500:4503 VFA.Redblack <> tree ind
+R4505:4505 VFA.Redblack <> V:40 var
+binder 4496:4496 <> t:41
+R4510:4513 Coq.Init.Datatypes <> list ind
+R4519:4521 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R4516:4518 VFA.Redblack <> key def
+R4522:4522 VFA.Redblack <> V:40 var
+R4530:4541 VFA.Redblack <> elements_aux def
+R4545:4546 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R4543:4543 VFA.Redblack <> t:41 var
+prf 5334:5342 <> ins_not_E
+binder 5354:5354 <> V:42
+R5369:5371 VFA.Redblack <> key def
+binder 5365:5365 <> x:43
+R5380:5380 VFA.Redblack <> V:42 var
+binder 5375:5376 <> vx:44
+R5388:5391 VFA.Redblack <> tree ind
+R5393:5393 VFA.Redblack <> V:42 var
+binder 5384:5384 <> t:45
+R5411:5414 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R5401:5403 VFA.Redblack <> ins def
+R5410:5410 VFA.Redblack <> t:45 var
+R5407:5408 VFA.Redblack <> vx:44 var
+R5405:5405 VFA.Redblack <> x:43 var
+R5415:5415 VFA.Redblack <> E constr
+R5655:5657 VFA.Extract <> ltb defax
+R5655:5657 VFA.Extract <> ltb defax
+R5674:5680 VFA.Redblack <> balance def
+R5866:5868 VFA.Redblack <> ins def
+R5866:5868 VFA.Redblack <> ins def
+R6203:6206 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R6177:6179 VFA.Redblack <> Red constr
+R6188:6192 VFA.Redblack <> Black constr
+R6203:6206 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R6177:6179 VFA.Redblack <> Red constr
+R6188:6192 VFA.Redblack <> Black constr
+R6273:6277 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R6244:6244 VFA.Redblack <> E constr
+R6253:6253 VFA.Redblack <> T constr
+R6273:6277 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R6244:6244 VFA.Redblack <> E constr
+R6253:6253 VFA.Redblack <> T constr
+R6424:6427 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R6398:6400 VFA.Redblack <> Red constr
+R6409:6413 VFA.Redblack <> Black constr
+R6424:6427 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R6398:6400 VFA.Redblack <> Red constr
+R6409:6413 VFA.Redblack <> Black constr
+R6496:6500 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R6467:6467 VFA.Redblack <> E constr
+R6476:6476 VFA.Redblack <> T constr
+R6496:6500 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R6467:6467 VFA.Redblack <> E constr
+R6476:6476 VFA.Redblack <> T constr
+R6686:6689 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R6675:6675 VFA.Redblack <> T constr
+R6690:6690 VFA.Redblack <> E constr
+R6686:6689 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R6675:6675 VFA.Redblack <> T constr
+R6690:6690 VFA.Redblack <> E constr
+prf 6795:6803 <> ins_not_E
+binder 6815:6815 <> V:46
+R6830:6832 VFA.Redblack <> key def
+binder 6826:6826 <> x:47
+R6841:6841 VFA.Redblack <> V:46 var
+binder 6836:6837 <> vx:48
+R6849:6852 VFA.Redblack <> tree ind
+R6854:6854 VFA.Redblack <> V:46 var
+binder 6845:6845 <> t:49
+R6872:6875 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R6862:6864 VFA.Redblack <> ins def
+R6871:6871 VFA.Redblack <> t:49 var
+R6868:6869 VFA.Redblack <> vx:48 var
+R6866:6866 VFA.Redblack <> x:47 var
+R6876:6876 VFA.Redblack <> E constr
+R6944:6950 VFA.Redblack <> balance def
+R6997:6997 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R7017:7021 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R6997:6997 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R7017:7021 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R7089:7092 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R7063:7065 VFA.Redblack <> Red constr
+R7074:7078 VFA.Redblack <> Black constr
+R7089:7092 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R7063:7065 VFA.Redblack <> Red constr
+R7074:7078 VFA.Redblack <> Black constr
+R7162:7166 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R7133:7133 VFA.Redblack <> E constr
+R7142:7142 VFA.Redblack <> T constr
+R7162:7166 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R7133:7133 VFA.Redblack <> E constr
+R7142:7142 VFA.Redblack <> T constr
+R7204:7207 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R7193:7193 VFA.Redblack <> T constr
+R7208:7208 VFA.Redblack <> E constr
+R7204:7207 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R7193:7193 VFA.Redblack <> T constr
+R7208:7208 VFA.Redblack <> E constr
+def 7757:7763 <> ForallT
+binder 7766:7766 <> V:50
+R7783:7786 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7780:7782 VFA.Extract <> int defax
+R7788:7791 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7787:7787 VFA.Redblack <> V:50 var
+binder 7777:7777 <> P:51
+R7803:7806 VFA.Redblack <> tree ind
+R7808:7808 VFA.Redblack <> V:50 var
+binder 7799:7799 <> t:52
+R7829:7829 VFA.Redblack <> t:52 var
+R7840:7840 VFA.Redblack <> E constr
+R7845:7848 Coq.Init.Logic <> True ind
+R7854:7854 VFA.Redblack <> T constr
+R7874:7877 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R7869:7869 VFA.Redblack <> P:51 var
+R7889:7892 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R7878:7884 VFA.Redblack <> ForallT:53 def
+R7886:7886 VFA.Redblack <> P:51 var
+R7893:7899 VFA.Redblack <> ForallT:53 def
+R7901:7901 VFA.Redblack <> P:51 var
+ind 7923:7925 <> BST
+constr 7960:7963 <> ST_E
+constr 7975:7978 <> ST_T
+binder 7928:7928 <> V:55
+R7946:7949 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7940:7943 VFA.Redblack <> tree ind
+R7967:7969 VFA.Redblack <> BST:56 ind
+R7971:7971 VFA.Redblack <> E constr
+R7994:7998 VFA.Redblack <> color ind
+binder 7990:7990 <> c:58
+R8006:8009 VFA.Redblack <> tree ind
+R8011:8011 VFA.Redblack <> V:55 var
+binder 8002:8002 <> l:59
+R8019:8021 VFA.Redblack <> key def
+binder 8015:8015 <> k:60
+R8029:8029 VFA.Redblack <> V:55 var
+binder 8025:8025 <> v:61
+R8037:8040 VFA.Redblack <> tree ind
+R8042:8042 VFA.Redblack <> V:55 var
+binder 8033:8033 <> r:62
+R8092:8099 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8050:8056 VFA.Redblack <> ForallT def
+R8091:8091 VFA.Redblack <> l:59 var
+binder 8063:8064 <> k':63
+R8071:8071 Coq.ZArith.BinInt <> ::Z_scope:x_'<'_x not
+R8078:8082 Coq.ZArith.BinInt <> ::Z_scope:x_'<'_x not
+R8088:8088 Coq.ZArith.BinInt <> ::Z_scope:x_'<'_x not
+R8072:8074 VFA.Extract <> Abs defax
+R8076:8077 VFA.Redblack <> k':63 var
+R8083:8085 VFA.Extract <> Abs defax
+R8087:8087 VFA.Redblack <> k:60 var
+R8142:8149 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8100:8106 VFA.Redblack <> ForallT def
+R8141:8141 VFA.Redblack <> r:62 var
+binder 8113:8114 <> k':64
+R8121:8121 Coq.ZArith.BinInt <> ::Z_scope:x_'>'_x not
+R8128:8132 Coq.ZArith.BinInt <> ::Z_scope:x_'>'_x not
+R8138:8138 Coq.ZArith.BinInt <> ::Z_scope:x_'>'_x not
+R8122:8124 VFA.Extract <> Abs defax
+R8126:8127 VFA.Redblack <> k':64 var
+R8133:8135 VFA.Extract <> Abs defax
+R8137:8137 VFA.Redblack <> k:60 var
+R8155:8162 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8150:8152 VFA.Redblack <> BST:56 ind
+R8154:8154 VFA.Redblack <> l:59 var
+R8168:8175 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8163:8165 VFA.Redblack <> BST:56 ind
+R8167:8167 VFA.Redblack <> r:62 var
+R8176:8178 VFA.Redblack <> BST:56 ind
+R8181:8181 VFA.Redblack <> T constr
+R8191:8191 VFA.Redblack <> r:62 var
+R8189:8189 VFA.Redblack <> v:61 var
+R8187:8187 VFA.Redblack <> k:60 var
+R8185:8185 VFA.Redblack <> l:59 var
+R8183:8183 VFA.Redblack <> c:58 var
+prf 8202:8215 <> empty_tree_BST
+binder 8227:8227 <> V:65
+R8238:8240 VFA.Redblack <> BST ind
+R8244:8253 VFA.Redblack <> empty_tree def
+R8255:8255 VFA.Redblack <> V:65 var
+R8275:8284 VFA.Redblack <> empty_tree def
+prf 8385:8394 <> insert_BST
+binder 8406:8406 <> V:66
+R8421:8424 VFA.Redblack <> tree ind
+R8426:8426 VFA.Redblack <> V:66 var
+binder 8417:8417 <> t:67
+R8434:8434 VFA.Redblack <> V:66 var
+binder 8430:8430 <> v:68
+R8442:8444 VFA.Redblack <> key def
+binder 8438:8438 <> k:69
+R8457:8464 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8452:8454 VFA.Redblack <> BST ind
+R8456:8456 VFA.Redblack <> t:67 var
+R8465:8467 VFA.Redblack <> BST ind
+R8470:8475 VFA.Redblack <> insert def
+R8481:8481 VFA.Redblack <> t:67 var
+R8479:8479 VFA.Redblack <> v:68 var
+R8477:8477 VFA.Redblack <> k:69 var
+prf 8682:8692 <> balance_BST
+binder 8703:8703 <> V:70
+R8718:8722 VFA.Redblack <> color ind
+binder 8714:8714 <> c:71
+R8730:8733 VFA.Redblack <> tree ind
+R8735:8735 VFA.Redblack <> V:70 var
+binder 8726:8726 <> l:72
+R8743:8745 VFA.Redblack <> key def
+binder 8739:8739 <> k:73
+R8774:8774 VFA.Redblack <> V:70 var
+binder 8770:8770 <> v:74
+R8782:8785 VFA.Redblack <> tree ind
+R8787:8787 VFA.Redblack <> V:70 var
+binder 8778:8778 <> r:75
+R8837:8844 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8795:8801 VFA.Redblack <> ForallT def
+R8836:8836 VFA.Redblack <> l:72 var
+binder 8808:8809 <> k':76
+R8816:8816 Coq.ZArith.BinInt <> ::Z_scope:x_'<'_x not
+R8823:8827 Coq.ZArith.BinInt <> ::Z_scope:x_'<'_x not
+R8833:8833 Coq.ZArith.BinInt <> ::Z_scope:x_'<'_x not
+R8817:8819 VFA.Extract <> Abs defax
+R8821:8822 VFA.Redblack <> k':76 var
+R8828:8830 VFA.Extract <> Abs defax
+R8832:8832 VFA.Redblack <> k:73 var
+R8887:8894 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8845:8851 VFA.Redblack <> ForallT def
+R8886:8886 VFA.Redblack <> r:75 var
+binder 8858:8859 <> k':77
+R8866:8866 Coq.ZArith.BinInt <> ::Z_scope:x_'>'_x not
+R8873:8877 Coq.ZArith.BinInt <> ::Z_scope:x_'>'_x not
+R8883:8883 Coq.ZArith.BinInt <> ::Z_scope:x_'>'_x not
+R8867:8869 VFA.Extract <> Abs defax
+R8871:8872 VFA.Redblack <> k':77 var
+R8878:8880 VFA.Extract <> Abs defax
+R8882:8882 VFA.Redblack <> k:73 var
+R8900:8907 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8895:8897 VFA.Redblack <> BST ind
+R8899:8899 VFA.Redblack <> l:72 var
+R8913:8920 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8908:8910 VFA.Redblack <> BST ind
+R8912:8912 VFA.Redblack <> r:75 var
+R8921:8923 VFA.Redblack <> BST ind
+R8926:8932 VFA.Redblack <> balance def
+R8942:8942 VFA.Redblack <> r:75 var
+R8940:8940 VFA.Redblack <> v:74 var
+R8938:8938 VFA.Redblack <> k:73 var
+R8936:8936 VFA.Redblack <> l:72 var
+R8934:8934 VFA.Redblack <> c:71 var
+R8994:9000 VFA.Redblack <> balance def
+R9042:9044 VFA.Redblack <> BST ind
+R9061:9063 VFA.Redblack <> Red constr
+R9072:9076 VFA.Redblack <> Black constr
+R9042:9044 VFA.Redblack <> BST ind
+R9061:9063 VFA.Redblack <> Red constr
+R9072:9076 VFA.Redblack <> Black constr
+R9112:9114 VFA.Redblack <> BST ind
+R9131:9131 VFA.Redblack <> E constr
+R9140:9140 VFA.Redblack <> T constr
+R9112:9114 VFA.Redblack <> BST ind
+R9131:9131 VFA.Redblack <> E constr
+R9140:9140 VFA.Redblack <> T constr
+prf 10512:10522 <> balance_BST
+binder 10533:10533 <> V:78
+R10548:10552 VFA.Redblack <> color ind
+binder 10544:10544 <> c:79
+R10560:10563 VFA.Redblack <> tree ind
+R10565:10565 VFA.Redblack <> V:78 var
+binder 10556:10556 <> l:80
+R10573:10575 VFA.Redblack <> key def
+binder 10569:10569 <> k:81
+R10604:10604 VFA.Redblack <> V:78 var
+binder 10600:10600 <> v:82
+R10612:10615 VFA.Redblack <> tree ind
+R10617:10617 VFA.Redblack <> V:78 var
+binder 10608:10608 <> r:83
+R10667:10674 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10625:10631 VFA.Redblack <> ForallT def
+R10666:10666 VFA.Redblack <> l:80 var
+binder 10638:10639 <> k':84
+R10646:10646 Coq.ZArith.BinInt <> ::Z_scope:x_'<'_x not
+R10653:10657 Coq.ZArith.BinInt <> ::Z_scope:x_'<'_x not
+R10663:10663 Coq.ZArith.BinInt <> ::Z_scope:x_'<'_x not
+R10647:10649 VFA.Extract <> Abs defax
+R10651:10652 VFA.Redblack <> k':84 var
+R10658:10660 VFA.Extract <> Abs defax
+R10662:10662 VFA.Redblack <> k:81 var
+R10717:10724 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10675:10681 VFA.Redblack <> ForallT def
+R10716:10716 VFA.Redblack <> r:83 var
+binder 10688:10689 <> k':85
+R10696:10696 Coq.ZArith.BinInt <> ::Z_scope:x_'>'_x not
+R10703:10707 Coq.ZArith.BinInt <> ::Z_scope:x_'>'_x not
+R10713:10713 Coq.ZArith.BinInt <> ::Z_scope:x_'>'_x not
+R10697:10699 VFA.Extract <> Abs defax
+R10701:10702 VFA.Redblack <> k':85 var
+R10708:10710 VFA.Extract <> Abs defax
+R10712:10712 VFA.Redblack <> k:81 var
+R10730:10737 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10725:10727 VFA.Redblack <> BST ind
+R10729:10729 VFA.Redblack <> l:80 var
+R10743:10750 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10738:10740 VFA.Redblack <> BST ind
+R10742:10742 VFA.Redblack <> r:83 var
+R10751:10753 VFA.Redblack <> BST ind
+R10756:10762 VFA.Redblack <> balance def
+R10772:10772 VFA.Redblack <> r:83 var
+R10770:10770 VFA.Redblack <> v:82 var
+R10768:10768 VFA.Redblack <> k:81 var
+R10766:10766 VFA.Redblack <> l:80 var
+R10764:10764 VFA.Redblack <> c:79 var
+R10800:10806 VFA.Redblack <> balance def
+R10849:10855 VFA.Redblack <> ForallT def
+R10860:10860 VFA.Redblack <> T constr
+R10849:10855 VFA.Redblack <> ForallT def
+R10860:10860 VFA.Redblack <> T constr
+R10916:10918 VFA.Redblack <> BST ind
+R10921:10921 VFA.Redblack <> T constr
+R10916:10918 VFA.Redblack <> BST ind
+R10921:10921 VFA.Redblack <> T constr
+R10958:10960 VFA.Redblack <> BST ind
+R10963:10963 VFA.Redblack <> T constr
+R10958:10960 VFA.Redblack <> BST ind
+R10963:10963 VFA.Redblack <> T constr
+R11001:11003 VFA.Redblack <> BST ind
+R11020:11022 VFA.Redblack <> Red constr
+R11031:11035 VFA.Redblack <> Black constr
+R11001:11003 VFA.Redblack <> BST ind
+R11020:11022 VFA.Redblack <> Red constr
+R11031:11035 VFA.Redblack <> Black constr
+R11072:11074 VFA.Redblack <> BST ind
+R11091:11091 VFA.Redblack <> E constr
+R11100:11100 VFA.Redblack <> T constr
+R11072:11074 VFA.Redblack <> BST ind
+R11091:11091 VFA.Redblack <> E constr
+R11100:11100 VFA.Redblack <> T constr
+R11147:11153 VFA.Redblack <> ForallT def
+R11158:11158 VFA.Redblack <> T constr
+R11147:11153 VFA.Redblack <> ForallT def
+R11158:11158 VFA.Redblack <> T constr
+prf 11709:11719 <> ForallT_imp
+binder 11731:11731 <> V:86
+R11751:11754 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11748:11750 VFA.Extract <> int defax
+R11756:11759 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11755:11755 VFA.Redblack <> V:86 var
+binder 11742:11742 <> P:87
+binder 11744:11744 <> Q:88
+binder 11766:11766 <> t:89
+R11784:11791 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11773:11779 VFA.Redblack <> ForallT def
+R11783:11783 VFA.Redblack <> t:89 var
+R11781:11781 VFA.Redblack <> P:87 var
+R11792:11792 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11819:11827 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 11800:11800 <> k:90
+binder 11802:11802 <> v:91
+R11810:11813 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11805:11805 VFA.Redblack <> P:87 var
+R11809:11809 VFA.Redblack <> v:91 var
+R11807:11807 VFA.Redblack <> k:90 var
+R11814:11814 VFA.Redblack <> Q:88 var
+R11818:11818 VFA.Redblack <> v:91 var
+R11816:11816 VFA.Redblack <> k:90 var
+R11828:11834 VFA.Redblack <> ForallT def
+R11838:11838 VFA.Redblack <> t:89 var
+R11836:11836 VFA.Redblack <> Q:88 var
+prf 11942:11956 <> ForallT_greater
+binder 11968:11968 <> V:92
+R11983:11986 VFA.Redblack <> tree ind
+R11988:11988 VFA.Redblack <> V:92 var
+binder 11979:11979 <> t:93
+R11999:12001 VFA.Redblack <> key def
+binder 11992:11992 <> k:94
+binder 11994:11995 <> k0:95
+R12047:12055 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12009:12015 VFA.Redblack <> ForallT def
+R12046:12046 VFA.Redblack <> t:93 var
+binder 12022:12023 <> k':96
+R12036:12038 Coq.ZArith.BinInt <> ::Z_scope:x_'>'_x not
+R12030:12032 VFA.Extract <> Abs defax
+R12034:12035 VFA.Redblack <> k':96 var
+R12039:12041 VFA.Extract <> Abs defax
+R12043:12043 VFA.Redblack <> k:94 var
+R12070:12077 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12061:12063 Coq.ZArith.BinInt <> ::Z_scope:x_'>'_x not
+R12056:12058 VFA.Extract <> Abs defax
+R12060:12060 VFA.Redblack <> k:94 var
+R12064:12066 VFA.Extract <> Abs defax
+R12068:12069 VFA.Redblack <> k0:95 var
+R12078:12084 VFA.Redblack <> ForallT def
+R12116:12116 VFA.Redblack <> t:93 var
+binder 12091:12092 <> k':97
+R12105:12107 Coq.ZArith.BinInt <> ::Z_scope:x_'>'_x not
+R12099:12101 VFA.Extract <> Abs defax
+R12103:12104 VFA.Redblack <> k':97 var
+R12108:12110 VFA.Extract <> Abs defax
+R12112:12113 VFA.Redblack <> k0:95 var
+R12143:12153 VFA.Redblack <> ForallT_imp thm
+R12143:12153 VFA.Redblack <> ForallT_imp thm
+prf 12203:12214 <> ForallT_less
+binder 12226:12226 <> V:98
+R12241:12244 VFA.Redblack <> tree ind
+R12246:12246 VFA.Redblack <> V:98 var
+binder 12237:12237 <> t:99
+R12257:12259 VFA.Redblack <> key def
+binder 12250:12250 <> k:100
+binder 12252:12253 <> k0:101
+R12305:12313 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12267:12273 VFA.Redblack <> ForallT def
+R12304:12304 VFA.Redblack <> t:99 var
+binder 12280:12281 <> k':102
+R12294:12296 Coq.ZArith.BinInt <> ::Z_scope:x_'<'_x not
+R12288:12290 VFA.Extract <> Abs defax
+R12292:12293 VFA.Redblack <> k':102 var
+R12297:12299 VFA.Extract <> Abs defax
+R12301:12301 VFA.Redblack <> k:100 var
+R12328:12335 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12319:12321 Coq.ZArith.BinInt <> ::Z_scope:x_'<'_x not
+R12314:12316 VFA.Extract <> Abs defax
+R12318:12318 VFA.Redblack <> k:100 var
+R12322:12324 VFA.Extract <> Abs defax
+R12326:12327 VFA.Redblack <> k0:101 var
+R12336:12342 VFA.Redblack <> ForallT def
+R12374:12374 VFA.Redblack <> t:99 var
+binder 12349:12350 <> k':103
+R12363:12365 Coq.ZArith.BinInt <> ::Z_scope:x_'<'_x not
+R12357:12359 VFA.Extract <> Abs defax
+R12361:12362 VFA.Redblack <> k':103 var
+R12366:12368 VFA.Extract <> Abs defax
+R12370:12371 VFA.Redblack <> k0:101 var
+R12401:12411 VFA.Redblack <> ForallT_imp thm
+R12401:12411 VFA.Redblack <> ForallT_imp thm
+prf 12512:12522 <> balance_BST
+binder 12533:12533 <> V:104
+R12548:12552 VFA.Redblack <> color ind
+binder 12544:12544 <> c:105
+R12560:12563 VFA.Redblack <> tree ind
+R12565:12565 VFA.Redblack <> V:104 var
+binder 12556:12556 <> l:106
+R12573:12575 VFA.Redblack <> key def
+binder 12569:12569 <> k:107
+R12604:12604 VFA.Redblack <> V:104 var
+binder 12600:12600 <> v:108
+R12612:12615 VFA.Redblack <> tree ind
+R12617:12617 VFA.Redblack <> V:104 var
+binder 12608:12608 <> r:109
+R12667:12674 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12625:12631 VFA.Redblack <> ForallT def
+R12666:12666 VFA.Redblack <> l:106 var
+binder 12638:12639 <> k':110
+R12646:12646 Coq.ZArith.BinInt <> ::Z_scope:x_'<'_x not
+R12653:12657 Coq.ZArith.BinInt <> ::Z_scope:x_'<'_x not
+R12663:12663 Coq.ZArith.BinInt <> ::Z_scope:x_'<'_x not
+R12647:12649 VFA.Extract <> Abs defax
+R12651:12652 VFA.Redblack <> k':110 var
+R12658:12660 VFA.Extract <> Abs defax
+R12662:12662 VFA.Redblack <> k:107 var
+R12717:12724 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12675:12681 VFA.Redblack <> ForallT def
+R12716:12716 VFA.Redblack <> r:109 var
+binder 12688:12689 <> k':111
+R12696:12696 Coq.ZArith.BinInt <> ::Z_scope:x_'>'_x not
+R12703:12707 Coq.ZArith.BinInt <> ::Z_scope:x_'>'_x not
+R12713:12713 Coq.ZArith.BinInt <> ::Z_scope:x_'>'_x not
+R12697:12699 VFA.Extract <> Abs defax
+R12701:12702 VFA.Redblack <> k':111 var
+R12708:12710 VFA.Extract <> Abs defax
+R12712:12712 VFA.Redblack <> k:107 var
+R12730:12737 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12725:12727 VFA.Redblack <> BST ind
+R12729:12729 VFA.Redblack <> l:106 var
+R12743:12750 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12738:12740 VFA.Redblack <> BST ind
+R12742:12742 VFA.Redblack <> r:109 var
+R12751:12753 VFA.Redblack <> BST ind
+R12756:12762 VFA.Redblack <> balance def
+R12772:12772 VFA.Redblack <> r:109 var
+R12770:12770 VFA.Redblack <> v:108 var
+R12768:12768 VFA.Redblack <> k:107 var
+R12766:12766 VFA.Redblack <> l:106 var
+R12764:12764 VFA.Redblack <> c:105 var
+R12800:12806 VFA.Redblack <> balance def
+R12849:12855 VFA.Redblack <> ForallT def
+R12860:12860 VFA.Redblack <> T constr
+R12849:12855 VFA.Redblack <> ForallT def
+R12860:12860 VFA.Redblack <> T constr
+R12916:12918 VFA.Redblack <> BST ind
+R12921:12921 VFA.Redblack <> T constr
+R12916:12918 VFA.Redblack <> BST ind
+R12921:12921 VFA.Redblack <> T constr
+R12958:12960 VFA.Redblack <> BST ind
+R12963:12963 VFA.Redblack <> T constr
+R12958:12960 VFA.Redblack <> BST ind
+R12963:12963 VFA.Redblack <> T constr
+R13001:13003 VFA.Redblack <> BST ind
+R13020:13022 VFA.Redblack <> Red constr
+R13031:13035 VFA.Redblack <> Black constr
+R13001:13003 VFA.Redblack <> BST ind
+R13020:13022 VFA.Redblack <> Red constr
+R13031:13035 VFA.Redblack <> Black constr
+R13072:13074 VFA.Redblack <> BST ind
+R13091:13091 VFA.Redblack <> E constr
+R13100:13100 VFA.Redblack <> T constr
+R13072:13074 VFA.Redblack <> BST ind
+R13091:13091 VFA.Redblack <> E constr
+R13100:13100 VFA.Redblack <> T constr
+R13147:13153 VFA.Redblack <> ForallT def
+R13158:13158 VFA.Redblack <> T constr
+R13147:13153 VFA.Redblack <> ForallT def
+R13158:13158 VFA.Redblack <> T constr
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13281:13295 VFA.Redblack <> ForallT_greater thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+R13309:13320 VFA.Redblack <> ForallT_less thm
+prf 13512:13519 <> balanceP
+binder 13531:13531 <> V:112
+R13549:13552 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13546:13548 VFA.Redblack <> key def
+R13554:13557 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13553:13553 VFA.Redblack <> V:112 var
+binder 13542:13542 <> P:113
+R13569:13573 VFA.Redblack <> color ind
+binder 13565:13565 <> c:114
+R13583:13586 VFA.Redblack <> tree ind
+R13588:13588 VFA.Redblack <> V:112 var
+binder 13577:13577 <> l:115
+binder 13579:13579 <> r:116
+R13615:13617 VFA.Redblack <> key def
+binder 13611:13611 <> k:117
+R13625:13625 VFA.Redblack <> V:112 var
+binder 13621:13621 <> v:118
+R13644:13651 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13633:13639 VFA.Redblack <> ForallT def
+R13643:13643 VFA.Redblack <> l:115 var
+R13641:13641 VFA.Redblack <> P:113 var
+R13663:13670 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13652:13658 VFA.Redblack <> ForallT def
+R13662:13662 VFA.Redblack <> r:116 var
+R13660:13660 VFA.Redblack <> P:113 var
+R13676:13683 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13671:13671 VFA.Redblack <> P:113 var
+R13675:13675 VFA.Redblack <> v:118 var
+R13673:13673 VFA.Redblack <> k:117 var
+R13684:13690 VFA.Redblack <> ForallT def
+R13695:13701 VFA.Redblack <> balance def
+R13711:13711 VFA.Redblack <> r:116 var
+R13709:13709 VFA.Redblack <> v:118 var
+R13707:13707 VFA.Redblack <> k:117 var
+R13705:13705 VFA.Redblack <> l:115 var
+R13703:13703 VFA.Redblack <> c:114 var
+R13692:13692 VFA.Redblack <> P:113 var
+prf 13975:13978 <> insP
+binder 13990:13990 <> V:119
+R14008:14011 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14005:14007 VFA.Redblack <> key def
+R14013:14016 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14012:14012 VFA.Redblack <> V:119 var
+binder 14001:14001 <> P:120
+R14028:14031 VFA.Redblack <> tree ind
+R14033:14033 VFA.Redblack <> V:119 var
+binder 14024:14024 <> t:121
+R14041:14043 VFA.Redblack <> key def
+binder 14037:14037 <> k:122
+R14051:14051 VFA.Redblack <> V:119 var
+binder 14047:14047 <> v:123
+R14070:14077 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14059:14065 VFA.Redblack <> ForallT def
+R14069:14069 VFA.Redblack <> t:121 var
+R14067:14067 VFA.Redblack <> P:120 var
+R14083:14090 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14078:14078 VFA.Redblack <> P:120 var
+R14082:14082 VFA.Redblack <> v:123 var
+R14080:14080 VFA.Redblack <> k:122 var
+R14091:14097 VFA.Redblack <> ForallT def
+R14102:14104 VFA.Redblack <> ins def
+R14110:14110 VFA.Redblack <> t:121 var
+R14108:14108 VFA.Redblack <> v:123 var
+R14106:14106 VFA.Redblack <> k:122 var
+R14099:14099 VFA.Redblack <> P:120 var
+prf 14341:14347 <> ins_BST
+binder 14359:14359 <> V:124
+R14374:14377 VFA.Redblack <> tree ind
+R14379:14379 VFA.Redblack <> V:124 var
+binder 14370:14370 <> t:125
+R14387:14389 VFA.Redblack <> key def
+binder 14383:14383 <> k:126
+R14397:14397 VFA.Redblack <> V:124 var
+binder 14393:14393 <> v:127
+R14410:14417 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14405:14407 VFA.Redblack <> BST ind
+R14409:14409 VFA.Redblack <> t:125 var
+R14418:14420 VFA.Redblack <> BST ind
+R14423:14425 VFA.Redblack <> ins def
+R14431:14431 VFA.Redblack <> t:125 var
+R14429:14429 VFA.Redblack <> v:127 var
+R14427:14427 VFA.Redblack <> k:126 var
+prf 14636:14645 <> insert_BST
+binder 14657:14657 <> V:128
+R14672:14675 VFA.Redblack <> tree ind
+R14677:14677 VFA.Redblack <> V:128 var
+binder 14668:14668 <> t:129
+R14685:14685 VFA.Redblack <> V:128 var
+binder 14681:14681 <> v:130
+R14693:14695 VFA.Redblack <> key def
+binder 14689:14689 <> k:131
+R14708:14715 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14703:14705 VFA.Redblack <> BST ind
+R14707:14707 VFA.Redblack <> t:129 var
+R14716:14718 VFA.Redblack <> BST ind
+R14721:14726 VFA.Redblack <> insert def
+R14732:14732 VFA.Redblack <> t:129 var
+R14730:14730 VFA.Redblack <> v:130 var
+R14728:14728 VFA.Redblack <> k:131 var
+prf 15168:15179 <> lookup_empty
+binder 15191:15191 <> V:132
+R15206:15206 VFA.Redblack <> V:132 var
+binder 15202:15202 <> d:133
+R15214:15216 VFA.Redblack <> key def
+binder 15210:15210 <> k:134
+R15250:15252 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15224:15229 VFA.Redblack <> lookup def
+R15237:15246 VFA.Redblack <> empty_tree def
+R15248:15248 VFA.Redblack <> V:132 var
+R15233:15233 VFA.Redblack <> k:134 var
+R15231:15231 VFA.Redblack <> d:133 var
+R15253:15253 VFA.Redblack <> d:133 var
+prf 15549:15562 <> balance_lookup
+binder 15573:15573 <> V:135
+R15588:15588 VFA.Redblack <> V:135 var
+binder 15584:15584 <> d:136
+R15596:15600 VFA.Redblack <> color ind
+binder 15592:15592 <> c:137
+R15611:15613 VFA.Redblack <> key def
+binder 15604:15604 <> k:138
+binder 15606:15607 <> k':139
+R15621:15621 VFA.Redblack <> V:135 var
+binder 15617:15617 <> v:140
+R15655:15658 VFA.Redblack <> tree ind
+R15660:15660 VFA.Redblack <> V:135 var
+binder 15649:15649 <> l:141
+binder 15651:15651 <> r:142
+R15673:15680 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15668:15670 VFA.Redblack <> BST ind
+R15672:15672 VFA.Redblack <> l:141 var
+R15686:15693 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15681:15683 VFA.Redblack <> BST ind
+R15685:15685 VFA.Redblack <> r:142 var
+R15732:15739 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15694:15700 VFA.Redblack <> ForallT def
+R15731:15731 VFA.Redblack <> l:141 var
+binder 15707:15708 <> k':143
+R15721:15723 Coq.ZArith.BinInt <> ::Z_scope:x_'<'_x not
+R15715:15717 VFA.Extract <> Abs defax
+R15719:15720 VFA.Redblack <> k':143 var
+R15724:15726 VFA.Extract <> Abs defax
+R15728:15728 VFA.Redblack <> k:138 var
+R15778:15785 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15740:15746 VFA.Redblack <> ForallT def
+R15777:15777 VFA.Redblack <> r:142 var
+binder 15753:15754 <> k':144
+R15767:15769 Coq.ZArith.BinInt <> ::Z_scope:x_'>'_x not
+R15761:15763 VFA.Extract <> Abs defax
+R15765:15766 VFA.Redblack <> k':144 var
+R15770:15772 VFA.Extract <> Abs defax
+R15774:15774 VFA.Redblack <> k:138 var
+R15817:15825 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15786:15791 VFA.Redblack <> lookup def
+R15799:15805 VFA.Redblack <> balance def
+R15815:15815 VFA.Redblack <> r:142 var
+R15813:15813 VFA.Redblack <> v:140 var
+R15811:15811 VFA.Redblack <> k:138 var
+R15809:15809 VFA.Redblack <> l:141 var
+R15807:15807 VFA.Redblack <> c:137 var
+R15795:15796 VFA.Redblack <> k':139 var
+R15793:15793 VFA.Redblack <> d:136 var
+R15835:15838 Coq.ZArith.BinInt <> ::Z_scope:x_'<?'_x not
+R15829:15831 VFA.Extract <> Abs defax
+R15833:15834 VFA.Redblack <> k':139 var
+R15839:15841 VFA.Extract <> Abs defax
+R15843:15843 VFA.Redblack <> k:138 var
+R15890:15893 Coq.ZArith.BinInt <> ::Z_scope:x_'>?'_x not
+R15884:15886 VFA.Extract <> Abs defax
+R15888:15889 VFA.Redblack <> k':139 var
+R15894:15896 VFA.Extract <> Abs defax
+R15898:15898 VFA.Redblack <> k:138 var
+R15946:15946 VFA.Redblack <> v:140 var
+R15916:15921 VFA.Redblack <> lookup def
+R15928:15928 VFA.Redblack <> r:142 var
+R15925:15926 VFA.Redblack <> k':139 var
+R15923:15923 VFA.Redblack <> d:136 var
+R15856:15861 VFA.Redblack <> lookup def
+R15868:15868 VFA.Redblack <> l:141 var
+R15865:15866 VFA.Redblack <> k':139 var
+R15863:15863 VFA.Redblack <> d:136 var
+prf 16452:16464 <> lookup_ins_eq
+binder 16475:16475 <> V:145
+R16490:16490 VFA.Redblack <> V:145 var
+binder 16486:16486 <> d:146
+R16498:16501 VFA.Redblack <> tree ind
+R16503:16503 VFA.Redblack <> V:145 var
+binder 16494:16494 <> t:147
+R16511:16513 VFA.Redblack <> key def
+binder 16507:16507 <> k:148
+R16521:16521 VFA.Redblack <> V:145 var
+binder 16517:16517 <> v:149
+R16534:16541 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16529:16531 VFA.Redblack <> BST ind
+R16533:16533 VFA.Redblack <> t:147 var
+R16564:16566 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16542:16547 VFA.Redblack <> lookup def
+R16554:16556 VFA.Redblack <> ins def
+R16562:16562 VFA.Redblack <> t:147 var
+R16560:16560 VFA.Redblack <> v:149 var
+R16558:16558 VFA.Redblack <> k:148 var
+R16551:16551 VFA.Redblack <> k:148 var
+R16549:16549 VFA.Redblack <> d:146 var
+R16567:16567 VFA.Redblack <> v:149 var
+prf 16810:16823 <> lookup_ins_neq
+binder 16834:16834 <> V:150
+R16849:16849 VFA.Redblack <> V:150 var
+binder 16845:16845 <> d:151
+R16857:16860 VFA.Redblack <> tree ind
+R16862:16862 VFA.Redblack <> V:150 var
+binder 16853:16853 <> t:152
+R16873:16875 VFA.Redblack <> key def
+binder 16866:16866 <> k:153
+binder 16868:16869 <> k':154
+R16909:16909 VFA.Redblack <> V:150 var
+binder 16905:16905 <> v:155
+R16922:16929 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16917:16919 VFA.Redblack <> BST ind
+R16921:16921 VFA.Redblack <> t:152 var
+R16937:16944 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16931:16934 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R16930:16930 VFA.Redblack <> k:153 var
+R16935:16936 VFA.Redblack <> k':154 var
+R16968:16970 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16945:16950 VFA.Redblack <> lookup def
+R16958:16960 VFA.Redblack <> ins def
+R16966:16966 VFA.Redblack <> t:152 var
+R16964:16964 VFA.Redblack <> v:155 var
+R16962:16962 VFA.Redblack <> k:153 var
+R16954:16955 VFA.Redblack <> k':154 var
+R16952:16952 VFA.Redblack <> d:151 var
+R16971:16976 VFA.Redblack <> lookup def
+R16983:16983 VFA.Redblack <> t:152 var
+R16980:16981 VFA.Redblack <> k':154 var
+R16978:16978 VFA.Redblack <> d:151 var
+prf 17233:17248 <> lookup_insert_eq
+binder 17260:17260 <> V:156
+R17275:17275 VFA.Redblack <> V:156 var
+binder 17271:17271 <> d:157
+R17283:17286 VFA.Redblack <> tree ind
+R17288:17288 VFA.Redblack <> V:156 var
+binder 17279:17279 <> t:158
+R17296:17298 VFA.Redblack <> key def
+binder 17292:17292 <> k:159
+R17335:17335 VFA.Redblack <> V:156 var
+binder 17331:17331 <> v:160
+R17348:17355 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17343:17345 VFA.Redblack <> BST ind
+R17347:17347 VFA.Redblack <> t:158 var
+R17381:17383 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R17356:17361 VFA.Redblack <> lookup def
+R17368:17373 VFA.Redblack <> insert def
+R17379:17379 VFA.Redblack <> t:158 var
+R17377:17377 VFA.Redblack <> v:160 var
+R17375:17375 VFA.Redblack <> k:159 var
+R17365:17365 VFA.Redblack <> k:159 var
+R17363:17363 VFA.Redblack <> d:157 var
+R17384:17384 VFA.Redblack <> v:160 var
+prf 17434:17450 <> lookup_insert_neq
+binder 17461:17461 <> V:161
+R17476:17476 VFA.Redblack <> V:161 var
+binder 17472:17472 <> d:162
+R17484:17487 VFA.Redblack <> tree ind
+R17489:17489 VFA.Redblack <> V:161 var
+binder 17480:17480 <> t:163
+R17500:17502 VFA.Redblack <> key def
+binder 17493:17493 <> k:164
+binder 17495:17496 <> k':165
+R17539:17539 VFA.Redblack <> V:161 var
+binder 17535:17535 <> v:166
+R17552:17559 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17547:17549 VFA.Redblack <> BST ind
+R17551:17551 VFA.Redblack <> t:163 var
+R17567:17574 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17561:17564 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R17560:17560 VFA.Redblack <> k:164 var
+R17565:17566 VFA.Redblack <> k':165 var
+R17601:17603 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R17575:17580 VFA.Redblack <> lookup def
+R17588:17593 VFA.Redblack <> insert def
+R17599:17599 VFA.Redblack <> t:163 var
+R17597:17597 VFA.Redblack <> v:166 var
+R17595:17595 VFA.Redblack <> k:164 var
+R17584:17585 VFA.Redblack <> k':165 var
+R17582:17582 VFA.Redblack <> d:162 var
+R17604:17609 VFA.Redblack <> lookup def
+R17616:17616 VFA.Redblack <> t:163 var
+R17613:17614 VFA.Redblack <> k':165 var
+R17611:17611 VFA.Redblack <> d:162 var
+binder 17825:17825 <> V:167
+R17840:17842 VFA.Redblack <> BST ind
+R17846:17855 VFA.Redblack <> empty_tree def
+R17857:17857 VFA.Redblack <> V:167 var
+R17798:17811 VFA.Redblack <> empty_tree_BST thm
+binder 17891:17891 <> V:168
+R17906:17909 VFA.Redblack <> tree ind
+R17911:17911 VFA.Redblack <> V:168 var
+binder 17902:17902 <> t:169
+R17919:17919 VFA.Redblack <> V:168 var
+binder 17915:17915 <> v:170
+R17927:17929 VFA.Redblack <> key def
+binder 17923:17923 <> k:171
+R17942:17945 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17937:17939 VFA.Redblack <> BST ind
+R17941:17941 VFA.Redblack <> t:169 var
+R17946:17948 VFA.Redblack <> BST ind
+R17951:17956 VFA.Redblack <> insert def
+R17962:17962 VFA.Redblack <> t:169 var
+R17960:17960 VFA.Redblack <> v:170 var
+R17958:17958 VFA.Redblack <> k:171 var
+R17868:17877 VFA.Redblack <> insert_BST prfax
+binder 17998:17998 <> V:172
+R18013:18013 VFA.Redblack <> V:172 var
+binder 18009:18009 <> d:173
+R18021:18023 VFA.Redblack <> key def
+binder 18017:18017 <> k:174
+R18057:18059 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R18031:18036 VFA.Redblack <> lookup def
+R18044:18053 VFA.Redblack <> empty_tree def
+R18055:18055 VFA.Redblack <> V:172 var
+R18040:18040 VFA.Redblack <> k:174 var
+R18038:18038 VFA.Redblack <> d:173 var
+R18060:18060 VFA.Redblack <> d:173 var
+R17973:17984 VFA.Redblack <> lookup_empty thm
+binder 18099:18099 <> V:175
+R18114:18114 VFA.Redblack <> V:175 var
+binder 18110:18110 <> d:176
+R18122:18125 VFA.Redblack <> tree ind
+R18127:18127 VFA.Redblack <> V:175 var
+binder 18118:18118 <> t:177
+R18135:18137 VFA.Redblack <> key def
+binder 18131:18131 <> k:178
+R18145:18145 VFA.Redblack <> V:175 var
+binder 18141:18141 <> v:179
+R18158:18161 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18153:18155 VFA.Redblack <> BST ind
+R18157:18157 VFA.Redblack <> t:177 var
+R18187:18189 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R18162:18167 VFA.Redblack <> lookup def
+R18174:18179 VFA.Redblack <> insert def
+R18185:18185 VFA.Redblack <> t:177 var
+R18183:18183 VFA.Redblack <> v:179 var
+R18181:18181 VFA.Redblack <> k:178 var
+R18171:18171 VFA.Redblack <> k:178 var
+R18169:18169 VFA.Redblack <> d:176 var
+R18190:18190 VFA.Redblack <> v:179 var
+R18070:18085 VFA.Redblack <> lookup_insert_eq prfax
+binder 18230:18230 <> V:180
+R18245:18245 VFA.Redblack <> V:180 var
+binder 18241:18241 <> d:181
+R18253:18256 VFA.Redblack <> tree ind
+R18258:18258 VFA.Redblack <> V:180 var
+binder 18249:18249 <> t:182
+R18269:18271 VFA.Redblack <> key def
+binder 18262:18262 <> k:183
+binder 18264:18265 <> k':184
+R18279:18279 VFA.Redblack <> V:180 var
+binder 18275:18275 <> v:185
+R18292:18299 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18287:18289 VFA.Redblack <> BST ind
+R18291:18291 VFA.Redblack <> t:182 var
+R18307:18314 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18301:18304 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R18300:18300 VFA.Redblack <> k:183 var
+R18305:18306 VFA.Redblack <> k':184 var
+R18341:18343 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R18315:18320 VFA.Redblack <> lookup def
+R18328:18333 VFA.Redblack <> insert def
+R18339:18339 VFA.Redblack <> t:182 var
+R18337:18337 VFA.Redblack <> v:185 var
+R18335:18335 VFA.Redblack <> k:183 var
+R18324:18325 VFA.Redblack <> k':184 var
+R18322:18322 VFA.Redblack <> d:181 var
+R18344:18349 VFA.Redblack <> lookup def
+R18356:18356 VFA.Redblack <> t:182 var
+R18353:18354 VFA.Redblack <> k':184 var
+R18351:18351 VFA.Redblack <> d:181 var
+R18200:18216 VFA.Redblack <> lookup_insert_neq prfax
+ind 20433:20434 <> RB
+constr 20485:20491 <> RB_leaf
+constr 20525:20528 <> RB_r
+constr 20651:20654 <> RB_b
+binder 20437:20437 <> V:186
+R20455:20458 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20449:20452 VFA.Redblack <> tree ind
+R20464:20467 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20459:20463 VFA.Redblack <> color ind
+R20471:20474 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20468:20470 Coq.Init.Datatypes <> nat ind
+R20506:20510 VFA.Redblack <> color ind
+binder 20502:20502 <> c:189
+R20514:20515 VFA.Redblack <> RB:187 ind
+R20519:20519 VFA.Redblack <> c:189 var
+R20517:20517 VFA.Redblack <> E constr
+R20545:20548 VFA.Redblack <> tree ind
+R20550:20550 VFA.Redblack <> V:186 var
+binder 20539:20539 <> l:190
+binder 20541:20541 <> r:191
+R20558:20560 VFA.Redblack <> key def
+binder 20554:20554 <> k:192
+R20568:20568 VFA.Redblack <> V:186 var
+binder 20564:20564 <> v:193
+R20576:20578 Coq.Init.Datatypes <> nat ind
+binder 20572:20572 <> n:194
+R20596:20603 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20586:20587 VFA.Redblack <> RB:187 ind
+R20595:20595 VFA.Redblack <> n:194 var
+R20591:20593 VFA.Redblack <> Red constr
+R20589:20589 VFA.Redblack <> l:190 var
+R20614:20621 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20604:20605 VFA.Redblack <> RB:187 ind
+R20613:20613 VFA.Redblack <> n:194 var
+R20609:20611 VFA.Redblack <> Red constr
+R20607:20607 VFA.Redblack <> r:191 var
+R20622:20623 VFA.Redblack <> RB:187 ind
+R20647:20647 VFA.Redblack <> n:194 var
+R20641:20645 VFA.Redblack <> Black constr
+R20626:20626 VFA.Redblack <> T constr
+R20638:20638 VFA.Redblack <> r:191 var
+R20636:20636 VFA.Redblack <> v:193 var
+R20634:20634 VFA.Redblack <> k:192 var
+R20632:20632 VFA.Redblack <> l:190 var
+R20628:20630 VFA.Redblack <> Red constr
+R20669:20673 VFA.Redblack <> color ind
+binder 20665:20665 <> c:195
+R20683:20686 VFA.Redblack <> tree ind
+R20688:20688 VFA.Redblack <> V:186 var
+binder 20677:20677 <> l:196
+binder 20679:20679 <> r:197
+R20696:20698 VFA.Redblack <> key def
+binder 20692:20692 <> k:198
+R20706:20706 VFA.Redblack <> V:186 var
+binder 20702:20702 <> v:199
+R20714:20716 Coq.Init.Datatypes <> nat ind
+binder 20710:20710 <> n:200
+R20736:20743 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20724:20725 VFA.Redblack <> RB:187 ind
+R20735:20735 VFA.Redblack <> n:200 var
+R20729:20733 VFA.Redblack <> Black constr
+R20727:20727 VFA.Redblack <> l:196 var
+R20756:20763 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20744:20745 VFA.Redblack <> RB:187 ind
+R20755:20755 VFA.Redblack <> n:200 var
+R20749:20753 VFA.Redblack <> Black constr
+R20747:20747 VFA.Redblack <> r:197 var
+R20764:20765 VFA.Redblack <> RB:187 ind
+R20788:20788 Coq.Init.Datatypes <> S constr
+R20790:20790 VFA.Redblack <> n:200 var
+R20785:20785 VFA.Redblack <> c:195 var
+R20768:20768 VFA.Redblack <> T constr
+R20782:20782 VFA.Redblack <> r:197 var
+R20780:20780 VFA.Redblack <> v:199 var
+R20778:20778 VFA.Redblack <> k:198 var
+R20776:20776 VFA.Redblack <> l:196 var
+R20770:20774 VFA.Redblack <> Black constr
+prf 20945:20961 <> RB_blacken_parent
+binder 20973:20973 <> V:201
+R20988:20991 VFA.Redblack <> tree ind
+R20993:20993 VFA.Redblack <> V:201 var
+binder 20984:20984 <> t:202
+R21001:21003 Coq.Init.Datatypes <> nat ind
+binder 20997:20997 <> n:203
+R21021:21024 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21011:21012 VFA.Redblack <> RB ind
+R21020:21020 VFA.Redblack <> n:203 var
+R21016:21018 VFA.Redblack <> Red constr
+R21014:21014 VFA.Redblack <> t:202 var
+R21025:21026 VFA.Redblack <> RB ind
+R21036:21036 VFA.Redblack <> n:203 var
+R21030:21034 VFA.Redblack <> Black constr
+R21028:21028 VFA.Redblack <> t:202 var
+ind 21277:21284 <> NearlyRB
+constr 21326:21335 <> NearlyRB_r
+constr 21463:21472 <> NearlyRB_b
+binder 21287:21287 <> V:204
+R21305:21308 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21299:21302 VFA.Redblack <> tree ind
+R21312:21315 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21309:21311 Coq.Init.Datatypes <> nat ind
+R21353:21356 VFA.Redblack <> tree ind
+R21358:21358 VFA.Redblack <> V:204 var
+binder 21347:21347 <> l:207
+binder 21349:21349 <> r:208
+R21366:21368 VFA.Redblack <> key def
+binder 21362:21362 <> k:209
+R21376:21376 VFA.Redblack <> V:204 var
+binder 21372:21372 <> v:210
+R21384:21386 Coq.Init.Datatypes <> nat ind
+binder 21380:21380 <> n:211
+R21406:21413 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21394:21395 VFA.Redblack <> RB ind
+R21405:21405 VFA.Redblack <> n:211 var
+R21399:21403 VFA.Redblack <> Black constr
+R21397:21397 VFA.Redblack <> l:207 var
+R21426:21433 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21414:21415 VFA.Redblack <> RB ind
+R21425:21425 VFA.Redblack <> n:211 var
+R21419:21423 VFA.Redblack <> Black constr
+R21417:21417 VFA.Redblack <> r:208 var
+R21434:21441 VFA.Redblack <> NearlyRB:205 ind
+R21459:21459 VFA.Redblack <> n:211 var
+R21444:21444 VFA.Redblack <> T constr
+R21456:21456 VFA.Redblack <> r:208 var
+R21454:21454 VFA.Redblack <> v:210 var
+R21452:21452 VFA.Redblack <> k:209 var
+R21450:21450 VFA.Redblack <> l:207 var
+R21446:21448 VFA.Redblack <> Red constr
+R21490:21493 VFA.Redblack <> tree ind
+R21495:21495 VFA.Redblack <> V:204 var
+binder 21484:21484 <> l:212
+binder 21486:21486 <> r:213
+R21503:21505 VFA.Redblack <> key def
+binder 21499:21499 <> k:214
+R21513:21513 VFA.Redblack <> V:204 var
+binder 21509:21509 <> v:215
+R21521:21523 Coq.Init.Datatypes <> nat ind
+binder 21517:21517 <> n:216
+R21543:21550 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21531:21532 VFA.Redblack <> RB ind
+R21542:21542 VFA.Redblack <> n:216 var
+R21536:21540 VFA.Redblack <> Black constr
+R21534:21534 VFA.Redblack <> l:212 var
+R21563:21570 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21551:21552 VFA.Redblack <> RB ind
+R21562:21562 VFA.Redblack <> n:216 var
+R21556:21560 VFA.Redblack <> Black constr
+R21554:21554 VFA.Redblack <> r:213 var
+R21571:21578 VFA.Redblack <> NearlyRB:205 ind
+R21599:21599 Coq.Init.Datatypes <> S constr
+R21601:21601 VFA.Redblack <> n:216 var
+R21581:21581 VFA.Redblack <> T constr
+R21595:21595 VFA.Redblack <> r:213 var
+R21593:21593 VFA.Redblack <> v:215 var
+R21591:21591 VFA.Redblack <> k:214 var
+R21589:21589 VFA.Redblack <> l:212 var
+R21583:21587 VFA.Redblack <> Black constr
+prf 22223:22228 <> ins_RB
+binder 22240:22240 <> V:217
+R22255:22257 VFA.Redblack <> key def
+binder 22251:22251 <> k:218
+R22265:22265 VFA.Redblack <> V:217 var
+binder 22261:22261 <> v:219
+R22273:22276 VFA.Redblack <> tree ind
+R22278:22278 VFA.Redblack <> V:217 var
+binder 22269:22269 <> t:220
+R22286:22288 Coq.Init.Datatypes <> nat ind
+binder 22282:22282 <> n:221
+R22296:22296 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R22335:22346 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R22383:22383 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R22309:22312 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22297:22298 VFA.Redblack <> RB ind
+R22308:22308 VFA.Redblack <> n:221 var
+R22302:22306 VFA.Redblack <> Black constr
+R22300:22300 VFA.Redblack <> t:220 var
+R22313:22320 VFA.Redblack <> NearlyRB ind
+R22334:22334 VFA.Redblack <> n:221 var
+R22323:22325 VFA.Redblack <> ins def
+R22331:22331 VFA.Redblack <> t:220 var
+R22329:22329 VFA.Redblack <> v:219 var
+R22327:22327 VFA.Redblack <> k:218 var
+R22357:22360 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22347:22348 VFA.Redblack <> RB ind
+R22356:22356 VFA.Redblack <> n:221 var
+R22352:22354 VFA.Redblack <> Red constr
+R22350:22350 VFA.Redblack <> t:220 var
+R22361:22362 VFA.Redblack <> RB ind
+R22382:22382 VFA.Redblack <> n:221 var
+R22376:22380 VFA.Redblack <> Black constr
+R22365:22367 VFA.Redblack <> ins def
+R22373:22373 VFA.Redblack <> t:220 var
+R22371:22371 VFA.Redblack <> v:219 var
+R22369:22369 VFA.Redblack <> k:218 var
+prf 23272:23278 <> ins_red
+binder 23290:23290 <> V:222
+R23305:23308 VFA.Redblack <> tree ind
+R23310:23310 VFA.Redblack <> V:222 var
+binder 23301:23301 <> t:223
+R23318:23320 VFA.Redblack <> key def
+binder 23314:23314 <> k:224
+R23328:23328 VFA.Redblack <> V:222 var
+binder 23324:23324 <> v:225
+R23336:23338 Coq.Init.Datatypes <> nat ind
+binder 23332:23332 <> n:226
+R23356:23359 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23346:23347 VFA.Redblack <> RB ind
+R23355:23355 VFA.Redblack <> n:226 var
+R23351:23353 VFA.Redblack <> Red constr
+R23349:23349 VFA.Redblack <> t:223 var
+R23360:23361 VFA.Redblack <> RB ind
+R23381:23381 VFA.Redblack <> n:226 var
+R23375:23379 VFA.Redblack <> Black constr
+R23364:23366 VFA.Redblack <> ins def
+R23372:23372 VFA.Redblack <> t:223 var
+R23370:23370 VFA.Redblack <> v:225 var
+R23368:23368 VFA.Redblack <> k:224 var
+R23407:23412 VFA.Redblack <> ins_RB prfax
+R23407:23412 VFA.Redblack <> ins_RB prfax
+prf 23740:23754 <> RB_blacken_root
+binder 23766:23766 <> V:227
+R23781:23784 VFA.Redblack <> tree ind
+R23786:23786 VFA.Redblack <> V:227 var
+binder 23777:23777 <> t:228
+R23794:23796 Coq.Init.Datatypes <> nat ind
+binder 23790:23790 <> n:229
+R23816:23823 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23804:23805 VFA.Redblack <> RB ind
+R23815:23815 VFA.Redblack <> n:229 var
+R23809:23813 VFA.Redblack <> Black constr
+R23807:23807 VFA.Redblack <> t:228 var
+R23824:23831 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R23840:23842 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R23837:23839 Coq.Init.Datatypes <> nat ind
+binder 23832:23833 <> n':230
+R23843:23844 VFA.Redblack <> RB ind
+R23865:23866 VFA.Redblack <> n':230 var
+R23861:23863 VFA.Redblack <> Red constr
+R23847:23856 VFA.Redblack <> make_black def
+R23858:23858 VFA.Redblack <> t:228 var
+prf 24115:24123 <> insert_RB
+binder 24135:24135 <> V:231
+R24150:24153 VFA.Redblack <> tree ind
+R24155:24155 VFA.Redblack <> V:231 var
+binder 24146:24146 <> t:232
+R24163:24165 VFA.Redblack <> key def
+binder 24159:24159 <> k:233
+R24173:24173 VFA.Redblack <> V:231 var
+binder 24169:24169 <> v:234
+R24181:24183 Coq.Init.Datatypes <> nat ind
+binder 24177:24177 <> n:235
+R24201:24208 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24191:24192 VFA.Redblack <> RB ind
+R24200:24200 VFA.Redblack <> n:235 var
+R24196:24198 VFA.Redblack <> Red constr
+R24194:24194 VFA.Redblack <> t:232 var
+R24209:24216 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R24225:24227 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R24222:24224 Coq.Init.Datatypes <> nat ind
+binder 24217:24218 <> n':236
+R24228:24229 VFA.Redblack <> RB ind
+R24250:24251 VFA.Redblack <> n':236 var
+R24246:24248 VFA.Redblack <> Red constr
+R24232:24237 VFA.Redblack <> insert def
+R24243:24243 VFA.Redblack <> t:232 var
+R24241:24241 VFA.Redblack <> v:234 var
+R24239:24239 VFA.Redblack <> k:233 var
+def 25051:25056 <> height
+binder 25059:25059 <> V:237
+R25074:25077 VFA.Redblack <> tree ind
+R25079:25079 VFA.Redblack <> V:237 var
+binder 25070:25070 <> t:238
+R25084:25086 Coq.Init.Datatypes <> nat ind
+def 25165:25172 <> mindepth
+binder 25175:25175 <> V:240
+R25190:25193 VFA.Redblack <> tree ind
+R25195:25195 VFA.Redblack <> V:240 var
+binder 25186:25186 <> t:241
+R25200:25202 Coq.Init.Datatypes <> nat ind
+prf 25278:25294 <> redblack_balanced
+binder 25306:25306 <> V:243
+R25321:25324 VFA.Redblack <> tree ind
+R25326:25326 VFA.Redblack <> V:243 var
+binder 25317:25317 <> t:244
+R25334:25338 VFA.Redblack <> color ind
+binder 25330:25330 <> c:245
+R25346:25348 Coq.Init.Datatypes <> nat ind
+binder 25342:25342 <> n:246
+R25364:25371 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R25356:25357 VFA.Redblack <> RB ind
+R25363:25363 VFA.Redblack <> n:246 var
+R25361:25361 VFA.Redblack <> c:245 var
+R25359:25359 VFA.Redblack <> t:244 var
+R25381:25384 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R25373:25378 VFA.Redblack <> height prfax
+R25380:25380 VFA.Redblack <> t:244 var
+R25399:25401 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R25386:25388 Coq.Init.Peano <> ::nat_scope:x_'*'_x not
+R25389:25396 VFA.Redblack <> mindepth prfax
+R25398:25398 VFA.Redblack <> t:244 var
+def 25500:25530 <> manual_grade_for_redblack_bound
+R25534:25539 Coq.Init.Datatypes <> option ind
+R25545:25545 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R25542:25544 Coq.Init.Datatypes <> nat ind
+R25546:25551 Coq.Strings.String <> string ind
+R25557:25560 Coq.Init.Datatypes <> None constr

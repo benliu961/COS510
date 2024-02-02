@@ -1,0 +1,504 @@
+DIGEST 39ec867cc1d55e07384d21231a6c401c
+FVFA.TrieTest
+R70:75 Coq.Strings.String <> <> lib
+R102:105 VFA.Trie <> <> lib
+ax 119:125 <> MISSING
+mod 142:146 <> Check
+R212:218 VFA.TrieTest <> MISSING defax
+R212:218 VFA.TrieTest <> MISSING defax
+R411:414 Coq.Init.Datatypes <> Some constr
+R411:414 Coq.Init.Datatypes <> Some constr
+R594:597 Coq.Init.Datatypes <> None constr
+R594:597 Coq.Init.Datatypes <> None constr
+R679:683 VFA.TrieTest Check <> mod
+R711:714 VFA.Trie <> <> lib
+R724:728 VFA.TrieTest Check <> mod
+def 732:740 <> Unnamed_thm
+R737:740 Coq.Init.Logic <> True ind
+R895:915 VFA.Trie Integers succ_correct prfax
+R931:947 VFA.Trie Integers positive ind
+binder 927:927 <> p:2
+R990:992 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R951:971 VFA.Trie Integers positive2nat def
+R974:986 VFA.Trie Integers succ def
+R988:988 VFA.TrieTest <> p:2 var
+R993:993 Coq.Init.Datatypes <> S constr
+R996:1016 VFA.Trie Integers positive2nat def
+R1018:1018 VFA.TrieTest <> p:2 var
+R895:915 VFA.Trie Integers succ_correct prfax
+R931:947 VFA.Trie Integers positive ind
+binder 927:927 <> p:3
+R990:992 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R951:971 VFA.Trie Integers positive2nat def
+R974:986 VFA.Trie Integers succ def
+R988:988 VFA.TrieTest <> p:3 var
+R993:993 Coq.Init.Datatypes <> S constr
+R996:1016 VFA.Trie Integers positive2nat def
+R1018:1018 VFA.TrieTest <> p:3 var
+R1071:1091 VFA.Trie Integers succ_correct prfax
+def 1094:1102 <> Unnamed_thm
+R1099:1102 Coq.Init.Logic <> True ind
+R1268:1288 VFA.Trie Integers addc_correct prfax
+R1305:1308 Coq.Init.Datatypes <> bool ind
+binder 1301:1301 <> c:4
+R1318:1334 VFA.Trie Integers positive ind
+binder 1312:1312 <> p:5
+binder 1314:1314 <> q:6
+R1382:1385 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1339:1359 VFA.Trie Integers positive2nat def
+R1362:1374 VFA.Trie Integers addc def
+R1376:1376 VFA.TrieTest <> c:4 var
+R1378:1378 VFA.TrieTest <> p:5 var
+R1380:1380 VFA.TrieTest <> q:6 var
+R1432:1434 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R1386:1386 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R1405:1408 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R1390:1390 VFA.TrieTest <> c:4 var
+R1409:1429 VFA.Trie Integers positive2nat def
+R1431:1431 VFA.TrieTest <> p:5 var
+R1435:1455 VFA.Trie Integers positive2nat def
+R1457:1457 VFA.TrieTest <> q:6 var
+R1268:1288 VFA.Trie Integers addc_correct prfax
+R1305:1308 Coq.Init.Datatypes <> bool ind
+binder 1301:1301 <> c:7
+R1318:1334 VFA.Trie Integers positive ind
+binder 1312:1312 <> p:8
+binder 1314:1314 <> q:9
+R1382:1385 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1339:1359 VFA.Trie Integers positive2nat def
+R1362:1374 VFA.Trie Integers addc def
+R1376:1376 VFA.TrieTest <> c:7 var
+R1378:1378 VFA.TrieTest <> p:8 var
+R1380:1380 VFA.TrieTest <> q:9 var
+R1432:1434 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R1386:1386 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R1405:1408 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R1390:1390 VFA.TrieTest <> c:7 var
+R1409:1429 VFA.Trie Integers positive2nat def
+R1431:1431 VFA.TrieTest <> p:8 var
+R1435:1455 VFA.Trie Integers positive2nat def
+R1457:1457 VFA.TrieTest <> q:9 var
+R1509:1529 VFA.Trie Integers addc_correct prfax
+def 1532:1540 <> Unnamed_thm
+R1537:1540 Coq.Init.Logic <> True ind
+R1713:1736 VFA.Trie Integers compare_correct prfax
+R1754:1770 VFA.Trie Integers positive ind
+binder 1748:1748 <> x:10
+binder 1750:1750 <> y:11
+R1780:1795 VFA.Trie Integers compare def
+R1797:1797 VFA.TrieTest <> x:10 var
+R1799:1799 VFA.TrieTest <> y:11 var
+R1809:1819 VFA.Trie Integers Eq constr
+R1847:1849 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1824:1844 VFA.Trie Integers positive2nat def
+R1846:1846 VFA.TrieTest <> x:10 var
+R1850:1870 VFA.Trie Integers positive2nat def
+R1872:1872 VFA.TrieTest <> y:11 var
+R1877:1887 VFA.Trie Integers Lt constr
+R1915:1917 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R1892:1912 VFA.Trie Integers positive2nat def
+R1914:1914 VFA.TrieTest <> x:10 var
+R1918:1938 VFA.Trie Integers positive2nat def
+R1940:1940 VFA.TrieTest <> y:11 var
+R1945:1955 VFA.Trie Integers Gt constr
+R1983:1985 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R1960:1980 VFA.Trie Integers positive2nat def
+R1982:1982 VFA.TrieTest <> x:10 var
+R1986:2006 VFA.Trie Integers positive2nat def
+R2008:2008 VFA.TrieTest <> y:11 var
+R1713:1736 VFA.Trie Integers compare_correct prfax
+R1754:1770 VFA.Trie Integers positive ind
+binder 1748:1748 <> x:12
+binder 1750:1750 <> y:13
+R1780:1795 VFA.Trie Integers compare def
+R1797:1797 VFA.TrieTest <> x:12 var
+R1799:1799 VFA.TrieTest <> y:13 var
+R1809:1819 VFA.Trie Integers Eq constr
+R1847:1849 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1824:1844 VFA.Trie Integers positive2nat def
+R1846:1846 VFA.TrieTest <> x:12 var
+R1850:1870 VFA.Trie Integers positive2nat def
+R1872:1872 VFA.TrieTest <> y:13 var
+R1877:1887 VFA.Trie Integers Lt constr
+R1915:1917 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R1892:1912 VFA.Trie Integers positive2nat def
+R1914:1914 VFA.TrieTest <> x:12 var
+R1918:1938 VFA.Trie Integers positive2nat def
+R1940:1940 VFA.TrieTest <> y:13 var
+R1945:1955 VFA.Trie Integers Gt constr
+R1983:1985 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R1960:1980 VFA.Trie Integers positive2nat def
+R1982:1982 VFA.TrieTest <> x:12 var
+R1986:2006 VFA.Trie Integers positive2nat def
+R2008:2008 VFA.TrieTest <> y:13 var
+R2065:2088 VFA.Trie Integers compare_correct prfax
+def 2091:2099 <> Unnamed_thm
+R2096:2099 Coq.Init.Logic <> True ind
+R2312:2356 VFA.Trie <> manual_grade_for_successor_of_Z_constant_time def
+R2507:2515 VFA.Trie <> look_leaf prfax
+binder 2528:2528 <> A:14
+R2543:2543 VFA.TrieTest <> A:14 var
+binder 2539:2539 <> a:15
+R2551:2566 Coq.Numbers.BinNums <> positive ind
+binder 2547:2547 <> j:16
+R2591:2593 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2571:2574 VFA.Trie <> look def
+R2576:2576 VFA.TrieTest <> A:14 var
+R2578:2578 VFA.TrieTest <> a:15 var
+R2580:2580 VFA.TrieTest <> j:16 var
+R2584:2587 VFA.Trie <> Leaf constr
+R2589:2589 VFA.TrieTest <> A:14 var
+R2594:2594 VFA.TrieTest <> a:15 var
+R2507:2515 VFA.Trie <> look_leaf prfax
+binder 2528:2528 <> A:17
+R2543:2543 VFA.TrieTest <> A:17 var
+binder 2539:2539 <> a:18
+R2551:2566 Coq.Numbers.BinNums <> positive ind
+binder 2547:2547 <> j:19
+R2591:2593 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2571:2574 VFA.Trie <> look def
+R2576:2576 VFA.TrieTest <> A:17 var
+R2578:2578 VFA.TrieTest <> a:18 var
+R2580:2580 VFA.TrieTest <> j:19 var
+R2584:2587 VFA.Trie <> Leaf constr
+R2589:2589 VFA.TrieTest <> A:17 var
+R2594:2594 VFA.TrieTest <> a:18 var
+R2646:2654 VFA.Trie <> look_leaf prfax
+def 2657:2665 <> Unnamed_thm
+R2662:2665 Coq.Init.Logic <> True ind
+R2824:2836 VFA.Trie <> look_ins_same prfax
+binder 2849:2849 <> A:20
+R2864:2864 VFA.TrieTest <> A:20 var
+binder 2860:2860 <> a:21
+R2872:2887 Coq.Numbers.BinNums <> positive ind
+binder 2868:2868 <> k:22
+R2895:2895 VFA.TrieTest <> A:20 var
+binder 2891:2891 <> v:23
+R2903:2906 VFA.Trie <> trie ind
+R2908:2908 VFA.TrieTest <> A:20 var
+binder 2899:2899 <> t:24
+R2941:2943 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2914:2917 VFA.Trie <> look def
+R2919:2919 VFA.TrieTest <> A:20 var
+R2921:2921 VFA.TrieTest <> a:21 var
+R2923:2923 VFA.TrieTest <> k:22 var
+R2927:2929 VFA.Trie <> ins def
+R2931:2931 VFA.TrieTest <> A:20 var
+R2933:2933 VFA.TrieTest <> a:21 var
+R2935:2935 VFA.TrieTest <> k:22 var
+R2937:2937 VFA.TrieTest <> v:23 var
+R2939:2939 VFA.TrieTest <> t:24 var
+R2944:2944 VFA.TrieTest <> v:23 var
+R2824:2836 VFA.Trie <> look_ins_same prfax
+binder 2849:2849 <> A:25
+R2864:2864 VFA.TrieTest <> A:25 var
+binder 2860:2860 <> a:26
+R2872:2887 Coq.Numbers.BinNums <> positive ind
+binder 2868:2868 <> k:27
+R2895:2895 VFA.TrieTest <> A:25 var
+binder 2891:2891 <> v:28
+R2903:2906 VFA.Trie <> trie ind
+R2908:2908 VFA.TrieTest <> A:25 var
+binder 2899:2899 <> t:29
+R2941:2943 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2914:2917 VFA.Trie <> look def
+R2919:2919 VFA.TrieTest <> A:25 var
+R2921:2921 VFA.TrieTest <> a:26 var
+R2923:2923 VFA.TrieTest <> k:27 var
+R2927:2929 VFA.Trie <> ins def
+R2931:2931 VFA.TrieTest <> A:25 var
+R2933:2933 VFA.TrieTest <> a:26 var
+R2935:2935 VFA.TrieTest <> k:27 var
+R2937:2937 VFA.TrieTest <> v:28 var
+R2939:2939 VFA.TrieTest <> t:29 var
+R2944:2944 VFA.TrieTest <> v:28 var
+R2996:3008 VFA.Trie <> look_ins_same prfax
+def 3011:3019 <> Unnamed_thm
+R3016:3019 Coq.Init.Logic <> True ind
+R3178:3190 VFA.Trie <> look_ins_same prfax
+binder 3203:3203 <> A:30
+R3218:3218 VFA.TrieTest <> A:30 var
+binder 3214:3214 <> a:31
+R3226:3241 Coq.Numbers.BinNums <> positive ind
+binder 3222:3222 <> k:32
+R3249:3249 VFA.TrieTest <> A:30 var
+binder 3245:3245 <> v:33
+R3257:3260 VFA.Trie <> trie ind
+R3262:3262 VFA.TrieTest <> A:30 var
+binder 3253:3253 <> t:34
+R3295:3297 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3268:3271 VFA.Trie <> look def
+R3273:3273 VFA.TrieTest <> A:30 var
+R3275:3275 VFA.TrieTest <> a:31 var
+R3277:3277 VFA.TrieTest <> k:32 var
+R3281:3283 VFA.Trie <> ins def
+R3285:3285 VFA.TrieTest <> A:30 var
+R3287:3287 VFA.TrieTest <> a:31 var
+R3289:3289 VFA.TrieTest <> k:32 var
+R3291:3291 VFA.TrieTest <> v:33 var
+R3293:3293 VFA.TrieTest <> t:34 var
+R3298:3298 VFA.TrieTest <> v:33 var
+R3178:3190 VFA.Trie <> look_ins_same prfax
+binder 3203:3203 <> A:35
+R3218:3218 VFA.TrieTest <> A:35 var
+binder 3214:3214 <> a:36
+R3226:3241 Coq.Numbers.BinNums <> positive ind
+binder 3222:3222 <> k:37
+R3249:3249 VFA.TrieTest <> A:35 var
+binder 3245:3245 <> v:38
+R3257:3260 VFA.Trie <> trie ind
+R3262:3262 VFA.TrieTest <> A:35 var
+binder 3253:3253 <> t:39
+R3295:3297 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3268:3271 VFA.Trie <> look def
+R3273:3273 VFA.TrieTest <> A:35 var
+R3275:3275 VFA.TrieTest <> a:36 var
+R3277:3277 VFA.TrieTest <> k:37 var
+R3281:3283 VFA.Trie <> ins def
+R3285:3285 VFA.TrieTest <> A:35 var
+R3287:3287 VFA.TrieTest <> a:36 var
+R3289:3289 VFA.TrieTest <> k:37 var
+R3291:3291 VFA.TrieTest <> v:38 var
+R3293:3293 VFA.TrieTest <> t:39 var
+R3298:3298 VFA.TrieTest <> v:38 var
+R3350:3362 VFA.Trie <> look_ins_same prfax
+def 3365:3373 <> Unnamed_thm
+R3370:3373 Coq.Init.Logic <> True ind
+R3540:3556 VFA.Trie <> pos2nat_injective prfax
+R3574:3589 Coq.Numbers.BinNums <> positive ind
+binder 3568:3568 <> p:40
+binder 3570:3570 <> q:41
+R3613:3616 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3601:3603 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3592:3598 VFA.Trie <> pos2nat def
+R3600:3600 VFA.TrieTest <> p:40 var
+R3604:3610 VFA.Trie <> pos2nat def
+R3612:3612 VFA.TrieTest <> q:41 var
+R3618:3620 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3617:3617 VFA.TrieTest <> p:40 var
+R3621:3621 VFA.TrieTest <> q:41 var
+R3540:3556 VFA.Trie <> pos2nat_injective prfax
+R3574:3589 Coq.Numbers.BinNums <> positive ind
+binder 3568:3568 <> p:42
+binder 3570:3570 <> q:43
+R3613:3616 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3601:3603 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3592:3598 VFA.Trie <> pos2nat def
+R3600:3600 VFA.TrieTest <> p:42 var
+R3604:3610 VFA.Trie <> pos2nat def
+R3612:3612 VFA.TrieTest <> q:43 var
+R3618:3620 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3617:3617 VFA.TrieTest <> p:42 var
+R3621:3621 VFA.TrieTest <> q:43 var
+R3673:3689 VFA.Trie <> pos2nat_injective prfax
+def 3692:3700 <> Unnamed_thm
+R3697:3700 Coq.Init.Logic <> True ind
+R3785:3801 VFA.Trie <> nat2pos_injective prfax
+R3818:3820 Coq.Init.Datatypes <> nat ind
+binder 3812:3812 <> i:44
+binder 3814:3814 <> j:45
+R3844:3847 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3832:3834 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3823:3829 VFA.Trie <> nat2pos def
+R3831:3831 VFA.TrieTest <> i:44 var
+R3835:3841 VFA.Trie <> nat2pos def
+R3843:3843 VFA.TrieTest <> j:45 var
+R3849:3851 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3848:3848 VFA.TrieTest <> i:44 var
+R3852:3852 VFA.TrieTest <> j:45 var
+R3785:3801 VFA.Trie <> nat2pos_injective prfax
+R3818:3820 Coq.Init.Datatypes <> nat ind
+binder 3812:3812 <> i:46
+binder 3814:3814 <> j:47
+R3844:3847 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3832:3834 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3823:3829 VFA.Trie <> nat2pos def
+R3831:3831 VFA.TrieTest <> i:46 var
+R3835:3841 VFA.Trie <> nat2pos def
+R3843:3843 VFA.TrieTest <> j:47 var
+R3849:3851 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3848:3848 VFA.TrieTest <> i:46 var
+R3852:3852 VFA.TrieTest <> j:47 var
+R3904:3920 VFA.Trie <> nat2pos_injective prfax
+def 3923:3931 <> Unnamed_thm
+R3928:3931 Coq.Init.Logic <> True ind
+R4078:4084 VFA.Trie <> is_trie prfax
+binder 4095:4095 <> A:48
+R4117:4120 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4105:4114 VFA.Trie <> trie_table def
+R4116:4116 VFA.TrieTest <> A:48 var
+R4078:4084 VFA.Trie <> is_trie prfax
+binder 4095:4095 <> A:49
+R4117:4120 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4105:4114 VFA.Trie <> trie_table def
+R4116:4116 VFA.TrieTest <> A:49 var
+R4176:4182 VFA.Trie <> is_trie prfax
+def 4185:4193 <> Unnamed_thm
+R4190:4193 Coq.Init.Logic <> True ind
+R4350:4361 VFA.Trie <> empty_relate prfax
+binder 4374:4374 <> A:50
+R4395:4395 VFA.TrieTest <> A:50 var
+binder 4385:4391 <> default:51
+R4401:4403 VFA.Trie <> Abs def
+R4405:4405 VFA.TrieTest <> A:50 var
+R4409:4413 VFA.Trie <> empty def
+R4415:4415 VFA.TrieTest <> A:50 var
+R4417:4423 VFA.TrieTest <> default:51 var
+R4428:4439 VFA.Maps <> t_empty def
+R4441:4441 VFA.TrieTest <> A:50 var
+R4443:4449 VFA.TrieTest <> default:51 var
+R4350:4361 VFA.Trie <> empty_relate prfax
+binder 4374:4374 <> A:52
+R4395:4395 VFA.TrieTest <> A:52 var
+binder 4385:4391 <> default:53
+R4401:4403 VFA.Trie <> Abs def
+R4405:4405 VFA.TrieTest <> A:52 var
+R4409:4413 VFA.Trie <> empty def
+R4415:4415 VFA.TrieTest <> A:52 var
+R4417:4423 VFA.TrieTest <> default:53 var
+R4428:4439 VFA.Maps <> t_empty def
+R4441:4441 VFA.TrieTest <> A:52 var
+R4443:4449 VFA.TrieTest <> default:53 var
+R4502:4513 VFA.Trie <> empty_relate prfax
+def 4516:4524 <> Unnamed_thm
+R4521:4524 Coq.Init.Logic <> True ind
+R4683:4695 VFA.Trie <> lookup_relate prfax
+binder 4708:4708 <> A:54
+R4723:4738 Coq.Numbers.BinNums <> positive ind
+binder 4719:4719 <> i:55
+R4746:4755 VFA.Trie <> trie_table def
+R4757:4757 VFA.TrieTest <> A:54 var
+binder 4742:4742 <> t:56
+R4768:4781 VFA.Maps <> total_map def
+R4783:4783 VFA.TrieTest <> A:54 var
+binder 4764:4764 <> m:57
+R4800:4803 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4789:4795 VFA.Trie <> is_trie prfax
+R4797:4797 VFA.TrieTest <> A:54 var
+R4799:4799 VFA.TrieTest <> t:56 var
+R4814:4817 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4805:4807 VFA.Trie <> Abs def
+R4809:4809 VFA.TrieTest <> A:54 var
+R4811:4811 VFA.TrieTest <> t:56 var
+R4813:4813 VFA.TrieTest <> m:57 var
+R4831:4833 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4819:4824 VFA.Trie <> lookup def
+R4826:4826 VFA.TrieTest <> A:54 var
+R4828:4828 VFA.TrieTest <> i:55 var
+R4830:4830 VFA.TrieTest <> t:56 var
+R4834:4834 VFA.TrieTest <> m:57 var
+R4837:4843 VFA.Trie <> pos2nat def
+R4845:4845 VFA.TrieTest <> i:55 var
+R4683:4695 VFA.Trie <> lookup_relate prfax
+binder 4708:4708 <> A:58
+R4723:4738 Coq.Numbers.BinNums <> positive ind
+binder 4719:4719 <> i:59
+R4746:4755 VFA.Trie <> trie_table def
+R4757:4757 VFA.TrieTest <> A:58 var
+binder 4742:4742 <> t:60
+R4768:4781 VFA.Maps <> total_map def
+R4783:4783 VFA.TrieTest <> A:58 var
+binder 4764:4764 <> m:61
+R4800:4803 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4789:4795 VFA.Trie <> is_trie prfax
+R4797:4797 VFA.TrieTest <> A:58 var
+R4799:4799 VFA.TrieTest <> t:60 var
+R4814:4817 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4805:4807 VFA.Trie <> Abs def
+R4809:4809 VFA.TrieTest <> A:58 var
+R4811:4811 VFA.TrieTest <> t:60 var
+R4813:4813 VFA.TrieTest <> m:61 var
+R4831:4833 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4819:4824 VFA.Trie <> lookup def
+R4826:4826 VFA.TrieTest <> A:58 var
+R4828:4828 VFA.TrieTest <> i:59 var
+R4830:4830 VFA.TrieTest <> t:60 var
+R4834:4834 VFA.TrieTest <> m:61 var
+R4837:4843 VFA.Trie <> pos2nat def
+R4845:4845 VFA.TrieTest <> i:59 var
+R4898:4910 VFA.Trie <> lookup_relate prfax
+def 4913:4921 <> Unnamed_thm
+R4918:4921 Coq.Init.Logic <> True ind
+R5080:5092 VFA.Trie <> insert_relate prfax
+binder 5105:5105 <> A:62
+R5120:5135 Coq.Numbers.BinNums <> positive ind
+binder 5116:5116 <> k:63
+R5143:5143 VFA.TrieTest <> A:62 var
+binder 5139:5139 <> v:64
+R5155:5164 VFA.Trie <> trie_table def
+R5166:5166 VFA.TrieTest <> A:62 var
+binder 5151:5151 <> t:65
+R5176:5189 VFA.Maps <> total_map def
+R5191:5191 VFA.TrieTest <> A:62 var
+binder 5170:5172 <> cts:66
+R5208:5212 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5197:5203 VFA.Trie <> is_trie prfax
+R5205:5205 VFA.TrieTest <> A:62 var
+R5207:5207 VFA.TrieTest <> t:65 var
+R5225:5229 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5214:5216 VFA.Trie <> Abs def
+R5218:5218 VFA.TrieTest <> A:62 var
+R5220:5220 VFA.TrieTest <> t:65 var
+R5222:5224 VFA.TrieTest <> cts:66 var
+R5231:5233 VFA.Trie <> Abs def
+R5235:5235 VFA.TrieTest <> A:62 var
+R5239:5244 VFA.Trie <> insert def
+R5246:5246 VFA.TrieTest <> A:62 var
+R5248:5248 VFA.TrieTest <> k:63 var
+R5250:5250 VFA.TrieTest <> v:64 var
+R5252:5252 VFA.TrieTest <> t:65 var
+R5257:5269 VFA.Maps <> t_update def
+R5271:5271 VFA.TrieTest <> A:62 var
+R5273:5275 VFA.TrieTest <> cts:66 var
+R5278:5284 VFA.Trie <> pos2nat def
+R5286:5286 VFA.TrieTest <> k:63 var
+R5289:5289 VFA.TrieTest <> v:64 var
+R5080:5092 VFA.Trie <> insert_relate prfax
+binder 5105:5105 <> A:67
+R5120:5135 Coq.Numbers.BinNums <> positive ind
+binder 5116:5116 <> k:68
+R5143:5143 VFA.TrieTest <> A:67 var
+binder 5139:5139 <> v:69
+R5155:5164 VFA.Trie <> trie_table def
+R5166:5166 VFA.TrieTest <> A:67 var
+binder 5151:5151 <> t:70
+R5176:5189 VFA.Maps <> total_map def
+R5191:5191 VFA.TrieTest <> A:67 var
+binder 5170:5172 <> cts:71
+R5208:5212 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5197:5203 VFA.Trie <> is_trie prfax
+R5205:5205 VFA.TrieTest <> A:67 var
+R5207:5207 VFA.TrieTest <> t:70 var
+R5225:5229 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5214:5216 VFA.Trie <> Abs def
+R5218:5218 VFA.TrieTest <> A:67 var
+R5220:5220 VFA.TrieTest <> t:70 var
+R5222:5224 VFA.TrieTest <> cts:71 var
+R5231:5233 VFA.Trie <> Abs def
+R5235:5235 VFA.TrieTest <> A:67 var
+R5239:5244 VFA.Trie <> insert def
+R5246:5246 VFA.TrieTest <> A:67 var
+R5248:5248 VFA.TrieTest <> k:68 var
+R5250:5250 VFA.TrieTest <> v:69 var
+R5252:5252 VFA.TrieTest <> t:70 var
+R5257:5269 VFA.Maps <> t_update def
+R5271:5271 VFA.TrieTest <> A:67 var
+R5273:5275 VFA.TrieTest <> cts:71 var
+R5278:5284 VFA.Trie <> pos2nat def
+R5286:5286 VFA.TrieTest <> k:68 var
+R5289:5289 VFA.TrieTest <> v:69 var
+R5342:5354 VFA.Trie <> insert_relate prfax
+def 5357:5365 <> Unnamed_thm
+R5362:5365 Coq.Init.Logic <> True ind
+R6526:6546 VFA.Trie Integers succ_correct prfax
+R6619:6639 VFA.Trie Integers addc_correct prfax
+R6715:6738 VFA.Trie Integers compare_correct prfax
+R6874:6882 VFA.Trie <> look_leaf prfax
+R6947:6959 VFA.Trie <> look_ins_same prfax
+R7024:7036 VFA.Trie <> look_ins_same prfax
+R7105:7121 VFA.Trie <> pos2nat_injective prfax
+R7190:7206 VFA.Trie <> nat2pos_injective prfax
+R7265:7271 VFA.Trie <> is_trie prfax
+R7335:7346 VFA.Trie <> empty_relate prfax
+R7411:7423 VFA.Trie <> lookup_relate prfax
+R7488:7500 VFA.Trie <> insert_relate prfax

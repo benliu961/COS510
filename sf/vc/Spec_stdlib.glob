@@ -1,0 +1,538 @@
+DIGEST 1b5d5ab981c0b6ef744da355c04eefb4
+FVC.Spec_stdlib
+R198:207 VC.Preface <> <> lib
+R266:284 VST.floyd.proofauto <> <> lib
+R302:310 VC.stdlib <> <> lib
+R510:526 VST.floyd.library <> <> lib
+R572:601 VST.floyd.library <> malloc_token defax
+rec 2109:2121 <> MallocFreeAPD
+proj 2131:2137 <> mem_mgr
+proj 2161:2175 <> malloc_token_sz
+proj 2209:2237 <> malloc_token_sz_valid_pointer
+proj 2322:2348 <> malloc_token_sz_local_facts
+R2147:2150 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2140:2146 VST.veric.SeparationLogic <> globals def
+R2151:2155 VST.veric.mpred <> mpred def
+R2183:2186 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2178:2182 VST.msl.shares <> share def
+R2188:2191 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2187:2187 Coq.Numbers.BinNums <> Z ind
+R2195:2198 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2192:2194 compcert.common.Values <> val ind
+R2199:2203 VST.veric.mpred <> mpred def
+binder 2247:2248 <> sh:4
+binder 2250:2251 <> sz:5
+binder 2253:2253 <> p:6
+R2270:2273 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2265:2268 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x not
+R2263:2264 VC.Spec_stdlib <> sz:5 var
+R2297:2301 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R2274:2288 VC.Spec_stdlib <> malloc_token_sz:3 meth
+R2296:2296 VC.Spec_stdlib <> p:6 var
+R2293:2294 VC.Spec_stdlib <> sz:5 var
+R2290:2291 VC.Spec_stdlib <> sh:4 var
+R2302:2314 VST.veric.expr <> valid_pointer def
+R2316:2316 VC.Spec_stdlib <> p:6 var
+binder 2359:2360 <> sh:8
+binder 2362:2363 <> sz:9
+binder 2365:2365 <> p:10
+R2398:2402 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R2375:2389 VC.Spec_stdlib <> malloc_token_sz:3 meth
+R2397:2397 VC.Spec_stdlib <> p:10 var
+R2394:2395 VC.Spec_stdlib <> sz:9 var
+R2391:2392 VC.Spec_stdlib <> sh:8 var
+R2403:2405 VST.msl.seplog <> ::logic:'!!'_x not
+R2406:2422 VST.floyd.field_at <> malloc_compatible def
+R2424:2425 VC.Spec_stdlib <> sz:9 var
+R2427:2427 VC.Spec_stdlib <> p:10 var
+sec 2771:2783 <> MallocFreeASI
+var 2795:2795 MallocFreeASI M
+R2797:2809 VC.Spec_stdlib <> MallocFreeAPD rec
+def 3134:3147 <> malloc_spec_sz
+R3153:3160 VST.floyd.client_lemmas <> :::'DECLARE'_x_x not
+R3168:3171 VST.floyd.client_lemmas <> :::'DECLARE'_x_x not
+R3161:3167 VC.stdlib <> _malloc def
+R3172:3176 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R3178:3178 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R3180:3181 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R3184:3185 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R3193:3202 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R3209:3218 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R3334:3345 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R3356:3358 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R3203:3208 VST.veric.Cop2 <> size_t def
+R3346:3349 compcert.export.Ctypesdefs <> tptr def
+R3351:3355 compcert.export.Ctypesdefs <> tvoid def
+R3179:3179 Coq.Numbers.BinNums <> Z ind
+R3186:3192 VST.veric.SeparationLogic <> globals def
+binder 3177:3177 <> n:13
+binder 3182:3183 <> gv:14
+R3219:3224 VST.floyd.canon <> ::assert:'PROP'_'('_x_';'_'..'_';'_x_')'_x not
+R3254:3262 VST.floyd.canon <> ::assert:'PROP'_'('_x_';'_'..'_';'_x_')'_x not
+R3226:3229 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R3231:3234 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R3230:3230 VC.Spec_stdlib <> n:13 var
+R3230:3230 VC.Spec_stdlib <> n:13 var
+R3235:3253 compcert.lib.Integers Ptrofs max_unsigned def
+R3263:3270 VST.floyd.canon <> ::assert3:'PARAMS'_'('_x_';'_'..'_';'_x_')'_x not
+R3294:3295 VST.floyd.canon <> ::assert3:'PARAMS'_'('_x_';'_'..'_';'_x_')'_x not
+R3271:3277 compcert.common.Values <> Vptrofs def
+R3280:3290 compcert.lib.Integers Ptrofs repr def
+R3292:3292 VC.Spec_stdlib <> n:13 var
+R3296:3304 VST.floyd.canon <> ::assert4:'GLOBALS'_'('_x_';'_'..'_';'_x_')'_x not
+R3307:3315 VST.floyd.canon <> ::assert4:'GLOBALS'_'('_x_';'_'..'_';'_x_')'_x not
+R3305:3306 VC.Spec_stdlib <> gv:14 var
+R3316:3320 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R3333:3333 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R3321:3327 VC.Spec_stdlib <> mem_mgr proj
+R3329:3329 VC.Spec_stdlib <> MallocFreeASI.M var
+R3331:3332 VC.Spec_stdlib <> gv:14 var
+binder 3177:3177 <> n:15
+binder 3182:3183 <> gv:16
+R3359:3361 VST.floyd.canon <> ::assert:'EX'_x_'..'_x_','_x not
+R3365:3373 VST.floyd.canon <> ::assert:'EX'_x_'..'_x_','_x not
+binder 3362:3362 <> p:17
+R3374:3388 VST.floyd.canon <> ::assert:'PROP'_'()'_x not
+R3389:3395 VST.floyd.canon <> ::assert3:'LOCAL'_'('_x_';'_'..'_';'_x_')'_x not
+R3411:3419 VST.floyd.canon <> ::assert3:'LOCAL'_'('_x_';'_'..'_';'_x_')'_x not
+R3396:3399 VST.floyd.canon <> temp constr
+R3401:3408 VST.veric.SeparationLogic <> ret_temp def
+R3410:3410 VC.Spec_stdlib <> p:17 var
+R3420:3424 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R3437:3451 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R3548:3548 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R3425:3431 VC.Spec_stdlib <> mem_mgr proj
+R3433:3433 VC.Spec_stdlib <> MallocFreeASI.M var
+R3435:3436 VC.Spec_stdlib <> gv:16 var
+R3455:3460 VST.msl.eq_dec <> eq_dec def
+R3464:3470 VST.veric.base <> nullval def
+R3462:3462 VC.Spec_stdlib <> p:17 var
+R3524:3526 VST.msl.seplog <> ::logic:x_'*'_x not
+R3499:3513 VC.Spec_stdlib <> malloc_token_sz proj
+R3515:3515 VC.Spec_stdlib <> MallocFreeASI.M var
+R3517:3519 VST.veric.shares <> Ews def
+R3521:3521 VC.Spec_stdlib <> n:15 var
+R3523:3523 VC.Spec_stdlib <> p:17 var
+R3527:3538 VST.veric.SeparationLogic <> memory_block def
+R3540:3542 VST.veric.shares <> Ews def
+R3544:3544 VC.Spec_stdlib <> n:15 var
+R3546:3546 VC.Spec_stdlib <> p:17 var
+R3477:3479 VST.msl.seplog <> emp meth
+def 3563:3574 <> free_spec_sz
+R3580:3587 VST.floyd.client_lemmas <> :::'DECLARE'_x_x not
+R3593:3596 VST.floyd.client_lemmas <> :::'DECLARE'_x_x not
+R3588:3592 VC.stdlib <> _free def
+R3597:3601 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R3603:3603 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R3605:3606 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R3608:3608 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R3612:3613 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R3616:3617 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R3625:3634 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R3645:3654 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R3833:3844 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R3850:3859 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R3635:3638 compcert.export.Ctypesdefs <> tptr def
+R3640:3644 compcert.export.Ctypesdefs <> tvoid def
+R3845:3849 compcert.cfrontend.Ctypes <> Tvoid constr
+R3604:3604 Coq.Numbers.BinNums <> Z ind
+R3609:3611 compcert.common.Values <> val ind
+R3618:3624 VST.veric.SeparationLogic <> globals def
+binder 3602:3602 <> n:18
+binder 3607:3607 <> p:19
+binder 3614:3615 <> gv:20
+R3655:3669 VST.floyd.canon <> ::assert:'PROP'_'()'_x not
+R3670:3677 VST.floyd.canon <> ::assert3:'PARAMS'_'('_x_';'_'..'_';'_x_')'_x not
+R3679:3680 VST.floyd.canon <> ::assert3:'PARAMS'_'('_x_';'_'..'_';'_x_')'_x not
+R3678:3678 VC.Spec_stdlib <> p:19 var
+R3681:3689 VST.floyd.canon <> ::assert4:'GLOBALS'_'('_x_';'_'..'_';'_x_')'_x not
+R3692:3700 VST.floyd.canon <> ::assert4:'GLOBALS'_'('_x_';'_'..'_';'_x_')'_x not
+R3690:3691 VC.Spec_stdlib <> gv:20 var
+R3701:3705 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R3718:3733 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R3832:3832 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R3706:3712 VC.Spec_stdlib <> mem_mgr proj
+R3714:3714 VC.Spec_stdlib <> MallocFreeASI.M var
+R3716:3717 VC.Spec_stdlib <> gv:20 var
+R3737:3742 VST.msl.eq_dec <> eq_dec def
+R3746:3752 VST.veric.base <> nullval def
+R3744:3744 VC.Spec_stdlib <> p:19 var
+R3808:3810 VST.msl.seplog <> ::logic:x_'*'_x not
+R3783:3797 VC.Spec_stdlib <> malloc_token_sz proj
+R3799:3799 VC.Spec_stdlib <> MallocFreeASI.M var
+R3801:3803 VST.veric.shares <> Ews def
+R3805:3805 VC.Spec_stdlib <> n:18 var
+R3807:3807 VC.Spec_stdlib <> p:19 var
+R3811:3822 VST.veric.SeparationLogic <> memory_block def
+R3824:3826 VST.veric.shares <> Ews def
+R3828:3828 VC.Spec_stdlib <> n:18 var
+R3830:3830 VC.Spec_stdlib <> p:19 var
+R3759:3761 VST.msl.seplog <> emp meth
+binder 3602:3602 <> n:21
+binder 3607:3607 <> p:22
+binder 3614:3615 <> gv:23
+R3860:3874 VST.floyd.canon <> ::assert:'PROP'_'()'_x not
+R3875:3890 VST.floyd.canon <> ::assert3:'LOCAL'_'()'_x not
+R3891:3895 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R3908:3908 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R3896:3902 VC.Spec_stdlib <> mem_mgr proj
+R3904:3904 VC.Spec_stdlib <> MallocFreeASI.M var
+R3906:3907 VC.Spec_stdlib <> gv:23 var
+def 4073:4081 <> exit_spec
+R4087:4094 VST.floyd.client_lemmas <> :::'DECLARE'_x_x not
+R4100:4101 VST.floyd.client_lemmas <> :::'DECLARE'_x_x not
+R4095:4099 VC.stdlib <> _exit def
+R4102:4106 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R4108:4109 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R4111:4117 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R4122:4126 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R4178:4186 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R4192:4197 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R4118:4121 compcert.export.Ctypesdefs <> tint def
+R4187:4191 compcert.export.Ctypesdefs <> tvoid def
+R4110:4110 Coq.Numbers.BinNums <> Z ind
+binder 4107:4107 <> i:24
+R4127:4134 VST.floyd.canon <> ::assert:'PROP'_'()'_x not
+R4135:4142 VST.floyd.canon <> ::assert3:'PARAMS'_'('_x_';'_'..'_';'_x_')'_x not
+R4160:4161 VST.floyd.canon <> ::assert3:'PARAMS'_'('_x_';'_'..'_';'_x_')'_x not
+R4143:4146 compcert.common.Values <> Vint constr
+R4149:4156 compcert.lib.Integers Int repr def
+R4158:4158 VC.Spec_stdlib <> i:24 var
+R4162:4172 VST.floyd.canon <> ::assert4:'GLOBALS'_'()'_x not
+R4173:4177 VST.floyd.canon <> ::assert5:'SEP'_'()' not
+binder 4107:4107 <> i:25
+R4198:4202 VST.floyd.canon <> ::assert:'PROP'_'('_x_';'_'..'_';'_x_')'_x not
+R4208:4209 VST.floyd.canon <> ::assert:'PROP'_'('_x_';'_'..'_';'_x_')'_x not
+R4203:4207 Coq.Init.Logic <> False ind
+R4210:4217 VST.floyd.canon <> ::assert3:'LOCAL'_'()'_x not
+R4218:4222 VST.floyd.canon <> ::assert5:'SEP'_'()' not
+def 4346:4358 <> MallocFreeASI
+R4360:4367 VST.veric.mpred <> funspecs def
+R4372:4373 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4388:4389 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4402:4403 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4413:4413 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4374:4387 VC.Spec_stdlib <> malloc_spec_sz def
+R4390:4401 VC.Spec_stdlib <> free_spec_sz def
+R4404:4412 VC.Spec_stdlib <> exit_spec def
+R4421:4433 VC.Spec_stdlib MallocFreeASI <> sec
+def 4813:4824 <> malloc_token
+R4831:4839 VST.veric.compspecs <> compspecs class
+binder 4827:4828 <> cs:26
+R4845:4857 VC.Spec_stdlib <> MallocFreeAPD rec
+binder 4843:4843 <> M:27
+binder 4860:4861 <> sh:28
+binder 4863:4863 <> t:29
+binder 4865:4865 <> v:30
+R4900:4907 VST.msl.seplog <> ::logic:x_'&&'_x not
+R4874:4876 VST.msl.seplog <> ::logic:'!!'_x not
+R4877:4892 VST.floyd.nested_field_lemmas <> field_compatible def
+R4894:4894 VC.Spec_stdlib <> t:29 var
+R4896:4897 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R4899:4899 VC.Spec_stdlib <> v:30 var
+R4908:4922 VC.Spec_stdlib <> malloc_token_sz proj
+R4924:4924 VC.Spec_stdlib <> M:27 var
+R4926:4927 VC.Spec_stdlib <> sh:28 var
+R4930:4935 VST.veric.expr <> sizeof def
+R4937:4937 VC.Spec_stdlib <> t:29 var
+R4940:4940 VC.Spec_stdlib <> v:30 var
+prf 4950:4975 <> malloc_token_valid_pointer
+R4990:4998 VST.veric.compspecs <> compspecs class
+binder 4986:4987 <> cs:31
+binder 5001:5001 <> M:32
+binder 5003:5004 <> sh:33
+binder 5006:5006 <> t:34
+binder 5008:5008 <> p:35
+R5031:5034 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5026:5029 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x not
+R5018:5023 VST.veric.expr <> sizeof def
+R5025:5025 VC.Spec_stdlib <> t:34 var
+R5056:5060 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R5035:5046 VC.Spec_stdlib <> malloc_token def
+R5055:5055 VC.Spec_stdlib <> p:35 var
+R5053:5053 VC.Spec_stdlib <> t:34 var
+R5050:5051 VC.Spec_stdlib <> sh:33 var
+R5048:5048 VC.Spec_stdlib <> M:32 var
+R5061:5073 VST.veric.expr <> valid_pointer def
+R5075:5075 VC.Spec_stdlib <> p:35 var
+R5100:5111 VC.Spec_stdlib <> malloc_token def
+R5121:5130 VST.msl.seplog <> andp_left2 meth
+R5121:5130 VST.msl.seplog <> andp_left2 meth
+R5139:5167 VC.Spec_stdlib <> malloc_token_sz_valid_pointer proj
+R5139:5167 VC.Spec_stdlib <> malloc_token_sz_valid_pointer proj
+R5375:5379 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R5380:5392 VST.veric.expr <> valid_pointer def
+R5375:5379 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R5380:5392 VST.veric.expr <> valid_pointer def
+R5430:5441 VC.Spec_stdlib <> malloc_token def
+R5430:5441 VC.Spec_stdlib <> malloc_token def
+R5704:5718 VC.Spec_stdlib <> malloc_token_sz proj
+R5704:5718 VC.Spec_stdlib <> malloc_token_sz proj
+R5756:5759 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x not
+R5807:5809 Coq.ZArith.BinInt <> ::Z_scope:x_'>'_x not
+R5853:5855 compcert.lib.Coqlib <> zlt def
+R5486:5489 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x not
+R5478:5483 VST.veric.expr <> sizeof def
+R5568:5570 Coq.ZArith.BinInt <> ::Z_scope:x_'>'_x not
+R5560:5565 VST.veric.expr <> sizeof def
+R5638:5640 compcert.lib.Coqlib <> zlt def
+R5645:5650 VST.veric.expr <> sizeof def
+R5955:5959 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R5935:5946 VC.Spec_stdlib <> malloc_token def
+R5960:5972 VST.veric.expr <> valid_pointer def
+R5996:6021 VC.Spec_stdlib <> malloc_token_valid_pointer thm
+R6086:6090 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R6091:6103 VST.veric.expr <> valid_pointer def
+prf 6170:6193 <> malloc_token_local_facts
+R6209:6217 VST.veric.compspecs <> compspecs class
+binder 6205:6206 <> cs:36
+binder 6220:6220 <> M:37
+binder 6222:6223 <> sh:38
+binder 6225:6225 <> t:39
+binder 6227:6227 <> p:40
+R6257:6261 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R6236:6247 VC.Spec_stdlib <> malloc_token def
+R6256:6256 VC.Spec_stdlib <> p:40 var
+R6254:6254 VC.Spec_stdlib <> t:39 var
+R6251:6252 VC.Spec_stdlib <> sh:38 var
+R6249:6249 VC.Spec_stdlib <> M:37 var
+R6262:6265 VST.msl.seplog <> ::logic:'!!'_x not
+R6323:6323 VST.msl.seplog <> ::logic:'!!'_x not
+R6289:6292 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6266:6281 VST.floyd.nested_field_lemmas <> field_compatible def
+R6283:6283 VC.Spec_stdlib <> t:39 var
+R6285:6286 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R6288:6288 VC.Spec_stdlib <> p:40 var
+R6293:6309 VST.floyd.field_at <> malloc_compatible def
+R6312:6317 VST.veric.expr <> sizeof def
+R6319:6319 VC.Spec_stdlib <> t:39 var
+R6322:6322 VC.Spec_stdlib <> p:40 var
+R6349:6360 VC.Spec_stdlib <> malloc_token def
+R6383:6390 VST.msl.log_normalize <> prop_and thm
+R6383:6390 VST.msl.log_normalize <> prop_and thm
+R6383:6390 VST.msl.log_normalize <> prop_and thm
+R6400:6409 VST.msl.seplog <> andp_right meth
+R6400:6409 VST.msl.seplog <> andp_right meth
+R6418:6427 VST.msl.seplog <> prop_right meth
+R6418:6427 VST.msl.seplog <> prop_right meth
+R6443:6469 VC.Spec_stdlib <> malloc_token_sz_local_facts proj
+R6443:6469 VC.Spec_stdlib <> malloc_token_sz_local_facts proj
+def 6555:6565 <> malloc_spec
+R6570:6582 VC.Spec_stdlib <> MallocFreeAPD rec
+binder 6568:6568 <> M:41
+R6590:6598 VST.veric.compspecs <> compspecs class
+binder 6586:6587 <> cs:42
+R6605:6608 compcert.cfrontend.Ctypes <> type ind
+binder 6602:6602 <> t:43
+R6615:6622 VST.floyd.client_lemmas <> :::'DECLARE'_x_x not
+R6630:6633 VST.floyd.client_lemmas <> :::'DECLARE'_x_x not
+R6623:6629 VC.stdlib <> _malloc def
+R6634:6638 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R6641:6642 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R6650:6659 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R6666:6675 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R6918:6929 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R6940:6942 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R6660:6665 VST.veric.Cop2 <> size_t def
+R6930:6933 compcert.export.Ctypesdefs <> tptr def
+R6935:6939 compcert.export.Ctypesdefs <> tvoid def
+R6643:6649 VST.veric.SeparationLogic <> globals def
+binder 6639:6640 <> gv:44
+R6676:6681 VST.floyd.canon <> ::assert:'PROP'_'('_x_';'_'..'_';'_x_')'_x not
+R6718:6735 VST.floyd.canon <> ::assert:'PROP'_'('_x_';'_'..'_';'_x_')'_x not
+R6769:6786 VST.floyd.canon <> ::assert:'PROP'_'('_x_';'_'..'_';'_x_')'_x not
+R6829:6837 VST.floyd.canon <> ::assert:'PROP'_'('_x_';'_'..'_';'_x_')'_x not
+R6683:6686 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R6695:6698 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R6687:6692 VST.veric.expr <> sizeof def
+R6694:6694 VC.Spec_stdlib <> t:43 var
+R6687:6692 VST.veric.expr <> sizeof def
+R6694:6694 VC.Spec_stdlib <> t:43 var
+R6699:6717 compcert.lib.Integers Ptrofs max_unsigned def
+R6762:6764 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6736:6759 VST.veric.composite_compute <> complete_legal_cosu_type def
+R6761:6761 VC.Spec_stdlib <> t:43 var
+R6765:6768 Coq.Init.Datatypes <> true constr
+R6822:6824 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6787:6801 VST.floyd.field_at <> natural_aligned def
+R6821:6821 VC.Spec_stdlib <> t:43 var
+R6803:6819 VST.floyd.field_at <> natural_alignment def
+R6825:6828 Coq.Init.Datatypes <> true constr
+R6838:6845 VST.floyd.canon <> ::assert3:'PARAMS'_'('_x_';'_'..'_';'_x_')'_x not
+R6878:6879 VST.floyd.canon <> ::assert3:'PARAMS'_'('_x_';'_'..'_';'_x_')'_x not
+R6846:6852 compcert.common.Values <> Vptrofs def
+R6855:6865 compcert.lib.Integers Ptrofs repr def
+R6868:6873 VST.veric.expr <> sizeof def
+R6875:6875 VC.Spec_stdlib <> t:43 var
+R6880:6888 VST.floyd.canon <> ::assert4:'GLOBALS'_'('_x_';'_'..'_';'_x_')'_x not
+R6891:6899 VST.floyd.canon <> ::assert4:'GLOBALS'_'('_x_';'_'..'_';'_x_')'_x not
+R6889:6890 VC.Spec_stdlib <> gv:44 var
+R6900:6904 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R6917:6917 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R6905:6911 VC.Spec_stdlib <> mem_mgr proj
+R6913:6913 VC.Spec_stdlib <> M:41 var
+R6915:6916 VC.Spec_stdlib <> gv:44 var
+binder 6639:6640 <> gv:45
+R6943:6945 VST.floyd.canon <> ::assert:'EX'_x_'..'_x_','_x not
+R6949:6957 VST.floyd.canon <> ::assert:'EX'_x_'..'_x_','_x not
+binder 6946:6946 <> p:46
+R6958:6972 VST.floyd.canon <> ::assert:'PROP'_'()'_x not
+R6973:6979 VST.floyd.canon <> ::assert3:'LOCAL'_'('_x_';'_'..'_';'_x_')'_x not
+R6995:7003 VST.floyd.canon <> ::assert3:'LOCAL'_'('_x_';'_'..'_';'_x_')'_x not
+R6980:6983 VST.floyd.canon <> temp constr
+R6985:6992 VST.veric.SeparationLogic <> ret_temp def
+R6994:6994 VC.Spec_stdlib <> p:46 var
+R7004:7008 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R7021:7035 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R7125:7125 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R7009:7015 VC.Spec_stdlib <> mem_mgr proj
+R7017:7017 VC.Spec_stdlib <> M:41 var
+R7019:7020 VC.Spec_stdlib <> gv:45 var
+R7039:7044 VST.msl.eq_dec <> eq_dec def
+R7048:7054 VST.veric.base <> nullval def
+R7046:7046 VC.Spec_stdlib <> p:46 var
+R7105:7107 VST.msl.seplog <> ::logic:x_'*'_x not
+R7083:7094 VC.Spec_stdlib <> malloc_token def
+R7104:7104 VC.Spec_stdlib <> p:46 var
+R7102:7102 VC.Spec_stdlib <> t:43 var
+R7098:7100 VST.veric.shares <> Ews def
+R7096:7096 VC.Spec_stdlib <> M:41 var
+R7108:7115 VST.floyd.field_at <> data_at_ def
+R7117:7119 VST.veric.shares <> Ews def
+R7121:7121 VC.Spec_stdlib <> t:43 var
+R7123:7123 VC.Spec_stdlib <> p:46 var
+R7061:7063 VST.msl.seplog <> emp meth
+def 7140:7148 <> free_spec
+R7153:7165 VC.Spec_stdlib <> MallocFreeAPD rec
+binder 7151:7151 <> M:47
+R7174:7182 VST.veric.compspecs <> compspecs class
+binder 7170:7171 <> cs:48
+R7189:7192 compcert.cfrontend.Ctypes <> type ind
+binder 7186:7186 <> t:49
+R7199:7206 VST.floyd.client_lemmas <> :::'DECLARE'_x_x not
+R7212:7215 VST.floyd.client_lemmas <> :::'DECLARE'_x_x not
+R7207:7211 VC.stdlib <> _free def
+R7216:7220 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R7222:7223 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R7227:7228 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R7231:7232 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R7240:7249 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R7260:7269 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R7441:7452 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R7458:7467 VST.floyd.client_lemmas <> ::funspec_scope:'WITH'_x_':'_x_','_x_':'_x_'PRE'_'['_x_','_'..'_','_x_']'_x_'POST'_'['_x_']'_x not
+R7250:7253 compcert.export.Ctypesdefs <> tptr def
+R7255:7259 compcert.export.Ctypesdefs <> tvoid def
+R7453:7457 compcert.cfrontend.Ctypes <> Tvoid constr
+R7224:7226 compcert.common.Values <> val ind
+R7233:7239 VST.veric.SeparationLogic <> globals def
+binder 7221:7221 <> p:50
+binder 7229:7230 <> gv:51
+R7270:7284 VST.floyd.canon <> ::assert:'PROP'_'()'_x not
+R7285:7292 VST.floyd.canon <> ::assert3:'PARAMS'_'('_x_';'_'..'_';'_x_')'_x not
+R7294:7295 VST.floyd.canon <> ::assert3:'PARAMS'_'('_x_';'_'..'_';'_x_')'_x not
+R7293:7293 VC.Spec_stdlib <> p:50 var
+R7296:7304 VST.floyd.canon <> ::assert4:'GLOBALS'_'('_x_';'_'..'_';'_x_')'_x not
+R7307:7315 VST.floyd.canon <> ::assert4:'GLOBALS'_'('_x_';'_'..'_';'_x_')'_x not
+R7305:7306 VC.Spec_stdlib <> gv:51 var
+R7316:7320 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R7333:7348 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R7440:7440 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R7321:7327 VC.Spec_stdlib <> mem_mgr proj
+R7329:7329 VC.Spec_stdlib <> M:47 var
+R7331:7332 VC.Spec_stdlib <> gv:51 var
+R7352:7357 VST.msl.eq_dec <> eq_dec def
+R7361:7367 VST.veric.base <> nullval def
+R7359:7359 VC.Spec_stdlib <> p:50 var
+R7420:7422 VST.msl.seplog <> ::logic:x_'*'_x not
+R7398:7409 VC.Spec_stdlib <> malloc_token def
+R7419:7419 VC.Spec_stdlib <> p:50 var
+R7417:7417 VC.Spec_stdlib <> t:49 var
+R7413:7415 VST.veric.shares <> Ews def
+R7411:7411 VC.Spec_stdlib <> M:47 var
+R7423:7430 VST.floyd.field_at <> data_at_ def
+R7432:7434 VST.veric.shares <> Ews def
+R7436:7436 VC.Spec_stdlib <> t:49 var
+R7438:7438 VC.Spec_stdlib <> p:50 var
+R7374:7376 VST.msl.seplog <> emp meth
+binder 7221:7221 <> p:52
+binder 7229:7230 <> gv:53
+R7468:7482 VST.floyd.canon <> ::assert:'PROP'_'()'_x not
+R7483:7498 VST.floyd.canon <> ::assert3:'LOCAL'_'()'_x not
+R7499:7503 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R7516:7516 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R7504:7510 VC.Spec_stdlib <> mem_mgr proj
+R7512:7512 VC.Spec_stdlib <> M:47 var
+R7514:7515 VC.Spec_stdlib <> gv:53 var
+prf 8111:8125 <> malloc_spec_sub
+R8140:8152 VC.Spec_stdlib <> MallocFreeAPD rec
+binder 8138:8138 <> M:54
+R8160:8168 VST.veric.compspecs <> compspecs class
+binder 8156:8157 <> cs:55
+R8175:8178 compcert.cfrontend.Ctypes <> type ind
+binder 8172:8172 <> t:56
+R8186:8196 VST.veric.SeparationLogic <> funspec_sub def
+R8199:8201 Coq.Init.Datatypes <> snd def
+R8204:8217 VC.Spec_stdlib <> malloc_spec_sz def
+R8219:8219 VC.Spec_stdlib <> M:54 var
+R8224:8226 Coq.Init.Datatypes <> snd def
+R8229:8239 VC.Spec_stdlib <> malloc_spec def
+R8243:8243 VC.Spec_stdlib <> t:56 var
+R8241:8241 VC.Spec_stdlib <> M:54 var
+R8309:8309 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8318:8319 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8322:8322 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8310:8315 VST.veric.expr <> sizeof def
+R8324:8326 VST.msl.seplog <> emp meth
+R8309:8309 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8318:8319 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8322:8322 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8310:8315 VST.veric.expr <> sizeof def
+R8324:8326 VST.msl.seplog <> emp meth
+R8373:8379 VST.veric.mpred <> eval_id def
+R8381:8388 VST.veric.SeparationLogic <> ret_temp def
+R8373:8379 VST.veric.mpred <> eval_id def
+R8381:8388 VST.veric.SeparationLogic <> ret_temp def
+R8434:8445 VC.Spec_stdlib <> malloc_token def
+R8463:8478 VST.floyd.nested_field_lemmas <> field_compatible def
+R8482:8483 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R8486:8492 VST.veric.mpred <> eval_id def
+R8494:8501 VST.veric.SeparationLogic <> ret_temp def
+R8463:8478 VST.floyd.nested_field_lemmas <> field_compatible def
+R8482:8483 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R8486:8492 VST.veric.mpred <> eval_id def
+R8494:8501 VST.veric.SeparationLogic <> ret_temp def
+R8535:8568 VST.floyd.field_at <> malloc_compatible_field_compatible thm
+R8535:8568 VST.floyd.field_at <> malloc_compatible_field_compatible thm
+R8602:8622 VST.floyd.field_at <> memory_block_data_at_ thm
+R8602:8622 VST.floyd.field_at <> memory_block_data_at_ thm
+R8602:8622 VST.floyd.field_at <> memory_block_data_at_ thm
+R8602:8622 VST.floyd.field_at <> memory_block_data_at_ thm
+prf 8643:8655 <> free_spec_sub
+R8669:8681 VC.Spec_stdlib <> MallocFreeAPD rec
+binder 8667:8667 <> M:57
+R8689:8697 VST.veric.compspecs <> compspecs class
+binder 8685:8686 <> cs:58
+R8704:8707 compcert.cfrontend.Ctypes <> type ind
+binder 8701:8701 <> t:59
+R8715:8725 VST.veric.SeparationLogic <> funspec_sub def
+R8728:8730 Coq.Init.Datatypes <> snd def
+R8733:8744 VC.Spec_stdlib <> free_spec_sz def
+R8746:8746 VC.Spec_stdlib <> M:57 var
+R8751:8753 Coq.Init.Datatypes <> snd def
+R8756:8764 VC.Spec_stdlib <> free_spec def
+R8768:8768 VC.Spec_stdlib <> t:59 var
+R8766:8766 VC.Spec_stdlib <> M:57 var
+R8838:8838 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8847:8848 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8850:8851 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8854:8854 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8839:8844 VST.veric.expr <> sizeof def
+R8856:8858 VST.msl.seplog <> emp meth
+R8838:8838 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8847:8848 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8850:8851 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8854:8854 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8839:8844 VST.veric.expr <> sizeof def
+R8856:8858 VST.msl.seplog <> emp meth
+R8910:8937 VST.floyd.field_at <> data_at__memory_block_cancel thm
+R8949:8960 VC.Spec_stdlib <> malloc_token def

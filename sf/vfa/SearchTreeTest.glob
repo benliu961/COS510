@@ -1,0 +1,675 @@
+DIGEST 28eef26dba0d994a62fb133b4821a8cc
+FVFA.SearchTreeTest
+R70:75 Coq.Strings.String <> <> lib
+R102:111 VFA.SearchTree <> <> lib
+ax 125:131 <> MISSING
+mod 148:152 <> Check
+R218:224 VFA.SearchTreeTest <> MISSING defax
+R218:224 VFA.SearchTreeTest <> MISSING defax
+R417:420 Coq.Init.Datatypes <> Some constr
+R417:420 Coq.Init.Datatypes <> Some constr
+R600:603 Coq.Init.Datatypes <> None constr
+R600:603 Coq.Init.Datatypes <> None constr
+R685:689 VFA.SearchTreeTest Check <> mod
+R717:726 VFA.SearchTree <> <> lib
+R736:740 VFA.SearchTreeTest Check <> mod
+def 744:752 <> Unnamed_thm
+R749:752 Coq.Init.Logic <> True ind
+R902:915 VFA.SearchTree <> empty_tree_BST prfax
+binder 926:926 <> V:2
+R937:939 VFA.SearchTree <> BST ind
+R941:941 VFA.SearchTreeTest <> V:2 var
+R945:954 VFA.SearchTree <> empty_tree def
+R956:956 VFA.SearchTreeTest <> V:2 var
+R902:915 VFA.SearchTree <> empty_tree_BST prfax
+binder 926:926 <> V:3
+R937:939 VFA.SearchTree <> BST ind
+R941:941 VFA.SearchTreeTest <> V:3 var
+R945:954 VFA.SearchTree <> empty_tree def
+R956:956 VFA.SearchTreeTest <> V:3 var
+R1009:1022 VFA.SearchTree <> empty_tree_BST prfax
+def 1025:1033 <> Unnamed_thm
+R1030:1033 Coq.Init.Logic <> True ind
+R1192:1205 VFA.SearchTree <> ForallT_insert prfax
+binder 1218:1218 <> V:4
+R1236:1239 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1233:1235 VFA.SearchTree <> key def
+R1241:1244 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1240:1240 VFA.SearchTreeTest <> V:4 var
+binder 1229:1229 <> P:5
+R1256:1259 VFA.SearchTree <> tree ind
+R1261:1261 VFA.SearchTreeTest <> V:4 var
+binder 1252:1252 <> t:6
+R1280:1284 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1267:1273 VFA.SearchTree <> ForallT def
+R1275:1275 VFA.SearchTreeTest <> V:4 var
+R1277:1277 VFA.SearchTreeTest <> P:5 var
+R1279:1279 VFA.SearchTreeTest <> t:6 var
+R1297:1299 VFA.SearchTree <> key def
+binder 1293:1293 <> k:7
+R1307:1307 VFA.SearchTreeTest <> V:4 var
+binder 1303:1303 <> v:8
+R1316:1319 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1311:1311 VFA.SearchTreeTest <> P:5 var
+R1315:1315 VFA.SearchTreeTest <> v:8 var
+R1313:1313 VFA.SearchTreeTest <> k:7 var
+R1321:1327 VFA.SearchTree <> ForallT def
+R1329:1329 VFA.SearchTreeTest <> V:4 var
+R1331:1331 VFA.SearchTreeTest <> P:5 var
+R1335:1340 VFA.SearchTree <> insert def
+R1342:1342 VFA.SearchTreeTest <> V:4 var
+R1344:1344 VFA.SearchTreeTest <> k:7 var
+R1346:1346 VFA.SearchTreeTest <> v:8 var
+R1348:1348 VFA.SearchTreeTest <> t:6 var
+R1192:1205 VFA.SearchTree <> ForallT_insert prfax
+binder 1218:1218 <> V:9
+R1236:1239 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1233:1235 VFA.SearchTree <> key def
+R1241:1244 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1240:1240 VFA.SearchTreeTest <> V:9 var
+binder 1229:1229 <> P:10
+R1256:1259 VFA.SearchTree <> tree ind
+R1261:1261 VFA.SearchTreeTest <> V:9 var
+binder 1252:1252 <> t:11
+R1280:1284 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1267:1273 VFA.SearchTree <> ForallT def
+R1275:1275 VFA.SearchTreeTest <> V:9 var
+R1277:1277 VFA.SearchTreeTest <> P:10 var
+R1279:1279 VFA.SearchTreeTest <> t:11 var
+R1297:1299 VFA.SearchTree <> key def
+binder 1293:1293 <> k:12
+R1307:1307 VFA.SearchTreeTest <> V:9 var
+binder 1303:1303 <> v:13
+R1316:1319 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1311:1311 VFA.SearchTreeTest <> P:10 var
+R1315:1315 VFA.SearchTreeTest <> v:13 var
+R1313:1313 VFA.SearchTreeTest <> k:12 var
+R1321:1327 VFA.SearchTree <> ForallT def
+R1329:1329 VFA.SearchTreeTest <> V:9 var
+R1331:1331 VFA.SearchTreeTest <> P:10 var
+R1335:1340 VFA.SearchTree <> insert def
+R1342:1342 VFA.SearchTreeTest <> V:9 var
+R1344:1344 VFA.SearchTreeTest <> k:12 var
+R1346:1346 VFA.SearchTreeTest <> v:13 var
+R1348:1348 VFA.SearchTreeTest <> t:11 var
+R1401:1414 VFA.SearchTree <> ForallT_insert prfax
+def 1417:1425 <> Unnamed_thm
+R1422:1425 Coq.Init.Logic <> True ind
+R1505:1514 VFA.SearchTree <> insert_BST prfax
+binder 1527:1527 <> V:14
+R1542:1544 VFA.SearchTree <> key def
+binder 1538:1538 <> k:15
+R1552:1552 VFA.SearchTreeTest <> V:14 var
+binder 1548:1548 <> v:16
+R1560:1563 VFA.SearchTree <> tree ind
+R1565:1565 VFA.SearchTreeTest <> V:14 var
+binder 1556:1556 <> t:17
+R1578:1581 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1571:1573 VFA.SearchTree <> BST ind
+R1575:1575 VFA.SearchTreeTest <> V:14 var
+R1577:1577 VFA.SearchTreeTest <> t:17 var
+R1583:1585 VFA.SearchTree <> BST ind
+R1587:1587 VFA.SearchTreeTest <> V:14 var
+R1591:1596 VFA.SearchTree <> insert def
+R1598:1598 VFA.SearchTreeTest <> V:14 var
+R1600:1600 VFA.SearchTreeTest <> k:15 var
+R1602:1602 VFA.SearchTreeTest <> v:16 var
+R1604:1604 VFA.SearchTreeTest <> t:17 var
+R1505:1514 VFA.SearchTree <> insert_BST prfax
+binder 1527:1527 <> V:18
+R1542:1544 VFA.SearchTree <> key def
+binder 1538:1538 <> k:19
+R1552:1552 VFA.SearchTreeTest <> V:18 var
+binder 1548:1548 <> v:20
+R1560:1563 VFA.SearchTree <> tree ind
+R1565:1565 VFA.SearchTreeTest <> V:18 var
+binder 1556:1556 <> t:21
+R1578:1581 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1571:1573 VFA.SearchTree <> BST ind
+R1575:1575 VFA.SearchTreeTest <> V:18 var
+R1577:1577 VFA.SearchTreeTest <> t:21 var
+R1583:1585 VFA.SearchTree <> BST ind
+R1587:1587 VFA.SearchTreeTest <> V:18 var
+R1591:1596 VFA.SearchTree <> insert def
+R1598:1598 VFA.SearchTreeTest <> V:18 var
+R1600:1600 VFA.SearchTreeTest <> k:19 var
+R1602:1602 VFA.SearchTreeTest <> v:20 var
+R1604:1604 VFA.SearchTreeTest <> t:21 var
+R1657:1666 VFA.SearchTree <> insert_BST prfax
+def 1669:1677 <> Unnamed_thm
+R1674:1677 Coq.Init.Logic <> True ind
+R1844:1860 VFA.SearchTree <> elements_complete prfax
+R1844:1860 VFA.SearchTree <> elements_complete prfax
+R1863:1884 VFA.SearchTree <> elements_complete_spec def
+R1935:1951 VFA.SearchTree <> elements_complete prfax
+def 1954:1962 <> Unnamed_thm
+R1959:1962 Coq.Init.Logic <> True ind
+R2145:2169 VFA.SearchTree <> elements_preserves_forall prfax
+binder 2182:2182 <> V:22
+R2200:2203 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2197:2199 VFA.SearchTree <> key def
+R2205:2208 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2204:2204 VFA.SearchTreeTest <> V:22 var
+binder 2193:2193 <> P:23
+R2220:2223 VFA.SearchTree <> tree ind
+R2225:2225 VFA.SearchTreeTest <> V:22 var
+binder 2216:2216 <> t:24
+R2244:2248 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2231:2237 VFA.SearchTree <> ForallT def
+R2239:2239 VFA.SearchTreeTest <> V:22 var
+R2241:2241 VFA.SearchTreeTest <> P:23 var
+R2243:2243 VFA.SearchTreeTest <> t:24 var
+R2250:2260 Coq.Lists.List <> Forall ind
+R2266:2268 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R2263:2265 VFA.SearchTree <> key def
+R2269:2269 VFA.SearchTreeTest <> V:22 var
+R2274:2280 VFA.SearchTree <> uncurry def
+R2282:2284 VFA.SearchTree <> key def
+R2286:2286 VFA.SearchTreeTest <> V:22 var
+R2293:2293 VFA.SearchTreeTest <> P:23 var
+R2298:2305 VFA.SearchTree <> elements def
+R2307:2307 VFA.SearchTreeTest <> V:22 var
+R2309:2309 VFA.SearchTreeTest <> t:24 var
+R2145:2169 VFA.SearchTree <> elements_preserves_forall prfax
+binder 2182:2182 <> V:25
+R2200:2203 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2197:2199 VFA.SearchTree <> key def
+R2205:2208 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2204:2204 VFA.SearchTreeTest <> V:25 var
+binder 2193:2193 <> P:26
+R2220:2223 VFA.SearchTree <> tree ind
+R2225:2225 VFA.SearchTreeTest <> V:25 var
+binder 2216:2216 <> t:27
+R2244:2248 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2231:2237 VFA.SearchTree <> ForallT def
+R2239:2239 VFA.SearchTreeTest <> V:25 var
+R2241:2241 VFA.SearchTreeTest <> P:26 var
+R2243:2243 VFA.SearchTreeTest <> t:27 var
+R2250:2260 Coq.Lists.List <> Forall ind
+R2266:2268 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R2263:2265 VFA.SearchTree <> key def
+R2269:2269 VFA.SearchTreeTest <> V:25 var
+R2274:2280 VFA.SearchTree <> uncurry def
+R2282:2284 VFA.SearchTree <> key def
+R2286:2286 VFA.SearchTreeTest <> V:25 var
+R2293:2293 VFA.SearchTreeTest <> P:26 var
+R2298:2305 VFA.SearchTree <> elements def
+R2307:2307 VFA.SearchTreeTest <> V:25 var
+R2309:2309 VFA.SearchTreeTest <> t:27 var
+R2362:2386 VFA.SearchTree <> elements_preserves_forall prfax
+def 2389:2397 <> Unnamed_thm
+R2394:2397 Coq.Init.Logic <> True ind
+R2584:2610 VFA.SearchTree <> elements_preserves_relation prfax
+binder 2623:2623 <> V:28
+R2641:2643 VFA.SearchTree <> key def
+binder 2634:2634 <> k:29
+binder 2636:2637 <> k':30
+R2651:2651 VFA.SearchTreeTest <> V:28 var
+binder 2647:2647 <> v:31
+R2659:2662 VFA.SearchTree <> tree ind
+R2664:2664 VFA.SearchTreeTest <> V:28 var
+binder 2655:2655 <> t:32
+R2675:2678 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2672:2674 VFA.SearchTree <> key def
+R2682:2685 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2679:2681 VFA.SearchTree <> key def
+binder 2668:2668 <> R:33
+R2740:2744 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2695:2701 VFA.SearchTree <> ForallT def
+R2703:2703 VFA.SearchTreeTest <> V:28 var
+R2715:2717 VFA.SearchTree <> key def
+binder 2711:2711 <> y:34
+R2725:2725 VFA.SearchTreeTest <> V:28 var
+R2731:2731 VFA.SearchTreeTest <> R:33 var
+R2735:2736 VFA.SearchTreeTest <> k':30 var
+R2733:2733 VFA.SearchTreeTest <> y:34 var
+R2739:2739 VFA.SearchTreeTest <> t:32 var
+R2786:2789 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2746:2752 Coq.Lists.List <> In def
+R2758:2760 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R2755:2757 VFA.SearchTree <> key def
+R2761:2761 VFA.SearchTreeTest <> V:28 var
+R2764:2764 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2766:2767 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2769:2769 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2765:2765 VFA.SearchTreeTest <> k:29 var
+R2768:2768 VFA.SearchTreeTest <> v:31 var
+R2773:2780 VFA.SearchTree <> elements def
+R2782:2782 VFA.SearchTreeTest <> V:28 var
+R2784:2784 VFA.SearchTreeTest <> t:32 var
+R2790:2790 VFA.SearchTreeTest <> R:33 var
+R2794:2795 VFA.SearchTreeTest <> k':30 var
+R2792:2792 VFA.SearchTreeTest <> k:29 var
+R2584:2610 VFA.SearchTree <> elements_preserves_relation prfax
+binder 2623:2623 <> V:35
+R2641:2643 VFA.SearchTree <> key def
+binder 2634:2634 <> k:36
+binder 2636:2637 <> k':37
+R2651:2651 VFA.SearchTreeTest <> V:35 var
+binder 2647:2647 <> v:38
+R2659:2662 VFA.SearchTree <> tree ind
+R2664:2664 VFA.SearchTreeTest <> V:35 var
+binder 2655:2655 <> t:39
+R2675:2678 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2672:2674 VFA.SearchTree <> key def
+R2682:2685 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2679:2681 VFA.SearchTree <> key def
+binder 2668:2668 <> R:40
+R2740:2744 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2695:2701 VFA.SearchTree <> ForallT def
+R2703:2703 VFA.SearchTreeTest <> V:35 var
+R2715:2717 VFA.SearchTree <> key def
+binder 2711:2711 <> y:41
+R2725:2725 VFA.SearchTreeTest <> V:35 var
+R2731:2731 VFA.SearchTreeTest <> R:40 var
+R2735:2736 VFA.SearchTreeTest <> k':37 var
+R2733:2733 VFA.SearchTreeTest <> y:41 var
+R2739:2739 VFA.SearchTreeTest <> t:39 var
+R2786:2789 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2746:2752 Coq.Lists.List <> In def
+R2758:2760 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R2755:2757 VFA.SearchTree <> key def
+R2761:2761 VFA.SearchTreeTest <> V:35 var
+R2764:2764 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2766:2767 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2769:2769 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2765:2765 VFA.SearchTreeTest <> k:36 var
+R2768:2768 VFA.SearchTreeTest <> v:38 var
+R2773:2780 VFA.SearchTree <> elements def
+R2782:2782 VFA.SearchTreeTest <> V:35 var
+R2784:2784 VFA.SearchTreeTest <> t:39 var
+R2790:2790 VFA.SearchTreeTest <> R:40 var
+R2794:2795 VFA.SearchTreeTest <> k':37 var
+R2792:2792 VFA.SearchTreeTest <> k:36 var
+R2847:2873 VFA.SearchTree <> elements_preserves_relation prfax
+def 2876:2884 <> Unnamed_thm
+R2881:2884 Coq.Init.Logic <> True ind
+R3049:3064 VFA.SearchTree <> elements_correct prfax
+R3049:3064 VFA.SearchTree <> elements_correct prfax
+R3067:3087 VFA.SearchTree <> elements_correct_spec def
+R3138:3153 VFA.SearchTree <> elements_correct prfax
+def 3156:3164 <> Unnamed_thm
+R3161:3164 Coq.Init.Logic <> True ind
+R3365:3389 VFA.SearchTree <> elements_complete_inverse prfax
+binder 3402:3402 <> V:42
+R3417:3419 VFA.SearchTree <> key def
+binder 3413:3413 <> k:43
+R3427:3427 VFA.SearchTreeTest <> V:42 var
+binder 3423:3423 <> v:44
+R3435:3438 VFA.SearchTree <> tree ind
+R3440:3440 VFA.SearchTreeTest <> V:42 var
+binder 3431:3431 <> t:45
+R3453:3457 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3446:3448 VFA.SearchTree <> BST ind
+R3450:3450 VFA.SearchTreeTest <> V:42 var
+R3452:3452 VFA.SearchTreeTest <> t:45 var
+R3478:3481 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3470:3472 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3459:3463 VFA.SearchTree <> bound def
+R3465:3465 VFA.SearchTreeTest <> V:42 var
+R3467:3467 VFA.SearchTreeTest <> k:43 var
+R3469:3469 VFA.SearchTreeTest <> t:45 var
+R3473:3477 Coq.Init.Datatypes <> false constr
+R3482:3483 Coq.Init.Logic <> ::type_scope:'~'_x not
+R3485:3491 Coq.Lists.List <> In def
+R3497:3499 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R3494:3496 VFA.SearchTree <> key def
+R3500:3500 VFA.SearchTreeTest <> V:42 var
+R3503:3503 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3505:3506 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3508:3508 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3504:3504 VFA.SearchTreeTest <> k:43 var
+R3507:3507 VFA.SearchTreeTest <> v:44 var
+R3512:3519 VFA.SearchTree <> elements def
+R3521:3521 VFA.SearchTreeTest <> V:42 var
+R3523:3523 VFA.SearchTreeTest <> t:45 var
+R3365:3389 VFA.SearchTree <> elements_complete_inverse prfax
+binder 3402:3402 <> V:46
+R3417:3419 VFA.SearchTree <> key def
+binder 3413:3413 <> k:47
+R3427:3427 VFA.SearchTreeTest <> V:46 var
+binder 3423:3423 <> v:48
+R3435:3438 VFA.SearchTree <> tree ind
+R3440:3440 VFA.SearchTreeTest <> V:46 var
+binder 3431:3431 <> t:49
+R3453:3457 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3446:3448 VFA.SearchTree <> BST ind
+R3450:3450 VFA.SearchTreeTest <> V:46 var
+R3452:3452 VFA.SearchTreeTest <> t:49 var
+R3478:3481 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3470:3472 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3459:3463 VFA.SearchTree <> bound def
+R3465:3465 VFA.SearchTreeTest <> V:46 var
+R3467:3467 VFA.SearchTreeTest <> k:47 var
+R3469:3469 VFA.SearchTreeTest <> t:49 var
+R3473:3477 Coq.Init.Datatypes <> false constr
+R3482:3483 Coq.Init.Logic <> ::type_scope:'~'_x not
+R3485:3491 Coq.Lists.List <> In def
+R3497:3499 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R3494:3496 VFA.SearchTree <> key def
+R3500:3500 VFA.SearchTreeTest <> V:46 var
+R3503:3503 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3505:3506 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3508:3508 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3504:3504 VFA.SearchTreeTest <> k:47 var
+R3507:3507 VFA.SearchTreeTest <> v:48 var
+R3512:3519 VFA.SearchTree <> elements def
+R3521:3521 VFA.SearchTreeTest <> V:46 var
+R3523:3523 VFA.SearchTreeTest <> t:49 var
+R3576:3600 VFA.SearchTree <> elements_complete_inverse prfax
+def 3603:3611 <> Unnamed_thm
+R3608:3611 Coq.Init.Logic <> True ind
+R3797:3807 VFA.SearchTree <> bound_value prfax
+binder 3820:3820 <> V:50
+R3835:3837 VFA.SearchTree <> key def
+binder 3831:3831 <> k:51
+R3845:3848 VFA.SearchTree <> tree ind
+R3850:3850 VFA.SearchTreeTest <> V:50 var
+binder 3841:3841 <> t:52
+R3874:3877 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3867:3869 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3856:3860 VFA.SearchTree <> bound def
+R3862:3862 VFA.SearchTreeTest <> V:50 var
+R3864:3864 VFA.SearchTreeTest <> k:51 var
+R3866:3866 VFA.SearchTreeTest <> t:52 var
+R3870:3873 Coq.Init.Datatypes <> true constr
+R3878:3884 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3890:3891 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3889:3889 VFA.SearchTreeTest <> V:50 var
+binder 3885:3885 <> v:53
+R3903:3903 VFA.SearchTreeTest <> V:50 var
+binder 3899:3899 <> d:54
+R3921:3923 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3907:3912 VFA.SearchTree <> lookup def
+R3914:3914 VFA.SearchTreeTest <> V:50 var
+R3916:3916 VFA.SearchTreeTest <> d:54 var
+R3918:3918 VFA.SearchTreeTest <> k:51 var
+R3920:3920 VFA.SearchTreeTest <> t:52 var
+R3924:3924 VFA.SearchTreeTest <> v:53 var
+R3797:3807 VFA.SearchTree <> bound_value prfax
+binder 3820:3820 <> V:55
+R3835:3837 VFA.SearchTree <> key def
+binder 3831:3831 <> k:56
+R3845:3848 VFA.SearchTree <> tree ind
+R3850:3850 VFA.SearchTreeTest <> V:55 var
+binder 3841:3841 <> t:57
+R3874:3877 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3867:3869 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3856:3860 VFA.SearchTree <> bound def
+R3862:3862 VFA.SearchTreeTest <> V:55 var
+R3864:3864 VFA.SearchTreeTest <> k:56 var
+R3866:3866 VFA.SearchTreeTest <> t:57 var
+R3870:3873 Coq.Init.Datatypes <> true constr
+R3878:3884 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3890:3891 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3889:3889 VFA.SearchTreeTest <> V:55 var
+binder 3885:3885 <> v:58
+R3903:3903 VFA.SearchTreeTest <> V:55 var
+binder 3899:3899 <> d:59
+R3921:3923 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3907:3912 VFA.SearchTree <> lookup def
+R3914:3914 VFA.SearchTreeTest <> V:55 var
+R3916:3916 VFA.SearchTreeTest <> d:59 var
+R3918:3918 VFA.SearchTreeTest <> k:56 var
+R3920:3920 VFA.SearchTreeTest <> t:57 var
+R3924:3924 VFA.SearchTreeTest <> v:58 var
+R3976:3986 VFA.SearchTree <> bound_value prfax
+def 3989:3997 <> Unnamed_thm
+R3994:3997 Coq.Init.Logic <> True ind
+R4107:4130 VFA.SearchTree <> elements_correct_inverse prfax
+binder 4143:4143 <> V:60
+R4158:4160 VFA.SearchTree <> key def
+binder 4154:4154 <> k:61
+R4168:4171 VFA.SearchTree <> tree ind
+R4173:4173 VFA.SearchTreeTest <> V:60 var
+binder 4164:4164 <> t:62
+R4178:4178 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4236:4241 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4190:4190 VFA.SearchTreeTest <> V:60 var
+binder 4186:4186 <> v:63
+R4193:4194 Coq.Init.Logic <> ::type_scope:'~'_x not
+R4196:4202 Coq.Lists.List <> In def
+R4208:4210 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R4205:4207 VFA.SearchTree <> key def
+R4211:4211 VFA.SearchTreeTest <> V:60 var
+R4214:4214 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4216:4217 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4219:4219 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4215:4215 VFA.SearchTreeTest <> k:61 var
+R4218:4218 VFA.SearchTreeTest <> v:63 var
+R4223:4230 VFA.SearchTree <> elements def
+R4232:4232 VFA.SearchTreeTest <> V:60 var
+R4234:4234 VFA.SearchTreeTest <> t:62 var
+R4254:4256 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4243:4247 VFA.SearchTree <> bound def
+R4249:4249 VFA.SearchTreeTest <> V:60 var
+R4251:4251 VFA.SearchTreeTest <> k:61 var
+R4253:4253 VFA.SearchTreeTest <> t:62 var
+R4257:4261 Coq.Init.Datatypes <> false constr
+R4107:4130 VFA.SearchTree <> elements_correct_inverse prfax
+binder 4143:4143 <> V:64
+R4158:4160 VFA.SearchTree <> key def
+binder 4154:4154 <> k:65
+R4168:4171 VFA.SearchTree <> tree ind
+R4173:4173 VFA.SearchTreeTest <> V:64 var
+binder 4164:4164 <> t:66
+R4178:4178 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4236:4241 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4190:4190 VFA.SearchTreeTest <> V:64 var
+binder 4186:4186 <> v:67
+R4193:4194 Coq.Init.Logic <> ::type_scope:'~'_x not
+R4196:4202 Coq.Lists.List <> In def
+R4208:4210 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R4205:4207 VFA.SearchTree <> key def
+R4211:4211 VFA.SearchTreeTest <> V:64 var
+R4214:4214 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4216:4217 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4219:4219 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4215:4215 VFA.SearchTreeTest <> k:65 var
+R4218:4218 VFA.SearchTreeTest <> v:67 var
+R4223:4230 VFA.SearchTree <> elements def
+R4232:4232 VFA.SearchTreeTest <> V:64 var
+R4234:4234 VFA.SearchTreeTest <> t:66 var
+R4254:4256 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4243:4247 VFA.SearchTree <> bound def
+R4249:4249 VFA.SearchTreeTest <> V:64 var
+R4251:4251 VFA.SearchTreeTest <> k:65 var
+R4253:4253 VFA.SearchTreeTest <> t:66 var
+R4257:4261 Coq.Init.Datatypes <> false constr
+R4313:4336 VFA.SearchTree <> elements_correct_inverse prfax
+def 4339:4347 <> Unnamed_thm
+R4344:4347 Coq.Init.Logic <> True ind
+R4518:4527 VFA.SearchTree <> sorted_app prfax
+R4548:4551 Coq.Init.Datatypes <> list ind
+R4553:4555 Coq.Init.Datatypes <> nat ind
+binder 4540:4541 <> l1:68
+binder 4543:4544 <> l2:69
+R4563:4565 Coq.Init.Datatypes <> nat ind
+binder 4559:4559 <> x:70
+R4584:4588 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4570:4580 VFA.Sort <> sorted ind
+R4582:4583 VFA.SearchTreeTest <> l1:68 var
+R4603:4607 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4589:4599 VFA.Sort <> sorted ind
+R4601:4602 VFA.SearchTreeTest <> l2:69 var
+R4650:4654 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4609:4619 Coq.Lists.List <> Forall ind
+R4621:4623 Coq.Init.Datatypes <> nat ind
+R4634:4636 Coq.Init.Datatypes <> nat ind
+binder 4630:4630 <> n:71
+R4642:4644 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R4641:4641 VFA.SearchTreeTest <> n:71 var
+R4645:4645 VFA.SearchTreeTest <> x:70 var
+R4648:4649 VFA.SearchTreeTest <> l1:68 var
+R4697:4700 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4656:4666 Coq.Lists.List <> Forall ind
+R4668:4670 Coq.Init.Datatypes <> nat ind
+R4681:4683 Coq.Init.Datatypes <> nat ind
+binder 4677:4677 <> n:72
+R4689:4691 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R4688:4688 VFA.SearchTreeTest <> n:72 var
+R4692:4692 VFA.SearchTreeTest <> x:70 var
+R4695:4696 VFA.SearchTreeTest <> l2:69 var
+R4701:4711 VFA.Sort <> sorted ind
+R4716:4719 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R4714:4715 VFA.SearchTreeTest <> l1:68 var
+R4721:4724 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4720:4720 VFA.SearchTreeTest <> x:70 var
+R4725:4726 VFA.SearchTreeTest <> l2:69 var
+R4518:4527 VFA.SearchTree <> sorted_app prfax
+R4548:4551 Coq.Init.Datatypes <> list ind
+R4553:4555 Coq.Init.Datatypes <> nat ind
+binder 4540:4541 <> l1:73
+binder 4543:4544 <> l2:74
+R4563:4565 Coq.Init.Datatypes <> nat ind
+binder 4559:4559 <> x:75
+R4584:4588 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4570:4580 VFA.Sort <> sorted ind
+R4582:4583 VFA.SearchTreeTest <> l1:73 var
+R4603:4607 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4589:4599 VFA.Sort <> sorted ind
+R4601:4602 VFA.SearchTreeTest <> l2:74 var
+R4650:4654 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4609:4619 Coq.Lists.List <> Forall ind
+R4621:4623 Coq.Init.Datatypes <> nat ind
+R4634:4636 Coq.Init.Datatypes <> nat ind
+binder 4630:4630 <> n:76
+R4642:4644 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R4641:4641 VFA.SearchTreeTest <> n:76 var
+R4645:4645 VFA.SearchTreeTest <> x:75 var
+R4648:4649 VFA.SearchTreeTest <> l1:73 var
+R4697:4700 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4656:4666 Coq.Lists.List <> Forall ind
+R4668:4670 Coq.Init.Datatypes <> nat ind
+R4681:4683 Coq.Init.Datatypes <> nat ind
+binder 4677:4677 <> n:77
+R4689:4691 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R4688:4688 VFA.SearchTreeTest <> n:77 var
+R4692:4692 VFA.SearchTreeTest <> x:75 var
+R4695:4696 VFA.SearchTreeTest <> l2:74 var
+R4701:4711 VFA.Sort <> sorted ind
+R4716:4719 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R4714:4715 VFA.SearchTreeTest <> l1:73 var
+R4721:4724 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4720:4720 VFA.SearchTreeTest <> x:75 var
+R4725:4726 VFA.SearchTreeTest <> l2:74 var
+R4779:4788 VFA.SearchTree <> sorted_app prfax
+def 4791:4799 <> Unnamed_thm
+R4796:4799 Coq.Init.Logic <> True ind
+R4980:4994 VFA.SearchTree <> sorted_elements prfax
+binder 5007:5007 <> V:78
+R5022:5025 VFA.SearchTree <> tree ind
+R5027:5027 VFA.SearchTreeTest <> V:78 var
+binder 5018:5018 <> t:79
+R5040:5043 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5033:5035 VFA.SearchTree <> BST ind
+R5037:5037 VFA.SearchTreeTest <> V:78 var
+R5039:5039 VFA.SearchTreeTest <> t:79 var
+R5044:5054 VFA.Sort <> sorted ind
+R5058:5066 VFA.SearchTree <> list_keys def
+R5068:5068 VFA.SearchTreeTest <> V:78 var
+R5072:5079 VFA.SearchTree <> elements def
+R5081:5081 VFA.SearchTreeTest <> V:78 var
+R5083:5083 VFA.SearchTreeTest <> t:79 var
+R4980:4994 VFA.SearchTree <> sorted_elements prfax
+binder 5007:5007 <> V:80
+R5022:5025 VFA.SearchTree <> tree ind
+R5027:5027 VFA.SearchTreeTest <> V:80 var
+binder 5018:5018 <> t:81
+R5040:5043 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5033:5035 VFA.SearchTree <> BST ind
+R5037:5037 VFA.SearchTreeTest <> V:80 var
+R5039:5039 VFA.SearchTreeTest <> t:81 var
+R5044:5054 VFA.Sort <> sorted ind
+R5058:5066 VFA.SearchTree <> list_keys def
+R5068:5068 VFA.SearchTreeTest <> V:80 var
+R5072:5079 VFA.SearchTree <> elements def
+R5081:5081 VFA.SearchTreeTest <> V:80 var
+R5083:5083 VFA.SearchTreeTest <> t:81 var
+R5137:5151 VFA.SearchTree <> sorted_elements prfax
+def 5154:5162 <> Unnamed_thm
+R5159:5162 Coq.Init.Logic <> True ind
+R5343:5365 VFA.SearchTree <> fast_elements_tr_helper prfax
+binder 5378:5378 <> V:82
+R5393:5396 VFA.SearchTree <> tree ind
+R5398:5398 VFA.SearchTreeTest <> V:82 var
+binder 5389:5389 <> t:83
+R5408:5411 Coq.Init.Datatypes <> list ind
+R5417:5419 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R5414:5416 VFA.SearchTree <> key def
+R5420:5420 VFA.SearchTreeTest <> V:82 var
+binder 5402:5404 <> lst:84
+R5451:5453 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5427:5442 VFA.SearchTree <> fast_elements_tr def
+R5444:5444 VFA.SearchTreeTest <> V:82 var
+R5446:5446 VFA.SearchTreeTest <> t:83 var
+R5448:5450 VFA.SearchTreeTest <> lst:84 var
+R5468:5471 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R5456:5463 VFA.SearchTree <> elements def
+R5465:5465 VFA.SearchTreeTest <> V:82 var
+R5467:5467 VFA.SearchTreeTest <> t:83 var
+R5472:5474 VFA.SearchTreeTest <> lst:84 var
+R5343:5365 VFA.SearchTree <> fast_elements_tr_helper prfax
+binder 5378:5378 <> V:85
+R5393:5396 VFA.SearchTree <> tree ind
+R5398:5398 VFA.SearchTreeTest <> V:85 var
+binder 5389:5389 <> t:86
+R5408:5411 Coq.Init.Datatypes <> list ind
+R5417:5419 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R5414:5416 VFA.SearchTree <> key def
+R5420:5420 VFA.SearchTreeTest <> V:85 var
+binder 5402:5404 <> lst:87
+R5451:5453 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5427:5442 VFA.SearchTree <> fast_elements_tr def
+R5444:5444 VFA.SearchTreeTest <> V:85 var
+R5446:5446 VFA.SearchTreeTest <> t:86 var
+R5448:5450 VFA.SearchTreeTest <> lst:87 var
+R5468:5471 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R5456:5463 VFA.SearchTree <> elements def
+R5465:5465 VFA.SearchTreeTest <> V:85 var
+R5467:5467 VFA.SearchTreeTest <> t:86 var
+R5472:5474 VFA.SearchTreeTest <> lst:87 var
+R5532:5554 VFA.SearchTree <> fast_elements_tr_helper prfax
+def 5557:5565 <> Unnamed_thm
+R5562:5565 Coq.Init.Logic <> True ind
+R5658:5682 VFA.SearchTree <> fast_elements_eq_elements prfax
+binder 5695:5695 <> V:88
+R5710:5713 VFA.SearchTree <> tree ind
+R5715:5715 VFA.SearchTreeTest <> V:88 var
+binder 5706:5706 <> t:89
+R5737:5739 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5720:5732 VFA.SearchTree <> fast_elements def
+R5734:5734 VFA.SearchTreeTest <> V:88 var
+R5736:5736 VFA.SearchTreeTest <> t:89 var
+R5741:5748 VFA.SearchTree <> elements def
+R5750:5750 VFA.SearchTreeTest <> V:88 var
+R5752:5752 VFA.SearchTreeTest <> t:89 var
+R5658:5682 VFA.SearchTree <> fast_elements_eq_elements prfax
+binder 5695:5695 <> V:90
+R5710:5713 VFA.SearchTree <> tree ind
+R5715:5715 VFA.SearchTreeTest <> V:90 var
+binder 5706:5706 <> t:91
+R5737:5739 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5720:5732 VFA.SearchTree <> fast_elements def
+R5734:5734 VFA.SearchTreeTest <> V:90 var
+R5736:5736 VFA.SearchTreeTest <> t:91 var
+R5741:5748 VFA.SearchTree <> elements def
+R5750:5750 VFA.SearchTreeTest <> V:90 var
+R5752:5752 VFA.SearchTreeTest <> t:91 var
+R5804:5828 VFA.SearchTree <> fast_elements_eq_elements prfax
+def 5831:5839 <> Unnamed_thm
+R5836:5839 Coq.Init.Logic <> True ind
+R6993:7006 VFA.SearchTree <> empty_tree_BST prfax
+R7072:7085 VFA.SearchTree <> ForallT_insert prfax
+R7147:7156 VFA.SearchTree <> insert_BST prfax
+R7225:7241 VFA.SearchTree <> elements_complete prfax
+R7318:7342 VFA.SearchTree <> elements_preserves_forall prfax
+R7421:7447 VFA.SearchTree <> elements_preserves_relation prfax
+R7515:7530 VFA.SearchTree <> elements_correct prfax
+R7605:7627 VFA.SearchTree <> fast_elements_tr_helper prfax
+R7704:7728 VFA.SearchTree <> fast_elements_eq_elements prfax
+R7855:7879 VFA.SearchTree <> elements_complete_inverse prfax
+R7942:7952 VFA.SearchTree <> bound_value prfax
+R8028:8051 VFA.SearchTree <> elements_correct_inverse prfax
+R8113:8122 VFA.SearchTree <> sorted_app prfax
+R8189:8203 VFA.SearchTree <> sorted_elements prfax

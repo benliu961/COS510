@@ -1,0 +1,19 @@
+DIGEST a6a2bbfd2c67ebb0576e6bb0523f0f16
+FVC.Preface
+R7533:7550 Coq.Strings.String <> <> lib
+def 7684:7697 <> release_needed
+R7725:7741 VST.veric.version <> <> lib
+def 7850:7878 <> Unnamed_thm
+R7862:7864 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7855:7861 VST.veric.version <> release def
+R7865:7878 VC.Preface <> release_needed def
+R7916:7929 VC.Preface <> release_needed def
+R7986:7992 VST.veric.version <> release def
+R8599:8604 Coq.ZArith.ZArith <> <> lib
+R8642:8649 VC.stack <> <> lib
+def 8698:8751 <> Unnamed_thm
+R8724:8726 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8703:8723 VC.stack Info bitsize def
+R8727:8751 VST.veric.version <> bitsize def
+R8787:8811 VST.veric.version <> bitsize def
+R8867:8887 VC.stack Info bitsize def

@@ -1,0 +1,84 @@
+DIGEST 7dc2e4e670206916196f3bab0aa1de69
+FVC.VSU_triang
+R920:938 VST.floyd.proofauto <> <> lib
+R956:968 VST.floyd.VSU <> <> lib
+R986:999 VC.Spec_stdlib <> <> lib
+R1017:1029 VC.Spec_stack <> <> lib
+R1047:1060 VC.Spec_triang <> <> lib
+R1078:1087 VC.triang2 <> <> lib
+inst 1109:1117 <> CompSpecs
+R1121:1129 VST.veric.compspecs <> compspecs class
+R1147:1150 VC.triang2 <> prog def
+sec 1360:1369 <> Triang_VSU
+var 1381:1381 Triang_VSU M
+R1384:1396 VC.Spec_stdlib <> MallocFreeAPD rec
+var 1408:1412 Triang_VSU STACK
+R1415:1422 VC.Spec_stack <> StackAPD rec
+def 1772:1791 <> push_increasing_spec
+R1800:1802 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1795:1799 compcert.common.AST <> ident def
+R1803:1809 VST.veric.mpred <> funspec ind
+def 1890:1905 <> pop_and_add_spec
+R1915:1917 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1910:1914 compcert.common.AST <> ident def
+R1918:1924 VST.veric.mpred <> funspec ind
+def 2005:2018 <> Triang_private
+R2022:2029 VST.veric.mpred <> funspecs def
+R2034:2059 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+def 2088:2101 <> Triang_imports
+R2105:2112 VST.veric.mpred <> funspecs def
+R2117:2124 VC.Spec_stack <> StackASI def
+R2128:2132 VC.VSU_triang <> Triang_VSU.STACK var
+R2126:2126 VC.VSU_triang <> Triang_VSU.M var
+def 2146:2161 <> Triang_internals
+R2165:2172 VST.veric.mpred <> funspecs def
+R2191:2195 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R2207:2207 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R2177:2190 VC.VSU_triang <> Triang_private def
+R2196:2204 VC.Spec_triang <> TriangASI def
+R2206:2206 VC.VSU_triang <> Triang_VSU.M var
+def 2221:2232 <> Triang_Gprog
+R2236:2243 VST.veric.mpred <> funspecs def
+R2262:2265 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R2248:2261 VC.VSU_triang <> Triang_imports def
+R2266:2281 VC.VSU_triang <> Triang_internals def
+def 2295:2306 <> Triang_Vprog
+R2310:2317 VST.veric.mpred <> varspecs def
+R2333:2336 VC.triang2 <> prog def
+prf 2562:2581 <> body_push_increasing
+R2584:2593 VST.floyd.SeparationLogicAsLogicSoundness MainTheorem.CSHL_PracticalLogic.CSHL_MinimumLogic.CSHL_Defs semax_body def
+R2664:2683 VC.VSU_triang <> push_increasing_spec prfax
+R2646:2662 VC.triang2 <> f_push_increasing def
+R2608:2619 VC.VSU_triang <> Triang_Gprog def
+R2595:2606 VC.VSU_triang <> Triang_Vprog def
+prf 2931:2946 <> body_pop_and_add
+R2949:2958 VST.floyd.SeparationLogicAsLogicSoundness MainTheorem.CSHL_PracticalLogic.CSHL_MinimumLogic.CSHL_Defs semax_body def
+R3000:3015 VC.VSU_triang <> pop_and_add_spec prfax
+R2986:2998 VC.triang2 <> f_pop_and_add def
+R2973:2984 VC.VSU_triang <> Triang_Gprog def
+R2960:2971 VC.VSU_triang <> Triang_Vprog def
+ax 4851:4862 <> stackrep_nil
+binder 4872:4873 <> st:3
+R4896:4900 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R4876:4883 VC.Spec_stack <> stackrep proj
+R4885:4889 VC.VSU_triang <> Triang_VSU.STACK var
+R4891:4892 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R4894:4895 VC.VSU_triang <> st:3 var
+R4901:4903 VST.msl.seplog <> emp meth
+prf 4915:4925 <> body_triang
+R4928:4937 VST.floyd.SeparationLogicAsLogicSoundness MainTheorem.CSHL_PracticalLogic.CSHL_MinimumLogic.CSHL_Defs semax_body def
+R4975:4985 VC.Spec_triang <> triang_spec def
+R4987:4987 VC.VSU_triang <> Triang_VSU.M var
+R4965:4972 VC.triang2 <> f_triang def
+R4952:4963 VC.VSU_triang <> Triang_Gprog def
+R4939:4950 VC.VSU_triang <> Triang_Vprog def
+def 5042:5050 <> TriangVSU
+R5054:5056 VST.floyd.Component <> VSU def
+R5058:5076 VST.veric.NullExtension <> Espec def
+R5078:5080 Coq.Init.Datatypes <> nil constr
+R5082:5095 VC.VSU_triang <> Triang_imports def
+R5122:5130 VC.Spec_triang <> TriangASI def
+R5132:5132 VC.VSU_triang <> Triang_VSU.M var
+R5135:5137 VST.msl.seplog <> emp meth
+R5115:5118 VC.triang2 <> prog def
+R5455:5464 VC.VSU_triang Triang_VSU <> sec

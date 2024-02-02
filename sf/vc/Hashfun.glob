@@ -1,0 +1,534 @@
+DIGEST c43443d33d579d0d32682b15af62d3ee
+FVC.Hashfun
+R3552:3576 VST.floyd.functional_base <> <> lib
+inst 3599:3610 <> EqDec_string
+R3613:3617 VST.msl.eq_dec <> EqDec class
+R3620:3623 Coq.Init.Datatypes <> list ind
+R3625:3628 compcert.lib.Integers <> byte abbrev
+R3634:3644 Coq.Lists.List <> list_eq_dec thm
+R3646:3656 compcert.lib.Integers Byte eq_dec thm
+def 3670:3680 <> hashfun_aux
+R3686:3686 Coq.Numbers.BinNums <> Z ind
+binder 3683:3683 <> h:1
+R3693:3696 Coq.Init.Datatypes <> list ind
+R3698:3701 compcert.lib.Integers <> byte abbrev
+binder 3690:3690 <> s:2
+R3706:3706 Coq.Numbers.BinNums <> Z ind
+R3718:3718 VC.Hashfun <> s:2 var
+R3728:3730 Coq.Init.Datatypes <> nil constr
+R3735:3735 VC.Hashfun <> h:1 var
+R3741:3744 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3757:3767 VC.Hashfun <> hashfun_aux:3 def
+R3770:3770 Coq.ZArith.BinInt <> ::Z_scope:x_'mod'_x not
+R3796:3801 Coq.ZArith.BinInt <> ::Z_scope:x_'mod'_x not
+R3780:3782 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R3772:3774 Coq.ZArith.BinInt <> ::Z_scope:x_'*'_x not
+R3771:3771 VC.Hashfun <> h:1 var
+R3783:3793 compcert.lib.Integers Byte signed def
+R3802:3812 compcert.lib.Integers Int modulus def
+def 3835:3841 <> hashfun
+R3847:3850 Coq.Init.Datatypes <> list ind
+R3852:3855 compcert.lib.Integers <> byte abbrev
+binder 3844:3844 <> s:5
+R3861:3871 VC.Hashfun <> hashfun_aux def
+R3875:3875 VC.Hashfun <> s:5 var
+def 3890:3907 <> hashtable_contents
+R3912:3915 Coq.Init.Datatypes <> list ind
+R3918:3921 Coq.Init.Datatypes <> list ind
+R3933:3935 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R3924:3927 Coq.Init.Datatypes <> list ind
+R3929:3932 compcert.lib.Integers <> byte abbrev
+R3936:3936 Coq.Numbers.BinNums <> Z ind
+def 3953:3953 <> N
+prf 3969:3972 <> N_eq
+R3977:3979 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3976:3976 VC.Hashfun <> N def
+R4034:4037 VC.Hashfun <> N_eq thm
+R4064:4064 VC.Hashfun <> N def
+def 4079:4089 <> empty_table
+R4093:4110 VC.Hashfun <> hashtable_contents def
+R4117:4123 VST.zlist.sublist <> Zrepeat def
+R4129:4129 VC.Hashfun <> N def
+R4125:4127 Coq.Init.Datatypes <> nil constr
+def 4142:4149 <> list_get
+R4155:4158 Coq.Init.Datatypes <> list ind
+R4160:4163 compcert.lib.Integers <> byte abbrev
+binder 4152:4152 <> s:6
+R4171:4174 Coq.Init.Datatypes <> list ind
+R4186:4188 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R4177:4180 Coq.Init.Datatypes <> list ind
+R4182:4185 compcert.lib.Integers <> byte abbrev
+R4189:4189 Coq.Numbers.BinNums <> Z ind
+binder 4167:4168 <> al:7
+R4195:4195 Coq.Numbers.BinNums <> Z ind
+R4208:4209 VC.Hashfun <> al:7 var
+R4224:4227 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4219:4219 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4221:4221 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4223:4223 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4238:4243 VST.msl.eq_dec <> eq_dec def
+R4245:4245 VC.Hashfun <> s:6 var
+R4261:4268 VC.Hashfun <> list_get:8 def
+R4270:4270 VC.Hashfun <> s:6 var
+R4279:4281 Coq.Init.Datatypes <> nil constr
+def 4304:4312 <> list_incr
+R4318:4321 Coq.Init.Datatypes <> list ind
+R4323:4326 compcert.lib.Integers <> byte abbrev
+binder 4315:4315 <> s:10
+R4334:4337 Coq.Init.Datatypes <> list ind
+R4349:4351 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R4340:4343 Coq.Init.Datatypes <> list ind
+R4345:4348 compcert.lib.Integers <> byte abbrev
+R4352:4352 Coq.Numbers.BinNums <> Z ind
+binder 4330:4331 <> al:11
+R4373:4376 Coq.Init.Datatypes <> list ind
+R4388:4390 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R4379:4382 Coq.Init.Datatypes <> list ind
+R4384:4387 compcert.lib.Integers <> byte abbrev
+R4391:4391 Coq.Numbers.BinNums <> Z ind
+R4405:4406 VC.Hashfun <> al:11 var
+R4421:4424 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4416:4416 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4418:4418 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4420:4420 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4435:4440 VST.msl.eq_dec <> eq_dec def
+R4442:4442 VC.Hashfun <> s:10 var
+R4521:4522 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4516:4516 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4518:4518 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4520:4520 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4523:4531 VC.Hashfun <> list_incr:12 def
+R4533:4533 VC.Hashfun <> s:10 var
+R4483:4484 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4474:4474 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4476:4477 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4482:4482 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4479:4480 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R4542:4544 Coq.Init.Datatypes <> nil constr
+R4555:4556 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4549:4549 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4551:4552 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4554:4554 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4550:4550 VC.Hashfun <> s:10 var
+R4557:4559 Coq.Init.Datatypes <> nil constr
+def 4579:4591 <> hashtable_get
+R4598:4601 Coq.Init.Datatypes <> list ind
+R4603:4606 compcert.lib.Integers <> byte abbrev
+binder 4595:4595 <> s:14
+R4620:4637 VC.Hashfun <> hashtable_contents def
+binder 4610:4617 <> contents:15
+R4642:4642 Coq.Numbers.BinNums <> Z ind
+R4649:4656 VC.Hashfun <> list_get def
+R4658:4658 VC.Hashfun <> s:14 var
+R4661:4664 VST.zlist.sublist <> Znth def
+R4701:4708 VC.Hashfun <> contents:15 var
+R4676:4681 Coq.ZArith.BinInt <> ::Z_scope:x_'mod'_x not
+R4698:4698 Coq.ZArith.BinInt <> ::Z_scope:x_'mod'_x not
+R4667:4673 VC.Hashfun <> hashfun def
+R4675:4675 VC.Hashfun <> s:14 var
+R4682:4688 Coq.ZArith.Zcomplements <> Zlength def
+R4690:4697 VC.Hashfun <> contents:15 var
+def 4724:4737 <> hashtable_incr
+R4743:4746 Coq.Init.Datatypes <> list ind
+R4748:4751 compcert.lib.Integers <> byte abbrev
+binder 4740:4740 <> s:16
+R4765:4782 VC.Hashfun <> hashtable_contents def
+binder 4755:4762 <> contents:17
+R4809:4826 VC.Hashfun <> hashtable_contents def
+R4851:4856 Coq.ZArith.BinInt <> ::Z_scope:x_'mod'_x not
+R4873:4873 Coq.ZArith.BinInt <> ::Z_scope:x_'mod'_x not
+R4842:4848 VC.Hashfun <> hashfun def
+R4850:4850 VC.Hashfun <> s:16 var
+R4857:4863 Coq.ZArith.Zcomplements <> Zlength def
+R4865:4872 VC.Hashfun <> contents:17 var
+binder 4837:4837 <> h:18
+R4890:4893 VST.zlist.sublist <> Znth def
+R4897:4904 VC.Hashfun <> contents:17 var
+R4895:4895 VC.Hashfun <> h:18 var
+binder 4884:4885 <> al:19
+R4911:4918 VST.zlist.sublist <> upd_Znth def
+R4932:4940 VC.Hashfun <> list_incr def
+R4942:4942 VC.Hashfun <> s:16 var
+R4944:4945 VC.Hashfun <> al:19 var
+R4922:4929 VC.Hashfun <> contents:17 var
+R4920:4920 VC.Hashfun <> h:18 var
+prf 5014:5028 <> hashfun_inrange
+binder 5038:5038 <> s:20
+R5042:5045 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R5055:5058 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R5046:5052 VC.Hashfun <> hashfun def
+R5054:5054 VC.Hashfun <> s:20 var
+R5046:5052 VC.Hashfun <> hashfun def
+R5054:5054 VC.Hashfun <> s:20 var
+R5059:5074 compcert.lib.Integers Int max_unsigned def
+prf 5190:5209 <> hashtable_get_unfold
+binder 5220:5224 <> sigma:21
+R5232:5235 Coq.Init.Datatypes <> list ind
+R5258:5260 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R5238:5241 Coq.Init.Datatypes <> list ind
+R5253:5255 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R5244:5247 Coq.Init.Datatypes <> list ind
+R5249:5252 compcert.lib.Integers <> byte abbrev
+R5256:5256 Coq.Numbers.BinNums <> Z ind
+R5261:5263 compcert.common.Values <> val ind
+binder 5227:5229 <> cts:22
+R5302:5306 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5269:5281 VC.Hashfun <> hashtable_get def
+R5283:5287 VC.Hashfun <> sigma:21 var
+R5290:5292 Coq.Lists.List <> map def
+R5298:5300 VC.Hashfun <> cts:22 var
+R5294:5296 Coq.Init.Datatypes <> fst def
+R5307:5314 VC.Hashfun <> list_get def
+R5316:5320 VC.Hashfun <> sigma:21 var
+R5323:5326 VST.zlist.sublist <> Znth def
+R5363:5365 Coq.Lists.List <> map def
+R5371:5373 VC.Hashfun <> cts:22 var
+R5367:5369 Coq.Init.Datatypes <> fst def
+R5342:5347 Coq.ZArith.BinInt <> ::Z_scope:x_'mod'_x not
+R5359:5359 Coq.ZArith.BinInt <> ::Z_scope:x_'mod'_x not
+R5329:5335 VC.Hashfun <> hashfun def
+R5337:5341 VC.Hashfun <> sigma:21 var
+R5348:5354 Coq.ZArith.Zcomplements <> Zlength def
+R5356:5358 VC.Hashfun <> cts:22 var
+prf 5496:5517 <> Zlength_hashtable_incr
+binder 5528:5532 <> sigma:23
+binder 5534:5536 <> cts:24
+R5561:5571 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5547:5549 Coq.ZArith.BinInt <> ::Z_scope:x_'<'_x not
+R5550:5556 Coq.ZArith.Zcomplements <> Zlength def
+R5558:5560 VC.Hashfun <> cts:24 var
+R5606:5608 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5572:5578 Coq.ZArith.Zcomplements <> Zlength def
+R5581:5594 VC.Hashfun <> hashtable_incr def
+R5596:5600 VC.Hashfun <> sigma:23 var
+R5602:5604 VC.Hashfun <> cts:24 var
+R5609:5615 Coq.ZArith.Zcomplements <> Zlength def
+R5617:5619 VC.Hashfun <> cts:24 var
+R5681:5702 VC.Hashfun <> Zlength_hashtable_incr prfax
+prf 5805:5819 <> Int_repr_eq_mod
+binder 5832:5832 <> a:25
+R5864:5866 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5836:5843 compcert.lib.Integers Int repr def
+R5847:5851 Coq.ZArith.BinInt <> ::Z_scope:x_'mod'_x not
+R5846:5846 VC.Hashfun <> a:25 var
+R5852:5862 compcert.lib.Integers Int modulus def
+R5867:5874 compcert.lib.Integers Int repr def
+R5876:5876 VC.Hashfun <> a:25 var
+R5892:5898 compcert.lib.Integers Int eqm def
+R5959:5965 compcert.lib.Integers Int eqm def
+prf 6120:6135 <> hashfun_aux_snoc
+binder 6147:6151 <> sigma:26
+binder 6153:6153 <> h:27
+binder 6155:6156 <> lo:28
+binder 6158:6158 <> i:29
+R6172:6179 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6166:6169 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x not
+R6170:6171 VC.Hashfun <> lo:28 var
+R6203:6208 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6182:6185 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<'_x not
+R6187:6189 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<'_x not
+R6180:6181 VC.Hashfun <> lo:28 var
+R6186:6186 VC.Hashfun <> i:29 var
+R6186:6186 VC.Hashfun <> i:29 var
+R6190:6196 Coq.ZArith.Zcomplements <> Zlength def
+R6198:6202 VC.Hashfun <> sigma:26 var
+R6260:6264 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6209:6216 compcert.lib.Integers Int repr def
+R6219:6229 VC.Hashfun <> hashfun_aux def
+R6231:6231 VC.Hashfun <> h:27 var
+R6234:6240 VST.zlist.sublist <> sublist def
+R6253:6257 VC.Hashfun <> sigma:26 var
+R6247:6249 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R6246:6246 VC.Hashfun <> i:29 var
+R6242:6243 VC.Hashfun <> lo:28 var
+R6265:6272 compcert.lib.Integers Int repr def
+R6317:6353 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R6309:6311 Coq.ZArith.BinInt <> ::Z_scope:x_'*'_x not
+R6275:6285 VC.Hashfun <> hashfun_aux def
+R6287:6287 VC.Hashfun <> h:27 var
+R6290:6296 VST.zlist.sublist <> sublist def
+R6303:6307 VC.Hashfun <> sigma:26 var
+R6301:6301 VC.Hashfun <> i:29 var
+R6298:6299 VC.Hashfun <> lo:28 var
+R6354:6364 compcert.lib.Integers Byte signed def
+R6367:6370 VST.zlist.sublist <> Znth def
+R6374:6378 VC.Hashfun <> sigma:26 var
+R6372:6372 VC.Hashfun <> i:29 var
+prf 6426:6437 <> hashfun_snoc
+binder 6449:6453 <> sigma:30
+binder 6455:6455 <> i:31
+R6484:6489 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6463:6466 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<'_x not
+R6468:6470 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<'_x not
+R6467:6467 VC.Hashfun <> i:31 var
+R6467:6467 VC.Hashfun <> i:31 var
+R6471:6477 Coq.ZArith.Zcomplements <> Zlength def
+R6479:6483 VC.Hashfun <> sigma:30 var
+R6534:6538 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6490:6497 compcert.lib.Integers Int repr def
+R6500:6506 VC.Hashfun <> hashfun def
+R6509:6515 VST.zlist.sublist <> sublist def
+R6527:6531 VC.Hashfun <> sigma:30 var
+R6521:6523 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R6520:6520 VC.Hashfun <> i:31 var
+R6539:6546 compcert.lib.Integers Int repr def
+R6584:6586 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R6576:6578 Coq.ZArith.BinInt <> ::Z_scope:x_'*'_x not
+R6549:6555 VC.Hashfun <> hashfun def
+R6558:6564 VST.zlist.sublist <> sublist def
+R6570:6574 VC.Hashfun <> sigma:30 var
+R6568:6568 VC.Hashfun <> i:31 var
+R6587:6597 compcert.lib.Integers Byte signed def
+R6600:6603 VST.zlist.sublist <> Znth def
+R6607:6611 VC.Hashfun <> sigma:30 var
+R6605:6605 VC.Hashfun <> i:31 var
+modtype 7169:7179 <> COUNT_TABLE
+ax 7193:7197 COUNT_TABLE table
+ax 7217:7219 COUNT_TABLE key
+ax 7240:7244 COUNT_TABLE empty
+R7247:7251 VC.Hashfun COUNT_TABLE table defax
+ax 7265:7267 COUNT_TABLE get
+R7273:7276 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7270:7272 VC.Hashfun COUNT_TABLE key defax
+R7282:7285 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7277:7281 VC.Hashfun COUNT_TABLE table defax
+R7286:7286 Coq.Numbers.BinNums <> Z ind
+ax 7300:7303 COUNT_TABLE incr
+R7309:7312 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7306:7308 VC.Hashfun COUNT_TABLE key defax
+R7318:7321 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7313:7317 VC.Hashfun COUNT_TABLE table defax
+R7322:7326 VC.Hashfun COUNT_TABLE table defax
+ax 7336:7341 COUNT_TABLE gempty
+binder 7351:7351 <> k:37
+R7390:7392 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7379:7381 VC.Hashfun COUNT_TABLE get defax
+R7383:7383 VC.Hashfun <> k:37 var
+R7385:7389 VC.Hashfun COUNT_TABLE empty defax
+ax 7403:7405 COUNT_TABLE gss
+binder 7415:7415 <> k:39
+binder 7417:7417 <> t:40
+R7466:7468 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7450:7452 VC.Hashfun COUNT_TABLE get defax
+R7454:7454 VC.Hashfun <> k:39 var
+R7457:7460 VC.Hashfun COUNT_TABLE incr defax
+R7462:7462 VC.Hashfun <> k:39 var
+R7464:7464 VC.Hashfun <> t:40 var
+R7470:7471 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R7479:7479 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R7472:7474 VC.Hashfun COUNT_TABLE get defax
+R7476:7476 VC.Hashfun <> k:39 var
+R7478:7478 VC.Hashfun <> t:40 var
+ax 7489:7491 COUNT_TABLE gso
+binder 7501:7501 <> j:42
+binder 7503:7503 <> k:43
+binder 7505:7505 <> t:44
+R7543:7546 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7538:7541 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R7537:7537 VC.Hashfun <> j:42 var
+R7542:7542 VC.Hashfun <> k:43 var
+R7563:7565 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7547:7549 VC.Hashfun COUNT_TABLE get defax
+R7551:7551 VC.Hashfun <> j:42 var
+R7554:7557 VC.Hashfun COUNT_TABLE incr defax
+R7559:7559 VC.Hashfun <> k:43 var
+R7561:7561 VC.Hashfun <> t:44 var
+R7566:7568 VC.Hashfun COUNT_TABLE get defax
+R7570:7570 VC.Hashfun <> j:42 var
+R7572:7572 VC.Hashfun <> t:44 var
+R7579:7589 VC.Hashfun COUNT_TABLE <> modtype
+R8087:8097 VC.Hashfun COUNT_TABLE <> mod
+mod 8075:8082 <> FunTable
+def 8112:8116 FunTable table
+R8130:8133 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8127:8129 Coq.Init.Datatypes <> nat ind
+R8134:8134 Coq.Numbers.BinNums <> Z ind
+def 8149:8151 FunTable key
+R8163:8165 Coq.Init.Datatypes <> nat ind
+def 8180:8184 FunTable empty
+R8187:8191 VC.Hashfun FunTable table def
+binder 8200:8200 <> k:46
+def 8220:8222 FunTable get
+R8228:8230 VC.Hashfun FunTable key def
+binder 8225:8225 <> k:47
+R8237:8241 VC.Hashfun FunTable table def
+binder 8234:8234 <> t:48
+R8246:8246 Coq.Numbers.BinNums <> Z ind
+R8251:8251 VC.Hashfun <> t:48 var
+R8253:8253 VC.Hashfun <> k:47 var
+def 8268:8271 FunTable incr
+R8277:8279 VC.Hashfun FunTable key def
+binder 8274:8274 <> k:49
+R8286:8290 VC.Hashfun FunTable table def
+binder 8283:8283 <> t:50
+R8295:8299 VC.Hashfun FunTable table def
+binder 8312:8313 <> k':51
+R8321:8327 Coq.Arith.PeanoNat Nat eqb def
+R8329:8330 VC.Hashfun <> k':51 var
+R8332:8332 VC.Hashfun <> k:49 var
+R8353:8353 VC.Hashfun <> t:50 var
+R8355:8356 VC.Hashfun <> k':51 var
+R8340:8342 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R8343:8343 VC.Hashfun <> t:50 var
+R8345:8346 VC.Hashfun <> k':51 var
+prf 8366:8371 FunTable gempty
+binder 8381:8381 <> k:52
+R8396:8398 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8385:8387 VC.Hashfun FunTable get def
+R8389:8389 VC.Hashfun <> k:52 var
+R8391:8395 VC.Hashfun FunTable empty def
+prf 8438:8440 FunTable gss
+binder 8450:8450 <> k:53
+binder 8452:8452 <> t:54
+R8472:8474 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8456:8458 VC.Hashfun FunTable get def
+R8460:8460 VC.Hashfun <> k:53 var
+R8463:8466 VC.Hashfun FunTable incr def
+R8468:8468 VC.Hashfun <> k:53 var
+R8470:8470 VC.Hashfun <> t:54 var
+R8476:8477 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R8485:8485 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R8478:8480 VC.Hashfun FunTable get def
+R8482:8482 VC.Hashfun <> k:53 var
+R8484:8484 VC.Hashfun <> t:54 var
+prf 8524:8526 FunTable gso
+binder 8536:8536 <> j:55
+binder 8538:8538 <> k:56
+binder 8540:8540 <> t:57
+R8550:8553 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8545:8548 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R8544:8544 VC.Hashfun <> j:55 var
+R8549:8549 VC.Hashfun <> k:56 var
+R8570:8572 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8554:8556 VC.Hashfun FunTable get def
+R8558:8558 VC.Hashfun <> j:55 var
+R8561:8564 VC.Hashfun FunTable incr def
+R8566:8566 VC.Hashfun <> k:56 var
+R8568:8568 VC.Hashfun <> t:57 var
+R8573:8575 VC.Hashfun FunTable get def
+R8577:8577 VC.Hashfun <> j:55 var
+R8579:8579 VC.Hashfun <> t:57 var
+R8615:8622 VC.Hashfun FunTable <> mod
+R9344:9354 VC.Hashfun COUNT_TABLE <> mod
+mod 9328:9339 <> IntHashTable
+def 9369:9387 IntHashTable hashtable_invariant
+R9395:9412 VC.Hashfun <> hashtable_contents def
+binder 9390:9392 <> cts:58
+R9442:9447 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R9438:9440 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9427:9433 Coq.ZArith.Zcomplements <> Zlength def
+R9435:9437 VC.Hashfun <> cts:58 var
+R9441:9441 VC.Hashfun <> N def
+binder 9455:9455 <> i:59
+R9468:9484 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9459:9462 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<'_x not
+R9464:9466 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<'_x not
+R9463:9463 VC.Hashfun <> i:59 var
+R9463:9463 VC.Hashfun <> i:59 var
+R9467:9467 VC.Hashfun <> N def
+R9520:9536 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R9485:9496 compcert.lib.Coqlib <> list_norepet ind
+R9499:9501 Coq.Lists.List <> map def
+R9508:9511 VST.zlist.sublist <> Znth def
+R9515:9517 VC.Hashfun <> cts:58 var
+R9513:9513 VC.Hashfun <> i:59 var
+R9503:9505 Coq.Init.Datatypes <> fst def
+R9537:9542 Coq.Lists.List <> Forall ind
+R9576:9578 Coq.Lists.List <> map def
+R9585:9588 VST.zlist.sublist <> Znth def
+R9592:9594 VC.Hashfun <> cts:58 var
+R9590:9590 VC.Hashfun <> i:59 var
+R9580:9582 Coq.Init.Datatypes <> fst def
+binder 9549:9549 <> s:60
+R9569:9571 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9563:9567 Coq.ZArith.BinInt <> ::Z_scope:x_'mod'_x not
+R9554:9560 VC.Hashfun <> hashfun def
+R9562:9562 VC.Hashfun <> s:60 var
+R9568:9568 VC.Hashfun <> N def
+R9572:9572 VC.Hashfun <> i:59 var
+def 9611:9615 IntHashTable table
+R9620:9622 Coq.Init.Specif <> sig ind
+R9624:9642 VC.Hashfun IntHashTable hashtable_invariant def
+def 9657:9659 IntHashTable key
+R9664:9667 Coq.Init.Datatypes <> list ind
+R9669:9672 compcert.lib.Integers <> byte abbrev
+prf 9683:9697 IntHashTable empty_invariant
+R9700:9718 VC.Hashfun IntHashTable hashtable_invariant def
+R9720:9730 VC.Hashfun <> empty_table def
+prf 9777:9790 IntHashTable incr_invariant
+binder 9800:9800 <> k:61
+binder 9802:9804 <> cts:62
+R9836:9839 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9813:9831 VC.Hashfun IntHashTable hashtable_invariant def
+R9833:9835 VC.Hashfun <> cts:62 var
+R9840:9858 VC.Hashfun IntHashTable hashtable_invariant def
+R9861:9874 VC.Hashfun <> hashtable_incr def
+R9876:9876 VC.Hashfun <> k:61 var
+R9878:9880 VC.Hashfun <> cts:62 var
+def 9933:9937 IntHashTable empty
+R9941:9945 VC.Hashfun IntHashTable table def
+R9950:9954 Coq.Init.Specif <> exist constr
+R9960:9974 VC.Hashfun IntHashTable empty_invariant prfax
+def 9989:9991 IntHashTable get
+R9998:10001 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9995:9997 VC.Hashfun IntHashTable key def
+R10007:10010 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10002:10006 VC.Hashfun IntHashTable table def
+R10011:10011 Coq.Numbers.BinNums <> Z ind
+binder 10039:10039 <> k:63
+binder 10041:10043 <> tbl:64
+R10048:10060 VC.Hashfun <> hashtable_get def
+R10062:10062 VC.Hashfun <> k:63 var
+R10065:10073 Coq.Init.Specif <> proj1_sig def
+R10075:10077 VC.Hashfun <> tbl:64 var
+def 10093:10096 IntHashTable incr
+R10103:10106 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10100:10102 VC.Hashfun IntHashTable key def
+R10112:10115 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10107:10111 VC.Hashfun IntHashTable table def
+R10116:10120 VC.Hashfun IntHashTable table def
+binder 10137:10137 <> k:65
+binder 10139:10141 <> tbl:66
+R10146:10150 Coq.Init.Specif <> exist constr
+R10157:10170 VC.Hashfun IntHashTable incr_invariant prfax
+R10172:10172 VC.Hashfun <> k:65 var
+R10177:10185 Coq.Init.Specif <> proj2_sig def
+R10187:10189 VC.Hashfun <> tbl:66 var
+prf 10204:10209 IntHashTable gempty
+binder 10219:10219 <> k:67
+R10233:10235 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10222:10224 VC.Hashfun IntHashTable get def
+R10226:10226 VC.Hashfun <> k:67 var
+R10228:10232 VC.Hashfun IntHashTable empty def
+prf 10286:10288 IntHashTable gss
+binder 10298:10298 <> k:68
+binder 10300:10300 <> t:69
+R10320:10323 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10304:10306 VC.Hashfun IntHashTable get def
+R10308:10308 VC.Hashfun <> k:68 var
+R10311:10314 VC.Hashfun IntHashTable incr def
+R10316:10316 VC.Hashfun <> k:68 var
+R10318:10318 VC.Hashfun <> t:69 var
+R10325:10328 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R10336:10336 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R10329:10331 VC.Hashfun IntHashTable get def
+R10333:10333 VC.Hashfun <> k:68 var
+R10335:10335 VC.Hashfun <> t:69 var
+prf 10386:10388 IntHashTable gso
+binder 10398:10398 <> j:70
+binder 10400:10400 <> k:71
+binder 10402:10402 <> t:72
+R10440:10443 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10435:10438 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R10434:10434 VC.Hashfun <> j:70 var
+R10439:10439 VC.Hashfun <> k:71 var
+R10460:10462 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10444:10446 VC.Hashfun IntHashTable get def
+R10448:10448 VC.Hashfun <> j:70 var
+R10451:10454 VC.Hashfun IntHashTable incr def
+R10456:10456 VC.Hashfun <> k:71 var
+R10458:10458 VC.Hashfun <> t:72 var
+R10463:10465 VC.Hashfun IntHashTable get def
+R10467:10467 VC.Hashfun <> j:70 var
+R10469:10469 VC.Hashfun <> t:72 var
+R10523:10534 VC.Hashfun IntHashTable <> mod

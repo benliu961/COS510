@@ -1,0 +1,747 @@
+DIGEST fdb0164a8bb276a1a1e8db2992d6f36f
+FVC.Verif_append2
+R455:464 VC.Preface <> <> lib
+R524:542 VST.floyd.proofauto <> <> lib
+R639:642 VST.msl.seplog <> wand meth
+R1129:1147 VST.msl.seplog <> wand_sepcon_adjoint meth
+prf 1385:1403 <> implies_and_adjoint
+binder 1416:1416 <> P:1
+binder 1418:1418 <> Q:2
+binder 1420:1420 <> R:3
+R1430:1430 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R1442:1450 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R1464:1464 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R1437:1440 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1432:1435 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1431:1431 VC.Verif_append2 <> P:1 var
+R1436:1436 VC.Verif_append2 <> Q:2 var
+R1441:1441 VC.Verif_append2 <> R:3 var
+R1452:1456 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1463:1463 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1451:1451 VC.Verif_append2 <> P:1 var
+R1458:1461 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1457:1457 VC.Verif_append2 <> Q:2 var
+R1462:1462 VC.Verif_append2 <> R:3 var
+R1766:1777 VST.msl.log_normalize <> wand_derives thm
+R1874:1890 VST.msl.log_normalize <> modus_ponens_wand thm
+prf 2087:2098 <> wand_trivial
+R2113:2117 VST.veric.mpred <> mpred def
+binder 2108:2108 <> P:4
+binder 2110:2110 <> Q:5
+R2121:2125 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R2120:2120 VC.Verif_append2 <> P:4 var
+R2127:2131 VST.msl.seplog <> ::logic:x_'-*'_x not
+R2137:2137 VST.msl.seplog <> ::logic:x_'-*'_x not
+R2126:2126 VC.Verif_append2 <> Q:5 var
+R2133:2135 VST.msl.seplog <> ::logic:x_'*'_x not
+R2132:2132 VC.Verif_append2 <> P:4 var
+R2136:2136 VC.Verif_append2 <> Q:5 var
+R2170:2188 VST.msl.seplog <> wand_sepcon_adjoint meth
+R2170:2188 VST.msl.seplog <> wand_sepcon_adjoint meth
+R2170:2188 VST.msl.seplog <> wand_sepcon_adjoint meth
+R2199:2210 VST.msl.seplog <> derives_refl meth
+R2199:2210 VST.msl.seplog <> derives_refl meth
+prf 2324:2353 <> modus_ponens_wand_from_adjoint
+R2369:2373 VST.veric.mpred <> mpred def
+binder 2363:2363 <> P:6
+binder 2365:2365 <> Q:7
+R2388:2392 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R2377:2380 VST.msl.seplog <> ::logic:x_'*'_x not
+R2387:2387 VST.msl.seplog <> ::logic:x_'*'_x not
+R2376:2376 VC.Verif_append2 <> P:6 var
+R2382:2385 VST.msl.seplog <> ::logic:x_'-*'_x not
+R2381:2381 VC.Verif_append2 <> P:6 var
+R2386:2386 VC.Verif_append2 <> Q:7 var
+R2393:2393 VC.Verif_append2 <> Q:7 var
+R2423:2433 VST.msl.seplog <> sepcon_comm meth
+R2423:2433 VST.msl.seplog <> sepcon_comm meth
+R2423:2433 VST.msl.seplog <> sepcon_comm meth
+R2449:2467 VST.msl.seplog <> wand_sepcon_adjoint meth
+R2449:2467 VST.msl.seplog <> wand_sepcon_adjoint meth
+R2449:2467 VST.msl.seplog <> wand_sepcon_adjoint meth
+R2478:2489 VST.msl.seplog <> derives_refl meth
+R2478:2489 VST.msl.seplog <> derives_refl meth
+prf 2760:2801 <> wand_derives_from_adjoint_and_modus_ponens
+R2825:2829 VST.veric.mpred <> mpred def
+binder 2813:2813 <> P:8
+binder 2815:2816 <> P':9
+binder 2818:2818 <> Q:10
+binder 2820:2821 <> Q':11
+R2844:2849 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2838:2842 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R2836:2837 VC.Verif_append2 <> P':9 var
+R2843:2843 VC.Verif_append2 <> P:8 var
+R2858:2863 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2851:2855 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R2850:2850 VC.Verif_append2 <> Q:10 var
+R2856:2857 VC.Verif_append2 <> Q':11 var
+R2870:2874 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R2865:2868 VST.msl.seplog <> ::logic:x_'-*'_x not
+R2864:2864 VC.Verif_append2 <> P:8 var
+R2869:2869 VC.Verif_append2 <> Q:10 var
+R2877:2880 VST.msl.seplog <> ::logic:x_'-*'_x not
+R2875:2876 VC.Verif_append2 <> P':9 var
+R2881:2882 VC.Verif_append2 <> Q':11 var
+R3089:3102 VST.msl.wand_frame <> wand_frame_ver thm
+prf 3318:3361 <> wand_frame_ver_from_adjoint_and_modus_ponens
+R3381:3385 VST.veric.mpred <> mpred def
+binder 3373:3373 <> P:12
+binder 3375:3375 <> Q:13
+binder 3377:3377 <> R:14
+R3407:3411 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R3388:3388 VST.msl.seplog <> ::logic:x_'*'_x not
+R3395:3399 VST.msl.seplog <> ::logic:x_'*'_x not
+R3406:3406 VST.msl.seplog <> ::logic:x_'*'_x not
+R3390:3393 VST.msl.seplog <> ::logic:x_'-*'_x not
+R3389:3389 VC.Verif_append2 <> P:12 var
+R3394:3394 VC.Verif_append2 <> Q:13 var
+R3401:3404 VST.msl.seplog <> ::logic:x_'-*'_x not
+R3400:3400 VC.Verif_append2 <> Q:13 var
+R3405:3405 VC.Verif_append2 <> R:14 var
+R3413:3416 VST.msl.seplog <> ::logic:x_'-*'_x not
+R3412:3412 VC.Verif_append2 <> P:12 var
+R3417:3417 VC.Verif_append2 <> R:14 var
+prf 3603:3620 <> emp_wand_emp_right
+R3626:3630 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R3623:3625 VST.msl.seplog <> emp meth
+R3634:3637 VST.msl.seplog <> ::logic:x_'-*'_x not
+R3631:3633 VST.msl.seplog <> emp meth
+R3638:3640 VST.msl.seplog <> emp meth
+prf 3686:3702 <> emp_wand_emp_left
+R3715:3719 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R3708:3711 VST.msl.seplog <> ::logic:x_'-*'_x not
+R3705:3707 VST.msl.seplog <> emp meth
+R3712:3714 VST.msl.seplog <> emp meth
+R3720:3722 VST.msl.seplog <> emp meth
+R3898:3906 VC.append <> <> lib
+R3924:3939 VC.Verif_append1 <> <> lib
+def 4555:4559 <> wlseg
+R4572:4575 Coq.Init.Datatypes <> list ind
+R4577:4579 compcert.common.Values <> val ind
+binder 4562:4569 <> contents:15
+R4588:4590 compcert.common.Values <> val ind
+binder 4583:4583 <> x:16
+binder 4585:4585 <> y:17
+R4595:4599 VST.veric.mpred <> mpred def
+R4606:4609 VST.msl.seplog <> ::logic:'ALL'_x_'..'_x_','_x not
+R4624:4625 VST.msl.seplog <> ::logic:'ALL'_x_'..'_x_','_x not
+R4616:4619 Coq.Init.Datatypes <> list ind
+R4621:4623 compcert.common.Values <> val ind
+binder 4610:4613 <> tail:18
+R4640:4643 VST.msl.seplog <> ::logic:x_'-*'_x not
+R4626:4632 VC.Verif_append1 <> listrep def
+R4634:4637 VC.Verif_append2 <> tail:18 var
+R4639:4639 VC.Verif_append2 <> y:17 var
+R4644:4650 VC.Verif_append1 <> listrep def
+R4661:4664 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R4653:4660 VC.Verif_append2 <> contents:15 var
+R4665:4668 VC.Verif_append2 <> tail:18 var
+R4671:4671 VC.Verif_append2 <> x:16 var
+R5415:5423 VST.msl.seplog <> allp_left meth
+R5534:5543 VST.msl.seplog <> allp_right meth
+prf 5748:5756 <> emp_wlseg
+R5770:5772 compcert.common.Values <> val ind
+binder 5767:5767 <> x:19
+R5781:5785 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R5778:5780 VST.msl.seplog <> emp meth
+R5786:5790 VC.Verif_append2 <> wlseg def
+R5792:5793 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R5795:5795 VC.Verif_append2 <> x:19 var
+R5797:5797 VC.Verif_append2 <> x:19 var
+R5826:5830 VC.Verif_append2 <> wlseg def
+R5841:5850 VST.msl.seplog <> allp_right meth
+R5841:5850 VST.msl.seplog <> allp_right meth
+R5878:5896 VST.msl.seplog <> wand_sepcon_adjoint meth
+R5878:5896 VST.msl.seplog <> wand_sepcon_adjoint meth
+R5878:5896 VST.msl.seplog <> wand_sepcon_adjoint meth
+R5909:5918 VST.msl.log_normalize <> emp_sepcon thm
+R5909:5918 VST.msl.log_normalize <> emp_sepcon thm
+R5909:5918 VST.msl.log_normalize <> emp_sepcon thm
+R5942:5953 VST.msl.seplog <> derives_refl meth
+R5942:5953 VST.msl.seplog <> derives_refl meth
+prf 6042:6052 <> wlseg_wlseg
+R6070:6073 Coq.Init.Datatypes <> list ind
+R6075:6077 compcert.common.Values <> val ind
+binder 6063:6064 <> s1:20
+binder 6066:6067 <> s2:21
+R6088:6090 compcert.common.Values <> val ind
+binder 6081:6081 <> x:22
+binder 6083:6083 <> y:23
+binder 6085:6085 <> z:24
+R6123:6127 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R6108:6110 VST.msl.seplog <> ::logic:x_'*'_x not
+R6096:6100 VC.Verif_append2 <> wlseg def
+R6102:6103 VC.Verif_append2 <> s2:21 var
+R6105:6105 VC.Verif_append2 <> y:23 var
+R6107:6107 VC.Verif_append2 <> z:24 var
+R6111:6115 VC.Verif_append2 <> wlseg def
+R6117:6118 VC.Verif_append2 <> s1:20 var
+R6120:6120 VC.Verif_append2 <> x:22 var
+R6122:6122 VC.Verif_append2 <> y:23 var
+R6128:6132 VC.Verif_append2 <> wlseg def
+R6137:6140 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R6135:6136 VC.Verif_append2 <> s1:20 var
+R6141:6142 VC.Verif_append2 <> s2:21 var
+R6145:6145 VC.Verif_append2 <> x:22 var
+R6147:6147 VC.Verif_append2 <> z:24 var
+R6174:6178 VC.Verif_append2 <> wlseg def
+R6278:6287 VST.msl.seplog <> allp_right meth
+R6278:6287 VST.msl.seplog <> allp_right meth
+R6399:6417 VST.msl.seplog <> wand_sepcon_adjoint meth
+R6399:6417 VST.msl.seplog <> wand_sepcon_adjoint meth
+R6399:6417 VST.msl.seplog <> wand_sepcon_adjoint meth
+R6428:6436 VST.msl.seplog <> allp_left meth
+R6428:6436 VST.msl.seplog <> allp_left meth
+R6459:6477 VST.msl.seplog <> wand_sepcon_adjoint meth
+R6459:6477 VST.msl.seplog <> wand_sepcon_adjoint meth
+R6459:6477 VST.msl.seplog <> wand_sepcon_adjoint meth
+R6580:6590 VST.msl.seplog <> sepcon_comm meth
+R6596:6614 VST.msl.seplog <> wand_sepcon_adjoint meth
+R6580:6590 VST.msl.seplog <> sepcon_comm meth
+R6580:6590 VST.msl.seplog <> sepcon_comm meth
+R6596:6614 VST.msl.seplog <> wand_sepcon_adjoint meth
+R6596:6614 VST.msl.seplog <> wand_sepcon_adjoint meth
+R6625:6633 VST.msl.seplog <> allp_left meth
+R6640:6643 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R6625:6633 VST.msl.seplog <> allp_left meth
+R6640:6643 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R6664:6682 VST.msl.seplog <> wand_sepcon_adjoint meth
+R6685:6695 VST.msl.seplog <> sepcon_comm meth
+R6664:6682 VST.msl.seplog <> wand_sepcon_adjoint meth
+R6664:6682 VST.msl.seplog <> wand_sepcon_adjoint meth
+R6685:6695 VST.msl.seplog <> sepcon_comm meth
+R6685:6695 VST.msl.seplog <> sepcon_comm meth
+R6767:6775 Coq.Lists.List <> app_assoc thm
+R6767:6775 Coq.Lists.List <> app_assoc thm
+R6767:6775 Coq.Lists.List <> app_assoc thm
+R6785:6798 VST.msl.wand_frame <> wand_frame_ver thm
+R6785:6798 VST.msl.wand_frame <> wand_frame_ver thm
+prf 7104:7118 <> singleton_wlseg
+R7132:7134 compcert.common.Values <> val ind
+binder 7129:7129 <> a:25
+R7143:7145 compcert.common.Values <> val ind
+binder 7138:7138 <> x:26
+binder 7140:7140 <> y:27
+R7178:7182 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R7151:7157 VST.floyd.field_at <> data_at def
+R7159:7161 VST.veric.shares <> Tsh def
+R7163:7168 VC.Verif_append1 <> t_list def
+R7170:7170 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7172:7173 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7175:7175 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7171:7171 VC.Verif_append2 <> a:25 var
+R7174:7174 VC.Verif_append2 <> y:27 var
+R7177:7177 VC.Verif_append2 <> x:26 var
+R7183:7187 VC.Verif_append2 <> wlseg def
+R7189:7189 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R7191:7191 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R7190:7190 VC.Verif_append2 <> a:25 var
+R7193:7193 VC.Verif_append2 <> x:26 var
+R7195:7195 VC.Verif_append2 <> y:27 var
+prf 7305:7314 <> wlseg_list
+R7332:7335 Coq.Init.Datatypes <> list ind
+R7337:7339 compcert.common.Values <> val ind
+binder 7325:7326 <> s1:28
+binder 7328:7329 <> s2:29
+R7348:7350 compcert.common.Values <> val ind
+binder 7343:7343 <> x:30
+binder 7345:7345 <> y:31
+R7383:7387 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R7368:7370 VST.msl.seplog <> ::logic:x_'*'_x not
+R7356:7360 VC.Verif_append2 <> wlseg def
+R7362:7363 VC.Verif_append2 <> s1:28 var
+R7365:7365 VC.Verif_append2 <> x:30 var
+R7367:7367 VC.Verif_append2 <> y:31 var
+R7371:7377 VC.Verif_append1 <> listrep def
+R7379:7380 VC.Verif_append2 <> s2:29 var
+R7382:7382 VC.Verif_append2 <> y:31 var
+R7388:7394 VC.Verif_append1 <> listrep def
+R7399:7402 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R7397:7398 VC.Verif_append2 <> s1:28 var
+R7403:7404 VC.Verif_append2 <> s2:29 var
+R7407:7407 VC.Verif_append2 <> x:30 var
+prf 7797:7814 <> body_append_alter2
+R7817:7826 VST.floyd.SeparationLogicAsLogicSoundness MainTheorem.CSHL_PracticalLogic.CSHL_MinimumLogic.CSHL_Defs semax_body def
+R7849:7859 VC.Verif_append1 <> append_spec def
+R7840:7847 VC.append <> f_append def
+R7834:7838 VC.Verif_append1 <> Gprog def
+R7828:7832 VC.Verif_append1 <> Vprog def
+R7945:7956 VC.Verif_append1 <> listrep_null prfax
+R7945:7956 VC.Verif_append1 <> listrep_null prfax
+R7945:7956 VC.Verif_append1 <> listrep_null prfax
+R8027:8041 VC.Verif_append1 <> listrep_nonnull prfax
+R8027:8041 VC.Verif_append1 <> listrep_nonnull prfax
+R8027:8041 VC.Verif_append1 <> listrep_nonnull prfax
+R8209:8211 VST.floyd.canon <> ::assert:'EX'_x_'..'_x_','_x not
+R8225:8226 VST.floyd.canon <> ::assert:'EX'_x_'..'_x_','_x not
+R8217:8220 Coq.Init.Datatypes <> list ind
+R8222:8224 compcert.common.Values <> val ind
+binder 8212:8214 <> s1a:32
+R8227:8229 VST.floyd.canon <> ::assert:'EX'_x_'..'_x_','_x not
+R8236:8237 VST.floyd.canon <> ::assert:'EX'_x_'..'_x_','_x not
+R8233:8235 compcert.common.Values <> val ind
+binder 8230:8230 <> b:33
+R8238:8240 VST.floyd.canon <> ::assert:'EX'_x_'..'_x_','_x not
+R8254:8255 VST.floyd.canon <> ::assert:'EX'_x_'..'_x_','_x not
+R8246:8249 Coq.Init.Datatypes <> list ind
+R8251:8253 compcert.common.Values <> val ind
+binder 8241:8243 <> s1c:34
+R8256:8258 VST.floyd.canon <> ::assert:'EX'_x_'..'_x_','_x not
+R8265:8266 VST.floyd.canon <> ::assert:'EX'_x_'..'_x_','_x not
+R8262:8264 compcert.common.Values <> val ind
+binder 8259:8259 <> t:35
+R8267:8269 VST.floyd.canon <> ::assert:'EX'_x_'..'_x_','_x not
+R8276:8284 VST.floyd.canon <> ::assert:'EX'_x_'..'_x_','_x not
+R8273:8275 compcert.common.Values <> val ind
+binder 8270:8270 <> u:36
+R8285:8290 VST.floyd.canon <> ::assert:'PROP'_'('_x_';'_'..'_';'_x_')'_x not
+R8311:8319 VST.floyd.canon <> ::assert:'PROP'_'('_x_';'_'..'_';'_x_')'_x not
+R8293:8295 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8299:8302 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R8296:8298 VC.Verif_append2 <> s1a:32 var
+R8304:8307 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8303:8303 VC.Verif_append2 <> b:33 var
+R8308:8310 VC.Verif_append2 <> s1c:34 var
+R8320:8326 VST.floyd.canon <> ::assert3:'LOCAL'_'('_x_';'_'..'_';'_x_')'_x not
+R8336:8337 VST.floyd.canon <> ::assert3:'LOCAL'_'('_x_';'_'..'_';'_x_')'_x not
+R8347:8348 VST.floyd.canon <> ::assert3:'LOCAL'_'('_x_';'_'..'_';'_x_')'_x not
+R8358:8359 VST.floyd.canon <> ::assert3:'LOCAL'_'('_x_';'_'..'_';'_x_')'_x not
+R8369:8377 VST.floyd.canon <> ::assert3:'LOCAL'_'('_x_';'_'..'_';'_x_')'_x not
+R8327:8330 VST.floyd.canon <> temp constr
+R8332:8333 VC.append <> _x def
+R8338:8341 VST.floyd.canon <> temp constr
+R8343:8344 VC.append <> _t def
+R8346:8346 VC.Verif_append2 <> t:35 var
+R8349:8352 VST.floyd.canon <> temp constr
+R8354:8355 VC.append <> _u def
+R8357:8357 VC.Verif_append2 <> u:36 var
+R8360:8363 VST.floyd.canon <> temp constr
+R8365:8366 VC.append <> _y def
+R8378:8382 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R8396:8409 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R8437:8450 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R8464:8477 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R8490:8490 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R8383:8387 VC.Verif_append2 <> wlseg def
+R8389:8391 VC.Verif_append2 <> s1a:32 var
+R8395:8395 VC.Verif_append2 <> t:35 var
+R8410:8416 VST.floyd.field_at <> data_at def
+R8418:8420 VST.veric.shares <> Tsh def
+R8422:8427 VC.Verif_append1 <> t_list def
+R8429:8429 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8431:8432 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8434:8434 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8430:8430 VC.Verif_append2 <> b:33 var
+R8433:8433 VC.Verif_append2 <> u:36 var
+R8436:8436 VC.Verif_append2 <> t:35 var
+R8451:8457 VC.Verif_append1 <> listrep def
+R8459:8461 VC.Verif_append2 <> s1c:34 var
+R8463:8463 VC.Verif_append2 <> u:36 var
+R8478:8484 VC.Verif_append1 <> listrep def
+R8209:8211 VST.floyd.canon <> ::assert:'EX'_x_'..'_x_','_x not
+R8225:8226 VST.floyd.canon <> ::assert:'EX'_x_'..'_x_','_x not
+R8217:8220 Coq.Init.Datatypes <> list ind
+R8222:8224 compcert.common.Values <> val ind
+binder 8212:8214 <> s1a:37
+R8227:8229 VST.floyd.canon <> ::assert:'EX'_x_'..'_x_','_x not
+R8236:8237 VST.floyd.canon <> ::assert:'EX'_x_'..'_x_','_x not
+R8233:8235 compcert.common.Values <> val ind
+binder 8230:8230 <> b:38
+R8238:8240 VST.floyd.canon <> ::assert:'EX'_x_'..'_x_','_x not
+R8254:8255 VST.floyd.canon <> ::assert:'EX'_x_'..'_x_','_x not
+R8246:8249 Coq.Init.Datatypes <> list ind
+R8251:8253 compcert.common.Values <> val ind
+binder 8241:8243 <> s1c:39
+R8256:8258 VST.floyd.canon <> ::assert:'EX'_x_'..'_x_','_x not
+R8265:8266 VST.floyd.canon <> ::assert:'EX'_x_'..'_x_','_x not
+R8262:8264 compcert.common.Values <> val ind
+binder 8259:8259 <> t:40
+R8267:8269 VST.floyd.canon <> ::assert:'EX'_x_'..'_x_','_x not
+R8276:8284 VST.floyd.canon <> ::assert:'EX'_x_'..'_x_','_x not
+R8273:8275 compcert.common.Values <> val ind
+binder 8270:8270 <> u:41
+R8285:8290 VST.floyd.canon <> ::assert:'PROP'_'('_x_';'_'..'_';'_x_')'_x not
+R8311:8319 VST.floyd.canon <> ::assert:'PROP'_'('_x_';'_'..'_';'_x_')'_x not
+R8293:8295 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8299:8302 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R8296:8298 VC.Verif_append2 <> s1a:37 var
+R8304:8307 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8303:8303 VC.Verif_append2 <> b:38 var
+R8308:8310 VC.Verif_append2 <> s1c:39 var
+R8320:8326 VST.floyd.canon <> ::assert3:'LOCAL'_'('_x_';'_'..'_';'_x_')'_x not
+R8336:8337 VST.floyd.canon <> ::assert3:'LOCAL'_'('_x_';'_'..'_';'_x_')'_x not
+R8347:8348 VST.floyd.canon <> ::assert3:'LOCAL'_'('_x_';'_'..'_';'_x_')'_x not
+R8358:8359 VST.floyd.canon <> ::assert3:'LOCAL'_'('_x_';'_'..'_';'_x_')'_x not
+R8369:8377 VST.floyd.canon <> ::assert3:'LOCAL'_'('_x_';'_'..'_';'_x_')'_x not
+R8327:8330 VST.floyd.canon <> temp constr
+R8332:8333 VC.append <> _x def
+R8338:8341 VST.floyd.canon <> temp constr
+R8343:8344 VC.append <> _t def
+R8346:8346 VC.Verif_append2 <> t:40 var
+R8349:8352 VST.floyd.canon <> temp constr
+R8354:8355 VC.append <> _u def
+R8357:8357 VC.Verif_append2 <> u:41 var
+R8360:8363 VST.floyd.canon <> temp constr
+R8365:8366 VC.append <> _y def
+R8378:8382 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R8396:8409 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R8437:8450 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R8464:8477 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R8490:8490 VST.floyd.canon <> ::assert5:'SEP'_'('_x_';'_'..'_';'_x_')' not
+R8383:8387 VC.Verif_append2 <> wlseg def
+R8389:8391 VC.Verif_append2 <> s1a:37 var
+R8395:8395 VC.Verif_append2 <> t:40 var
+R8410:8416 VST.floyd.field_at <> data_at def
+R8418:8420 VST.veric.shares <> Tsh def
+R8422:8427 VC.Verif_append1 <> t_list def
+R8429:8429 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8431:8432 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8434:8434 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8430:8430 VC.Verif_append2 <> b:38 var
+R8433:8433 VC.Verif_append2 <> u:41 var
+R8436:8436 VC.Verif_append2 <> t:40 var
+R8451:8457 VC.Verif_append1 <> listrep def
+R8459:8461 VC.Verif_append2 <> s1c:39 var
+R8463:8463 VC.Verif_append2 <> u:41 var
+R8478:8484 VC.Verif_append1 <> listrep def
+prf 10881:10902 <> wandQ_frame_elim_mpred
+binder 10913:10913 <> A:42
+R10929:10932 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10928:10928 VC.Verif_append2 <> A:42 var
+R10933:10937 VST.veric.mpred <> mpred def
+binder 10923:10923 <> P:43
+binder 10925:10925 <> Q:44
+R10944:10944 VC.Verif_append2 <> A:42 var
+binder 10941:10941 <> a:45
+R10979:10983 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R10950:10950 VST.msl.seplog <> ::logic:x_'*'_x not
+R10972:10975 VST.msl.seplog <> ::logic:x_'*'_x not
+R10951:10954 VST.msl.seplog <> ::logic:'ALL'_x_'..'_x_','_x not
+R10960:10961 VST.msl.seplog <> ::logic:'ALL'_x_'..'_x_','_x not
+R10959:10959 VC.Verif_append2 <> A:42 var
+binder 10955:10955 <> x:46
+R10965:10968 VST.msl.seplog <> ::logic:x_'-*'_x not
+R10962:10962 VC.Verif_append2 <> P:43 var
+R10964:10964 VC.Verif_append2 <> x:46 var
+R10969:10969 VC.Verif_append2 <> Q:44 var
+R10971:10971 VC.Verif_append2 <> x:46 var
+R10976:10976 VC.Verif_append2 <> P:43 var
+R10978:10978 VC.Verif_append2 <> a:45 var
+R10984:10984 VC.Verif_append2 <> Q:44 var
+R10986:10986 VC.Verif_append2 <> a:45 var
+R11019:11037 VST.msl.seplog <> wand_sepcon_adjoint meth
+R11019:11037 VST.msl.seplog <> wand_sepcon_adjoint meth
+R11019:11037 VST.msl.seplog <> wand_sepcon_adjoint meth
+R11049:11057 VST.msl.seplog <> allp_left meth
+R11049:11057 VST.msl.seplog <> allp_left meth
+R11073:11084 VST.msl.seplog <> derives_refl meth
+R11073:11084 VST.msl.seplog <> derives_refl meth
+prf 11239:11259 <> wandQ_frame_ver_mpred
+binder 11270:11270 <> A:47
+R11288:11291 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11287:11287 VC.Verif_append2 <> A:47 var
+R11292:11296 VST.veric.mpred <> mpred def
+binder 11280:11280 <> P:48
+binder 11282:11282 <> Q:49
+binder 11284:11284 <> R:50
+R11350:11354 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R11302:11302 VST.msl.seplog <> ::logic:x_'*'_x not
+R11324:11328 VST.msl.seplog <> ::logic:x_'*'_x not
+R11349:11349 VST.msl.seplog <> ::logic:x_'*'_x not
+R11303:11306 VST.msl.seplog <> ::logic:'ALL'_x_'..'_x_','_x not
+R11312:11313 VST.msl.seplog <> ::logic:'ALL'_x_'..'_x_','_x not
+R11311:11311 VC.Verif_append2 <> A:47 var
+binder 11307:11307 <> x:51
+R11317:11320 VST.msl.seplog <> ::logic:x_'-*'_x not
+R11314:11314 VC.Verif_append2 <> P:48 var
+R11316:11316 VC.Verif_append2 <> x:51 var
+R11321:11321 VC.Verif_append2 <> Q:49 var
+R11323:11323 VC.Verif_append2 <> x:51 var
+R11329:11332 VST.msl.seplog <> ::logic:'ALL'_x_'..'_x_','_x not
+R11337:11338 VST.msl.seplog <> ::logic:'ALL'_x_'..'_x_','_x not
+R11336:11336 VC.Verif_append2 <> A:47 var
+binder 11333:11333 <> x:52
+R11342:11345 VST.msl.seplog <> ::logic:x_'-*'_x not
+R11339:11339 VC.Verif_append2 <> Q:49 var
+R11341:11341 VC.Verif_append2 <> x:52 var
+R11346:11346 VC.Verif_append2 <> R:50 var
+R11348:11348 VC.Verif_append2 <> x:52 var
+R11355:11358 VST.msl.seplog <> ::logic:'ALL'_x_'..'_x_','_x not
+R11363:11364 VST.msl.seplog <> ::logic:'ALL'_x_'..'_x_','_x not
+R11362:11362 VC.Verif_append2 <> A:47 var
+binder 11359:11359 <> x:53
+R11368:11371 VST.msl.seplog <> ::logic:x_'-*'_x not
+R11365:11365 VC.Verif_append2 <> P:48 var
+R11367:11367 VC.Verif_append2 <> x:53 var
+R11372:11372 VC.Verif_append2 <> R:50 var
+R11374:11374 VC.Verif_append2 <> x:53 var
+R11402:11411 VST.msl.seplog <> allp_right meth
+R11402:11411 VST.msl.seplog <> allp_right meth
+R11436:11454 VST.msl.seplog <> wand_sepcon_adjoint meth
+R11436:11454 VST.msl.seplog <> wand_sepcon_adjoint meth
+R11436:11454 VST.msl.seplog <> wand_sepcon_adjoint meth
+R11466:11474 VST.msl.seplog <> allp_left meth
+R11466:11474 VST.msl.seplog <> allp_left meth
+R11495:11513 VST.msl.seplog <> wand_sepcon_adjoint meth
+R11495:11513 VST.msl.seplog <> wand_sepcon_adjoint meth
+R11495:11513 VST.msl.seplog <> wand_sepcon_adjoint meth
+R11526:11536 VST.msl.seplog <> sepcon_comm meth
+R11542:11560 VST.msl.seplog <> wand_sepcon_adjoint meth
+R11526:11536 VST.msl.seplog <> sepcon_comm meth
+R11526:11536 VST.msl.seplog <> sepcon_comm meth
+R11542:11560 VST.msl.seplog <> wand_sepcon_adjoint meth
+R11542:11560 VST.msl.seplog <> wand_sepcon_adjoint meth
+R11572:11580 VST.msl.seplog <> allp_left meth
+R11572:11580 VST.msl.seplog <> allp_left meth
+R11601:11619 VST.msl.seplog <> wand_sepcon_adjoint meth
+R11622:11632 VST.msl.seplog <> sepcon_comm meth
+R11601:11619 VST.msl.seplog <> wand_sepcon_adjoint meth
+R11601:11619 VST.msl.seplog <> wand_sepcon_adjoint meth
+R11622:11632 VST.msl.seplog <> sepcon_comm meth
+R11622:11632 VST.msl.seplog <> sepcon_comm meth
+R11643:11656 VST.msl.wand_frame <> wand_frame_ver thm
+R11643:11656 VST.msl.wand_frame <> wand_frame_ver thm
+def 13438:13447 <> t_list_box
+R13452:13455 compcert.export.Ctypesdefs <> tptr def
+R13457:13462 VC.Verif_append1 <> t_list def
+def 13477:13486 <> listboxrep
+R13499:13502 Coq.Init.Datatypes <> list ind
+R13504:13506 compcert.common.Values <> val ind
+binder 13489:13496 <> contents:54
+R13513:13515 compcert.common.Values <> val ind
+binder 13510:13510 <> x:55
+R13523:13525 VST.msl.seplog <> ::logic:'EX'_x_'..'_x_','_x not
+R13532:13533 VST.msl.seplog <> ::logic:'EX'_x_'..'_x_','_x not
+R13529:13531 compcert.common.Values <> val ind
+binder 13526:13526 <> y:56
+R13560:13562 VST.msl.seplog <> ::logic:x_'*'_x not
+R13534:13540 VST.floyd.field_at <> data_at def
+R13542:13544 VST.veric.shares <> Tsh def
+R13546:13555 VC.Verif_append2 <> t_list_box def
+R13557:13557 VC.Verif_append2 <> y:56 var
+R13559:13559 VC.Verif_append2 <> x:55 var
+R13563:13569 VC.Verif_append1 <> listrep def
+R13571:13578 VC.Verif_append2 <> contents:54 var
+R13580:13580 VC.Verif_append2 <> x:55 var
+def 13595:13599 <> lbseg
+R13612:13615 Coq.Init.Datatypes <> list ind
+R13617:13619 compcert.common.Values <> val ind
+binder 13602:13609 <> contents:57
+R13628:13630 compcert.common.Values <> val ind
+binder 13623:13623 <> x:58
+binder 13625:13625 <> y:59
+R13638:13641 VST.msl.seplog <> ::logic:'ALL'_x_'..'_x_','_x not
+R13656:13657 VST.msl.seplog <> ::logic:'ALL'_x_'..'_x_','_x not
+R13648:13651 Coq.Init.Datatypes <> list ind
+R13653:13655 compcert.common.Values <> val ind
+binder 13642:13645 <> tail:60
+R13675:13678 VST.msl.seplog <> ::logic:x_'-*'_x not
+R13658:13667 VC.Verif_append2 <> listboxrep def
+R13669:13672 VC.Verif_append2 <> tail:60 var
+R13674:13674 VC.Verif_append2 <> y:59 var
+R13679:13688 VC.Verif_append2 <> listboxrep def
+R13699:13702 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R13691:13698 VC.Verif_append2 <> contents:57 var
+R13703:13706 VC.Verif_append2 <> tail:60 var
+R13709:13709 VC.Verif_append2 <> x:58 var
+prf 14146:14154 <> emp_lbseg
+R14168:14170 compcert.common.Values <> val ind
+binder 14165:14165 <> x:61
+R14179:14183 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R14176:14178 VST.msl.seplog <> emp meth
+R14184:14188 VC.Verif_append2 <> lbseg def
+R14190:14191 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R14193:14193 VC.Verif_append2 <> x:61 var
+R14195:14195 VC.Verif_append2 <> x:61 var
+prf 14341:14351 <> lbseg_lbseg
+R14369:14372 Coq.Init.Datatypes <> list ind
+R14374:14376 compcert.common.Values <> val ind
+binder 14362:14363 <> s1:62
+binder 14365:14366 <> s2:63
+R14387:14389 compcert.common.Values <> val ind
+binder 14380:14380 <> x:64
+binder 14382:14382 <> y:65
+binder 14384:14384 <> z:66
+R14422:14426 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R14407:14409 VST.msl.seplog <> ::logic:x_'*'_x not
+R14395:14399 VC.Verif_append2 <> lbseg def
+R14401:14402 VC.Verif_append2 <> s2:63 var
+R14404:14404 VC.Verif_append2 <> y:65 var
+R14406:14406 VC.Verif_append2 <> z:66 var
+R14410:14414 VC.Verif_append2 <> lbseg def
+R14416:14417 VC.Verif_append2 <> s1:62 var
+R14419:14419 VC.Verif_append2 <> x:64 var
+R14421:14421 VC.Verif_append2 <> y:65 var
+R14427:14431 VC.Verif_append2 <> lbseg def
+R14436:14439 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R14434:14435 VC.Verif_append2 <> s1:62 var
+R14440:14441 VC.Verif_append2 <> s2:63 var
+R14444:14444 VC.Verif_append2 <> x:64 var
+R14446:14446 VC.Verif_append2 <> z:66 var
+prf 14595:14607 <> listbox_lbseg
+R14625:14628 Coq.Init.Datatypes <> list ind
+R14630:14632 compcert.common.Values <> val ind
+binder 14618:14619 <> s1:67
+binder 14621:14622 <> s2:68
+R14641:14643 compcert.common.Values <> val ind
+binder 14636:14636 <> x:69
+binder 14638:14638 <> y:70
+R14679:14683 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R14661:14663 VST.msl.seplog <> ::logic:x_'*'_x not
+R14649:14653 VC.Verif_append2 <> lbseg def
+R14655:14656 VC.Verif_append2 <> s1:67 var
+R14658:14658 VC.Verif_append2 <> x:69 var
+R14660:14660 VC.Verif_append2 <> y:70 var
+R14664:14673 VC.Verif_append2 <> listboxrep def
+R14675:14676 VC.Verif_append2 <> s2:68 var
+R14678:14678 VC.Verif_append2 <> y:70 var
+R14684:14693 VC.Verif_append2 <> listboxrep def
+R14698:14701 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R14696:14697 VC.Verif_append2 <> s1:67 var
+R14702:14703 VC.Verif_append2 <> s2:68 var
+R14706:14706 VC.Verif_append2 <> x:69 var
+prf 15401:15410 <> lseg2wlseg
+binder 15420:15420 <> s:71
+binder 15422:15422 <> x:72
+binder 15424:15424 <> y:73
+R15437:15441 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R15427:15430 VC.Verif_append1 <> lseg def
+R15432:15432 VC.Verif_append2 <> s:71 var
+R15434:15434 VC.Verif_append2 <> x:72 var
+R15436:15436 VC.Verif_append2 <> y:73 var
+R15442:15446 VC.Verif_append2 <> wlseg def
+R15448:15448 VC.Verif_append2 <> s:71 var
+R15450:15450 VC.Verif_append2 <> x:72 var
+R15452:15452 VC.Verif_append2 <> y:73 var
+R15481:15485 VC.Verif_append2 <> wlseg def
+R15496:15505 VST.msl.seplog <> allp_right meth
+R15496:15505 VST.msl.seplog <> allp_right meth
+R15534:15552 VST.msl.seplog <> wand_sepcon_adjoint meth
+R15534:15552 VST.msl.seplog <> wand_sepcon_adjoint meth
+R15534:15552 VST.msl.seplog <> wand_sepcon_adjoint meth
+R15568:15576 VC.Verif_append1 <> lseg_list prfax
+R15568:15576 VC.Verif_append1 <> lseg_list prfax
+R15599:15610 VST.msl.seplog <> derives_refl meth
+R15599:15610 VST.msl.seplog <> derives_refl meth
+prf 15687:15704 <> wlseg2lseg_nullval
+binder 15714:15714 <> s:74
+binder 15716:15716 <> x:75
+R15736:15740 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R15719:15723 VC.Verif_append2 <> wlseg def
+R15725:15725 VC.Verif_append2 <> s:74 var
+R15727:15727 VC.Verif_append2 <> x:75 var
+R15729:15735 VST.veric.base <> nullval def
+R15741:15744 VC.Verif_append1 <> lseg def
+R15746:15746 VC.Verif_append2 <> s:74 var
+R15748:15748 VC.Verif_append2 <> x:75 var
+R15750:15756 VST.veric.base <> nullval def
+R15785:15789 VC.Verif_append2 <> wlseg def
+R15817:15819 Coq.Init.Datatypes <> nil constr
+R15821:15823 compcert.common.Values <> val ind
+R15800:15808 VST.msl.seplog <> allp_left meth
+R15817:15819 Coq.Init.Datatypes <> nil constr
+R15821:15823 compcert.common.Values <> val ind
+R15800:15808 VST.msl.seplog <> allp_left meth
+R15836:15842 VC.Verif_append1 <> listrep def
+R15860:15873 VST.msl.log_normalize <> prop_true_andp thm
+R15860:15873 VST.msl.log_normalize <> prop_true_andp thm
+R15860:15873 VST.msl.log_normalize <> prop_true_andp thm
+R15910:15920 Coq.Lists.List <> app_nil_end thm
+R15910:15920 Coq.Lists.List <> app_nil_end thm
+R15910:15920 Coq.Lists.List <> app_nil_end thm
+R16280:16289 VST.msl.log_normalize <> emp_sepcon thm
+R16295:16298 VST.msl.seplog <> ::logic:x_'-*'_x not
+R16292:16294 VST.msl.seplog <> emp meth
+R16299:16305 VC.Verif_append1 <> listrep def
+R16280:16289 VST.msl.log_normalize <> emp_sepcon thm
+R16295:16298 VST.msl.seplog <> ::logic:x_'-*'_x not
+R16292:16294 VST.msl.seplog <> emp meth
+R16299:16305 VC.Verif_append1 <> listrep def
+R16280:16289 VST.msl.log_normalize <> emp_sepcon thm
+R16295:16298 VST.msl.seplog <> ::logic:x_'-*'_x not
+R16292:16294 VST.msl.seplog <> emp meth
+R16299:16305 VC.Verif_append1 <> listrep def
+R16327:16343 VST.msl.log_normalize <> modus_ponens_wand thm
+R16350:16356 VC.Verif_append1 <> listrep def
+R16345:16347 VST.msl.seplog <> emp meth
+R16327:16343 VST.msl.log_normalize <> modus_ponens_wand thm
+R16350:16356 VC.Verif_append1 <> listrep def
+R16345:16347 VST.msl.seplog <> emp meth
+R16395:16406 VC.Verif_append1 <> listrep2lseg prfax
+R16395:16406 VC.Verif_append1 <> listrep2lseg prfax
+prf 16518:16530 <> wlseg_nullval
+binder 16540:16540 <> s:76
+binder 16542:16542 <> x:77
+R16562:16564 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16545:16549 VC.Verif_append2 <> wlseg def
+R16551:16551 VC.Verif_append2 <> s:76 var
+R16553:16553 VC.Verif_append2 <> x:77 var
+R16555:16561 VST.veric.base <> nullval def
+R16565:16568 VC.Verif_append1 <> lseg def
+R16570:16570 VC.Verif_append2 <> s:76 var
+R16572:16572 VC.Verif_append2 <> x:77 var
+R16574:16580 VST.veric.base <> nullval def
+R16608:16615 VST.msl.seplog <> pred_ext meth
+R16608:16615 VST.msl.seplog <> pred_ext meth
+R16628:16645 VC.Verif_append2 <> wlseg2lseg_nullval thm
+R16628:16645 VC.Verif_append2 <> wlseg2lseg_nullval thm
+R16658:16667 VC.Verif_append2 <> lseg2wlseg thm
+R16658:16667 VC.Verif_append2 <> lseg2wlseg thm
+prf 16686:16704 <> wlseg_listrep_equiv
+binder 16714:16714 <> s:78
+binder 16716:16716 <> x:79
+R16736:16738 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16719:16723 VC.Verif_append2 <> wlseg def
+R16725:16725 VC.Verif_append2 <> s:78 var
+R16727:16727 VC.Verif_append2 <> x:79 var
+R16729:16735 VST.veric.base <> nullval def
+R16739:16745 VC.Verif_append1 <> listrep def
+R16747:16747 VC.Verif_append2 <> s:78 var
+R16749:16749 VC.Verif_append2 <> x:79 var
+R16779:16791 VC.Verif_append2 <> wlseg_nullval thm
+R16794:16811 VC.Verif_append1 <> lseg_listrep_equiv thm
+R16779:16791 VC.Verif_append2 <> wlseg_nullval thm
+R16779:16791 VC.Verif_append2 <> wlseg_nullval thm
+R16794:16811 VC.Verif_append1 <> lseg_listrep_equiv thm
+R16794:16811 VC.Verif_append1 <> lseg_listrep_equiv thm
+prf 17374:17384 <> wlseg_weird
+binder 17394:17394 <> a:80
+binder 17396:17396 <> x:81
+binder 17398:17398 <> y:82
+R17424:17428 VST.msl.seplog <> ::logic_derives:x_'|--'_x not
+R17403:17410 VST.floyd.field_at <> data_at_ def
+R17412:17414 VST.veric.shares <> Tsh def
+R17416:17421 VC.Verif_append1 <> t_list def
+R17423:17423 VC.Verif_append2 <> y:82 var
+R17429:17433 VC.Verif_append2 <> wlseg def
+R17435:17435 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R17437:17437 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R17436:17436 VC.Verif_append2 <> a:80 var
+R17439:17439 VC.Verif_append2 <> x:81 var
+R17441:17441 VC.Verif_append2 <> y:82 var
+R17470:17474 VC.Verif_append2 <> wlseg def
+R17485:17494 VST.msl.seplog <> allp_right meth
+R17485:17494 VST.msl.seplog <> allp_right meth
+R17520:17538 VST.msl.seplog <> wand_sepcon_adjoint meth
+R17520:17538 VST.msl.seplog <> wand_sepcon_adjoint meth
+R17520:17538 VST.msl.seplog <> wand_sepcon_adjoint meth
+R17566:17572 VC.Verif_append1 <> listrep def
+R17650:17656 VC.Verif_append1 <> listrep def
+R17669:17675 VC.Verif_append1 <> listrep def
+R17669:17675 VC.Verif_append1 <> listrep def
+R17707:17722 VST.floyd.field_at <> data_at_conflict thm
+R17724:17726 VST.veric.shares <> Tsh def
+R17728:17733 VC.Verif_append1 <> t_list def
+R17736:17746 VST.floyd.reptype_lemmas <> default_val def
+R17748:17753 VC.Verif_append1 <> t_list def
+R17756:17756 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R17758:17759 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R17761:17761 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R17707:17722 VST.floyd.field_at <> data_at_conflict thm
+R17724:17726 VST.veric.shares <> Tsh def
+R17728:17733 VC.Verif_append1 <> t_list def
+R17736:17746 VST.floyd.reptype_lemmas <> default_val def
+R17748:17753 VC.Verif_append1 <> t_list def
+R17756:17756 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R17758:17759 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R17761:17761 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
