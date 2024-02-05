@@ -2017,7 +2017,7 @@ Fixpoint bin_to_nat (m:bin) : nat :=
   match m with
   | Z => O
   | B0 n => plus (bin_to_nat n) (bin_to_nat n)
-  | B1 n => plus (S 0) (plus (bin_to_nat n) (bin_to_nat n))
+  | B1 n => S (plus (bin_to_nat n) (bin_to_nat n))
   end.
 
 (** The following "unit tests" of your increment and binary-to-unary
