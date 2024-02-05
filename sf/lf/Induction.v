@@ -256,7 +256,8 @@ Lemma double_plus : forall n, double n = n + n .
 Proof.
   induction n as [| n' IHn'].
   - reflexivity.
-  - simpl. rewrite -> IHn'. 
+  - simpl. rewrite -> IHn'.  
+  
 (** [] *)
 
 (** **** Exercise: 2 stars, standard (eqb_refl)
