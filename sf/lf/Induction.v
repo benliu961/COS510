@@ -204,22 +204,40 @@ Proof.
 Theorem mul_0_r : forall n:nat,
   n * 0 = 0.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  induction n as [| n' IHn'].
+  - reflexivity.
+  - simpl. rewrite -> IHn'. reflexivity. Qed.
 
 Theorem plus_n_Sm : forall n m : nat,
   S (n + m) = n + (S m).
 Proof.
-  (* FILL IN HERE *) Admitted.
+  induction n as [| n' IHn'].
+  - reflexivity.
+  - induction m as [| m' IHm'].
+    + simpl. rewrite -> IHn'. reflexivity.
+    + simpl. rewrite -> IHn'. reflexivity. Qed.
 
 Theorem add_comm : forall n m : nat,
   n + m = m + n.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  induction n as [| n' IHn'].
+  - induction m as [| m' IHm'].
+    + reflexivity.
+    + simpl. rewrite <- IHm'. simpl. reflexivity.
+  - induction m as [| m' IHm'].
+    + simpl. rewrite -> IHn'. simpl. reflexivity.
+    + simpl. rewrite <- IHm'. rewrite -> IHn'. simpl. rewrite -> IHn'. reflexivity. Qed.
 
 Theorem add_assoc : forall n m p : nat,
   n + (m + p) = (n + m) + p.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  induction n as [| n' IHn'].
+  - simpl. reflexivity.
+  - induction m as [| m' IHm'].
+    + simpl. rewrite -> add_0_r. reflexivity.
+    + induction p as [| p' IHp'].
+      * rewrite -> add_0_r. rewrite -> add_0_r. reflexivity.
+      * simpl. rewrite <- IHn'. simpl. reflexivity. Qed.
 (** [] *)
 
 (** **** Exercise: 2 stars, standard (double_plus)
@@ -236,7 +254,9 @@ Fixpoint double (n:nat) :=
 
 Lemma double_plus : forall n, double n = n + n .
 Proof.
-  (* FILL IN HERE *) Admitted.
+  induction n as [| n' IHn'].
+  - reflexivity.
+  - simpl. rewrite -> IHn'. 
 (** [] *)
 
 (** **** Exercise: 2 stars, standard (eqb_refl)
