@@ -732,7 +732,7 @@ Proof.
   induction n as [| n' IHn'].
   - reflexivity.
   - simpl. rewrite -> bin_to_nat_pres_incr. 
-    rewrite -> IHn'. reflexivity.
+    rewrite -> IHn'. reflexivity. Qed.
 
 (** [] *)
 
@@ -820,14 +820,31 @@ Abort.
     end of the [bin] and process each bit only once. Do not try to
     "look ahead" at future bits. *)
 
-Fixpoint normalize (b:bin) : bin
-  (* REPLACE THIS LINE WITH ":= _your_definition_ ." *). Admitted.
+Fixpoint normalize (b:bin) : bin := 
+  match b with
+  | Z => Z
+  | B0 b' => double_bin (normalize b')
+  | B1 b' => incr (double_bin (normalize b'))
+  end.
 
 (** It would be wise to do some [Example] proofs to check that your definition of
     [normalize] works the way you intend before you proceed. They won't be graded,
     but fill them in below. *)
 
-(* FILL IN HERE *)
+Example test_normalize1 : normalize Z = Z.
+Proof. reflexivity. Qed.
+
+Example test_normalize2 : normalize (B0 Z) = Z.
+Proof. reflexivity. Qed.
+
+Example test_normalize3 : normalize (B0 (B0 Z)) = Z.
+Proof. reflexivity. Qed.
+
+Example test_normalize4 : bin_to_nat (normalize (B1 Z)) = 1.
+Proof. reflexivity. Qed.
+
+Example test_normalize5 : bin_to_nat (normalize (B0 (B1 Z))) = 2.
+Proof. reflexivity. Qed.
 
 (** Finally, prove the main theorem. The inductive cases could be a
     bit tricky.
@@ -838,9 +855,26 @@ Fixpoint normalize (b:bin) : bin
     progress. We have one lemma for the [B0] case (which also makes
     use of [double_incr_bin]) and another for the [B1] case. *)
 
+Lemma nat_bin_double : forall n : nat,
+  nat_to_bin (double n) = double_bin (nat_to_bin n).
+Proof.
+  induction n as [| n IHn'].
+  - reflexivity.
+  - simpl. rewrite -> double_incr_bin. 
+    rewrite <- IHn'. reflexivity. Qed.
+
 Theorem bin_nat_bin : forall b, nat_to_bin (bin_to_nat b) = normalize b.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  induction b as [| b' IHb' | b' IHb'].
+  - reflexivity.
+  - simpl. rewrite <- IHb'. 
+    rewrite <- double_plus. 
+    rewrite -> nat_bin_double. 
+    reflexivity.
+  - simpl. rewrite <- IHb'. 
+    rewrite <- double_plus. 
+    rewrite -> nat_bin_double. 
+    reflexivity. Qed.
 
 (** [] *)
 
