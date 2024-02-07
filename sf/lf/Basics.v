@@ -1,3 +1,8 @@
+(* README
+  Acquired assistance from Theresa Lim for general functionality of 
+  features of the proof environment.
+ *)
+
 (** * Basics: Functional Programming in Coq *)
 
 (* REMINDER:
