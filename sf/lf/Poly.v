@@ -1094,9 +1094,10 @@ Proof.
     
     - First, suppose [n = 0]
         
-        If n = 0, then l = []. Therefore, nth_error X l n = None.
+        If n = 0, then l = []. Therefore, nth_error X l n = None by evaluating 
+        nth_error.
         
-    - Next, suppose [n = S n'], l = a :: l' forall a : X, and length l' = n' where
+    - Next, suppose [n = S n'], let length l = S n', so l = a :: l' and length l' = n' where
 
         nth_error X l' n' = None
 

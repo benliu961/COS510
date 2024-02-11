@@ -112,7 +112,10 @@ Theorem rev_exercise1 : forall (l l' : list nat),
   l = rev l' ->
   l' = rev l.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros.
+  rewrite H.
+  symmetry.
+  apply rev_involutive. Qed.
 (** [] *)
 
 (** **** Exercise: 1 star, standard, optional (apply_rewrite)
@@ -282,7 +285,14 @@ Example injection_ex3 : forall (X : Type) (x y z : X) (l j : list X),
   j = z :: l ->
   x = y.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros.
+  injection H as H1 H2.
+  rewrite H1.
+  assert (H3: y :: l = z :: l). { rewrite H2. rewrite H0. reflexivity. }
+  injection H3 as H4.
+  rewrite H4.
+  reflexivity.
+  Qed.
 (** [] *)
 
 (** So much for injectivity of constructors.  What about disjointness? *)
@@ -332,7 +342,9 @@ Example discriminate_ex3 :
     x :: y :: l = [] ->
     x = z.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros.
+  discriminate H.
+  Qed.
 (** [] *)
 
 (** For a more useful example, we can use [discriminate] to make a
@@ -646,7 +658,14 @@ Proof.
 Theorem eqb_true : forall n m,
   n =? m = true -> n = m.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros n.
+  induction n.
+  - intros m eq. destruct m.
+    + reflexivity.
+    + simpl in eq. discriminate eq.
+  - intros m eq. destruct m.
+    + discriminate.
+    + f_equal. apply IHn. simpl in eq. apply eq. Qed.       
 (** [] *)
 
 (** **** Exercise: 2 stars, advanced (eqb_true_informal)
@@ -655,7 +674,29 @@ Proof.
     hypothesis explicitly and being as explicit as possible about
     quantifiers, everywhere. *)
 
-(* FILL IN HERE *)
+(*  Theorem: n =? m = true -> n = m 
+    
+    Proof: We show this by induction on n.
+    
+    - First, suppose [n = 0]
+
+        We consider the cases of m = 0 and m being of the form S m'. 
+        In the case of m = 0, we have 0 =? 0 = true and we can see that 0 = 0.
+        In the case of m = S m', we have 0 =? S m' = true, but this is not
+        possible. Therefore, we can conclude anything, so n = m.
+      
+    - Next, supposed n = S n' where
+
+        for all m : n' =? m = true -> n' = m 
+
+      We want to show that for all m : S n' =? m = true -> S n' = m
+
+        We consider the cases of m = 0 and m being of the form S m'. 
+        In the case of m = 0, we have S n' =? 0 = true, but this is not
+        possible. Therefore, we can conclude anything, so n = m.
+        In the case of m = S m', we have S n' =? S m' = true. 
+
+    *)
 
 (* Do not modify the following line: *)
 Definition manual_grade_for_informal_proof : option (nat*string) := None.
