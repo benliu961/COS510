@@ -1174,8 +1174,8 @@ R39141:39144 LF.Basics <> true constr
 R39152:39154 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R39150:39151 LF.Logic <> n1:173 var
 R39155:39156 LF.Logic <> n2:174 var
-R39199:39206 LF.Tactics <> eqb_true prfax
-R39199:39206 LF.Tactics <> eqb_true prfax
+R39199:39206 LF.Tactics <> eqb_true thm
+R39199:39206 LF.Tactics <> eqb_true thm
 R39242:39249 LF.Induction <> eqb_refl thm
 R39242:39249 LF.Induction <> eqb_refl thm
 R39242:39249 LF.Induction <> eqb_refl thm

@@ -1028,10 +1028,8 @@ Theorem combine_split : forall X Y (l : list (X * Y)) l1 l2,
 Proof.
   intros X Y l. induction l.
   - intros. simpl in H. injection H as H0 H1. rewrite <- H0. rewrite <- H1. reflexivity.
-  - intros. destruct x. destruct l1.
-    + destruct l in H.
-      * discriminate H.
-      * simpl in H. Admitted.
+  - intros. destruct x. simpl in H. destruct (split l). injection H as H0 H1. 
+    rewrite <- H0. rewrite <- H1. simpl. f_equal. apply IHl. reflexivity. Qed.
 (** [] *)
 
 (** The [eqn:] part of the [destruct] tactic is optional; although
@@ -1271,11 +1269,12 @@ Theorem filter_exercise : forall (X : Type) (test : X -> bool)
   test x = true.
 Proof.
   intros X test x l lf.
+  generalize dependent x.
   induction l.
   - intros. discriminate H.
-  - intros. destruct (test x) eqn:H0.
-    + reflexivity.
-    + Admitted.
+  - intros. simpl in H. destruct (test x) eqn:H0.
+    + injection H as H1 H2. rewrite <- H1. apply H0.
+    + apply IHl. apply H. Qed.
 (** [] *)
 
 (** **** Exercise: 4 stars, advanced, especially useful (forall_exists_challenge)
