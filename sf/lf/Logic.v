@@ -1004,7 +1004,18 @@ Theorem All_In :
     All P l.
 Proof.
   intros. split.
-  - intros. 
+  - intros. induction l.
+    + reflexivity.
+    + simpl. split.
+      * apply H. simpl. left. reflexivity.
+      * apply IHl. intros. apply H. simpl. right. apply H0.
+  - intros. induction l.
+    + destruct H0.
+    + simpl in H. destruct H. simpl in H0. destruct H0.
+      * rewrite H0 in H. apply H.
+      * apply IHl.
+        { apply H1. }
+        { apply H0. } Qed.
 (** [] *)
 
 (** **** Exercise: 2 stars, standard, optional (combine_odd_even)
