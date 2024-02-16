@@ -399,7 +399,10 @@ Proof.
 Theorem not_implies_our_not : forall (P:Prop),
   ~ P -> (forall (Q:Prop), P -> Q).
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros.
+  unfold not in H.
+  apply H in H0.
+  destruct H0. Qed.
 (** [] *)
 
 (** Inequality is a very common form of negated statement, so there is a
@@ -458,7 +461,11 @@ Proof.
 
    _Theorem_: [P] implies [~~P], for any proposition [P]. *)
 
-(* FILL IN HERE *)
+(*  Given P, we want to show that ~~P. ~P is defined as P -> False. 
+    ~~P is defined as ~P -> False. We want to show that (P -> False) -> False.
+    If P -> False, then False follows from P. We also know that P.
+    Therefore, we have shown that P implies ~~P.
+ *)
 
 (* Do not modify the following line: *)
 Definition manual_grade_for_double_neg_inf : option (nat*string) := None.
@@ -468,14 +475,26 @@ Definition manual_grade_for_double_neg_inf : option (nat*string) := None.
 Theorem contrapositive : forall (P Q : Prop),
   (P -> Q) -> (~Q -> ~P).
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros.
+  unfold not.
+  unfold not in H0.
+  intros.
+  apply H in H1.
+  apply H0 in H1.
+  destruct H1. Qed.
+
 (** [] *)
 
 (** **** Exercise: 1 star, standard (not_both_true_and_false) *)
 Theorem not_both_true_and_false : forall P : Prop,
   ~ (P /\ ~P).
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros.
+  unfold not.
+  intros.
+  destruct H.
+  apply H0 in H.
+  destruct H. Qed.
 (** [] *)
 
 (** **** Exercise: 1 star, advanced (informal_not_PNP)
@@ -483,7 +502,11 @@ Proof.
     Write an informal proof (in English) of the proposition [forall P
     : Prop, ~(P /\ ~P)]. *)
 
-(* FILL IN HERE *)
+(*  We want to show that for any proposition P, ~(P /\ ~P).
+    ~(P /\ ~P) means (P /\ (P -> False)) -> False. If P /\ (P -> False),
+    then P and P -> False are both true. This means that False
+    is true by applying P -> False to P. Therefore, we can conclude ~(P /\ ~P)
+ *)
 
 (* Do not modify the following line: *)
 Definition manual_grade_for_informal_not_PNP : option (nat*string) := None.
@@ -500,7 +523,13 @@ Definition manual_grade_for_informal_not_PNP : option (nat*string) := None.
 Theorem de_morgan_not_or : forall (P Q : Prop),
     ~ (P \/ Q) -> ~P /\ ~Q.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros.
+  unfold not in H.
+  unfold not.
+  split.
+  - intros. apply H. left. apply H0.
+  - intros. apply H. right. apply H0. Qed.
+  
 (** [] *)
 
 (** Since inequality involves a negation, it also requires a little
@@ -661,7 +690,24 @@ Proof.
 Theorem or_distributes_over_and : forall P Q R : Prop,
   P \/ (Q /\ R) <-> (P \/ Q) /\ (P \/ R).
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros.
+  split.
+  - intros.
+    + split. 
+      * destruct H.
+        { left. apply H. }
+        { destruct H. right. apply H. }
+      * destruct H.
+        { left. apply H. }
+        { right. apply H. }
+  - intros. destruct H. destruct H. 
+    + left. apply H.
+    + destruct H0.
+      * left. apply H0.
+      * right. split.
+        { apply H. }
+        { apply H0. } Qed. 
+    
 (** [] *)
 
 (* ================================================================= *)
@@ -771,7 +817,17 @@ Proof.
 Theorem dist_not_exists : forall (X:Type) (P : X -> Prop),
   (forall x, P x) -> ~ (exists x, ~ P x).
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros.
+  unfold not.
+  intros.
+  destruct H0 as [x Hx].
+  apply Hx. apply H. Qed.
+(** [] *)
+
+(** **** Exercise: 2 stars, standard (dist_exists_or)
+
+    Prove that existential quantification distributes over
+    disjunction. *)
 (** [] *)
 
 (** **** Exercise: 2 stars, standard (dist_exists_or)
@@ -782,7 +838,13 @@ Proof.
 Theorem dist_exists_or : forall (X:Type) (P Q : X -> Prop),
   (exists x, P x \/ Q x) <-> (exists x, P x) \/ (exists x, Q x).
 Proof.
-   (* FILL IN HERE *) Admitted.
+  intros. split.
+  - intros. destruct H. destruct H.
+    + left. exists x. apply H.
+    + right. exists x. apply H.
+  - intros. destruct H.
+    + destruct H. exists x. left. apply H.
+    + destruct H. exists x. right. apply H. Qed.  
 (** [] *)
 
 (** **** Exercise: 3 stars, standard, optional (leb_plus_exists) *)
@@ -880,7 +942,19 @@ Theorem In_map_iff :
 Proof.
   intros A B f l y. split.
   { induction l as [|x l' IHl'].
-  (* FILL IN HERE *) Admitted.
+  - simpl. intros. destruct H.
+  - simpl. intros. destruct H.
+    + exists x. split.
+      * apply H.
+      * left. reflexivity.
+    + apply IHl' in H. destruct H. exists x0. destruct H. split.
+      * apply H.
+      * right. apply H0. }
+  { intros. destruct H. destruct H. induction l.
+    - simpl in H0. destruct H0.
+    - simpl in H0. destruct H0.
+      + rewrite H0. simpl. left. apply H.
+      + simpl. right. apply IHl. apply H0. } Qed. 
 (** [] *)
 
 (** **** Exercise: 2 stars, standard (In_app_iff) *)
@@ -888,7 +962,22 @@ Theorem In_app_iff : forall A l l' (a:A),
   In a (l++l') <-> In a l \/ In a l'.
 Proof.
   intros A l. induction l as [|a' l' IH].
-  (* FILL IN HERE *) Admitted.
+  - intros. simpl. split.
+    + intros. right. apply H.
+    + intros. destruct H.
+      * destruct H.
+      * apply H.
+  - intros. simpl. split.
+    + intros. destruct H.
+      * left. left. apply H.
+      * apply IH in H. destruct H.
+        { left. right. apply H. }
+        { right. apply H. }
+    + intros. destruct H.
+      * destruct H.
+        { left. apply H. }
+        { right. apply IH. left. apply H. }
+      * right. apply IH. right. apply H. Qed.
 (** [] *)
 
 (** **** Exercise: 3 stars, standard, especially useful (All)
@@ -903,15 +992,19 @@ Proof.
     lemma below.  (Of course, your definition should _not_ just
     restate the left-hand side of [All_In].) *)
 
-Fixpoint All {T : Type} (P : T -> Prop) (l : list T) : Prop
-  (* REPLACE THIS LINE WITH ":= _your_definition_ ." *). Admitted.
+Fixpoint All {T : Type} (P : T -> Prop) (l : list T) : Prop :=
+  match l with
+  | [] => True
+  | x' :: l' => P x' /\ All P l'
+  end.
 
 Theorem All_In :
   forall T (P : T -> Prop) (l : list T),
     (forall x, In x l -> P x) <->
     All P l.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros. split.
+  - intros. 
 (** [] *)
 
 (** **** Exercise: 2 stars, standard, optional (combine_odd_even)
