@@ -625,7 +625,7 @@ R6166:6167 LF.IndPropTest <> l1:81 var
 R6169:6170 LF.IndPropTest <> l2:82 var
 R6172:6172 LF.IndPropTest <> l:80 var
 R6216:6220 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R6179:6181 LF.Logic <> All prfax
+R6179:6181 LF.Logic <> All def
 R6183:6183 LF.IndPropTest <> X:78 var
 R6194:6194 LF.IndPropTest <> X:78 var
 binder 6190:6190 <> n:83
@@ -635,7 +635,7 @@ R6204:6204 LF.IndPropTest <> n:83 var
 R6208:6211 LF.Basics <> true constr
 R6214:6215 LF.IndPropTest <> l1:81 var
 R6260:6263 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R6222:6224 LF.Logic <> All prfax
+R6222:6224 LF.Logic <> All def
 R6226:6226 LF.IndPropTest <> X:78 var
 R6237:6237 LF.IndPropTest <> X:78 var
 binder 6233:6233 <> n:84
@@ -668,7 +668,7 @@ R6166:6167 LF.IndPropTest <> l1:88 var
 R6169:6170 LF.IndPropTest <> l2:89 var
 R6172:6172 LF.IndPropTest <> l:87 var
 R6216:6220 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R6179:6181 LF.Logic <> All prfax
+R6179:6181 LF.Logic <> All def
 R6183:6183 LF.IndPropTest <> X:85 var
 R6194:6194 LF.IndPropTest <> X:85 var
 binder 6190:6190 <> n:90
@@ -678,7 +678,7 @@ R6204:6204 LF.IndPropTest <> n:90 var
 R6208:6211 LF.Basics <> true constr
 R6214:6215 LF.IndPropTest <> l1:88 var
 R6260:6263 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R6222:6224 LF.Logic <> All prfax
+R6222:6224 LF.Logic <> All def
 R6226:6226 LF.IndPropTest <> X:85 var
 R6237:6237 LF.IndPropTest <> X:85 var
 binder 6233:6233 <> n:91

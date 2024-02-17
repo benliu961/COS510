@@ -1302,7 +1302,12 @@ Lemma even_double_conv : forall n, exists k,
   n = if even n then double k else S (double k).
 Proof.
   (* Hint: Use the [even_S] lemma from [Induction.v]. *)
-  (* FILL IN HERE *) Admitted.
+  intros. induction n.
+  - simpl. exists 0. reflexivity.
+  - rewrite even_S. destruct (even n).
+    + simpl. destruct IHn. exists x. rewrite H. reflexivity.
+    + simpl. destruct IHn. exists (S x). rewrite H. reflexivity. Qed.
+    
 (** [] *)
 
 (** Now the main theorem: *)
@@ -1474,12 +1479,31 @@ Qed.
 Theorem andb_true_iff : forall b1 b2:bool,
   b1 && b2 = true <-> b1 = true /\ b2 = true.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros. split.
+  - intros. split.
+    + destruct b1.
+      * reflexivity.
+      * discriminate.
+    + destruct b2.
+      * reflexivity.
+      * apply andb_true_elim2 in H. discriminate.
+  - intros. destruct H. rewrite H. rewrite H0. reflexivity. Qed.
+       
 
 Theorem orb_true_iff : forall b1 b2,
   b1 || b2 = true <-> b1 = true \/ b2 = true.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros. split.
+  - intros. destruct b1.
+    + left. reflexivity.
+    + destruct b2.
+      * right. reflexivity.
+      * discriminate.
+  - intros. destruct H.
+    + rewrite H. reflexivity.
+    + rewrite H. destruct b1.
+      * reflexivity.
+      * reflexivity. Qed.
 (** [] *)
 
 (** **** Exercise: 1 star, standard (eqb_neq)
@@ -1491,7 +1515,11 @@ Proof.
 Theorem eqb_neq : forall x y : nat,
   x =? y = false <-> x <> y.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros. split.
+  - intros. unfold not. intros. rewrite H0 in H. rewrite eqb_refl in H. discriminate.
+  - intros. unfold not in H. destruct (x =? y) eqn:E.
+    + apply eqb_eq in E. apply H in E. destruct E.
+    + reflexivity. Qed.
 (** [] *)
 
 (** **** Exercise: 3 stars, standard (eqb_list)
@@ -1503,15 +1531,36 @@ Proof.
     definition is correct, prove the lemma [eqb_list_true_iff]. *)
 
 Fixpoint eqb_list {A : Type} (eqb : A -> A -> bool)
-                  (l1 l2 : list A) : bool
-  (* REPLACE THIS LINE WITH ":= _your_definition_ ." *). Admitted.
+                  (l1 l2 : list A) : bool :=
+  match l1, l2 with
+  | [], [] => true
+  | x :: l1', y :: l2' => andb (eqb x y) (eqb_list eqb l1' l2')
+  | _, _ => false
+  end.
 
 Theorem eqb_list_true_iff :
   forall A (eqb : A -> A -> bool),
     (forall a1 a2, eqb a1 a2 = true <-> a1 = a2) ->
     forall l1 l2, eqb_list eqb l1 l2 = true <-> l1 = l2.
 Proof.
-(* FILL IN HERE *) Admitted.
+  intros. split.
+  - intros. generalize dependent l2. induction l1.
+    + intros. destruct l2.
+      * reflexivity.
+      * discriminate.
+    + intros. destruct l2.
+      * discriminate.
+      * simpl in H0. apply andb_true_iff in H0. destruct H0. apply H in H0. 
+        apply IHl1 in H1. rewrite H0. rewrite H1. reflexivity.
+  - intros. generalize dependent l2. induction l1.
+    + intros. destruct l2.
+      * reflexivity.
+      * discriminate.
+    + intros. destruct l2.
+      * discriminate.
+      * simpl. injection H0 as H1 H2. rewrite andb_true_iff. split.
+        { apply H. apply H1. }
+        { apply IHl1. apply H2. } Qed. 
 
 (** [] *)
 
@@ -1523,13 +1572,28 @@ Proof.
 
 (** Copy the definition of [forallb] from your [Tactics] here
     so that this file can be graded on its own. *)
-Fixpoint forallb {X : Type} (test : X -> bool) (l : list X) : bool
-  (* REPLACE THIS LINE WITH ":= _your_definition_ ." *). Admitted.
+Fixpoint forallb {X : Type} (test : X -> bool) (l : list X) : bool :=
+  match l with
+  | [] => true
+  | x :: l' => if test x then forallb test l' else false
+  end.
 
 Theorem forallb_true_iff : forall X test (l : list X),
   forallb test l = true <-> All (fun x => test x = true) l.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros. split.
+  - induction l.
+    + simpl. intros. apply I.
+    + simpl. destruct (test x).
+      * intros. split.
+        { reflexivity. }
+        { apply IHl. apply H. }
+      * intros. discriminate.    
+  - induction l.
+    + simpl. intros. reflexivity.
+    + simpl. intros. destruct H. destruct (test x).
+      * apply IHl in H0. apply H0.
+      * discriminate. Qed.  
 
 (** (Ungraded thought question) Are there any important properties of
     the function [forallb] which are not captured by this
@@ -1671,8 +1735,16 @@ Definition tr_rev {X} (l : list X) : list X :=
     Prove that the two definitions are indeed equivalent. *)
 
 Theorem tr_rev_correct : forall X, @tr_rev X = @rev X.
-Proof.
-(* FILL IN HERE *) Admitted.
+Proof. 
+  intros. apply functional_extensionality. intros. 
+  assert (forall l1 l2 : list X, rev_append l1 l2 = (rev l1) ++ l2).
+  { induction l1.
+    - intros. simpl. reflexivity.
+    - intros. simpl. rewrite IHl1. rewrite <- app_assoc. reflexivity. }
+  induction x.
+  - simpl. reflexivity.
+  - simpl. rewrite <- H. reflexivity. Qed.
+
 (** [] *)
 
 (* ================================================================= *)
@@ -1803,7 +1875,7 @@ Qed.
 Theorem excluded_middle_irrefutable: forall (P : Prop),
   ~ ~ (P \/ ~ P).
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros. unfold not. intros. apply H. right. intros. apply H. left. apply H0. Qed.
 (** [] *)
 
 (** **** Exercise: 3 stars, advanced (not_exists_dist)
@@ -1824,7 +1896,11 @@ Theorem not_exists_dist :
   forall (X:Type) (P : X -> Prop),
     ~ (exists x, ~ P x) -> (forall x, P x).
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros. unfold not in H0. unfold excluded_middle in H. unfold not in H. 
+  assert (P x \/ ~ P x). { apply H. } destruct H1.
+  - apply H1.
+  - unfold not in H1. apply ex_falso_quodlibet. apply H0. exists x. apply H1. Qed.
+
 (** [] *)
 
 (** **** Exercise: 5 stars, standard, optional (classical_axioms)

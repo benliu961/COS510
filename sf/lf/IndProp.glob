@@ -1491,18 +1491,18 @@ R44274:44275 LF.Logic <> In def
 R44280:44287 LF.IndProp <> re_chars def
 R44289:44290 LF.IndProp <> re:240 var
 R44277:44277 LF.IndProp <> x:241 var
-R44933:44942 LF.Logic <> In_app_iff prfax
-R44933:44942 LF.Logic <> In_app_iff prfax
-R44933:44942 LF.Logic <> In_app_iff prfax
-R45119:45128 LF.Logic <> In_app_iff prfax
-R45119:45128 LF.Logic <> In_app_iff prfax
-R45119:45128 LF.Logic <> In_app_iff prfax
-R45194:45203 LF.Logic <> In_app_iff prfax
-R45194:45203 LF.Logic <> In_app_iff prfax
-R45194:45203 LF.Logic <> In_app_iff prfax
-R45648:45657 LF.Logic <> In_app_iff prfax
-R45648:45657 LF.Logic <> In_app_iff prfax
-R45648:45657 LF.Logic <> In_app_iff prfax
+R44933:44942 LF.Logic <> In_app_iff thm
+R44933:44942 LF.Logic <> In_app_iff thm
+R44933:44942 LF.Logic <> In_app_iff thm
+R45119:45128 LF.Logic <> In_app_iff thm
+R45119:45128 LF.Logic <> In_app_iff thm
+R45119:45128 LF.Logic <> In_app_iff thm
+R45194:45203 LF.Logic <> In_app_iff thm
+R45194:45203 LF.Logic <> In_app_iff thm
+R45194:45203 LF.Logic <> In_app_iff thm
+R45648:45657 LF.Logic <> In_app_iff thm
+R45648:45657 LF.Logic <> In_app_iff thm
+R45648:45657 LF.Logic <> In_app_iff thm
 def 46010:46021 <> re_not_empty
 binder 46024:46024 <> T:242
 R46040:46046 LF.IndProp <> reg_exp ind
@@ -2072,7 +2072,7 @@ R64781:64781 LF.IndProp <> l:333 var
 R64778:64779 LF.IndProp <> l2:335 var
 R64775:64776 LF.IndProp <> l1:334 var
 R64819:64824 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R64788:64790 LF.Logic <> All prfax
+R64788:64790 LF.Logic <> All def
 R64817:64818 LF.IndProp <> l1:334 var
 binder 64797:64797 <> n:336
 R64808:64810 Coq.Init.Logic <> ::type_scope:x_'='_x not
@@ -2080,7 +2080,7 @@ R64802:64805 LF.IndProp <> test:332 var
 R64807:64807 LF.IndProp <> n:336 var
 R64811:64814 LF.Basics <> true constr
 R64857:64862 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R64825:64827 LF.Logic <> All prfax
+R64825:64827 LF.Logic <> All def
 R64855:64856 LF.IndProp <> l2:335 var
 binder 64834:64834 <> n:337
 R64845:64847 Coq.Init.Logic <> ::type_scope:x_'='_x not
