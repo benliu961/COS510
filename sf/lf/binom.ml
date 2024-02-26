@@ -48,8 +48,8 @@ let pow2heap (n: int) (t: key tree) : unit =
   match t with 
   | Leaf -> ()
   | Node (k, t1, t2) ->
-    let rec aux (n: int) (t: key tree) : unit =
-      match t with
+    let rec aux (n: int) (tr: key tree) : unit =
+      match tr with
       | Leaf -> if n = 0 then () else raise (IllFormed (n, t))
       | Node (k, t1, t2) -> 
         if aux (n-1) t1 = () && aux (n-1) t2 = () then ()
@@ -109,20 +109,20 @@ let smash (t : key tree) (u : key tree) : key tree =
   let s1 = check_size t in
   let s2 = check_size u in
   if s1 = s2 then
-    if pow2heap (s1-1) t = () && pow2heap (s1-1) u = () then
+    if pow2heap s1 t = () && pow2heap s1 u = () then
       match t, u with
-      | Node (k1, t1, t2), Node (k2, u1, u2) -> 
-        if k1 > k2 then Node (k1, t2, u)
-        else Node (k2, u2, t)
+      | Node (k1, t1, Leaf), Node (k2, u1, Leaf) -> 
+        if k1 > k2 then Node (k1, Node (k2, u1, t1), Leaf)
+        else Node (k2, Node (k1, t1, u1), Leaf)
       | _ -> raise SmashError
     else raise SmashError
   else raise SmashError;;
      
 (* Problem 3a.  Demonstrate a test case.  Do more than one if you
    want to save time later by having debugged this part early.  *)
-let tree1 : key tree =   Leaf;; (* fix me *)
+let tree1 : key tree = Node (1, Node (2, Node(3, Leaf, Leaf), Node(4, Leaf, Leaf)), Leaf);;
 let test_tree1 = pow2heap 2 tree1;;
-let tree2 : key tree =   Leaf;; (* fix me *)
+let tree2 : key tree = Node (5, Node (6, Node(7, Leaf, Leaf), Node(8, Leaf, Leaf)), Leaf);;
 let test_tree2 = pow2heap 2 tree2;;
 let tree12 = smash tree1 tree2;;
 let test_tree12 = pow2heap 3 tree12;;
@@ -226,7 +226,7 @@ let rec unzip (t: key tree) (cont: key priqueue -> key priqueue) : key priqueue 
 
 let delete_spine (t: key tree) = unzip t (fun u -> u);;
 
-(* what does cont do *)
+(* what does cont do / unfold tree of depth 3*)
 
 (* Problem 8.  Implement a function that deletes (and discards)
    the maximum element of a power-of-2 heap, returning a
@@ -261,7 +261,14 @@ let heap_delete_max (t: key tree) : key priqueue =
 *)
 
 let delete_max (q: key priqueue) : key * key priqueue = 
-     raise Empty;; (* fix me *)
+  let max_key = find_max q in
+  let iele = List.find (fun t -> 
+    match t with
+    | Leaf -> false
+    | Node (k, _, _) -> k = max_key) q in
+  let l1 = heap_delete_max iele in
+  let l2 = List.map (fun t -> if t = iele then Leaf else t) q in
+  (max_key, join l1 l2 Leaf);;
 
 (* Problem 9b.  Demonstrate delete_max on queue1.
   Then, demonstrate that repeating delete_max on a priority queue
