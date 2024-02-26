@@ -148,7 +148,7 @@ let rec carry (q: key priqueue) (t: key tree) : key priqueue =
   | [] -> [t]
   | t'::q' -> 
     if t' = Leaf then t::q'
-    else carry q' (smash t t')
+    else Leaf :: carry q' (smash t t')
 
 let insert (q: key priqueue) (x: key) : key priqueue = 
   carry q (Node (x, Leaf, Leaf));;
@@ -195,11 +195,15 @@ let rec join (p: key priqueue) (q: key priqueue) (c: key tree) : key priqueue =
   | [], _ -> carry q c
   | _, [] -> carry p c
   | t1::p', t2::q' -> 
-    if t1 = Leaf then 
-      if t2 = Leaf then c::(join p' q' Leaf)
-      else carry (t2::q') c
-    else if t2 = Leaf then carry (t1::p') c
-    else c::(join p' q' (smash t1 t2));;
+    match t1, t2 with
+    | Leaf, Leaf -> c::(join p' q' Leaf)
+    | _, Leaf -> 
+      if c = Leaf then t1::(join p' q' Leaf)
+      else Leaf::(join p' q' (smash t1 c))
+    | Leaf, _ -> 
+      if c = Leaf then t2::(join p' q' Leaf)
+      else Leaf::(join p' q' (smash t2 c))
+    | _, _ -> c::(join p' q' (smash t1 t2));;
 
 (* Problem 6b.  Do a test case or two, to show that the (join p q c) is
   a well-formed priority queue.  More work here will save enormous time
