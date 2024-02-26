@@ -177,7 +177,7 @@ let rec find_max (q: key priqueue) : key =
   List.fold_left (fun acc t -> 
     match t with
     | Leaf -> acc
-    | Node (k, _, _) -> if k > acc then k else acc) 0 q;;
+    | Node (k, _, _) -> if k >= acc then k else acc) 0 q;;
 
 let max1 = find_max queue1;;
 
@@ -281,6 +281,8 @@ let test_heap_delete_max = heap_delete_max tree1;;
 *)
 
 let delete_max (q: key priqueue) : key * key priqueue = 
+  if List.filter( fun t -> t <> Leaf) q = [] then raise Empty
+  else
   let max_key = find_max q in
   let iele = List.find (fun t -> 
     match t with
