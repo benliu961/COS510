@@ -120,9 +120,9 @@ let smash (t : key tree) (u : key tree) : key tree =
      
 (* Problem 3a.  Demonstrate a test case.  Do more than one if you
    want to save time later by having debugged this part early.  *)
-let tree1 : key tree = Node (1, Node (2, Node(3, Leaf, Leaf), Node(4, Leaf, Leaf)), Leaf);;
+let tree1 : key tree = Node (4, Node (2, Node(1, Leaf, Leaf), Node(3, Leaf, Leaf)), Leaf);;
 let test_tree1 = pow2heap 2 tree1;;
-let tree2 : key tree = Node (5, Node (6, Node(7, Leaf, Leaf), Node(8, Leaf, Leaf)), Leaf);;
+let tree2 : key tree = Node (8, Node (6, Node(5, Leaf, Leaf), Node(7, Leaf, Leaf)), Leaf);;
 let test_tree2 = pow2heap 2 tree2;;
 let tree12 = smash tree1 tree2;;
 let test_tree12 = pow2heap 3 tree12;;
@@ -158,6 +158,9 @@ let insert (q: key priqueue) (x: key) : key priqueue =
 let queue1 = List.fold_left insert emptyQ [3;1;4;1;5;9;2;3;5];;
 let test_queue1 = priq queue1;;
 
+let queue2 = List.fold_left insert emptyQ [9;8;7;6;5;4;3];;
+let test_queue2 = priq queue2;;
+
 (* The maximum element of a binomial queue, implemented as a list
    of power-of-2 heaps, is the max element of any of those heaps.
    The max element of those heaps is at the root (because the
@@ -175,6 +178,8 @@ let rec find_max (q: key priqueue) : key =
     match t with
     | Leaf -> acc
     | Node (k, _, _) -> if k > acc then k else acc) 0 q;;
+
+let max1 = find_max queue1;;
 
 (* Two priority queues may be joined together by a process that
    Sedgewick says "mimics the binary addition" function.
@@ -210,6 +215,9 @@ let rec join (p: key priqueue) (q: key priqueue) (c: key tree) : key priqueue =
   later. 
 *)
 
+let queue3 = join queue1 queue2 Leaf;;
+let test_queue3 = priq queue3;;
+
 (* Deletion of the spine.
    Sedgewick's Figure 9.18 shows that "Taking away the root [of a 
    power-of-2 heap] gives a forest of power-of-2 heaps, all left-heap-ordered,
@@ -229,8 +237,13 @@ let rec unzip (t: key tree) (cont: key priqueue -> key priqueue) : key priqueue 
   | Node (k, t1, t2) -> unzip t2 (fun q -> Node(k, t1, Leaf) :: cont q);;
 
 let delete_spine (t: key tree) = unzip t (fun u -> u);;
+(* 
+   the cont argument is a function that builds the priqueue from the
+   right spine of the tree. It makes sure that the output of is a 
+   well formed priqueue.   
+*)
 
-(* what does cont do / unfold tree of depth 3*)
+let test_delete_spine = delete_spine (Node (5, Node(3, Node (2, Leaf, Leaf), Node (4, Leaf, Leaf)), Node (7, Node (6, Leaf, Leaf), Node (8, Leaf, Leaf))));;
 
 (* Problem 8.  Implement a function that deletes (and discards)
    the maximum element of a power-of-2 heap, returning a
@@ -244,13 +257,16 @@ let heap_delete_max (t: key tree) : key priqueue =
   | Leaf -> []
   | Node (k, t1, t2) -> 
     let q = delete_spine t1 in
-    let rec aux (q: key priqueue) : key priqueue = 
+    (* let rec aux (q: key priqueue) : key priqueue = 
       match q with
       | [] -> []
       | t'::q' -> 
         if t' = Leaf then aux q'
         else (Node (k, t', t2))::q' in
-    aux q;;
+    aux q;; *)
+    q;;
+
+let test_heap_delete_max = heap_delete_max tree1;;
 
 (* Deletion of the max element of a binomial queue is done as follows:
   Suppose the i'th list element has the max element.
