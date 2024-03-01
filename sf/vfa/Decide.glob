@@ -3,7 +3,6 @@ FVFA.Decide
 R159:162 VFA.Perm <> <> lib
 R525:530 Coq.Arith.PeanoNat Nat lt def
 R567:573 Coq.Arith.PeanoNat Nat ltb def
-R866:872 Coq.Bool.Bool <> reflect ind
 R1013:1023 VFA.Perm <> ltb_reflect thm
 def 3107:3124 <> Unnamed_thm
 R3117:3119 Coq.Init.Logic <> ::type_scope:x_'='_x not
@@ -35,6 +34,10 @@ R5453:5453 VFA.Decide <> B:2 var
 R5458:5464 VFA.Decide <> sumbool:3 ind
 R5468:5468 VFA.Decide <> B:2 var
 R5466:5466 VFA.Decide <> A:1 var
+scheme 5385:5391 ScratchPad sumbool_rect
+scheme 5385:5391 ScratchPad sumbool_ind
+scheme 5385:5391 ScratchPad sumbool_rec
+scheme 5385:5391 ScratchPad sumbool_sind
 def 5545:5546 ScratchPad t1
 R5551:5557 VFA.Decide ScratchPad sumbool ind
 R5561:5561 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
@@ -99,7 +102,6 @@ R7055:7058 Coq.Init.Datatypes <> true constr
 R7063:7067 VFA.Decide ScratchPad right constr
 R7078:7082 Coq.Init.Datatypes <> false constr
 R7107:7117 VFA.Decide ScratchPad is_3_less_7 def
-R7147:7148 VFA.Decide ScratchPad t4 def
 R7820:7830 VFA.Perm <> ltb_reflect thm
 def 7953:7958 ScratchPad lt_dec
 R7964:7966 Coq.Init.Datatypes <> nat ind
@@ -156,8 +158,6 @@ R8255:8255 VFA.Decide <> a:9 var
 R8257:8257 VFA.Decide <> b:10 var
 R8274:8284 VFA.Perm <> ltb_reflect thm
 R8274:8284 VFA.Perm <> ltb_reflect thm
-R8349:8354 VFA.Decide ScratchPad lt_dec def
-R8363:8369 VFA.Decide ScratchPad lt_dec' def
 prf 8381:8397 ScratchPad lt_dec_equivalent
 binder 8407:8407 <> a:11
 binder 8409:8409 <> b:12
@@ -172,7 +172,6 @@ R8460:8465 VFA.Decide ScratchPad lt_dec def
 R8468:8474 VFA.Decide ScratchPad lt_dec' def
 R8681:8690 VFA.Decide ScratchPad <> mod
 mod 8822:8832 <> ScratchPad2
-R8887:8893 Coq.Init.Specif <> sumbool ind
 def 9108:9113 ScratchPad2 lt_dec
 R9119:9121 Coq.Init.Datatypes <> nat ind
 binder 9116:9116 <> a:13
@@ -283,6 +282,8 @@ R9924:9924 VFA.Decide <> x:27 var
 R9928:9929 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
 R9927:9927 VFA.Decide <> y:28 var
 R9930:9930 VFA.Decide <> l:29 var
+scheme 9757:9762 ScratchPad2 sorted_ind
+scheme 9757:9762 ScratchPad2 sorted_sind
 prf 10004:10016 ScratchPad2 insert_sorted
 binder 10028:10028 <> a:30
 binder 10030:10030 <> l:31

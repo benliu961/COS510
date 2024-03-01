@@ -8,11 +8,9 @@ R3472:3477 Coq.PArith.PArith <> <> lib
 R3521:3524 VFA.Perm <> <> lib
 R4019:4041 Coq.Structures.OrderedTypeEx PositiveOrderedTypeBits <> modtype
 mod 4014:4014 <> E
-R4066:4068 VFA.Color <> t def
 R4269:4283 Coq.FSets.FSetInterface S <> mod
 R4288:4298 Coq.FSets.FSetPositive PositiveSet <> modtype
 mod 4264:4264 <> S
-R4323:4327 VFA.Color <> elt def
 R4400:4414 Coq.FSets.FMapInterface S <> mod
 R4419:4429 Coq.FSets.FMapPositive PositiveMap <> modtype
 mod 4395:4395 <> M
@@ -74,7 +72,6 @@ R7052:7052 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_
 R7054:7054 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
 R7056:7056 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
 R7058:7058 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
-R7205:7214 Coq.Lists.SetoidList <> equivlistA def
 def 8058:8068 <> same_mod_10
 R8076:8078 Coq.Init.Datatypes <> nat ind
 binder 8071:8071 <> i:5

@@ -1074,7 +1074,6 @@ R18363:18365 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R18352:18354 VFA.ADT OverlyEncapsulatedExample get defax
 R18358:18362 VFA.ADT OverlyEncapsulatedExample empty defax
 R18434:18458 VFA.ADT OverlyEncapsulatedExample <> mod
-R18970:19030 VFA.ADT <> V defax
 modtype 19561:19571 <> SimpleTable
 ax 19586:19588 SimpleTable key
 ax 19610:19610 SimpleTable V
@@ -1094,7 +1093,6 @@ def 19893:19897 SimpleStringTable1 table
 R19902:19905 VFA.SearchTree <> tree ind
 R19907:19907 VFA.ADT SimpleStringTable1 V def
 R19914:19931 VFA.ADT SimpleStringTable1 <> mod
-R19964:19983 VFA.ADT <> V defax
 R20015:20025 VFA.ADT SimpleTable <> mod
 R20048:20053 Coq.Strings.String <> string ind
 modtype 19999:20010 <> SimpleTable2
@@ -1110,8 +1108,6 @@ def 20200:20204 SimpleStringTable2 table
 R20209:20212 VFA.SearchTree <> tree ind
 R20214:20214 VFA.ADT SimpleStringTable2 V def
 R20221:20238 VFA.ADT SimpleStringTable2 <> mod
-R20297:20316 VFA.ADT <> V defax
-R20325:20350 VFA.ADT <> default defax
 R20382:20392 VFA.ADT SimpleTable <> mod
 R20417:20422 Coq.Strings.String <> string ind
 modtype 20366:20377 <> SimpleTable3
@@ -1127,8 +1123,6 @@ def 20608:20612 SimpleStringTable3 table
 R20617:20620 VFA.SearchTree <> tree ind
 R20622:20622 VFA.ADT SimpleStringTable3 V def
 R20629:20646 VFA.ADT SimpleStringTable3 <> mod
-R20698:20717 VFA.ADT <> V defax
-R20726:20751 VFA.ADT <> default defax
 R20914:20920 VFA.ADT ValType <> mod
 R20926:20931 VFA.ADT ETable <> mod
 R20954:20957 VFA.ADT VT V defax
@@ -2118,6 +2112,10 @@ R38018:38018 VFA.ADT <> P:316 var
 R38020:38020 VFA.ADT <> x:319 var
 R38025:38027 VFA.ADT <> sig:317 ind
 R38029:38029 VFA.ADT <> P:316 var
+scheme 37957:37959 SigSandbox sig_rect
+scheme 37957:37959 SigSandbox sig_ind
+scheme 37957:37959 SigSandbox sig_rec
+scheme 37957:37959 SigSandbox sig_sind
 R38064:38066 VFA.ADT SigSandbox sig ind
 binder 38075:38075 <> x:320
 not 38044:38044 SigSandbox :::'{'_x_':'_x_'|'_x_'}'
@@ -2134,6 +2132,8 @@ R38466:38466 VFA.ADT <> P:322 var
 R38468:38468 VFA.ADT <> x:325 var
 R38473:38474 VFA.ADT <> ex:323 ind
 R38476:38476 VFA.ADT <> P:322 var
+scheme 38403:38404 SigSandbox ex_ind
+scheme 38403:38404 SigSandbox ex_sind
 def 38799:38807 SigSandbox proj1_sig
 binder 38810:38810 <> A:326
 R38826:38829 Coq.Init.Logic <> ::type_scope:x_'->'_x not

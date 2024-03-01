@@ -101,6 +101,8 @@ R3690:3690 VFA.Sort <> x:11 var
 R3696:3699 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
 R3695:3695 VFA.Sort <> y:12 var
 R3700:3700 VFA.Sort <> l:13 var
+scheme 3523:3528 <> sorted_ind
+scheme 3523:3528 <> sorted_sind
 R3723:3728 VFA.Sort <> sorted ind
 binder 4495:4495 <> A:14
 R4508:4511 Coq.Init.Logic <> ::type_scope:x_'->'_x not

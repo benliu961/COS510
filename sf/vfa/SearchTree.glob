@@ -21,6 +21,10 @@ binder 1905:1905 <> v:6
 R1917:1920 VFA.SearchTree <> tree:2 ind
 R1922:1922 VFA.SearchTree <> V:1 var
 binder 1913:1913 <> r:7
+scheme 1847:1850 <> tree_rect
+scheme 1847:1850 <> tree_ind
+scheme 1847:1850 <> tree_rec
+scheme 1847:1850 <> tree_sind
 R1937:1937 VFA.SearchTree <> E constr
 R1937:1937 VFA.SearchTree <> E constr
 R1954:1954 VFA.SearchTree <> T constr
@@ -216,6 +220,8 @@ R5852:5852 VFA.SearchTree <> r:37 var
 R5850:5850 VFA.SearchTree <> v:36 var
 R5848:5848 VFA.SearchTree <> x:35 var
 R5846:5846 VFA.SearchTree <> l:34 var
+scheme 5660:5662 <> BST_ind
+scheme 5660:5662 <> BST_sind
 R5875:5877 VFA.SearchTree <> BST ind
 def 5979:5987 <> is_BST_ex
 R5993:5995 VFA.SearchTree <> BST ind
@@ -1108,7 +1114,6 @@ R24619:24629 VFA.Sort <> sorted ind
 R24632:24640 VFA.SearchTree <> list_keys def
 R24643:24650 VFA.SearchTree <> elements def
 R24652:24652 VFA.SearchTree <> t:205 var
-R25116:25120 Coq.Lists.List <> NoDup ind
 def 25311:25318 <> disjoint
 binder 25321:25321 <> X:206
 R25337:25340 Coq.Init.Datatypes <> list ind

@@ -183,6 +183,8 @@ R4413:4413 VFA.Selection <> i:25 var
 R4419:4422 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
 R4418:4418 VFA.Selection <> j:26 var
 R4423:4423 VFA.Selection <> l:27 var
+scheme 4259:4264 <> sorted_ind
+scheme 4259:4264 <> sorted_sind
 R4446:4451 VFA.Selection <> sorted ind
 def 4473:4494 <> is_a_sorting_algorithm
 R4508:4511 Coq.Init.Logic <> ::type_scope:x_'->'_x not
@@ -493,8 +495,6 @@ R11549:11549 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_
 R11551:11551 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
 R11553:11553 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
 R11555:11555 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
-R11803:11810 VFA.Selection <> selsort' thm
-R11819:11836 VFA.Selection <> selsort'_terminate def
 R12031:12047 VFA.Selection <> selsort'_equation def
 prf 12226:12238 <> selsort'_perm
 binder 12249:12249 <> n:102

@@ -334,7 +334,13 @@ Theorem lookup_insert_neq :
   forall (V : Type) (t : tree V) (d : V) (k k' : key) (v : V),
    k <> k' -> lookup d k' (insert k v t) = lookup d k' t.
 Proof.
-  induction t; intros; bdall.
+  induction t; intros.
+  (* - simpl. bdestruct (k' =? k). contradiction. reflexivity. *)
+  - simpl. bdestruct (k' <? k).
+    + reflexivity.
+    + bdestruct (k' >? k).
+      * reflexivity.
+      * 
 Qed.
 
 (** Perhaps surprisingly, the proofs of these results do not

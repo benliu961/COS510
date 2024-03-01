@@ -372,6 +372,8 @@ binder 6992:6992 <> p:76
 R6995:6998 VFA.Priqueue <> Abs':74 ind
 R7002:7002 VFA.Priqueue <> p:76 var
 R7000:7000 VFA.Priqueue <> p:76 var
+scheme 6934:6937 List_Priqueue Abs'_ind
+scheme 6934:6937 List_Priqueue Abs'_sind
 def 7017:7019 List_Priqueue Abs
 R7024:7027 VFA.Priqueue List_Priqueue Abs' ind
 prf 7162:7171 List_Priqueue can_relate

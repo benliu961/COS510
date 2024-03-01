@@ -52,7 +52,6 @@ R3887:3887 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_
 R3889:3889 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
 R3891:3891 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
 R3893:3893 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
-R4705:4707 Coq.Bool.Bool <> eqb def
 R5031:5038 VFA.Trie VerySlow <> mod
 mod 5478:5485 <> Integers
 ind 5539:5546 Integers positive
@@ -66,6 +65,10 @@ R5604:5607 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R5596:5603 VFA.Trie <> positive:7 ind
 R5608:5615 VFA.Trie <> positive:7 ind
 R5626:5633 VFA.Trie <> positive:7 ind
+scheme 5539:5546 Integers positive_rect
+scheme 5539:5546 Integers positive_ind
+scheme 5539:5546 Integers positive_rec
+scheme 5539:5546 Integers positive_sind
 def 5820:5822 Integers ten
 R5827:5828 VFA.Trie Integers xO constr
 R5831:5832 VFA.Trie Integers xI constr
@@ -112,7 +115,6 @@ R6634:6635 VFA.Trie Integers xI constr
 not 6622:6622 Integers :::x_'~'_'1'
 R6716:6717 VFA.Trie Integers xO constr
 not 6704:6704 Integers :::x_'~'_'0'
-R6784:6786 VFA.Trie Integers ten def
 def 7464:7467 Integers succ
 binder 7469:7469 <> x:15
 R7482:7482 VFA.Trie <> x:15 var
@@ -307,6 +309,10 @@ constr 10563:10564 Integers Gt
 R10532:10541 VFA.Trie <> comparison:33 ind
 R10550:10559 VFA.Trie <> comparison:33 ind
 R10568:10577 VFA.Trie <> comparison:33 ind
+scheme 10503:10512 Integers comparison_rect
+scheme 10503:10512 Integers comparison_ind
+scheme 10503:10512 Integers comparison_rec
+scheme 10503:10512 Integers comparison_sind
 def 10648:10654 Integers compare
 binder 10656:10656 <> x:35
 binder 10658:10658 <> y:36
@@ -365,8 +371,11 @@ R11640:11640 VFA.Trie <> Z:43 ind
 R11661:11664 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R11653:11660 VFA.Trie Integers positive ind
 R11665:11665 VFA.Trie <> Z:43 ind
+scheme 11595:11595 Integers Z_rect
+scheme 11595:11595 Integers Z_ind
+scheme 11595:11595 Integers Z_rec
+scheme 11595:11595 Integers Z_sind
 R11982:11989 VFA.Trie Integers <> mod
-R12225:12232 Coq.Numbers.BinNums <> positive ind
 R12389:12399 Coq.PArith.BinPos Pos compare def
 R12454:12460 Coq.PArith.BinPos Pos add def
 R12511:12515 Coq.ZArith.BinInt Z add def
@@ -444,7 +453,6 @@ R13441:13441 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_
 R13443:13443 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
 R13445:13445 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
 R13486:13495 VFA.Trie RatherSlow <> mod
-R15195:15202 Coq.Numbers.BinNums <> positive ind
 def 15316:15351 <> Unnamed_thm
 R15334:15336 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R15337:15338 Coq.Numbers.BinNums <> xO constr
@@ -467,6 +475,10 @@ R15720:15723 VFA.Trie <> trie:60 ind
 R15725:15725 VFA.Trie <> A:59 var
 R15730:15733 VFA.Trie <> trie:60 ind
 R15735:15735 VFA.Trie <> A:59 var
+scheme 15653:15656 <> trie_rect
+scheme 15653:15656 <> trie_ind
+scheme 15653:15656 <> trie_rec
+scheme 15653:15656 <> trie_sind
 R15748:15751 VFA.Trie <> Leaf constr
 R15748:15751 VFA.Trie <> Leaf constr
 R15768:15771 VFA.Trie <> Node constr

@@ -306,7 +306,6 @@ R7603:7604 VFA.Merge <> l2:52 var
 binder 7471:7479 <> merge_aux:56
 R7642:7650 VFA.Merge <> merge_aux:56 var
 R7652:7653 VFA.Merge <> l2:50 var
-R8409:8413 VFA.Merge <> merge def
 prf 8960:8965 <> merge2
 R8983:8985 Coq.Init.Datatypes <> nat ind
 binder 8977:8978 <> x1:57

@@ -10,6 +10,10 @@ R1827:1829 VFA.Extract <> int defax
 ind 1843:1847 <> color
 constr 1852:1854 <> Red
 constr 1858:1862 <> Black
+scheme 1843:1847 <> color_rect
+scheme 1843:1847 <> color_ind
+scheme 1843:1847 <> color_rec
+scheme 1843:1847 <> color_sind
 ind 1876:1879 <> tree
 constr 1904:1904 <> E
 constr 1917:1917 <> T
@@ -30,6 +34,10 @@ R1952:1955 VFA.Redblack <> tree:4 ind
 R1957:1957 VFA.Redblack <> V:3 var
 R1962:1965 VFA.Redblack <> tree:4 ind
 R1967:1967 VFA.Redblack <> V:3 var
+scheme 1876:1879 <> tree_rect
+scheme 1876:1879 <> tree_ind
+scheme 1876:1879 <> tree_rec
+scheme 1876:1879 <> tree_sind
 R1981:1981 VFA.Redblack <> E constr
 R1981:1981 VFA.Redblack <> E constr
 R1998:1998 VFA.Redblack <> T constr
@@ -53,7 +61,6 @@ R2316:2316 VFA.Redblack <> t:10 var
 R2327:2327 VFA.Redblack <> E constr
 R2332:2332 VFA.Redblack <> d:8 var
 R2338:2338 VFA.Redblack <> T constr
-R2342:2343 Coq.Lists.List <> tl def
 R2358:2360 VFA.Extract <> ltb defax
 R2362:2362 VFA.Redblack <> x:9 var
 R2413:2415 VFA.Extract <> ltb defax
@@ -415,6 +422,8 @@ R8189:8189 VFA.Redblack <> v:61 var
 R8187:8187 VFA.Redblack <> k:60 var
 R8185:8185 VFA.Redblack <> l:59 var
 R8183:8183 VFA.Redblack <> c:58 var
+scheme 7923:7925 <> BST_ind
+scheme 7923:7925 <> BST_sind
 prf 8202:8215 <> empty_tree_BST
 binder 8227:8227 <> V:65
 R8238:8240 VFA.Redblack <> BST ind
@@ -1296,6 +1305,8 @@ R20780:20780 VFA.Redblack <> v:199 var
 R20778:20778 VFA.Redblack <> k:198 var
 R20776:20776 VFA.Redblack <> l:196 var
 R20770:20774 VFA.Redblack <> Black constr
+scheme 20433:20434 <> RB_ind
+scheme 20433:20434 <> RB_sind
 prf 20945:20961 <> RB_blacken_parent
 binder 20973:20973 <> V:201
 R20988:20991 VFA.Redblack <> tree ind
@@ -1377,6 +1388,8 @@ R21593:21593 VFA.Redblack <> v:215 var
 R21591:21591 VFA.Redblack <> k:214 var
 R21589:21589 VFA.Redblack <> l:212 var
 R21583:21587 VFA.Redblack <> Black constr
+scheme 21277:21284 <> NearlyRB_ind
+scheme 21277:21284 <> NearlyRB_sind
 prf 22223:22228 <> ins_RB
 binder 22240:22240 <> V:217
 R22255:22257 VFA.Redblack <> key def

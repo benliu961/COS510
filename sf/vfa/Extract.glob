@@ -339,6 +339,8 @@ R8696:8696 VFA.Extract <> x:52 var
 R8702:8705 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
 R8701:8701 VFA.Extract <> y:53 var
 R8706:8706 VFA.Extract <> l:54 var
+scheme 8524:8529 <> sorted_ind
+scheme 8524:8529 <> sorted_sind
 R8729:8734 VFA.Extract <> sorted ind
 prf 9047:9062 <> sort_int_correct
 R9079:9082 Coq.Init.Datatypes <> list ind
@@ -372,6 +374,10 @@ R9465:9468 VFA.Extract <> tree:57 ind
 R9470:9470 VFA.Extract <> V:56 var
 R9475:9478 VFA.Extract <> tree:57 ind
 R9480:9480 VFA.Extract <> V:56 var
+scheme 9394:9397 <> tree_rect
+scheme 9394:9397 <> tree_ind
+scheme 9394:9397 <> tree_rec
+scheme 9394:9397 <> tree_sind
 R9494:9494 VFA.Extract <> E constr
 R9494:9494 VFA.Extract <> E constr
 R9511:9511 VFA.Extract <> T constr

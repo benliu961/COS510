@@ -18,6 +18,10 @@ R1113:1116 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R1109:1112 VFA.Binom <> tree:1 ind
 R1117:1120 VFA.Binom <> tree:1 ind
 R1132:1135 VFA.Binom <> tree:1 ind
+scheme 1070:1073 BinomQueue tree_rect
+scheme 1070:1073 BinomQueue tree_ind
+scheme 1070:1073 BinomQueue tree_rec
+scheme 1070:1073 BinomQueue tree_sind
 def 1460:1467 BinomQueue priqueue
 R1472:1475 Coq.Init.Datatypes <> list ind
 R1477:1480 VFA.Binom BinomQueue tree ind
@@ -532,6 +536,8 @@ R7505:7508 VFA.Binom BinomQueue Node constr
 R7510:7510 VFA.Binom <> v:87 var
 R7512:7513 VFA.Binom <> tl:88 var
 R7515:7516 VFA.Binom <> tr:89 var
+scheme 7257:7266 BinomQueue tree_elems_ind
+scheme 7257:7266 BinomQueue tree_elems_sind
 ind 7981:7994 BinomQueue priqueue_elems
 R8006:8009 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R7997:8000 Coq.Init.Datatypes <> list ind
@@ -539,6 +545,10 @@ R8002:8005 VFA.Binom BinomQueue tree ind
 R8018:8021 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R8010:8013 Coq.Init.Datatypes <> list ind
 R8015:8017 VFA.Binom BinomQueue key def
+scheme 7981:7994 BinomQueue priqueue_elems_rect
+scheme 7981:7994 BinomQueue priqueue_elems_ind
+scheme 7981:7994 BinomQueue priqueue_elems_rec
+scheme 7981:7994 BinomQueue priqueue_elems_sind
 def 8115:8145 BinomQueue manual_grade_for_priqueue_elems
 R8149:8154 Coq.Init.Datatypes <> option ind
 R8160:8160 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
