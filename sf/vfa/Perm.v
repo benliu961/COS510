@@ -438,7 +438,11 @@ Print Permutation.
      - 3. [[1;1]] is NOT a permutation of [[1;2]].
      - 4. [[1;2;3;4]] IS a permutation of [[3;4;2;1]].
 
-   YOUR TASK: Add three more properties. Write them here: *)
+   YOUR TASK: Add three more properties. Write them here: 
+     - 5. If [Permutation al bl] and [Permutation bl cl], then [Permutation al cl].
+     - 6. If [Permutation (a::al) (a::bl)], then [Permutation al bl].
+     - 7. If [Permutation al bl], then [Permutation (al++cl) (bl++cl)].
+   *)
 
 (** Now, let's examine all the theorems in the Coq library about
     permutations: *)
@@ -448,6 +452,10 @@ Search Permutation.  (* Browse through the results of this query! *)
 (** Which of the properties that you wrote down above have already
     been proved as theorems by the Coq library developers?  Answer
     here:
+
+    5. Permutation_trains
+    6. Permutation_cons_inv
+    7. Permutation_app_tail
 
 *)
 (* Do not modify the following line: *)
@@ -534,7 +542,14 @@ Check app_comm_cons.
 Example permut_example: forall (a b: list nat),
   Permutation (5 :: 6 :: a ++ b) ((5 :: b) ++ (6 :: a ++ [])).
 Proof.
-(* FILL IN HERE *) Admitted.
+  intros.
+  rewrite app_nil_r.
+  rewrite <- app_comm_cons.
+  apply perm_skip.
+  rewrite app_comm_cons.
+  apply Permutation_app_comm.
+  Qed.
+
 (** [] *)
 
 (** **** Exercise: 2 stars, standard (not_a_permutation)
@@ -548,7 +563,11 @@ Check Permutation_length_1_inv.
 Example not_a_permutation:
   ~ Permutation [1;1] [1;2].
 Proof.
-(* FILL IN HERE *) Admitted.
+  unfold not.
+  intros.
+  apply Permutation_cons_inv in H.
+  apply Permutation_length_1_inv in H.
+  inversion H. Qed.
 (** [] *)
 
 (* ================================================================= *)
@@ -614,7 +633,19 @@ Theorem Forall_perm: forall {A} (f: A -> Prop) al bl,
   Permutation al bl ->
   Forall f al -> Forall f bl.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros A f al bl H.
+  induction H.
+  - intros. apply H.
+  - intros. inv H0. apply Forall_cons.
+    + apply H3.
+    + apply IHPermutation. apply H4.
+  - intros. inv H. inv H3. apply Forall_cons.
+    + apply H1.
+    + apply Forall_cons.
+      * apply H2.
+      * apply H4.
+  - intros. apply IHPermutation2. apply IHPermutation1. apply H1.
+  Qed.
 (** [] *)
 
 (* ################################################################# *)
