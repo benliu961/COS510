@@ -453,7 +453,7 @@ Search Permutation.  (* Browse through the results of this query! *)
     been proved as theorems by the Coq library developers?  Answer
     here:
 
-    5. Permutation_trains
+    5. Permutation_trans
     6. Permutation_cons_inv
     7. Permutation_app_tail
 
