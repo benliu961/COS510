@@ -174,7 +174,25 @@ Lemma insert_sorted:
   forall a l, sorted l -> sorted (insert a l).
 Proof.
   intros a l S. induction S; simpl.
-  (* FILL IN HERE *) Admitted.
+  - auto.
+  - bdestruct (a <=? x).
+    + auto.
+    + apply sorted_cons.
+      * lia. 
+      * auto.
+  - bdestruct (a <=? x).
+    + bdestruct (a <=? y).
+      * auto.
+      * auto.
+    + bdestruct (a <=? y). 
+      * apply sorted_cons.
+        { lia. }
+        { auto. } 
+      * apply sorted_cons.
+        { lia. }
+        
+        
+  
 
 (** [] *)
 
