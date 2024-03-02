@@ -384,8 +384,8 @@ R8679:8680 VFA.ADT <> k':58 var
 R8682:8682 VFA.ADT <> t:60 var
 R8713:8715 VFA.ADT TreeTable get def
 R8718:8720 VFA.ADT TreeTable set def
-R8729:8745 VFA.SearchTree <> lookup_insert_neq thm
-R8729:8745 VFA.SearchTree <> lookup_insert_neq thm
+R8729:8745 VFA.SearchTree <> lookup_insert_neq prfax
+R8729:8745 VFA.SearchTree <> lookup_insert_neq prfax
 R8772:8780 VFA.ADT TreeTable <> mod
 modtype 9142:9161 <> ETable_first_attempt
 R9436:9440 VFA.ADT Table <> mod
@@ -2493,8 +2493,8 @@ R43658:43659 VFA.ADT <> k':391 var
 R43661:43661 VFA.ADT <> t:393 var
 R43692:43694 VFA.ADT TreeETableSubset get def
 R43697:43699 VFA.ADT TreeETableSubset set def
-R43747:43763 VFA.SearchTree <> lookup_insert_neq thm
-R43747:43763 VFA.SearchTree <> lookup_insert_neq thm
+R43747:43763 VFA.SearchTree <> lookup_insert_neq prfax
+R43747:43763 VFA.SearchTree <> lookup_insert_neq prfax
 prf 43796:43806 TreeETableSubset bound_empty
 R43822:43824 VFA.ADT TreeETableSubset key def
 binder 43818:43818 <> k:394

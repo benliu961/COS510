@@ -335,12 +335,37 @@ Theorem lookup_insert_neq :
    k <> k' -> lookup d k' (insert k v t) = lookup d k' t.
 Proof.
   induction t; intros.
-  (* - simpl. bdestruct (k' =? k). contradiction. reflexivity. *)
   - simpl. bdestruct (k' <? k).
     + reflexivity.
     + bdestruct (k' >? k).
       * reflexivity.
-      * 
+      * lia.
+  - simpl. 
+    + bdestruct (k0 <? k). simpl.
+      * bdestruct (k' <? k).
+        { apply IHt1. apply H. }
+        { reflexivity. }
+      * bdestruct (k0 >? k).
+        { simpl. bdestruct (k' <? k).
+          { reflexivity. }
+          { bdestruct (k' >? k). 
+            {apply IHt2. apply H. }
+            { reflexivity. }
+          }
+        }
+        { simpl. bdestruct (k' <? k0).
+          { bdestruct (k' <? k).
+            { reflexivity. }
+            { lia. } 
+          }
+          { bdestruct (k' >? k0).
+            { bdestruct (k' >? k).
+              { bdestruct (k' <? k). lia. reflexivity. }
+              { lia. }
+            }
+            { lia. }
+          }
+        }
 Qed.
 
 (** Perhaps surprisingly, the proofs of these results do not
@@ -372,7 +397,13 @@ Theorem bound_default :
     bound k t = false ->
     lookup d k t = d.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  induction t; intros.
+  - apply lookup_empty.
+  - simpl in H. simpl. bdestruct (k <? k0).
+    + apply IHt1 in H. apply H.
+    + bdestruct (k >? k0).
+      * apply IHt2. apply H.
+      * discriminate. 
 
 (** [] *)
 
@@ -450,7 +481,11 @@ Lemma lookup_insert_same :
   forall (V : Type) (k k' : key) (d : V) (t : tree V),
     lookup d k' (insert k (lookup d k t) t) = lookup d k' t.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros. bdestruct (k =? k').
+  - rewrite <- H. rewrite lookup_insert_eq. reflexivity.
+  - rewrite lookup_insert_neq.
+    + reflexivity.
+    + apply H. Qed.
 
 (** [] *)
 
