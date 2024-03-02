@@ -175,23 +175,9 @@ Lemma insert_sorted:
 Proof.
   intros a l S. induction S; simpl.
   - apply sorted_1.
-  - bdestruct (a <=? x); apply sorted_cons. 
-    + lia. 
-    + apply sorted_1.
-    + lia. 
-    + apply sorted_1.
+  - bdestruct (a <=? x); apply sorted_cons; try lia; try apply sorted_1. 
   - bdestruct (a <=? x).
-    + bdestruct (a <=? y).
-      * apply sorted_cons.
-        { lia. }
-        { apply sorted_cons.
-          { lia. }
-          { apply S. } }
-      * apply sorted_cons.
-        { lia. }
-        { apply sorted_cons.
-          { lia. }
-          { apply S. } } 
+    + repeat apply sorted_cons; assumption.
     + bdestruct (a <=? y). 
       * apply sorted_cons.
         { lia. }
@@ -204,9 +190,6 @@ Proof.
           { lia. } 
           { apply IHS. } } Qed.
 
-        
-  
-
 (** [] *)
 
 (** **** Exercise: 2 stars, standard (sort_sorted) *)
@@ -216,7 +199,9 @@ Proof.
 
 Theorem sort_sorted: forall l, sorted (sort l).
 Proof.
-  (* FILL IN HERE *) Admitted.
+  induction l.
+  - apply sorted_nil.
+  - simpl. apply insert_sorted. apply IHl. Qed.
 
 (** [] *)
 
@@ -228,7 +213,13 @@ Proof.
 Lemma insert_perm: forall x l,
     Permutation (x :: l) (insert x l).
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros. induction l.
+  - simpl. apply Permutation_refl.
+  - simpl. bdestruct (x <=? a).
+    + apply Permutation_refl.
+    + apply perm_trans with (a :: x :: l).
+      * apply perm_swap.
+      * apply Permutation_cons. reflexivity. apply IHl. Qed.
 
 (** [] *)
 
@@ -238,7 +229,11 @@ Proof.
 
 Theorem sort_perm: forall l, Permutation l (sort l).
 Proof.
-(* FILL IN HERE *) Admitted.
+  intros. induction l.
+  - apply Permutation_refl.
+  - simpl. apply perm_trans with (a :: sort l). 
+    * apply perm_skip. apply IHl.
+    * apply insert_perm. Qed.
 
 (** [] *)
 
@@ -249,7 +244,10 @@ Proof.
 Theorem insertion_sort_correct:
     is_a_sorting_algorithm sort.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  unfold is_a_sorting_algorithm. split.
+  - apply sort_perm.
+  - apply sort_sorted. Qed.
+
 
 (** [] *)
 
@@ -273,7 +271,30 @@ Lemma sorted_sorted': forall al, sorted al -> sorted' al.
     have to think about how to approach it, and try out one or two
     different ideas.*)
 Proof.
-(* FILL IN HERE *) Admitted.
+  assert (N0: forall A (ls: list A) i, ls = [] -> nth_error ls i = None).
+    { intros. rewrite H. destruct i. reflexivity. reflexivity. }
+  assert (N1: forall A (x:A) y i, nth_error [x] i = Some y -> x = y /\ i = 0).
+    { intros. split. destruct i. 
+      - simpl in *. inv H. reflexivity.
+      - simpl in *. rewrite N0 in H. discriminate. reflexivity.
+      - destruct i. reflexivity. simpl in *. rewrite N0 in H. discriminate. reflexivity. }
+  intros. induction H.
+  - unfold sorted'. intros. rewrite N0 in H0. discriminate. reflexivity.
+  - unfold sorted'. intros. apply N1 in H0, H1. lia.
+  - unfold sorted'. inv H0.
+    * intros. destruct i; destruct j; try lia; simpl in *.
+      + apply N1 in H2. inv H1. lia.
+      + apply N1 in H1, H2. lia.
+    * intros. destruct i; destruct j; try lia; simpl in *.
+      + destruct j. 
+        { simpl in *. inv H1. inv H2. lia. }
+        { assert (forall k kv, nth_error (y0 :: l0) k = Some kv -> y <= kv).
+          { intros. unfold sorted' in IHsorted. apply IHsorted with 0 (S k). lia. 
+            auto. simpl. apply H5. } 
+          simpl in H2. apply H5 in H2. inv H1. lia. }
+      + apply Nat.succ_lt_mono in H0. unfold sorted' in IHsorted. 
+        apply IHsorted with i j; assumption. Qed.
+        
 (** [] *)
 
 (** **** Exercise: 3 stars, advanced (sorted'_sorted) *)
@@ -282,7 +303,13 @@ Proof.
 (** Here, you can't do induction on the sortedness of the list,
     because [sorted'] is not an inductive predicate. But the proof
     is less tricky than the previous. *)
-(* FILL IN HERE *) Admitted.
+  intros. induction al.
+  - apply sorted_nil.
+  - destruct al.
+    + apply sorted_1.
+    + apply sorted_cons.
+      * unfold sorted' in H. specialize H with 0 1 a n. apply H; auto.
+      * apply IHal. unfold sorted' in *. intros. apply H with (S i) (S j); auto. lia. Qed. 
 (** [] *)
 
 (* ################################################################# *)

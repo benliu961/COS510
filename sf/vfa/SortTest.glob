@@ -15,7 +15,7 @@ R711:714 VFA.Sort <> <> lib
 R724:728 VFA.SortTest Check <> mod
 def 732:740 <> Unnamed_thm
 R737:740 Coq.Init.Logic <> True ind
-R888:900 VFA.Sort <> insert_sorted prfax
+R888:900 VFA.Sort <> insert_sorted thm
 R917:919 Coq.Init.Datatypes <> nat ind
 binder 913:913 <> a:2
 R927:930 Coq.Init.Datatypes <> list ind
@@ -28,7 +28,7 @@ R950:955 VFA.Sort <> sorted ind
 R958:963 VFA.Sort <> insert def
 R965:965 VFA.SortTest <> a:2 var
 R967:967 VFA.SortTest <> l:3 var
-R888:900 VFA.Sort <> insert_sorted prfax
+R888:900 VFA.Sort <> insert_sorted thm
 R917:919 Coq.Init.Datatypes <> nat ind
 binder 913:913 <> a:4
 R927:930 Coq.Init.Datatypes <> list ind
@@ -41,7 +41,7 @@ R950:955 VFA.Sort <> sorted ind
 R958:963 VFA.Sort <> insert def
 R965:965 VFA.SortTest <> a:4 var
 R967:967 VFA.SortTest <> l:5 var
-R1020:1032 VFA.Sort <> insert_sorted prfax
+R1020:1032 VFA.Sort <> insert_sorted thm
 def 1035:1043 <> Unnamed_thm
 R1040:1043 Coq.Init.Logic <> True ind
 R1198:1208 VFA.Sort <> sort_sorted prfax
@@ -164,7 +164,7 @@ R2806:2807 VFA.SortTest <> al:17 var
 R2859:2872 VFA.Sort <> sorted'_sorted prfax
 def 2875:2883 <> Unnamed_thm
 R2880:2883 Coq.Init.Logic <> True ind
-R4036:4048 VFA.Sort <> insert_sorted prfax
+R4036:4048 VFA.Sort <> insert_sorted thm
 R4111:4121 VFA.Sort <> sort_sorted prfax
 R4184:4194 VFA.Sort <> insert_perm prfax
 R4255:4263 VFA.Sort <> sort_perm prfax
