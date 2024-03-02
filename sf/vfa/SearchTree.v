@@ -403,7 +403,7 @@ Proof.
     + apply IHt1 in H. apply H.
     + bdestruct (k >? k0).
       * apply IHt2. apply H.
-      * discriminate. 
+      * discriminate. Qed.
 
 (** [] *)
 
