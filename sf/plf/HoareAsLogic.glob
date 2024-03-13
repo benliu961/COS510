@@ -186,6 +186,10 @@ R7350:7358 PLF.HoareAsLogic <> derivable:6 ind
 R7364:7364 PLF.HoareAsLogic <> Q:30 var
 R7362:7362 PLF.HoareAsLogic <> c:33 var
 R7360:7360 PLF.HoareAsLogic <> P:29 var
+scheme 6569:6577 <> derivable_rect
+scheme 6569:6577 <> derivable_ind
+scheme 6569:6577 <> derivable_rec
+scheme 6569:6577 <> derivable_sind
 prf 7549:7565 <> H_Consequence_pre
 R7585:7593 PLF.Hoare <> Assertion def
 binder 7577:7577 <> P:36

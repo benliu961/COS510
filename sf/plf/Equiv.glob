@@ -1968,6 +1968,8 @@ R44371:44373 PLF.Imp <> :com::x_'*'_x not
 R44369:44370 PLF.Equiv <> a1:131 var
 R44374:44375 PLF.Equiv <> a2:132 var
 R44363:44363 PLF.Equiv <> x:122 var
+scheme 43781:43800 <> var_not_used_in_aexp_ind
+scheme 43781:43800 <> var_not_used_in_aexp_sind
 prf 44389:44403 <> aeval_weakening
 binder 44414:44414 <> x:133
 binder 44416:44417 <> st:134
@@ -2035,6 +2037,10 @@ R47230:47232 PLF.Equiv <> com:137 ind
 R47253:47256 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R47247:47252 Coq.Strings.String <> string ind
 R47257:47259 PLF.Equiv <> com:137 ind
+scheme 47073:47075 Himp com_rect
+scheme 47073:47075 Himp com_ind
+scheme 47073:47075 Himp com_rec
+scheme 47073:47075 Himp com_sind
 R47318:47323 PLF.Equiv Himp CHavoc constr
 not 47302:47302 Himp :com::'havoc'_x
 R47435:47439 PLF.Equiv Himp CSkip constr
@@ -2224,6 +2230,8 @@ R49312:49312 PLF.Equiv <> b:167 var
 R49317:49317 PLF.Equiv <> c:168 var
 R49299:49300 PLF.Equiv <> st:164 var
 R49327:49330 PLF.Equiv <> st'':166 var
+scheme 48478:48482 Himp ceval_ind
+scheme 48478:48482 Himp ceval_sind
 R49382:49386 PLF.Equiv Himp ceval ind
 not 49360:49360 Himp :::x_'=['_x_']=>'_x
 def 49500:49513 Himp havoc_example1

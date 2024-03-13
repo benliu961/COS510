@@ -32,6 +32,10 @@ R35928:35929 PLF.MoreStlc <> ty:1 ind
 R35936:35939 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R35934:35935 PLF.MoreStlc <> ty:1 ind
 R35940:35941 PLF.MoreStlc <> ty:1 ind
+scheme 35785:35786 STLCExtended ty_rect
+scheme 35785:35786 STLCExtended ty_ind
+scheme 35785:35786 STLCExtended ty_rec
+scheme 35785:35786 STLCExtended ty_sind
 ind 35955:35956 STLCExtended tm
 constr 35990:35995 STLCExtended tm_var
 constr 36016:36021 STLCExtended tm_app
@@ -151,6 +155,10 @@ R36828:36829 PLF.MoreStlc <> tm:3 ind
 R36899:36902 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R36897:36898 PLF.MoreStlc <> tm:3 ind
 R36903:36904 PLF.MoreStlc <> tm:3 ind
+scheme 35955:35956 STLCExtended tm_rect
+scheme 35955:35956 STLCExtended tm_ind
+scheme 35955:35956 STLCExtended tm_rec
+scheme 35955:35956 STLCExtended tm_sind
 def 37183:37183 STLCExtended w
 R37187:37192 Coq.Strings.String <> string ind
 def 37213:37213 STLCExtended x
@@ -230,7 +238,6 @@ R41669:41670 PLF.MoreStlc STLCExtended tm ind
 R43165:43169 PLF.MoreStlc <> subst:8 def
 R41683:41683 PLF.MoreStlc <> t:7 var
 R41712:41717 PLF.MoreStlc STLCExtended tm_var constr
-R41719:41719 PLF.MoreStlc STLCExtended y def
 R41733:41742 Coq.Strings.String <> eqb def
 R41744:41744 PLF.MoreStlc <> x:5 var
 R41760:41760 PLF.MoreStlc <> t:7 var
@@ -240,7 +247,6 @@ R41776:41777 PLF.MoreStlc STLCExtended :::'<{'_x_'}>' not
 R41768:41768 PLF.MoreStlc STLCExtended :stlc::'\'_x_':'_x_','_x not
 R41770:41770 PLF.MoreStlc STLCExtended :stlc::'\'_x_':'_x_','_x not
 R41772:41773 PLF.MoreStlc STLCExtended :stlc::'\'_x_':'_x_','_x not
-R41769:41769 PLF.MoreStlc STLCExtended y def
 R41791:41800 Coq.Strings.String <> eqb def
 R41802:41802 PLF.MoreStlc <> x:5 var
 R41818:41819 PLF.MoreStlc STLCExtended :::'<{'_x_'}>' not
@@ -647,6 +653,8 @@ R44595:44596 PLF.MoreStlc STLCExtended :stlc::'('_x_','_x_')' not
 R44599:44599 PLF.MoreStlc STLCExtended :stlc::'('_x_','_x_')' not
 R44593:44594 PLF.MoreStlc <> v1:23 var
 R44597:44598 PLF.MoreStlc <> v2:24 var
+scheme 43838:43842 STLCExtended value_ind
+scheme 43838:43842 STLCExtended value_sind
 R44623:44627 PLF.MoreStlc <> value ind
 ind 44755:44758 STLCExtended step
 constr 44804:44812 STLCExtended ST_AppAbs
@@ -1184,6 +1192,8 @@ R47341:47342 PLF.MoreStlc STLCExtended :stlc::'['_x_':='_x_']'_x not
 R47333:47334 PLF.MoreStlc <> x1:104 var
 R47339:47340 PLF.MoreStlc <> v1:101 var
 R47343:47344 PLF.MoreStlc <> t3:106 var
+scheme 44755:44758 STLCExtended step_ind
+scheme 44755:44758 STLCExtended step_sind
 R47527:47530 PLF.MoreStlc STLCExtended step ind
 not 47510:47510 STLCExtended :::x_'-->'_x
 abbrev 47560:47568 STLCExtended multistep
@@ -1593,6 +1603,8 @@ R50047:50051 PLF.MoreStlc STLCExtended :::x_'|--'_x_'\in'_x not
 R50033:50037 PLF.MoreStlc <> Gamma:167 var
 R50043:50046 PLF.MoreStlc STLCExtended :stlc::'unit' not
 R50052:50055 PLF.MoreStlc STLCExtended :stlc_ty::'Unit' not
+scheme 48107:48114 STLCExtended has_type_ind
+scheme 48107:48114 STLCExtended has_type_sind
 R50243:50250 PLF.MoreStlc STLCExtended has_type ind
 not 50215:50215 STLCExtended :::x_'|--'_x_'\in'_x
 R50294:50301 PLF.MoreStlc <> has_type ind

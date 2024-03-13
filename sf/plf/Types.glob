@@ -32,6 +32,10 @@ R1910:1911 PLF.Types <> tm:1 ind
 R1927:1930 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R1925:1926 PLF.Types <> tm:1 ind
 R1931:1932 PLF.Types <> tm:1 ind
+scheme 1792:1793 TM tm_rect
+scheme 1792:1793 TM tm_ind
+scheme 1792:1793 TM tm_rec
+scheme 1792:1793 TM tm_sind
 R2007:2010 Coq.Init.Datatypes <> true constr
 not 1994:1994 TM ::tm_scope:'true'
 R2058:2060 PLF.Types TM tru constr
@@ -67,6 +71,8 @@ R3176:3181 PLF.Types <> bvalue:3 ind
 R3183:3185 PLF.Types TM ::tm_scope:'<{'_x_'}>' not
 R3191:3193 PLF.Types TM ::tm_scope:'<{'_x_'}>' not
 R3186:3190 PLF.Types TM :tm:tm_scope:'false' not
+scheme 3106:3111 TM bvalue_ind
+scheme 3106:3111 TM bvalue_sind
 ind 3207:3212 TM nvalue
 constr 3234:3237 TM nv_0
 constr 3260:3266 TM nv_succ
@@ -85,6 +91,8 @@ R3299:3301 PLF.Types TM ::tm_scope:'<{'_x_'}>' not
 R3308:3310 PLF.Types TM ::tm_scope:'<{'_x_'}>' not
 R3302:3306 PLF.Types TM :tm:tm_scope:'succ'_x not
 R3307:3307 PLF.Types <> t:7 var
+scheme 3207:3212 TM nvalue_ind
+scheme 3207:3212 TM nvalue_sind
 def 3325:3329 TM value
 R3336:3337 PLF.Types TM tm ind
 binder 3332:3332 <> t:8
@@ -250,6 +258,8 @@ R6042:6044 PLF.Types TM ::tm_scope:'<{'_x_'}>' not
 R6055:6057 PLF.Types TM ::tm_scope:'<{'_x_'}>' not
 R6045:6051 PLF.Types TM :tm:tm_scope:'iszero'_x not
 R6052:6054 PLF.Types <> t1':26 var
+scheme 5230:5233 TM step_ind
+scheme 5230:5233 TM step_sind
 R6083:6086 PLF.Types TM step ind
 not 6066:6066 TM :::x_'-->'_x
 R6114:6117 PLF.Types <> step ind
@@ -287,6 +297,10 @@ constr 9006:9009 TM Bool
 constr 9020:9022 TM Nat
 R9013:9014 PLF.Types <> ty:30 ind
 R9026:9027 PLF.Types <> ty:30 ind
+scheme 8989:8990 TM ty_rect
+scheme 8989:8990 TM ty_ind
+scheme 8989:8990 TM ty_rec
+scheme 8989:8990 TM ty_sind
 ind 10487:10494 TM has_type
 constr 10522:10527 TM T_True
 constr 10566:10572 TM T_False
@@ -387,6 +401,8 @@ R11030:11032 PLF.Types TM ::tm_scope:'<{'_x_'}>' not
 R11021:11027 PLF.Types TM :tm:tm_scope:'iszero'_x not
 R11028:11029 PLF.Types <> t1:40 var
 R11038:11041 PLF.Types TM Bool constr
+scheme 10487:10494 TM has_type_ind
+scheme 10487:10494 TM has_type_sind
 R11072:11079 PLF.Types TM has_type ind
 not 11050:11050 TM :::'|--'_x_'\in'_x
 R11106:11113 PLF.Types <> has_type ind

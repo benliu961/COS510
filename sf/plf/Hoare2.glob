@@ -162,6 +162,10 @@ R17325:17328 PLF.Hoare2 <> dcom:1 ind
 binder 17321:17321 <> d:27
 R17336:17344 PLF.Hoare <> Assertion def
 binder 17332:17332 <> Q:28
+scheme 16787:16790 DComFirstTry dcom_rect
+scheme 16787:16790 DComFirstTry dcom_ind
+scheme 16787:16790 DComFirstTry dcom_rec
+scheme 16787:16790 DComFirstTry dcom_sind
 R17353:17364 PLF.Hoare2 DComFirstTry <> mod
 ind 19863:19866 <> dcom
 constr 19880:19885 <> DCSkip
@@ -210,6 +214,10 @@ R20379:20382 PLF.Hoare2 <> dcom:29 ind
 binder 20375:20375 <> d:49
 R20390:20398 PLF.Hoare <> Assertion def
 binder 20386:20386 <> Q:50
+scheme 19863:19866 <> dcom_rect
+scheme 19863:19866 <> dcom_ind
+scheme 19863:19866 <> dcom_rec
+scheme 19863:19866 <> dcom_sind
 ind 20570:20578 <> decorated
 constr 20594:20602 <> Decorated
 R20615:20618 Coq.Init.Logic <> ::type_scope:x_'->'_x not
@@ -217,6 +225,10 @@ R20606:20614 PLF.Hoare <> Assertion def
 R20623:20626 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R20619:20622 PLF.Hoare2 <> dcom ind
 R20627:20635 PLF.Hoare2 <> decorated:51 ind
+scheme 20570:20578 <> decorated_rect
+scheme 20570:20578 <> decorated_ind
+scheme 20570:20578 <> decorated_rec
+scheme 20570:20578 <> decorated_sind
 R20855:20860 PLF.Hoare2 <> DCSkip constr
 not 20828:20828 <> :com:dcom_scope:'skip'_'{{'_x_'}}'
 R20965:20970 PLF.Hoare2 <> DCAsgn constr
@@ -255,7 +267,6 @@ R22253:22260 PLF.Hoare2 <> :com:dcom_scope:'skip'_'{{'_x_'}}' not
 R22265:22267 PLF.Hoare2 <> :com:dcom_scope:'skip'_'{{'_x_'}}' not
 R22261:22264 Coq.Init.Logic <> True ind
 R22276:22279 Coq.Init.Logic <> True ind
-R22406:22409 PLF.Hoare2 <> dec1 ex
 def 22508:22516 <> dec_while
 R22520:22528 PLF.Hoare2 <> decorated ind
 R22535:22539 PLF.Imp <> ::com_scope:'<{'_x_'}>' not
@@ -302,7 +313,6 @@ R22903:22906 PLF.Imp <> CSeq constr
 R22909:22913 PLF.Hoare2 <> erase:54 def
 R22920:22924 PLF.Hoare2 <> erase:54 def
 R22934:22939 PLF.Hoare2 <> DCAsgn constr
-R22941:22941 PLF.Imp <> X def
 R22956:22960 PLF.Imp <> CAsgn constr
 R22970:22973 PLF.Hoare2 <> DCIf constr
 R22992:22994 PLF.Imp <> CIf constr
@@ -430,7 +440,6 @@ R28131:28131 PLF.Hoare2 <> P:66 var
 R28145:28167 PLF.Hoare2 <> verification_conditions:68 def
 R28170:28173 PLF.Hoare2 <> post def
 R28186:28191 PLF.Hoare2 <> DCAsgn constr
-R28193:28193 PLF.Imp <> X def
 R28210:28214 PLF.Hoare <> ::hoare_spec_scope:x_'->>'_x not
 R28209:28209 PLF.Hoare2 <> P:66 var
 R28216:28217 PLF.Hoare <> ::hoare_spec_scope:x_'['_x_'|->'_x_']' not

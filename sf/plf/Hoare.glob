@@ -1309,6 +1309,10 @@ R46663:46666 PLF.Imp <> bexp ind
 R46674:46677 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R46671:46673 PLF.Hoare <> com:120 ind
 R46678:46680 PLF.Hoare <> com:120 ind
+scheme 46491:46493 If1 com_rect
+scheme 46491:46493 If1 com_ind
+scheme 46491:46493 If1 com_rec
+scheme 46491:46493 If1 com_sind
 R46731:46734 PLF.Hoare If1 CIf1 constr
 not 46693:46693 If1 :com::'if1'_x_'then'_x_'end'
 R46839:46843 PLF.Hoare If1 CSkip constr
@@ -1498,6 +1502,8 @@ R48589:48589 PLF.Hoare <> b:150 var
 R48594:48594 PLF.Hoare <> c:151 var
 R48576:48577 PLF.Hoare <> st:147 var
 R48604:48607 PLF.Hoare <> st'':149 var
+scheme 47752:47756 If1 ceval_ind
+scheme 47752:47756 If1 ceval_sind
 R48661:48665 PLF.Hoare If1 ceval ind
 not 48635:48635 If1 :::x_'=['_x_']=>'_x
 R48697:48701 PLF.Hoare <> ceval ind
@@ -1751,6 +1757,10 @@ R57299:57301 PLF.Hoare <> com:168 ind
 R57310:57313 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R57306:57309 PLF.Imp <> bexp ind
 R57314:57316 PLF.Hoare <> com:168 ind
+scheme 57124:57126 RepeatExercise com_rect
+scheme 57124:57126 RepeatExercise com_ind
+scheme 57124:57126 RepeatExercise com_rec
+scheme 57124:57126 RepeatExercise com_sind
 R57621:57627 PLF.Hoare RepeatExercise CRepeat constr
 not 57576:57576 RepeatExercise :com::'repeat'_x_'until'_x_'end'
 R57778:57782 PLF.Hoare RepeatExercise CSkip constr
@@ -1940,6 +1950,8 @@ R59452:59455 PLF.Hoare RepeatExercise :com::'while'_x_'do'_x_'end' not
 R59446:59446 PLF.Hoare <> b:198 var
 R59451:59451 PLF.Hoare <> c:199 var
 R59461:59464 PLF.Hoare <> st'':197 var
+scheme 58609:58613 RepeatExercise ceval_ind
+scheme 58609:58613 RepeatExercise ceval_sind
 R59518:59522 PLF.Hoare RepeatExercise ceval ind
 not 59492:59492 RepeatExercise :::x_'=['_x_']=>'_x
 def 59636:59653 RepeatExercise valid_hoare_triple
@@ -2033,6 +2045,10 @@ R63144:63146 PLF.Hoare <> com:205 ind
 R63167:63170 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R63161:63166 Coq.Strings.String <> string ind
 R63171:63173 PLF.Hoare <> com:205 ind
+scheme 62987:62989 Himp com_rect
+scheme 62987:62989 Himp com_ind
+scheme 62987:62989 Himp com_rec
+scheme 62987:62989 Himp com_sind
 R63202:63207 PLF.Hoare Himp CHavoc constr
 not 63186:63186 Himp :com::'havoc'_x
 R63319:63323 PLF.Hoare Himp CSkip constr
@@ -2237,6 +2253,8 @@ R64826:64828 PLF.Maps <> :::x_'!->'_x_';'_x not
 R64829:64830 PLF.Hoare <> st:237 var
 R64819:64819 PLF.Hoare <> x:238 var
 R64825:64825 PLF.Hoare <> n:239 var
+scheme 63908:63912 Himp ceval_ind
+scheme 63908:63912 Himp ceval_sind
 R64866:64870 PLF.Hoare Himp ceval ind
 not 64840:64840 Himp :::x_'=['_x_']=>'_x
 R64902:64906 PLF.Hoare <> ceval ind
@@ -2378,6 +2396,10 @@ R67598:67600 PLF.Hoare <> com:258 ind
 R67620:67623 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R67616:67619 PLF.Imp <> bexp ind
 R67624:67626 PLF.Hoare <> com:258 ind
+scheme 67415:67417 HoareAssertAssume com_rect
+scheme 67415:67417 HoareAssertAssume com_ind
+scheme 67415:67417 HoareAssertAssume com_rec
+scheme 67415:67417 HoareAssertAssume com_sind
 R67656:67662 PLF.Hoare HoareAssertAssume CAssert constr
 not 67639:67639 HoareAssertAssume :com::'assert'_x
 R67773:67779 PLF.Hoare HoareAssertAssume CAssume constr
@@ -2399,6 +2421,10 @@ R68878:68881 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R68873:68877 PLF.Imp <> state def
 R68882:68887 PLF.Hoare <> result:260 ind
 R68902:68907 PLF.Hoare <> result:260 ind
+scheme 68842:68847 HoareAssertAssume result_rect
+scheme 68842:68847 HoareAssertAssume result_ind
+scheme 68842:68847 HoareAssertAssume result_rec
+scheme 68842:68847 HoareAssertAssume result_sind
 ind 68999:69003 HoareAssertAssume ceval
 constr 69081:69086 HoareAssertAssume E_Skip
 constr 69137:69142 HoareAssertAssume E_Asgn
@@ -2669,6 +2695,8 @@ R70439:70439 PLF.Hoare <> b:303 var
 R70426:70427 PLF.Hoare <> st:302 var
 R70445:70451 PLF.Hoare HoareAssertAssume RNormal constr
 R70453:70454 PLF.Hoare <> st:302 var
+scheme 68999:69003 HoareAssertAssume ceval_ind
+scheme 68999:69003 HoareAssertAssume ceval_sind
 R70487:70491 PLF.Hoare HoareAssertAssume ceval ind
 not 70463:70463 HoareAssertAssume :::x_'=['_x_']=>'_x
 def 70738:70755 HoareAssertAssume valid_hoare_triple

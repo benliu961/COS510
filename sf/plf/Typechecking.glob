@@ -65,14 +65,12 @@ R2865:2870 Coq.Init.Datatypes <> option ind
 R2872:2873 PLF.Stlc STLC ty ind
 R2886:2886 PLF.Typechecking <> t:10 var
 R2897:2902 PLF.Stlc STLC tm_var constr
-R2904:2904 PLF.Stlc STLC x def
 R2915:2919 PLF.Typechecking <> Gamma:9 var
 R2927:2928 PLF.Stlc STLC :::'<{'_x_'}>' not
 R2938:2939 PLF.Stlc STLC :::'<{'_x_'}>' not
 R2929:2929 PLF.Stlc STLC :stlc::'\'_x_':'_x_','_x not
 R2931:2931 PLF.Stlc STLC :stlc::'\'_x_':'_x_','_x not
 R2934:2935 PLF.Stlc STLC :stlc::'\'_x_':'_x_','_x not
-R2930:2930 PLF.Stlc STLC x def
 R2956:2965 PLF.Typechecking <> type_check:11 def
 R2969:2973 PLF.Maps <> :::x_'|->'_x_';'_x not
 R2976:2978 PLF.Maps <> :::x_'|->'_x_';'_x not
@@ -156,7 +154,6 @@ R4682:4687 Coq.Init.Datatypes <> option ind
 R4689:4690 PLF.Stlc STLC ty ind
 R4703:4703 PLF.Typechecking <> t:14 var
 R4714:4719 PLF.Stlc STLC tm_var constr
-R4721:4721 PLF.Stlc STLC x def
 R4738:4742 PLF.Typechecking <> Gamma:13 var
 R4759:4762 Coq.Init.Datatypes <> Some constr
 R4769:4775 PLF.Typechecking <> :::'return'_x not
@@ -167,7 +164,6 @@ R4826:4827 PLF.Stlc STLC :::'<{'_x_'}>' not
 R4817:4817 PLF.Stlc STLC :stlc::'\'_x_':'_x_','_x not
 R4819:4819 PLF.Stlc STLC :stlc::'\'_x_':'_x_','_x not
 R4822:4823 PLF.Stlc STLC :stlc::'\'_x_':'_x_','_x not
-R4818:4818 PLF.Stlc STLC x def
 R4840:4843 PLF.Typechecking <> :::x_'<-'_x_';;'_x not
 R4876:4885 PLF.Typechecking <> :::x_'<-'_x_';;'_x not
 R4844:4853 PLF.Typechecking <> type_check:15 def
@@ -404,7 +400,6 @@ R9151:9156 Coq.Init.Datatypes <> option ind
 R9158:9159 PLF.MoreStlc STLCExtended ty ind
 R9172:9172 PLF.Typechecking <> t:40 var
 R9183:9188 PLF.MoreStlc STLCExtended tm_var constr
-R9190:9190 PLF.MoreStlc STLCExtended x def
 R9207:9211 PLF.Typechecking <> Gamma:39 var
 R9228:9231 Coq.Init.Datatypes <> Some constr
 R9238:9244 PLF.Typechecking <> :::'return'_x not
@@ -778,7 +773,6 @@ R15815:15820 Coq.Init.Datatypes <> option ind
 R15822:15823 PLF.MoreStlc STLCExtended tm ind
 R15836:15836 PLF.Typechecking <> t:74 var
 R15865:15870 PLF.MoreStlc STLCExtended tm_var constr
-R15872:15872 PLF.MoreStlc STLCExtended x def
 R15877:15880 Coq.Init.Datatypes <> None constr
 R15929:15931 PLF.MoreStlc STLCExtended :::'<{'_x_'}>' not
 R15942:15944 PLF.MoreStlc STLCExtended :::'<{'_x_'}>' not
@@ -811,7 +805,6 @@ R16268:16270 PLF.MoreStlc STLCExtended :::'<{'_x_'}>' not
 R16259:16259 PLF.MoreStlc STLCExtended :stlc::'\'_x_':'_x_','_x not
 R16261:16261 PLF.MoreStlc STLCExtended :stlc::'\'_x_':'_x_','_x not
 R16263:16264 PLF.MoreStlc STLCExtended :stlc::'\'_x_':'_x_','_x not
-R16260:16260 PLF.MoreStlc STLCExtended x def
 R16281:16286 PLF.Typechecking StepFunction assert def
 R16289:16294 PLF.Typechecking StepFunction valuef def
 R16301:16304 Coq.Init.Datatypes <> Some constr

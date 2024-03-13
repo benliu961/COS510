@@ -6,7 +6,6 @@ R1592:1609 Coq.Strings.String <> <> lib
 R1636:1665 Coq.Logic.FunctionalExtensionality <> <> lib
 R1692:1701 Coq.Lists.List <> <> lib
 R1711:1723 Coq.Lists.List ListNotations <> mod
-R2306:2317 Coq.Init.Nat <> add def
 R2899:2904 Coq.Strings.String <> string ind
 binder 2895:2895 <> x:1
 R2922:2924 Coq.Init.Logic <> ::type_scope:x_'='_x not

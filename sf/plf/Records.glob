@@ -29,6 +29,10 @@ R2845:2849 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R2837:2841 PLF.Records STLCExtendedRecords.FirstTry alist def
 R2843:2844 PLF.Records <> ty:2 ind
 R2850:2851 PLF.Records <> ty:2 ind
+scheme 2750:2751 STLCExtendedRecords.FirstTry ty_rect
+scheme 2750:2751 STLCExtendedRecords.FirstTry ty_ind
+scheme 2750:2751 STLCExtendedRecords.FirstTry ty_rec
+scheme 2750:2751 STLCExtendedRecords.FirstTry ty_sind
 R3473:3480 PLF.Records STLCExtendedRecords.FirstTry <> mod
 ind 4039:4040 STLCExtendedRecords ty
 constr 4056:4062 STLCExtendedRecords Ty_Base
@@ -51,6 +55,10 @@ R4151:4152 PLF.Records <> ty:4 ind
 R4159:4162 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R4157:4158 PLF.Records <> ty:4 ind
 R4163:4164 PLF.Records <> ty:4 ind
+scheme 4039:4040 STLCExtendedRecords ty_rect
+scheme 4039:4040 STLCExtendedRecords ty_ind
+scheme 4039:4040 STLCExtendedRecords ty_rec
+scheme 4039:4040 STLCExtendedRecords ty_sind
 ind 4353:4354 STLCExtendedRecords tm
 constr 4370:4375 STLCExtendedRecords tm_var
 constr 4396:4401 STLCExtendedRecords tm_app
@@ -86,6 +94,10 @@ R4551:4552 PLF.Records <> tm:6 ind
 R4559:4562 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R4557:4558 PLF.Records <> tm:6 ind
 R4563:4564 PLF.Records <> tm:6 ind
+scheme 4353:4354 STLCExtendedRecords tm_rect
+scheme 4353:4354 STLCExtendedRecords tm_ind
+scheme 4353:4354 STLCExtendedRecords tm_rec
+scheme 4353:4354 STLCExtendedRecords tm_sind
 not 4608:4608 STLCExtendedRecords :::'<{'_x_'}>'
 not 4661:4661 STLCExtendedRecords :::'<{{'_x_'}}>'
 not 4719:4719 STLCExtendedRecords :stlc::'('_x_')'
@@ -155,6 +167,8 @@ R7253:7256 PLF.Records STLCExtendedRecords :stlc_ty::x_':'_x_'::'_x not
 R7247:7247 PLF.Records <> i:10 var
 R7251:7252 PLF.Records <> T1:11 var
 R7257:7258 PLF.Records <> T2:12 var
+scheme 7128:7136 STLCExtendedRecords record_ty_ind
+scheme 7128:7136 STLCExtendedRecords record_ty_sind
 ind 7328:7341 STLCExtendedRecords well_formed_ty
 constr 7363:7368 STLCExtendedRecords wfBase
 constr 7435:7441 STLCExtendedRecords wfArrow
@@ -207,6 +221,8 @@ R7750:7753 PLF.Records STLCExtendedRecords :stlc_ty::x_':'_x_'::'_x not
 R7744:7744 PLF.Records <> i:18 var
 R7748:7749 PLF.Records <> T1:19 var
 R7754:7755 PLF.Records <> T2:20 var
+scheme 7328:7341 STLCExtendedRecords well_formed_ty_ind
+scheme 7328:7341 STLCExtendedRecords well_formed_ty_sind
 R7781:7789 PLF.Records <> record_ty ind
 R7791:7804 PLF.Records <> well_formed_ty ind
 ind 8484:8492 STLCExtendedRecords record_tm
@@ -229,6 +245,8 @@ R8607:8610 PLF.Records STLCExtendedRecords :stlc::x_':='_x_'::'_x not
 R8600:8600 PLF.Records <> i:23 var
 R8605:8606 PLF.Records <> t1:24 var
 R8611:8612 PLF.Records <> t2:25 var
+scheme 8484:8492 STLCExtendedRecords record_tm_ind
+scheme 8484:8492 STLCExtendedRecords record_tm_sind
 R8637:8645 PLF.Records <> record_tm ind
 def 8879:8883 STLCExtendedRecords subst
 R8890:8895 Coq.Strings.String <> string ind
@@ -363,6 +381,8 @@ R9709:9712 PLF.Records STLCExtendedRecords :stlc::x_':='_x_'::'_x not
 R9702:9702 PLF.Records <> i:36 var
 R9707:9708 PLF.Records <> v1:37 var
 R9713:9714 PLF.Records <> vr:38 var
+scheme 9510:9514 STLCExtendedRecords value_ind
+scheme 9510:9514 STLCExtendedRecords value_sind
 R9739:9743 PLF.Records <> value ind
 def 9869:9875 STLCExtendedRecords tlookup
 R9880:9885 Coq.Strings.String <> string ind
@@ -549,6 +569,8 @@ R10964:10967 PLF.Records STLCExtendedRecords :stlc::x_':='_x_'::'_x not
 R10957:10957 PLF.Records <> i:65 var
 R10962:10963 PLF.Records <> v1:66 var
 R10968:10971 PLF.Records <> tr2':68 var
+scheme 10176:10179 STLCExtendedRecords step_ind
+scheme 10176:10179 STLCExtendedRecords step_sind
 R11000:11003 PLF.Records STLCExtendedRecords step ind
 not 10983:10983 STLCExtendedRecords :::x_'-->'_x
 abbrev 11022:11030 STLCExtendedRecords multistep
@@ -740,6 +762,8 @@ R13576:13579 PLF.Records STLCExtendedRecords :stlc_ty::x_':'_x_'::'_x not
 R13571:13571 PLF.Records <> i:90 var
 R13575:13575 PLF.Records <> T:92 var
 R13580:13581 PLF.Records <> Tr:94 var
+scheme 12787:12794 STLCExtendedRecords has_type_ind
+scheme 12787:12794 STLCExtendedRecords has_type_sind
 R13619:13626 PLF.Records STLCExtendedRecords has_type ind
 not 13591:13591 STLCExtendedRecords :::x_'|--'_x_'\in'_x
 R13659:13666 PLF.Records <> has_type ind

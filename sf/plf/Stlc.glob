@@ -13,6 +13,10 @@ R6845:6846 PLF.Stlc <> ty:1 ind
 R6853:6856 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R6851:6852 PLF.Stlc <> ty:1 ind
 R6857:6858 PLF.Stlc <> ty:1 ind
+scheme 6799:6800 STLC ty_rect
+scheme 6799:6800 STLC ty_ind
+scheme 6799:6800 STLC ty_rec
+scheme 6799:6800 STLC ty_sind
 ind 6961:6962 STLC tm
 constr 6978:6983 STLC tm_var
 constr 7006:7011 STLC tm_app
@@ -44,6 +48,10 @@ R7129:7130 PLF.Stlc <> tm:3 ind
 R7137:7140 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R7135:7136 PLF.Stlc <> tm:3 ind
 R7141:7142 PLF.Stlc <> tm:3 ind
+scheme 6961:6962 STLC tm_rect
+scheme 6961:6962 STLC tm_ind
+scheme 6961:6962 STLC tm_rec
+scheme 6961:6962 STLC tm_sind
 not 7287:7287 STLC :::'<{'_x_'}>'
 not 7340:7340 STLC :stlc::'('_x_')'
 not 7395:7395 STLC :stlc::x
@@ -170,6 +178,8 @@ R11214:11218 PLF.Stlc <> value:5 ind
 R11220:11221 PLF.Stlc STLC :::'<{'_x_'}>' not
 R11227:11228 PLF.Stlc STLC :::'<{'_x_'}>' not
 R11222:11226 PLF.Stlc STLC :stlc::'false' not
+scheme 11084:11088 STLC value_ind
+scheme 11084:11088 STLC value_sind
 R11250:11254 PLF.Stlc <> value ind
 def 14336:14340 STLC subst
 R14347:14352 Coq.Strings.String <> string ind
@@ -182,7 +192,6 @@ R14375:14376 PLF.Stlc STLC tm ind
 R14771:14775 PLF.Stlc <> subst:13 def
 R14389:14389 PLF.Stlc <> t:12 var
 R14400:14405 PLF.Stlc STLC tm_var constr
-R14407:14407 PLF.Stlc STLC y def
 R14421:14430 Coq.Strings.String <> eqb def
 R14432:14432 PLF.Stlc <> x:10 var
 R14448:14448 PLF.Stlc <> t:12 var
@@ -192,7 +201,6 @@ R14464:14465 PLF.Stlc STLC :::'<{'_x_'}>' not
 R14456:14456 PLF.Stlc STLC :stlc::'\'_x_':'_x_','_x not
 R14458:14458 PLF.Stlc STLC :stlc::'\'_x_':'_x_','_x not
 R14460:14461 PLF.Stlc STLC :stlc::'\'_x_':'_x_','_x not
-R14457:14457 PLF.Stlc STLC y def
 R14479:14488 Coq.Strings.String <> eqb def
 R14490:14490 PLF.Stlc <> x:10 var
 R14506:14507 PLF.Stlc STLC :::'<{'_x_'}>' not
@@ -295,6 +303,10 @@ R17549:17554 PLF.Stlc STLC tm_var constr
 R17556:17556 PLF.Stlc <> x:16 var
 R17546:17546 PLF.Stlc <> x:16 var
 R17544:17544 PLF.Stlc <> s:15 var
+scheme 17467:17472 STLC substi_rect
+scheme 17467:17472 STLC substi_ind
+scheme 17467:17472 STLC substi_rec
+scheme 17467:17472 STLC substi_sind
 R17603:17608 PLF.Stlc <> substi ind
 prf 17627:17640 STLC substi_correct
 binder 17651:17651 <> s:19
@@ -445,6 +457,8 @@ R20106:20111 PLF.Stlc STLC :stlc::'if'_x_'then'_x_'else'_x not
 R20095:20097 PLF.Stlc <> t1':40 var
 R20104:20105 PLF.Stlc <> t2:41 var
 R20112:20113 PLF.Stlc <> t3:42 var
+scheme 19528:19531 STLC step_ind
+scheme 19528:19531 STLC step_sind
 R20141:20144 PLF.Stlc STLC step ind
 not 20124:20124 STLC :::x_'-->'_x
 R20172:20175 PLF.Stlc <> step ind
@@ -750,6 +764,8 @@ R26753:26754 PLF.Stlc <> t1:60 var
 R26761:26762 PLF.Stlc <> t2:61 var
 R26769:26770 PLF.Stlc <> t3:62 var
 R26776:26777 PLF.Stlc <> T1:63 var
+scheme 26110:26117 STLC has_type_ind
+scheme 26110:26117 STLC has_type_sind
 R26814:26821 PLF.Stlc STLC has_type ind
 not 26786:26786 STLC :::x_'|--'_x_'\in'_x
 R26854:26861 PLF.Stlc <> has_type ind

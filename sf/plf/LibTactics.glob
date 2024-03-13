@@ -7,22 +7,42 @@ binder 3513:3513 <> A:3
 R3523:3526 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R3522:3522 PLF.LibTactics <> A:3 var
 R3527:3531 PLF.LibTactics <> Boxer:1 ind
+scheme 3477:3481 <> Boxer_rect
+scheme 3477:3481 <> Boxer_ind
+scheme 3477:3481 <> Boxer_rec
+scheme 3477:3481 <> Boxer_sind
 ind 3972:3982 <> ltac_No_arg
 constr 3997:4007 <> ltac_no_arg
 R4011:4021 PLF.LibTactics <> ltac_No_arg:4 ind
+scheme 3972:3982 <> ltac_No_arg_rect
+scheme 3972:3982 <> ltac_No_arg_ind
+scheme 3972:3982 <> ltac_No_arg_rec
+scheme 3972:3982 <> ltac_No_arg_sind
 ind 4277:4285 <> ltac_Wild
 constr 4300:4308 <> ltac_wild
 R4312:4320 PLF.LibTactics <> ltac_Wild:6 ind
+scheme 4277:4285 <> ltac_Wild_rect
+scheme 4277:4285 <> ltac_Wild_ind
+scheme 4277:4285 <> ltac_Wild_rec
+scheme 4277:4285 <> ltac_Wild_sind
 R4343:4351 PLF.LibTactics <> ltac_wild constr
 not 4333:4333 <> ::ltac_scope:'__'
 ind 4566:4575 <> ltac_Wilds
 constr 4590:4599 <> ltac_wilds
 R4603:4612 PLF.LibTactics <> ltac_Wilds:8 ind
+scheme 4566:4575 <> ltac_Wilds_rect
+scheme 4566:4575 <> ltac_Wilds_ind
+scheme 4566:4575 <> ltac_Wilds_rec
+scheme 4566:4575 <> ltac_Wilds_sind
 R4636:4645 PLF.LibTactics <> ltac_wilds constr
 not 4625:4625 <> ::ltac_scope:'___'
 ind 4945:4953 <> ltac_Mark
 constr 4969:4977 <> ltac_mark
 R4981:4989 PLF.LibTactics <> ltac_Mark:10 ind
+scheme 4945:4953 <> ltac_Mark_rect
+scheme 4945:4953 <> ltac_Mark_ind
+scheme 4945:4953 <> ltac_Mark_rec
+scheme 4945:4953 <> ltac_Mark_sind
 R5296:5304 PLF.LibTactics <> ltac_Mark ind
 R5296:5304 PLF.LibTactics <> ltac_Mark ind
 R5679:5687 PLF.LibTactics <> ltac_Mark ind
@@ -343,6 +363,10 @@ R10511:10515 PLF.LibTactics <> boxer constr
 R10521:10523 Coq.Init.Datatypes <> nil constr
 ind 11167:11185 <> Ltac_database_token
 constr 11197:11215 <> ltac_database_token
+scheme 11167:11185 <> Ltac_database_token_rect
+scheme 11167:11185 <> Ltac_database_token_ind
+scheme 11167:11185 <> Ltac_database_token_rec
+scheme 11167:11185 <> Ltac_database_token_sind
 def 11230:11242 <> ltac_database
 R11247:11251 PLF.LibTactics <> Boxer ind
 binder 11245:11245 <> D:14
@@ -2079,6 +2103,10 @@ R178482:178486 Coq.Init.Logic <> False ind
 R178531:178540 PLF.LibTactics <> skip_axiom prfax
 ind 180952:180971 <> ltac_goal_to_discard
 constr 180976:181001 <> ltac_goal_to_discard_intro
+scheme 180952:180971 <> ltac_goal_to_discard_rect
+scheme 180952:180971 <> ltac_goal_to_discard_ind
+scheme 180952:180971 <> ltac_goal_to_discard_rec
+scheme 180952:180971 <> ltac_goal_to_discard_sind
 R181098:181123 PLF.LibTactics <> ltac_goal_to_discard_intro constr
 R181239:181258 PLF.LibTactics <> ltac_goal_to_discard ind
 R181239:181258 PLF.LibTactics <> ltac_goal_to_discard ind

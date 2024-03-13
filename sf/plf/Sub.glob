@@ -94,6 +94,10 @@ R27030:27031 PLF.Sub <> ty:1 ind
 R27038:27041 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R27036:27037 PLF.Sub <> ty:1 ind
 R27042:27043 PLF.Sub <> ty:1 ind
+scheme 26891:26892 STLCSub ty_rect
+scheme 26891:26892 STLCSub ty_ind
+scheme 26891:26892 STLCSub ty_rec
+scheme 26891:26892 STLCSub ty_sind
 ind 27058:27059 STLCSub tm
 constr 27075:27080 STLCSub tm_var
 constr 27101:27106 STLCSub tm_app
@@ -141,6 +145,10 @@ R27296:27297 PLF.Sub <> tm:3 ind
 R27314:27317 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R27312:27313 PLF.Sub <> tm:3 ind
 R27318:27319 PLF.Sub <> tm:3 ind
+scheme 27058:27059 STLCSub tm_rect
+scheme 27058:27059 STLCSub tm_ind
+scheme 27058:27059 STLCSub tm_rec
+scheme 27058:27059 STLCSub tm_sind
 not 27360:27360 STLCSub :::'<{'_x_'}>'
 not 27413:27413 STLCSub :stlc::'('_x_')'
 not 27468:27468 STLCSub :stlc::x
@@ -361,6 +369,8 @@ R30486:30490 PLF.Sub <> value:10 ind
 R30492:30493 PLF.Sub STLCSub :::'<{'_x_'}>' not
 R30498:30499 PLF.Sub STLCSub :::'<{'_x_'}>' not
 R30494:30497 PLF.Sub STLCSub :stlc::'unit' not
+scheme 30321:30325 STLCSub value_ind
+scheme 30321:30325 STLCSub value_sind
 R30522:30526 PLF.Sub <> value ind
 ind 30594:30597 STLCSub step
 constr 30625:30633 STLCSub ST_AppAbs
@@ -490,6 +500,8 @@ R31174:31179 PLF.Sub STLCSub :stlc::'if'_x_'then'_x_'else'_x not
 R31163:31165 PLF.Sub <> t1':32 var
 R31172:31173 PLF.Sub <> t2:33 var
 R31180:31181 PLF.Sub <> t3:34 var
+scheme 30594:30597 STLCSub step_ind
+scheme 30594:30597 STLCSub step_sind
 R31208:31211 PLF.Sub STLCSub step ind
 not 31191:31191 STLCSub :::x_'-->'_x
 R31239:31242 PLF.Sub <> step ind
@@ -550,6 +562,8 @@ R31931:31932 PLF.Sub STLCSub :::'<{'_x_'}>' not
 R31927:31928 PLF.Sub STLCSub :stlc::x_'->'_x not
 R31925:31926 PLF.Sub <> T1:44 var
 R31929:31930 PLF.Sub <> T2:45 var
+scheme 31653:31659 STLCSub subtype_ind
+scheme 31653:31659 STLCSub subtype_sind
 R31955:31961 PLF.Sub STLCSub subtype ind
 not 31940:31940 STLCSub :::x_'<:'_x
 R32190:32196 PLF.Sub <> subtype ind
@@ -797,6 +811,8 @@ R35596:35600 PLF.Sub STLCSub :::x_'|--'_x_'\in'_x not
 R35584:35588 PLF.Sub <> Gamma:69 var
 R35594:35595 PLF.Sub <> t1:70 var
 R35601:35602 PLF.Sub <> T2:72 var
+scheme 34700:34707 STLCSub has_type_ind
+scheme 34700:34707 STLCSub has_type_sind
 R35639:35646 PLF.Sub STLCSub has_type ind
 not 35611:35611 STLCSub :::x_'|--'_x_'\in'_x
 R35679:35686 PLF.Sub <> has_type ind

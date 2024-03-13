@@ -57,7 +57,6 @@ R4150:4152 Coq.Lists.List <> map def
 R4165:4169 PLF.PE <> pe_st:5 var
 R4156:4158 Coq.Init.Datatypes <> fst def
 R4147:4147 PLF.PE <> V:6 var
-R4455:4456 Coq.Lists.List <> In def
 R4836:4844 Coq.Lists.List <> filter_In thm
 def 5164:5166 <> inb
 binder 5169:5169 <> A:8
@@ -1931,6 +1930,8 @@ R32948:32953 PLF.PE <> pe_st1:159 var
 R32956:32965 PLF.PE <> pe_compare def
 R32967:32972 PLF.PE <> pe_st1:159 var
 R32974:32979 PLF.PE <> pe_st2:160 var
+scheme 31479:31484 <> pe_com_ind
+scheme 31479:31484 <> pe_com_sind
 R33025:33030 PLF.PE <> pe_com ind
 not 32991:32991 <> :::x_'/'_x_'==>'_x_'/'_x
 R33073:33078 PLF.PE <> pe_com ind
@@ -2154,6 +2155,8 @@ R34973:34974 PLF.PE <> c':176 var
 R34978:34983 PLF.PE <> pe_st':177 var
 R34987:34988 PLF.PE <> st:178 var
 R34994:34997 PLF.PE <> st'':179 var
+scheme 34805:34812 <> pe_ceval_ind
+scheme 34805:34812 <> pe_ceval_sind
 R35045:35052 PLF.PE <> pe_ceval ind
 not 35007:35007 <> :::x_'/'_x_'/'_x_'==>'_x
 R35099:35106 PLF.PE <> pe_ceval ind
@@ -3135,6 +3138,8 @@ R44156:44160 PLF.PE <> pe_st:273 var
 R44164:44165 PLF.Imp <> ::com_scope:'<{'_x_'}>' not
 R44170:44171 PLF.Imp <> ::com_scope:'<{'_x_'}>' not
 R44166:44169 PLF.Imp <> :com:com_scope:'skip' not
+scheme 40220:40225 Loop pe_com_ind
+scheme 40220:40225 Loop pe_com_sind
 R44224:44229 PLF.PE Loop pe_com ind
 not 44182:44182 Loop :::x_'/'_x_'==>'_x_'/'_x_'/'_x
 R44276:44281 PLF.PE <> pe_com ind
@@ -3881,6 +3886,8 @@ R48235:48235 Coq.Init.Datatypes <> S constr
 R48240:48242 Coq.Init.Nat <> ::nat_scope:x_'+'_x not
 R48238:48239 PLF.PE <> n1:354 var
 R48243:48244 PLF.PE <> n2:355 var
+scheme 47249:47259 Loop ceval_count_ind
+scheme 47249:47259 Loop ceval_count_sind
 R48286:48296 PLF.PE Loop ceval_count ind
 not 48256:48256 Loop :::x_'/'_x_'==>'_x_'#'_x
 R48337:48347 PLF.PE <> ceval_count ind
@@ -4015,6 +4022,8 @@ R49781:49783 PLF.PE <> c'':372 var
 R49787:49788 PLF.PE <> st:373 var
 R49794:49797 PLF.PE <> st'':374 var
 R49801:49801 PLF.PE <> n:375 var
+scheme 49515:49528 Loop pe_ceval_count_ind
+scheme 49515:49528 Loop pe_ceval_count_sind
 R49871:49884 PLF.PE Loop pe_ceval_count ind
 not 49811:49811 Loop :::x_'/'_x_'/'_x_'/'_x_'==>'_x_'#'_x
 R49937:49950 PLF.PE <> pe_ceval_count ind
@@ -4369,8 +4378,8 @@ R55942:55956 PLF.PE <> pe_bexp_correct thm
 R55942:55956 PLF.PE <> pe_bexp_correct thm
 R56057:56073 PLF.PE Loop ceval_count_sound thm
 R56057:56073 PLF.PE Loop ceval_count_sound thm
-R56128:56143 PLF.Imp <> loop_never_stops prfax
-R56128:56143 PLF.Imp <> loop_never_stops prfax
+R56128:56143 PLF.Imp <> loop_never_stops thm
+R56128:56143 PLF.Imp <> loop_never_stops thm
 R56245:56246 PLF.Imp <> ::com_scope:'<{'_x_'}>' not
 R56285:56286 PLF.Imp <> ::com_scope:'<{'_x_'}>' not
 R56247:56252 PLF.Imp <> :com:com_scope:'while'_x_'do'_x_'end' not
@@ -4488,6 +4497,10 @@ R58912:58916 PLF.PE <> block:411 ind
 R58918:58922 PLF.PE <> Label:410 var
 R58927:58931 PLF.PE <> block:411 ind
 R58933:58937 PLF.PE <> Label:410 var
+scheme 58773:58777 <> block_rect
+scheme 58773:58777 <> block_ind
+scheme 58773:58777 <> block_rec
+scheme 58773:58777 <> block_sind
 R58951:58954 PLF.PE <> Goto constr
 R58951:58954 PLF.PE <> Goto constr
 R58977:58978 PLF.PE <> If constr
@@ -4503,6 +4516,10 @@ R59279:59290 PLF.PE <> parity_label:413 ind
 R59304:59315 PLF.PE <> parity_label:413 ind
 R59329:59340 PLF.PE <> parity_label:413 ind
 R59354:59365 PLF.PE <> parity_label:413 ind
+scheme 59244:59255 <> parity_label_rect
+scheme 59244:59255 <> parity_label_ind
+scheme 59244:59255 <> parity_label_rec
+scheme 59244:59255 <> parity_label_sind
 def 59483:59493 <> parity_body
 R59497:59501 PLF.PE <> block ind
 R59503:59514 PLF.PE <> parity_label ind
@@ -4658,6 +4675,8 @@ R61366:61369 PLF.PE <> st'':434 var
 R61364:61364 PLF.PE <> l:430 var
 R61361:61362 PLF.PE <> st:429 var
 R61359:61359 PLF.PE <> p:424 var
+scheme 61089:61093 <> peval_ind
+scheme 61089:61093 <> peval_sind
 def 61385:61395 <> parity_eval
 R61398:61402 PLF.PE <> peval ind
 R61436:61439 PLF.PE <> done constr
@@ -4934,6 +4953,8 @@ R64335:64335 PLF.PE <> l:460 var
 R64329:64333 PLF.PE <> pe_st:459 var
 R64326:64327 PLF.PE <> st:458 var
 R64324:64324 PLF.PE <> p:457 var
+scheme 64077:64084 <> pe_peval_ind
+scheme 64077:64084 <> pe_peval_sind
 prf 64355:64372 <> pe_program_correct
 binder 64385:64385 <> L:467
 R64398:64404 PLF.PE <> program def

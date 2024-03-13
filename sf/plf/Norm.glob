@@ -32,6 +32,10 @@ R3870:3871 PLF.Norm <> ty:1 ind
 R3878:3881 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R3876:3877 PLF.Norm <> ty:1 ind
 R3882:3883 PLF.Norm <> ty:1 ind
+scheme 3795:3796 <> ty_rect
+scheme 3795:3796 <> ty_ind
+scheme 3795:3796 <> ty_rec
+scheme 3795:3796 <> ty_sind
 ind 3898:3899 <> tm
 constr 3935:3940 <> tm_var
 constr 3961:3966 <> tm_app
@@ -77,6 +81,10 @@ R4174:4175 PLF.Norm <> tm:3 ind
 R4192:4195 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R4190:4191 PLF.Norm <> tm:3 ind
 R4196:4197 PLF.Norm <> tm:3 ind
+scheme 3898:3899 <> tm_rect
+scheme 3898:3899 <> tm_ind
+scheme 3898:3899 <> tm_rec
+scheme 3898:3899 <> tm_sind
 not 4238:4238 <> :::'<{'_x_'}>'
 not 4291:4291 <> :stlc::'('_x_')'
 not 4346:4346 <> :stlc::x
@@ -299,6 +307,8 @@ R7014:7015 PLF.Norm <> :stlc::'('_x_','_x_')' not
 R7018:7018 PLF.Norm <> :stlc::'('_x_','_x_')' not
 R7012:7013 PLF.Norm <> v1:15 var
 R7016:7017 PLF.Norm <> v2:16 var
+scheme 6788:6792 <> value_ind
+scheme 6788:6792 <> value_sind
 R7042:7046 PLF.Norm <> value ind
 ind 7114:7117 <> step
 constr 7145:7153 <> ST_AppAbs
@@ -547,6 +557,8 @@ R8294:8294 PLF.Norm <> :stlc::'('_x_','_x_')' not
 R8289:8290 PLF.Norm <> v1:49 var
 R8292:8293 PLF.Norm <> v2:50 var
 R8307:8308 PLF.Norm <> v2:50 var
+scheme 7114:7117 <> step_ind
+scheme 7114:7117 <> step_sind
 R8334:8337 PLF.Norm <> step ind
 not 8317:8317 <> :::x_'-->'_x
 R8365:8368 PLF.Norm <> step ind
@@ -772,6 +784,8 @@ R9976:9980 PLF.Norm <> Gamma:83 var
 R9988:9991 PLF.Norm <> :stlc::x_'.snd' not
 R9986:9987 PLF.Norm <> t0:84 var
 R9997:9998 PLF.Norm <> T2:86 var
+scheme 8953:8960 <> has_type_ind
+scheme 8953:8960 <> has_type_sind
 R10035:10042 PLF.Norm <> has_type ind
 not 10007:10007 <> :::x_'|--'_x_'\in'_x
 R10075:10082 PLF.Norm <> has_type ind
@@ -1091,6 +1105,8 @@ R13606:13608 PLF.Norm <> :::'<{'_x_'}>' not
 R13602:13605 PLF.Norm <> :stlc::x_'.snd' not
 R13601:13601 PLF.Norm <> t:137 var
 R13596:13596 PLF.Norm <> x:136 var
+scheme 12420:12434 <> appears_free_in_ind
+scheme 12420:12434 <> appears_free_in_sind
 R13631:13645 PLF.Norm <> appears_free_in ind
 def 13667:13672 <> closed
 R13677:13678 PLF.Norm <> tm ind
@@ -1560,6 +1576,8 @@ R29221:29221 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' n
 R29218:29218 PLF.Norm <> x:200 var
 R29220:29220 PLF.Norm <> T:201 var
 R29224:29224 PLF.Norm <> c:203 var
+scheme 29044:29056 <> instantiation_ind
+scheme 29044:29056 <> instantiation_sind
 prf 29500:29519 <> vacuous_substitution
 binder 29531:29531 <> t:205
 binder 29533:29533 <> x:206

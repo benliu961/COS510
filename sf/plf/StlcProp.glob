@@ -492,6 +492,8 @@ R19425:19426 PLF.StlcProp <> t1:62 var
 R19433:19434 PLF.StlcProp <> t2:63 var
 R19441:19442 PLF.StlcProp <> t3:64 var
 R19418:19418 PLF.StlcProp <> x:46 var
+scheme 18729:18743 STLCProp appears_free_in_ind
+scheme 18729:18743 STLCProp appears_free_in_sind
 R19466:19480 PLF.StlcProp <> appears_free_in ind
 def 19787:19792 STLCProp closed
 R19797:19798 PLF.Stlc STLC tm ind
@@ -605,6 +607,10 @@ R32636:32639 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R32634:32635 PLF.StlcProp <> ty:79 ind
 R32640:32641 PLF.StlcProp <> ty:79 ind
 R32657:32658 PLF.StlcProp <> ty:79 ind
+scheme 32600:32601 STLCArith ty_rect
+scheme 32600:32601 STLCArith ty_ind
+scheme 32600:32601 STLCArith ty_rec
+scheme 32600:32601 STLCArith ty_sind
 ind 32796:32797 STLCArith tm
 constr 32813:32818 STLCArith tm_var
 constr 32839:32844 STLCArith tm_app
@@ -650,6 +656,10 @@ R33021:33022 PLF.StlcProp <> tm:81 ind
 R33029:33032 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R33027:33028 PLF.StlcProp <> tm:81 ind
 R33033:33034 PLF.StlcProp <> tm:81 ind
+scheme 32796:32797 STLCArith tm_rect
+scheme 32796:32797 STLCArith tm_ind
+scheme 32796:32797 STLCArith tm_rec
+scheme 32796:32797 STLCArith tm_sind
 not 33047:33047 STLCArith :stlc::'{'_x_'}'
 not 33109:33109 STLCArith :::'<{'_x_'}>'
 not 33162:33162 STLCArith :stlc::'('_x_')'
@@ -683,6 +693,10 @@ R35434:35435 PLF.StlcProp STLCArith tm ind
 ind 35697:35701 STLCArith value
 R35707:35710 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R35705:35706 PLF.StlcProp STLCArith tm ind
+scheme 35697:35701 STLCArith value_rect
+scheme 35697:35701 STLCArith value_ind
+scheme 35697:35701 STLCArith value_rec
+scheme 35697:35701 STLCArith value_sind
 R35761:35765 PLF.StlcProp <> value ind
 ind 35833:35836 STLCArith step
 R35842:35845 Coq.Init.Logic <> ::type_scope:x_'->'_x not
@@ -690,6 +704,10 @@ R35840:35841 PLF.StlcProp STLCArith tm ind
 R35848:35851 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R35846:35847 PLF.StlcProp STLCArith tm ind
 R35904:35907 PLF.StlcProp <> step:90 ind
+scheme 35833:35836 STLCArith step_rect
+scheme 35833:35836 STLCArith step_ind
+scheme 35833:35836 STLCArith step_rec
+scheme 35833:35836 STLCArith step_sind
 R35904:35907 PLF.StlcProp STLCArith step ind
 not 35887:35887 STLCArith :::x_'-->'_x
 abbrev 35926:35934 STLCArith multistep
@@ -734,6 +752,10 @@ R36367:36368 PLF.StlcProp STLCArith tm ind
 R36375:36378 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R36373:36374 PLF.StlcProp STLCArith ty ind
 R36442:36449 PLF.StlcProp <> has_type:93 ind
+scheme 36345:36352 STLCArith has_type_rect
+scheme 36345:36352 STLCArith has_type_ind
+scheme 36345:36352 STLCArith has_type_rec
+scheme 36345:36352 STLCArith has_type_sind
 R36442:36449 PLF.StlcProp STLCArith has_type ind
 not 36414:36414 STLCArith :::x_'|--'_x_'\in'_x
 R36482:36489 PLF.StlcProp <> has_type ind

@@ -23,6 +23,10 @@ R4522:4523 PLF.Smallstep <> tm:1 ind
 R4530:4533 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R4528:4529 PLF.Smallstep <> tm:1 ind
 R4534:4535 PLF.Smallstep <> tm:1 ind
+scheme 4460:4461 <> tm_rect
+scheme 4460:4461 <> tm_ind
+scheme 4460:4461 <> tm_rec
+scheme 4460:4461 <> tm_sind
 def 4691:4695 <> evalF
 R4702:4703 PLF.Smallstep <> tm ind
 binder 4698:4698 <> t:3
@@ -66,6 +70,8 @@ R5535:5536 PLF.Smallstep <> t2:10 var
 R5545:5547 Coq.Init.Nat <> ::nat_scope:x_'+'_x not
 R5543:5544 PLF.Smallstep <> n1:11 var
 R5548:5549 PLF.Smallstep <> n2:12 var
+scheme 5385:5388 <> eval_ind
+scheme 5385:5388 <> eval_sind
 R5577:5580 PLF.Smallstep <> eval ind
 not 5559:5559 <> :::x_'==>'_x
 mod 5596:5607 <> SimpleArith1
@@ -120,6 +126,8 @@ R6481:6481 PLF.Smallstep <> P constr
 R6484:6484 PLF.Smallstep <> C constr
 R6486:6487 PLF.Smallstep <> n1:20 var
 R6490:6492 PLF.Smallstep <> t2':22 var
+scheme 6223:6226 SimpleArith1 step_ind
+scheme 6223:6226 SimpleArith1 step_sind
 R6522:6525 PLF.Smallstep SimpleArith1 step ind
 not 6503:6503 SimpleArith1 :::x_'-->'_x
 def 7160:7170 SimpleArith1 test_step_1
@@ -207,6 +215,8 @@ binder 14303:14303 <> n:31
 R14306:14310 PLF.Smallstep <> value:29 ind
 R14313:14313 PLF.Smallstep <> C constr
 R14315:14315 PLF.Smallstep <> n:31 var
+scheme 14260:14264 <> value_ind
+scheme 14260:14264 <> value_sind
 ind 15661:15664 <> step
 constr 15692:15708 <> ST_PlusConstConst
 constr 15778:15785 <> ST_Plus1
@@ -259,6 +269,8 @@ R15982:15983 PLF.Smallstep <> t2:40 var
 R15989:15989 PLF.Smallstep <> P constr
 R15991:15992 PLF.Smallstep <> v1:39 var
 R15994:15996 PLF.Smallstep <> t2':41 var
+scheme 15661:15664 <> step_ind
+scheme 15661:15664 <> step_sind
 R16026:16029 PLF.Smallstep <> step ind
 not 16007:16007 <> :::x_'-->'_x
 prf 17353:17370 <> step_deterministic
@@ -369,6 +381,8 @@ R22022:22022 PLF.Smallstep <> P constr
 R22024:22025 PLF.Smallstep <> t1:56 var
 R22028:22028 PLF.Smallstep <> C constr
 R22030:22030 PLF.Smallstep <> n:57 var
+scheme 21914:21918 Temp1 value_ind
+scheme 21914:21918 Temp1 value_sind
 ind 22118:22121 Temp1 step
 constr 22149:22165 Temp1 ST_PlusConstConst
 constr 22225:22232 Temp1 ST_Plus1
@@ -421,6 +435,8 @@ R22383:22384 PLF.Smallstep <> t2:66 var
 R22390:22390 PLF.Smallstep <> P constr
 R22392:22393 PLF.Smallstep <> v1:65 var
 R22395:22397 PLF.Smallstep <> t2':67 var
+scheme 22118:22121 Temp1 step_ind
+scheme 22118:22121 Temp1 step_sind
 R22427:22430 PLF.Smallstep Temp1 step ind
 not 22408:22408 Temp1 :::x_'-->'_x
 prf 22446:22474 Temp1 value_not_same_as_normal_form
@@ -444,6 +460,8 @@ binder 22858:22858 <> n:71
 R22861:22865 PLF.Smallstep <> value:69 ind
 R22868:22868 PLF.Smallstep <> C constr
 R22870:22870 PLF.Smallstep <> n:71 var
+scheme 22815:22819 Temp2 value_ind
+scheme 22815:22819 Temp2 value_sind
 ind 22968:22971 Temp2 step
 constr 22999:23006 Temp2 ST_Funny
 constr 23084:23100 Temp2 ST_PlusConstConst
@@ -505,6 +523,8 @@ R23318:23319 PLF.Smallstep <> t2:81 var
 R23325:23325 PLF.Smallstep <> P constr
 R23327:23328 PLF.Smallstep <> v1:80 var
 R23330:23332 PLF.Smallstep <> t2':82 var
+scheme 22968:22971 Temp2 step_ind
+scheme 22968:22971 Temp2 step_sind
 R23362:23365 PLF.Smallstep Temp2 step ind
 not 23343:23343 Temp2 :::x_'-->'_x
 prf 23381:23409 Temp2 value_not_same_as_normal_form
@@ -528,6 +548,8 @@ binder 24062:24062 <> n:86
 R24065:24069 PLF.Smallstep <> value:84 ind
 R24072:24072 PLF.Smallstep <> C constr
 R24074:24074 PLF.Smallstep <> n:86 var
+scheme 24019:24023 Temp3 value_ind
+scheme 24019:24023 Temp3 value_sind
 ind 24138:24141 Temp3 step
 constr 24169:24185 Temp3 ST_PlusConstConst
 constr 24245:24252 Temp3 ST_Plus1
@@ -562,6 +584,8 @@ R24305:24306 PLF.Smallstep <> t2:93 var
 R24312:24312 PLF.Smallstep <> P constr
 R24314:24316 PLF.Smallstep <> t1':92 var
 R24318:24319 PLF.Smallstep <> t2:93 var
+scheme 24138:24141 Temp3 step_ind
+scheme 24138:24141 Temp3 step_sind
 R24349:24352 PLF.Smallstep Temp3 step ind
 not 24330:24330 Temp3 :::x_'-->'_x
 prf 24411:24439 Temp3 value_not_same_as_normal_form
@@ -590,6 +614,10 @@ R24927:24928 PLF.Smallstep <> tm:95 ind
 R24935:24938 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R24933:24934 PLF.Smallstep <> tm:95 ind
 R24939:24940 PLF.Smallstep <> tm:95 ind
+scheme 24871:24872 Temp4 tm_rect
+scheme 24871:24872 Temp4 tm_ind
+scheme 24871:24872 Temp4 tm_rec
+scheme 24871:24872 Temp4 tm_sind
 ind 24954:24958 Temp4 value
 constr 24980:24984 Temp4 v_tru
 constr 25002:25006 Temp4 v_fls
@@ -599,6 +627,8 @@ R24988:24992 PLF.Smallstep <> value:97 ind
 R24994:24996 PLF.Smallstep Temp4 tru constr
 R25010:25014 PLF.Smallstep <> value:97 ind
 R25016:25018 PLF.Smallstep Temp4 fls constr
+scheme 24954:24958 Temp4 value_ind
+scheme 24954:24958 Temp4 value_sind
 ind 25081:25084 Temp4 step
 constr 25112:25120 Temp4 ST_IfTrue
 constr 25170:25179 Temp4 ST_IfFalse
@@ -641,6 +671,8 @@ R25302:25305 PLF.Smallstep Temp4 test constr
 R25307:25309 PLF.Smallstep <> t1':106 var
 R25311:25312 PLF.Smallstep <> t2:107 var
 R25314:25315 PLF.Smallstep <> t3:108 var
+scheme 25081:25084 Temp4 step_ind
+scheme 25081:25084 Temp4 step_sind
 R25345:25348 PLF.Smallstep Temp4 step ind
 not 25326:25326 Temp4 :::x_'-->'_x
 def 25603:25617 Temp4 bool_step_prop1
@@ -743,6 +775,8 @@ R27588:27591 PLF.Smallstep Temp4 test constr
 R27593:27595 PLF.Smallstep <> t1':118 var
 R27597:27598 PLF.Smallstep <> t2:119 var
 R27600:27601 PLF.Smallstep <> t3:120 var
+scheme 27367:27370 Temp4.Temp5 step_ind
+scheme 27367:27370 Temp4.Temp5 step_sind
 R27652:27655 PLF.Smallstep Temp4.Temp5 step ind
 not 27633:27633 Temp4.Temp5 :::x_'-->'_x
 def 27676:27690 Temp4.Temp5 bool_step_prop4
@@ -796,6 +830,8 @@ R30269:30273 PLF.Smallstep <> multi:123 ind
 R30279:30279 PLF.Smallstep <> z:128 var
 R30277:30277 PLF.Smallstep <> x:126 var
 R30275:30275 PLF.Smallstep <> R:122 var
+scheme 30053:30057 <> multi_ind
+scheme 30053:30057 <> multi_sind
 R31031:31035 PLF.Smallstep <> multi ind
 R31037:31040 PLF.Smallstep <> step ind
 not 31011:31011 <> :::x_'-->*'_x
@@ -1170,6 +1206,10 @@ R42515:42516 PLF.Smallstep <> tm:160 ind
 R42523:42526 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R42521:42522 PLF.Smallstep <> tm:160 ind
 R42527:42528 PLF.Smallstep <> tm:160 ind
+scheme 42418:42419 Combined tm_rect
+scheme 42418:42419 Combined tm_ind
+scheme 42418:42419 Combined tm_rec
+scheme 42418:42419 Combined tm_sind
 ind 42542:42546 Combined value
 constr 42568:42574 Combined v_const
 constr 42604:42608 Combined v_tru
@@ -1184,6 +1224,8 @@ R42612:42616 PLF.Smallstep <> value:162 ind
 R42618:42620 PLF.Smallstep Combined tru constr
 R42634:42638 PLF.Smallstep <> value:162 ind
 R42640:42642 PLF.Smallstep Combined fls constr
+scheme 42542:42546 Combined value_ind
+scheme 42542:42546 Combined value_sind
 ind 42705:42708 Combined step
 constr 42736:42752 Combined ST_PlusConstConst
 constr 42812:42819 Combined ST_Plus1
@@ -1272,6 +1314,8 @@ R43180:43183 PLF.Smallstep Combined test constr
 R43185:43187 PLF.Smallstep <> t1':180 var
 R43189:43190 PLF.Smallstep <> t2:181 var
 R43192:43193 PLF.Smallstep <> t3:182 var
+scheme 42705:42708 Combined step_ind
+scheme 42705:42708 Combined step_sind
 R43223:43226 PLF.Smallstep Combined step ind
 not 43204:43204 Combined :::x_'-->'_x
 prf 43626:43652 Combined combined_step_deterministic
@@ -1319,6 +1363,8 @@ binder 44579:44579 <> n:189
 R44582:44585 PLF.Smallstep <> aval:187 ind
 R44588:44591 PLF.Imp <> ANum constr
 R44593:44593 PLF.Smallstep <> n:189 var
+scheme 44536:44539 <> aval_ind
+scheme 44536:44539 <> aval_sind
 ind 44920:44924 <> astep
 constr 44969:44973 <> AS_Id
 constr 45027:45034 <> AS_Plus1
@@ -1532,6 +1578,8 @@ R45906:45907 PLF.Smallstep <> v2:217 var
 R45925:45927 Coq.Init.Nat <> ::nat_scope:x_'*'_x not
 R45923:45924 PLF.Smallstep <> v1:216 var
 R45928:45929 PLF.Smallstep <> v2:217 var
+scheme 44920:44924 <> astep_ind
+scheme 44920:44924 <> astep_sind
 R45970:45974 PLF.Smallstep <> astep ind
 not 45943:45943 <> :::x_'/'_x_'-->a'_x
 ind 46087:46091 <> bstep
@@ -1808,6 +1856,8 @@ R47350:47354 PLF.Imp <> :com::'false' not
 R47369:47371 PLF.Imp <> ::com_scope:'<{'_x_'}>' not
 R47377:47379 PLF.Imp <> ::com_scope:'<{'_x_'}>' not
 R47372:47376 PLF.Imp <> :com::'false' not
+scheme 46087:46091 <> bstep_ind
+scheme 46087:46091 <> bstep_sind
 R47415:47419 PLF.Smallstep <> bstep ind
 not 47388:47388 <> :::x_'/'_x_'-->b'_x
 ind 48445:48449 <> cstep
@@ -2024,6 +2074,8 @@ R49349:49350 PLF.Smallstep <> b1:273 var
 R49355:49356 PLF.Smallstep <> c1:274 var
 R49367:49370 PLF.Imp <> :com:com_scope:'skip' not
 R49381:49382 PLF.Smallstep <> st:272 var
+scheme 48445:48449 <> cstep_ind
+scheme 48445:48449 <> cstep_sind
 R49427:49431 PLF.Smallstep <> cstep ind
 R49433:49433 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
 R49435:49435 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
@@ -2068,6 +2120,10 @@ R50467:50469 PLF.Smallstep <> com:275 ind
 R50477:50480 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R50474:50476 PLF.Smallstep <> com:275 ind
 R50481:50483 PLF.Smallstep <> com:275 ind
+scheme 50295:50297 CImp com_rect
+scheme 50295:50297 CImp com_ind
+scheme 50295:50297 CImp com_rec
+scheme 50295:50297 CImp com_sind
 R50549:50552 PLF.Smallstep CImp CPar constr
 not 50527:50527 CImp :com::x_'||'_x
 R50651:50655 PLF.Smallstep CImp CSkip constr
@@ -2367,6 +2423,8 @@ R52526:52528 PLF.Imp <> ::com_scope:'<{'_x_'}>' not
 R52533:52535 PLF.Imp <> ::com_scope:'<{'_x_'}>' not
 R52529:52532 PLF.Smallstep CImp :com::'skip' not
 R52539:52540 PLF.Smallstep <> st:317 var
+scheme 51240:51244 CImp cstep_ind
+scheme 51240:51244 CImp cstep_sind
 R52585:52589 PLF.Smallstep CImp cstep ind
 R52591:52591 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
 R52593:52593 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
@@ -2945,6 +3003,8 @@ R60701:60702 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
 R60700:60700 PLF.Smallstep <> m:346 var
 R60703:60705 PLF.Smallstep <> stk:344 var
 R60681:60682 PLF.Smallstep <> st:327 var
+scheme 60208:60217 <> stack_step_ind
+scheme 60208:60217 <> stack_step_sind
 prf 60735:60758 <> stack_step_deterministic
 binder 60769:60770 <> st:348
 R60775:60787 PLF.Smallstep <> deterministic def
