@@ -1569,7 +1569,6 @@ Inductive ceval : com -> state -> state -> Prop :=
       st =[ if1 b then c end ]=> st'
   | E_If1False : forall st b c,
       beval st b = false ->
-      st =[ skip ]=> st ->
       st =[ if1 b then c end ]=> st
 
 where "st '=[' c ']=>' st'" := (ceval c st st').
@@ -1634,7 +1633,10 @@ Proof.
   - simpl in *. apply H in H8.
     + assumption.
     + split; assumption.
-  - simpl in *. apply H0 in H8.
+  - simpl in *. 
+    assert (st' =[ skip ]=> st').
+    { apply E_Skip. }
+    apply H0 in H3.
     + assumption.
     + split.
       * assumption.
@@ -1649,15 +1651,6 @@ Proof.
     end
   {{ X = Z }}
 *)
-
-Example hoare_if1_good :
-  {{ X + Y = Z }}
-    if1 Y <> 0 then
-      X := X + Y
-    end
-  {{ X = Z }}.
-Proof. 
-  apply hoare_if1.
 
 (* Do not modify the following line: *)
 Definition manual_grade_for_hoare_if1 : option (nat*string) := None.
@@ -1702,7 +1695,16 @@ Lemma hoare_if1_good :
       X := X + Y
     end
   {{ X = Z }}.
-Proof. (* FILL IN HERE *) Admitted.
+Proof. 
+  apply hoare_if1.
+  - eapply hoare_consequence_pre.
+    + apply hoare_asgn.
+    + assertion_auto''.
+  - unfold valid_hoare_triple. intros.
+    inversion H; subst. simpl in *.
+    destruct H0. apply eq_true_negb_classical in H1. apply eqb_eq in H1.
+    lia. Qed.
+
 (** [] *)
 
 End If1.
