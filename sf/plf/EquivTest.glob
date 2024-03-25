@@ -15,7 +15,7 @@ R712:716 PLF.Equiv <> <> lib
 R726:730 PLF.EquivTest Check <> mod
 def 734:742 <> Unnamed_thm
 R739:742 Coq.Init.Logic <> True ind
-R884:893 PLF.Equiv <> skip_right prfax
+R884:893 PLF.Equiv <> skip_right thm
 R908:910 PLF.Imp <> com ind
 binder 904:904 <> c:2
 R913:918 PLF.Equiv <> cequiv def
@@ -25,7 +25,7 @@ R924:925 PLF.Imp <> :com:com_scope:x_';'_x not
 R923:923 PLF.EquivTest <> c:2 var
 R926:929 PLF.Imp <> :com:com_scope:'skip' not
 R934:934 PLF.EquivTest <> c:2 var
-R884:893 PLF.Equiv <> skip_right prfax
+R884:893 PLF.Equiv <> skip_right thm
 R908:910 PLF.Imp <> com ind
 binder 904:904 <> c:3
 R913:918 PLF.Equiv <> cequiv def
@@ -35,10 +35,10 @@ R924:925 PLF.Imp <> :com:com_scope:x_';'_x not
 R923:923 PLF.EquivTest <> c:3 var
 R926:929 PLF.Imp <> :com:com_scope:'skip' not
 R934:934 PLF.EquivTest <> c:3 var
-R986:995 PLF.Equiv <> skip_right prfax
+R986:995 PLF.Equiv <> skip_right thm
 def 998:1006 <> Unnamed_thm
 R1003:1006 Coq.Init.Logic <> True ind
-R1155:1162 PLF.Equiv <> if_false prfax
+R1155:1162 PLF.Equiv <> if_false thm
 R1179:1182 PLF.Imp <> bexp ind
 binder 1175:1175 <> b:4
 R1194:1196 PLF.Imp <> com ind
@@ -61,7 +61,7 @@ R1238:1238 PLF.EquivTest <> b:4 var
 R1245:1246 PLF.EquivTest <> c1:5 var
 R1253:1254 PLF.EquivTest <> c2:6 var
 R1263:1264 PLF.EquivTest <> c2:6 var
-R1155:1162 PLF.Equiv <> if_false prfax
+R1155:1162 PLF.Equiv <> if_false thm
 R1179:1182 PLF.Imp <> bexp ind
 binder 1175:1175 <> b:7
 R1194:1196 PLF.Imp <> com ind
@@ -84,10 +84,10 @@ R1238:1238 PLF.EquivTest <> b:7 var
 R1245:1246 PLF.EquivTest <> c1:8 var
 R1253:1254 PLF.EquivTest <> c2:9 var
 R1263:1264 PLF.EquivTest <> c2:9 var
-R1316:1323 PLF.Equiv <> if_false prfax
+R1316:1323 PLF.Equiv <> if_false thm
 def 1326:1334 <> Unnamed_thm
 R1331:1334 Coq.Init.Logic <> True ind
-R1499:1514 PLF.Equiv <> swap_if_branches prfax
+R1499:1514 PLF.Equiv <> swap_if_branches thm
 R1531:1534 PLF.Imp <> bexp ind
 binder 1527:1527 <> b:10
 R1546:1548 PLF.Imp <> com ind
@@ -113,7 +113,7 @@ R1597:1598 PLF.Imp <> :com::'~'_x not
 R1599:1599 PLF.EquivTest <> b:10 var
 R1606:1607 PLF.EquivTest <> c2:12 var
 R1614:1615 PLF.EquivTest <> c1:11 var
-R1499:1514 PLF.Equiv <> swap_if_branches prfax
+R1499:1514 PLF.Equiv <> swap_if_branches thm
 R1531:1534 PLF.Imp <> bexp ind
 binder 1527:1527 <> b:13
 R1546:1548 PLF.Imp <> com ind
@@ -139,10 +139,10 @@ R1597:1598 PLF.Imp <> :com::'~'_x not
 R1599:1599 PLF.EquivTest <> b:13 var
 R1606:1607 PLF.EquivTest <> c2:15 var
 R1614:1615 PLF.EquivTest <> c1:14 var
-R1674:1689 PLF.Equiv <> swap_if_branches prfax
+R1674:1689 PLF.Equiv <> swap_if_branches thm
 def 1692:1700 <> Unnamed_thm
 R1697:1700 Coq.Init.Logic <> True ind
-R1853:1862 PLF.Equiv <> while_true prfax
+R1853:1862 PLF.Equiv <> while_true thm
 R1879:1882 PLF.Imp <> bexp ind
 binder 1875:1875 <> b:16
 R1890:1892 PLF.Imp <> com ind
@@ -168,7 +168,7 @@ R1964:1967 PLF.Imp <> :com:com_scope:'while'_x_'do'_x_'end' not
 R1972:1975 PLF.Imp <> :com:com_scope:'while'_x_'do'_x_'end' not
 R1960:1963 PLF.Imp <> :com::'true' not
 R1968:1971 PLF.Imp <> :com:com_scope:'skip' not
-R1853:1862 PLF.Equiv <> while_true prfax
+R1853:1862 PLF.Equiv <> while_true thm
 R1879:1882 PLF.Imp <> bexp ind
 binder 1875:1875 <> b:18
 R1890:1892 PLF.Imp <> com ind
@@ -194,10 +194,10 @@ R1964:1967 PLF.Imp <> :com:com_scope:'while'_x_'do'_x_'end' not
 R1972:1975 PLF.Imp <> :com:com_scope:'while'_x_'do'_x_'end' not
 R1960:1963 PLF.Imp <> :com::'true' not
 R1968:1971 PLF.Imp <> :com:com_scope:'skip' not
-R2030:2039 PLF.Equiv <> while_true prfax
+R2030:2039 PLF.Equiv <> while_true thm
 def 2042:2050 <> Unnamed_thm
 R2047:2050 Coq.Init.Logic <> True ind
-R2209:2221 PLF.Equiv <> assign_aequiv prfax
+R2209:2221 PLF.Equiv <> assign_aequiv thm
 R2238:2250 Coq.Strings.String <> string ind
 binder 2234:2234 <> X:20
 R2258:2261 PLF.Imp <> aexp ind
@@ -216,7 +216,7 @@ R2313:2315 PLF.Imp <> ::com_scope:'<{'_x_'}>' not
 R2308:2311 PLF.Imp <> :com:com_scope:x_':='_x not
 R2307:2307 PLF.EquivTest <> X:20 var
 R2312:2312 PLF.EquivTest <> a:21 var
-R2209:2221 PLF.Equiv <> assign_aequiv prfax
+R2209:2221 PLF.Equiv <> assign_aequiv thm
 R2238:2250 Coq.Strings.String <> string ind
 binder 2234:2234 <> X:22
 R2258:2261 PLF.Imp <> aexp ind
@@ -235,11 +235,11 @@ R2313:2315 PLF.Imp <> ::com_scope:'<{'_x_'}>' not
 R2308:2311 PLF.Imp <> :com:com_scope:x_':='_x not
 R2307:2307 PLF.EquivTest <> X:22 var
 R2312:2312 PLF.EquivTest <> a:23 var
-R2367:2379 PLF.Equiv <> assign_aequiv prfax
+R2367:2379 PLF.Equiv <> assign_aequiv thm
 def 2382:2390 <> Unnamed_thm
 R2387:2390 Coq.Init.Logic <> True ind
 R2573:2602 PLF.Equiv <> manual_grade_for_equiv_classes def
-R2763:2776 PLF.Equiv <> CIf_congruence prfax
+R2763:2776 PLF.Equiv <> CIf_congruence thm
 R2796:2799 PLF.Imp <> bexp ind
 binder 2789:2789 <> b:24
 binder 2791:2792 <> b':25
@@ -279,7 +279,7 @@ R2942:2945 PLF.Imp <> :com:com_scope:'if'_x_'then'_x_'else'_x_'end' not
 R2922:2923 PLF.EquivTest <> b':25 var
 R2930:2932 PLF.EquivTest <> c1':27 var
 R2939:2941 PLF.EquivTest <> c2':29 var
-R2763:2776 PLF.Equiv <> CIf_congruence prfax
+R2763:2776 PLF.Equiv <> CIf_congruence thm
 R2796:2799 PLF.Imp <> bexp ind
 binder 2789:2789 <> b:30
 binder 2791:2792 <> b':31
@@ -319,20 +319,20 @@ R2942:2945 PLF.Imp <> :com:com_scope:'if'_x_'then'_x_'else'_x_'end' not
 R2922:2923 PLF.EquivTest <> b':31 var
 R2930:2932 PLF.EquivTest <> c1':33 var
 R2939:2941 PLF.EquivTest <> c2':35 var
-R3000:3013 PLF.Equiv <> CIf_congruence prfax
+R3000:3013 PLF.Equiv <> CIf_congruence thm
 def 3016:3024 <> Unnamed_thm
 R3021:3024 Coq.Init.Logic <> True ind
 R3217:3242 PLF.Equiv <> manual_grade_for_not_congr def
-R3423:3446 PLF.Equiv <> fold_constants_com_sound prfax
+R3423:3446 PLF.Equiv <> fold_constants_com_sound thm
 R3450:3461 PLF.Equiv <> ctrans_sound def
 R3463:3480 PLF.Equiv <> fold_constants_com def
-R3423:3446 PLF.Equiv <> fold_constants_com_sound prfax
+R3423:3446 PLF.Equiv <> fold_constants_com_sound thm
 R3450:3461 PLF.Equiv <> ctrans_sound def
 R3463:3480 PLF.Equiv <> fold_constants_com def
-R3532:3555 PLF.Equiv <> fold_constants_com_sound prfax
+R3532:3555 PLF.Equiv <> fold_constants_com_sound thm
 def 3558:3566 <> Unnamed_thm
 R3563:3566 Coq.Init.Logic <> True ind
-R3731:3746 PLF.Equiv <> inequiv_exercise prfax
+R3731:3746 PLF.Equiv <> inequiv_exercise thm
 R3750:3751 Coq.Init.Logic <> ::type_scope:'~'_x not
 R3752:3757 PLF.Equiv <> cequiv def
 R3759:3761 PLF.Imp <> ::com_scope:'<{'_x_'}>' not
@@ -345,7 +345,7 @@ R3776:3779 PLF.Imp <> :com:com_scope:'skip' not
 R3788:3790 PLF.Imp <> ::com_scope:'<{'_x_'}>' not
 R3795:3797 PLF.Imp <> ::com_scope:'<{'_x_'}>' not
 R3791:3794 PLF.Imp <> :com:com_scope:'skip' not
-R3731:3746 PLF.Equiv <> inequiv_exercise prfax
+R3731:3746 PLF.Equiv <> inequiv_exercise thm
 R3750:3751 Coq.Init.Logic <> ::type_scope:'~'_x not
 R3752:3757 PLF.Equiv <> cequiv def
 R3759:3761 PLF.Imp <> ::com_scope:'<{'_x_'}>' not
@@ -358,11 +358,11 @@ R3776:3779 PLF.Imp <> :com:com_scope:'skip' not
 R3788:3790 PLF.Imp <> ::com_scope:'<{'_x_'}>' not
 R3795:3797 PLF.Imp <> ::com_scope:'<{'_x_'}>' not
 R3791:3794 PLF.Imp <> :com:com_scope:'skip' not
-R3849:3864 PLF.Equiv <> inequiv_exercise prfax
+R3849:3864 PLF.Equiv <> inequiv_exercise thm
 def 3867:3875 <> Unnamed_thm
 R3872:3875 Coq.Init.Logic <> True ind
 R4067:4108 PLF.Equiv Himp manual_grade_for_Check_rule_for_HAVOC def
-R4270:4288 PLF.Equiv Himp pXY_cequiv_pYX prfax
+R4270:4288 PLF.Equiv Himp pXY_cequiv_pYX thm
 R4322:4325 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
 R4293:4303 PLF.Equiv Himp cequiv def
 R4305:4312 PLF.Equiv Himp pXY def
@@ -371,7 +371,7 @@ R4326:4327 Coq.Init.Logic <> ::type_scope:'~'_x not
 R4328:4338 PLF.Equiv Himp cequiv def
 R4340:4347 PLF.Equiv Himp pXY def
 R4349:4356 PLF.Equiv Himp pYX def
-R4270:4288 PLF.Equiv Himp pXY_cequiv_pYX prfax
+R4270:4288 PLF.Equiv Himp pXY_cequiv_pYX thm
 R4322:4325 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
 R4293:4303 PLF.Equiv Himp cequiv def
 R4305:4312 PLF.Equiv Himp pXY def
@@ -380,10 +380,10 @@ R4326:4327 Coq.Init.Logic <> ::type_scope:'~'_x not
 R4328:4338 PLF.Equiv Himp cequiv def
 R4340:4347 PLF.Equiv Himp pXY def
 R4349:4356 PLF.Equiv Himp pYX def
-R4408:4426 PLF.Equiv Himp pXY_cequiv_pYX prfax
+R4408:4426 PLF.Equiv Himp pXY_cequiv_pYX thm
 def 4429:4437 <> Unnamed_thm
 R4434:4437 Coq.Init.Logic <> True ind
-R4617:4635 PLF.Equiv Himp p1_may_diverge prfax
+R4617:4635 PLF.Equiv Himp p1_may_diverge thm
 R4666:4669 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R4653:4665 Coq.Strings.String <> string ind
 R4670:4672 Coq.Init.Datatypes <> nat ind
@@ -399,7 +399,7 @@ R4706:4715 PLF.Equiv Himp ceval ind
 R4717:4723 PLF.Equiv Himp p1 def
 R4725:4726 PLF.EquivTest <> st:36 var
 R4728:4730 PLF.EquivTest <> st':37 var
-R4617:4635 PLF.Equiv Himp p1_may_diverge prfax
+R4617:4635 PLF.Equiv Himp p1_may_diverge thm
 R4666:4669 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R4653:4665 Coq.Strings.String <> string ind
 R4670:4672 Coq.Init.Datatypes <> nat ind
@@ -415,10 +415,10 @@ R4706:4715 PLF.Equiv Himp ceval ind
 R4717:4723 PLF.Equiv Himp p1 def
 R4725:4726 PLF.EquivTest <> st:38 var
 R4728:4730 PLF.EquivTest <> st':39 var
-R4782:4800 PLF.Equiv Himp p1_may_diverge prfax
+R4782:4800 PLF.Equiv Himp p1_may_diverge thm
 def 4803:4811 <> Unnamed_thm
 R4808:4811 Coq.Init.Logic <> True ind
-R4916:4934 PLF.Equiv Himp p2_may_diverge prfax
+R4916:4934 PLF.Equiv Himp p2_may_diverge thm
 R4965:4968 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R4952:4964 Coq.Strings.String <> string ind
 R4969:4971 Coq.Init.Datatypes <> nat ind
@@ -434,7 +434,7 @@ R5005:5014 PLF.Equiv Himp ceval ind
 R5016:5022 PLF.Equiv Himp p2 def
 R5024:5025 PLF.EquivTest <> st:40 var
 R5027:5029 PLF.EquivTest <> st':41 var
-R4916:4934 PLF.Equiv Himp p2_may_diverge prfax
+R4916:4934 PLF.Equiv Himp p2_may_diverge thm
 R4965:4968 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R4952:4964 Coq.Strings.String <> string ind
 R4969:4971 Coq.Init.Datatypes <> nat ind
@@ -450,43 +450,43 @@ R5005:5014 PLF.Equiv Himp ceval ind
 R5016:5022 PLF.Equiv Himp p2 def
 R5024:5025 PLF.EquivTest <> st:42 var
 R5027:5029 PLF.EquivTest <> st':43 var
-R5081:5099 PLF.Equiv Himp p2_may_diverge prfax
+R5081:5099 PLF.Equiv Himp p2_may_diverge thm
 def 5102:5110 <> Unnamed_thm
 R5107:5110 Coq.Init.Logic <> True ind
-R5288:5303 PLF.Equiv Himp p1_p2_equiv prfax
+R5288:5303 PLF.Equiv Himp p1_p2_equiv thm
 R5307:5317 PLF.Equiv Himp cequiv def
 R5319:5325 PLF.Equiv Himp p1 def
 R5327:5333 PLF.Equiv Himp p2 def
-R5288:5303 PLF.Equiv Himp p1_p2_equiv prfax
+R5288:5303 PLF.Equiv Himp p1_p2_equiv thm
 R5307:5317 PLF.Equiv Himp cequiv def
 R5319:5325 PLF.Equiv Himp p1 def
 R5327:5333 PLF.Equiv Himp p2 def
-R5385:5400 PLF.Equiv Himp p1_p2_equiv prfax
+R5385:5400 PLF.Equiv Himp p1_p2_equiv thm
 def 5403:5411 <> Unnamed_thm
 R5408:5411 Coq.Init.Logic <> True ind
-R5593:5610 PLF.Equiv Himp p3_p4_inequiv prfax
+R5593:5610 PLF.Equiv Himp p3_p4_inequiv thm
 R5614:5615 Coq.Init.Logic <> ::type_scope:'~'_x not
 R5616:5626 PLF.Equiv Himp cequiv def
 R5628:5634 PLF.Equiv Himp p3 def
 R5636:5642 PLF.Equiv Himp p4 def
-R5593:5610 PLF.Equiv Himp p3_p4_inequiv prfax
+R5593:5610 PLF.Equiv Himp p3_p4_inequiv thm
 R5614:5615 Coq.Init.Logic <> ::type_scope:'~'_x not
 R5616:5626 PLF.Equiv Himp cequiv def
 R5628:5634 PLF.Equiv Himp p3 def
 R5636:5642 PLF.Equiv Himp p4 def
-R5694:5711 PLF.Equiv Himp p3_p4_inequiv prfax
+R5694:5711 PLF.Equiv Himp p3_p4_inequiv thm
 def 5714:5722 <> Unnamed_thm
 R5719:5722 Coq.Init.Logic <> True ind
-R6674:6683 PLF.Equiv <> skip_right prfax
-R6743:6750 PLF.Equiv <> if_false prfax
-R6818:6833 PLF.Equiv <> swap_if_branches prfax
-R6895:6904 PLF.Equiv <> while_true prfax
-R6969:6981 PLF.Equiv <> assign_aequiv prfax
-R7107:7120 PLF.Equiv <> CIf_congruence prfax
-R7196:7219 PLF.Equiv <> fold_constants_com_sound prfax
-R7287:7302 PLF.Equiv <> inequiv_exercise prfax
-R7440:7458 PLF.Equiv Himp pXY_cequiv_pYX prfax
-R7635:7653 PLF.Equiv Himp p1_may_diverge prfax
-R7724:7742 PLF.Equiv Himp p2_may_diverge prfax
-R7810:7825 PLF.Equiv Himp p1_p2_equiv prfax
-R7895:7912 PLF.Equiv Himp p3_p4_inequiv prfax
+R6674:6683 PLF.Equiv <> skip_right thm
+R6743:6750 PLF.Equiv <> if_false thm
+R6818:6833 PLF.Equiv <> swap_if_branches thm
+R6895:6904 PLF.Equiv <> while_true thm
+R6969:6981 PLF.Equiv <> assign_aequiv thm
+R7107:7120 PLF.Equiv <> CIf_congruence thm
+R7196:7219 PLF.Equiv <> fold_constants_com_sound thm
+R7287:7302 PLF.Equiv <> inequiv_exercise thm
+R7440:7458 PLF.Equiv Himp pXY_cequiv_pYX thm
+R7635:7653 PLF.Equiv Himp p1_may_diverge thm
+R7724:7742 PLF.Equiv Himp p2_may_diverge thm
+R7810:7825 PLF.Equiv Himp p1_p2_equiv thm
+R7895:7912 PLF.Equiv Himp p3_p4_inequiv thm

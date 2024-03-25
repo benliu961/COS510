@@ -1020,17 +1020,17 @@ Definition if_minus_plus_dec :=
   <{
   {{True}}
   if (X <= Y) then
-              {{ FILL_IN_HERE }} ->>
+              {{ True /\ X <= Y }} ->>
               {{ FILL_IN_HERE }}
     Z := Y - X
-              {{ FILL_IN_HERE }}
+              {{ Y = X + Z }}
   else
-              {{ FILL_IN_HERE }} ->>
+              {{ True /\ ~(X <= Y) }} ->>
               {{ FILL_IN_HERE }}
     Y := X + Z
-              {{ FILL_IN_HERE }}
+              {{ Y = X + Z }}
   end
-  {{ Y = X + Z}} }>.
+  {{ Y = X + Z }} }>.
 
 Theorem if_minus_plus_correct :
   outer_triple_valid if_minus_plus_dec.

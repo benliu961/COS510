@@ -1708,7 +1708,7 @@ R66167:66167 PLF.Hoare2 <> X:133 var
 R66172:66172 PLF.Hoare2 <> Q:132 var
 R66183:66187 PLF.Hoare <> ::hoare_spec_scope:x_'->>'_x not
 R66182:66182 PLF.Hoare2 <> P:131 var
-R66188:66196 PLF.Hoare Himp havoc_pre prfax
+R66188:66196 PLF.Hoare Himp havoc_pre def
 R66198:66198 PLF.Hoare2 <> X:133 var
 R66200:66200 PLF.Hoare2 <> Q:132 var
 R66243:66247 PLF.Hoare2 Himp2 <> mod
