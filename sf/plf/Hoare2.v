@@ -1021,12 +1021,12 @@ Definition if_minus_plus_dec :=
   {{True}}
   if (X <= Y) then
               {{ True /\ X <= Y }} ->>
-              {{ FILL_IN_HERE }}
+              {{ Y = X + (Y - X) }}
     Z := Y - X
               {{ Y = X + Z }}
   else
               {{ True /\ ~(X <= Y) }} ->>
-              {{ FILL_IN_HERE }}
+              {{ (X + Z) = X + Z }}
     Y := X + Z
               {{ Y = X + Z }}
   end
@@ -1035,7 +1035,7 @@ Definition if_minus_plus_dec :=
 Theorem if_minus_plus_correct :
   outer_triple_valid if_minus_plus_dec.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  Proof. verify. Qed.
 (** [] *)
 
 (** **** Exercise: 2 stars, standard, optional (div_mod_outer_triple_valid)
@@ -1273,23 +1273,23 @@ Example slow_assignment_dec (m : nat) : decorated :=
   <{
     {{ X = m }}
       Y := 0
-                    {{ FILL_IN_HERE }} ->>
-                    {{ FILL_IN_HERE }} ;
+                    {{ X = m /\ Y = 0 }} ->>
+                    {{ X + Y = m }} ;
       while X <> 0 do
-                    {{ FILL_IN_HERE }} ->>
-                    {{ FILL_IN_HERE }}
+                    {{ X + Y = m /\ (X <> 0) }} ->>
+                    {{ (X - 1) + (Y + 1) = m }}
          X := X - 1
-                    {{ FILL_IN_HERE }} ;
+                    {{ X + (Y + 1) = m }} ;
          Y := Y + 1
-                    {{ FILL_IN_HERE }}
+                    {{ X + Y = m }}
       end
-    {{ FILL_IN_HERE }} ->>
+    {{ X + Y = m /\ ~(X <> 0) }} ->>
     {{ Y = m }}
   }>.
 
 Theorem slow_assignment : forall m,
   outer_triple_valid (slow_assignment_dec m).
-Proof. (* FILL IN HERE *) Admitted.
+Proof. verify. Qed.
 (** [] *)
 
 (* ================================================================= *)
@@ -1591,6 +1591,15 @@ Compute fact 5. (* ==> 120 *)
     the variable [Y].
 *)
 
+(* 
+  X := m;
+  Y := 1;
+  while X <> 0 do
+    Y := Y * X;
+    X := X - 1
+  end
+ *)
+
 (** Using your definition [factorial] and [slow_assignment_dec] as a
     guide, write a formal decorated program [factorial_dec] that
     implements the factorial function.  Hint: recall the use of [ap]
@@ -1613,14 +1622,37 @@ Compute fact 5. (* ==> 120 *)
     For example, recall that [1 + ...] is easier to work with than
     [... + 1]. *)
 
-Example factorial_dec (m:nat) : decorated
-(* REPLACE THIS LINE WITH ":= _your_definition_ ." *). Admitted.
+Example factorial_dec (m:nat) : decorated :=
+  <{
+    {{ X = m }} 
+      Y := 1
+                   {{ X = m /\ Y = 1 }} ->>
+                   {{ Y * ap fact X = fact m }} ;
+      while X <> 0 do
+                   {{ Y * ap fact X = fact m /\ (X <> 0) }} ->>
+                   {{ (Y * X) * ap fact (X - 1) = fact m }}
+        Y := Y * X
+                   {{ Y * ap fact (X - 1) = fact m }};
+        X := X - 1
+                   {{ Y * ap fact X = fact m }}
+      end
+    {{ Y * ap fact X = fact m /\ ~(X <> 0) }} ->>
+    {{ Y = fact m }}
+  }>.
 
 (* FILL IN HERE *)
 
 Theorem factorial_correct: forall m,
   outer_triple_valid (factorial_dec m).
-Proof. (* FILL IN HERE *) Admitted.
+Proof. 
+  verify.
+  - rewrite <- H. rewrite <- mul_assoc. 
+    rewrite mul_comm. rewrite mul_comm with (st Y) (fact (st X)). apply mul_cancel_r.
+    + assert (fact m <> 0). { apply fact_neq_0. } lia.
+    + destruct (st X).
+      * lia.
+      * simpl. rewrite sub_0_r. reflexivity.
+  - rewrite <- H. apply eq_dne in H0. rewrite H0. simpl. lia. Qed.
 (** [] *)
 
 (* ================================================================= *)
@@ -1642,30 +1674,42 @@ Proof. (* FILL IN HERE *) Admitted.
 Definition minimum_dec (a b : nat) : decorated :=
   <{
     {{ True }} ->>
-    {{ FILL_IN_HERE }}
+    {{ 0 + min a b = min a b }}
       X := a
-             {{ FILL_IN_HERE }};
+             {{ 0 + ap2 min X b = min a b }};
       Y := b
-             {{ FILL_IN_HERE }};
+             {{ 0 + ap2 min X Y = min a b }};
       Z := 0
-             {{ FILL_IN_HERE }};
+             {{ Z + ap2 min X Y = min a b }};
       while X <> 0 && Y <> 0 do
-             {{ FILL_IN_HERE }} ->>
-             {{ FILL_IN_HERE }}
+             {{ Z + ap2 min X Y = min a b /\ (X <> 0) /\ (Y <> 0) }} ->>
+             {{ (Z + 1) + ap2 min (X - 1) (Y - 1) = min a b }}
         X := X - 1
-             {{ FILL_IN_HERE }};
+             {{ (Z + 1) + ap2 min X (Y - 1) = min a b }};
         Y := Y - 1
-             {{ FILL_IN_HERE }};
+             {{ (Z + 1) + ap2 min X Y = min a b }};
         Z := Z + 1
-             {{ FILL_IN_HERE }}
+             {{ Z + ap2 min X Y = min a b }}
       end
-    {{ FILL_IN_HERE }} ->>
+    {{ Z + ap2 min X Y = min a b /\ ~((X <> 0) /\ (Y <> 0) ) }} ->>
     {{ Z = min a b }}
   }>.
 
 Theorem minimum_correct : forall a b,
   outer_triple_valid (minimum_dec a b).
-Proof. (* FILL IN HERE *) Admitted.
+Proof. verify.
+  - apply andb_prop in H0. destruct H0. 
+    apply negb_true_iff in H0. 
+    apply eqb_neq in H0. assumption.
+  - apply andb_prop in H0. destruct H0. 
+    apply negb_true_iff in H1. 
+    apply eqb_neq in H1. assumption.
+  - unfold not. intros. destruct H1.
+    apply andb_false_iff in H0. destruct H0.
+    + apply H1. apply negb_false_iff in H0. apply eqb_eq in H0. assumption.
+    + apply H2. apply negb_false_iff in H0. apply eqb_eq in H0. assumption.
+  Qed.
+  
 (** [] *)
 
 (* ================================================================= *)
@@ -1693,39 +1737,39 @@ Proof. (* FILL IN HERE *) Admitted.
 Definition two_loops_dec (a b c : nat) : decorated :=
   <{
     {{ True }} ->>
-    {{ FILL_IN_HERE }}
+    {{ c = c + 0 + 0 }}
       X := 0
-                   {{ FILL_IN_HERE }};
+                   {{ c = c + X + 0 }};
       Y := 0
-                   {{ FILL_IN_HERE }};
+                   {{ c = c + X + Y }};
       Z := c
-                   {{ FILL_IN_HERE }};
+                   {{ Z = c + X + Y }};
       while X <> a do
-                   {{ FILL_IN_HERE }} ->>
-                   {{ FILL_IN_HERE }}
+                   {{ Z = c + X + Y /\ (X <> a) }} ->>
+                   {{ (Z + 1) = c + (X + 1) + Y }}
         X := X + 1
-                   {{ FILL_IN_HERE }};
+                   {{ (Z + 1) = c + X + Y }};
         Z := Z + 1
-                   {{ FILL_IN_HERE }}
+                   {{ Z = c + X + Y }}
       end
-                   {{ FILL_IN_HERE }} ->>
-                   {{ FILL_IN_HERE }};
+                   {{ Z = c + X + Y /\ ~(X <> a) }} ->>
+                   {{ Z = c + a + Y }};
       while Y <> b do
-                   {{ FILL_IN_HERE }} ->>
-                   {{ FILL_IN_HERE }}
+                   {{ Z = c + a + Y /\ (Y <> b) }} ->>
+                   {{ (Z + 1) = c + a + (Y + 1) }}
         Y := Y + 1
-                   {{ FILL_IN_HERE }};
+                   {{ (Z + 1) = c + a + Y }};
         Z := Z + 1
-                   {{ FILL_IN_HERE }}
+                   {{ Z = c + a + Y }}
       end
-    {{ FILL_IN_HERE }} ->>
+    {{ Z = c + a + Y /\ ~(Y <> b) }} ->>
     {{ Z = a + b + c }}
   }>.
 
 Theorem two_loops : forall a b c,
   outer_triple_valid (two_loops_dec a b c).
 Proof.
-  (* FILL IN HERE *) Admitted.
+  verify. Qed.
 
 (** [] *)
 
