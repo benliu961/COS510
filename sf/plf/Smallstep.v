@@ -204,7 +204,7 @@ Example test_step_2 :
           (C 2)
           (C 4)).
 Proof.
-  (* FILL IN HERE *) Admitted.
+  constructor. constructor. constructor. Qed.
 (** [] *)
 
 End SimpleArith1.
@@ -465,7 +465,21 @@ Inductive step : tm -> tm -> Prop :=
 Theorem step_deterministic :
   deterministic step.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros x y1 y2 Hy1 Hy2.
+  generalize dependent y2.
+  induction Hy1; intros y2 Hy2.
+  - inversion Hy2; subst.
+    * constructor.
+    * inversion H2.
+    * inversion H3.
+  - inversion Hy2; subst.
+    * inversion Hy1.
+    * apply IHHy1 in H2. rewrite H2. reflexivity.
+    * destruct H1. inversion Hy1.
+  - inversion Hy2; subst.
+    * inversion Hy1.
+    * destruct H. inversion H3.
+    * apply IHHy1 in H4. rewrite H4. reflexivity. Qed.  
 (** [] *)
 
 (* ================================================================= *)
@@ -812,7 +826,8 @@ Inductive step : tm -> tm -> Prop :=
   | ST_If : forall t1 t1' t2 t3,
       t1 --> t1' ->
       test t1 t2 t3 --> test t1' t2 t3
-  (* FILL IN HERE *)
+  | ST_ShortCircuit : forall t t1,
+      test t t1 t1 --> t1
 
   where " t '-->' t' " := (step t t').
 
@@ -827,7 +842,7 @@ Definition bool_step_prop4 :=
 Example bool_step_prop4_holds :
   bool_step_prop4.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  unfold bool_step_prop4. apply ST_ShortCircuit. Qed. 
 (** [] *)
 
 (** **** Exercise: 3 stars, standard, optional (properties_of_altered_step)
@@ -1036,7 +1051,17 @@ Lemma test_multistep_4:
         (C 0)
         (C (2 + (0 + 3))).
 Proof.
-  (* FILL IN HERE *) Admitted.
+  simpl.
+  eapply multi_step. { apply ST_Plus2.
+    - apply v_const.
+    - apply ST_Plus2.
+      + apply v_const.
+      + apply ST_PlusConstConst. }
+  eapply multi_step. { apply ST_Plus2.
+    - apply v_const.
+    - apply ST_PlusConstConst. }
+  simpl. apply multi_refl. Qed.
+  
 (** [] *)
 
 (* ================================================================= *)
@@ -1105,7 +1130,17 @@ Lemma multistep_congr_2 : forall v1 t2 t2',
      t2 -->* t2' ->
      P v1 t2 -->* P v1 t2'.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros.
+  induction H0.
+  - apply multi_refl.
+  - eapply multi_step.
+    + apply ST_Plus2.
+      * apply H.
+      * apply H0.
+    + apply IHmulti.
+  Qed.
+
+  
 (** [] *)
 
 (** With these lemmas in hand, the main proof is a straightforward
@@ -1216,14 +1251,58 @@ Theorem eval__multistep : forall t n,
     includes [-->]. *)
 
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros. induction H.
+  - apply multi_refl.
+  - apply multi_trans with (P (C n1) t2). 
+    + apply multistep_congr_1. auto.
+    + apply multi_trans with (P (C n1) (C n2)).
+      * apply multistep_congr_2; auto. constructor.
+      * apply multi_R. apply ST_PlusConstConst. Qed.
+  
 (** [] *)
 
 (** **** Exercise: 3 stars, advanced (eval__multistep_inf)
 
     Write a detailed informal version of the proof of [eval__multistep].
 
-(* FILL IN HERE *)
+(* 
+  Our goal is to prove [t ==> n -> t -->* C n]. 
+  We proceed by induction on the derivation of [t ==> n].
+
+  Base Case:
+  - Suppose [t = C n]. We must show [C n -->* C n]. This is true by [multi_refl].
+
+  Inductive Case:
+  - Suppose [t = P t1 t2] and [t1 ==> n1] and [t2 ==> n2] and [n = n1 + n2]. 
+    We have two inductive hypothesis: [t1 -->* C n1] and [t2 -->* C n].
+
+    By [multi_trans], we know that if [P t1 t2 -->* P (C n1) t2] and [P (C n1) t2 -->* C (n1 + n2)], 
+    then [P t1 t2 -->* C (n1 + n2)].
+
+    We first show [P t1 t2 -->* P (C n1) t2].
+
+      By [multistep_congr_1], we know that [t1 -->* C n1] implies [P t1 t2 -->* P (C n1) t2].
+      [t1 -->* C n1] follows from our inductive hypothesis. Therefore, [P t1 t2 -->* P (C n1) t2].
+    
+    Next, we show [P (C n1) t2 -->* C (n1 + n2)].
+
+    By [multi_trans], we know that if [P (C n1) t2 -->* P (C n1) (C n2)] and [P (C n1) (C n2) -->* C (n1 + n2)], 
+    then [P (C n1) t2 -->* C (n1 + n2)].
+
+    First we show [P (C n1) t2 -->* P (C n1) (C n2)].
+
+      By [multistep_congr_2], we know that [value (C n1)] and [t2 -->* C n2] implies [P (C n1) t2 -->* P (C n1) (C n2)].
+      [t2 -->* C n2] follows from our inductive hypothesis and [value (C n1)] is satisfied by construction. 
+      Therefore, [P (C n1) t2 -->* P (C n1) (C n2)].
+    
+    Next we show [P (C n1) (C n2) -->* C (n1 + n2)].
+
+      By [multi_R], we know that [P (C n1) (C n2) --> C (n1 + n2)] implies [P (C n1) (C n2) -->* C (n1 + n2)].
+      We can show [P (C n1) (C n2) --> C (n1 + n2)] by [ST_PlusConstConst]. 
+      Therefore, [P (C n1) (C n2) -->* C (n1 + n2)].
+
+    Qed.
+ *)
 *)
 
 (* Do not modify the following line: *)
@@ -1240,7 +1319,12 @@ Lemma step__eval : forall t t' n,
      t  ==> n.
 Proof.
   intros t t' n Hs. generalize dependent n.
-  (* FILL IN HERE *) Admitted.
+  induction Hs; intros n Hb.
+  - inversion Hb; subst. apply E_Plus; apply E_Const.
+  - inversion Hb; subst. apply IHHs in H1. apply E_Plus; auto.
+  - inversion Hb; subst. apply IHHs in H4. apply E_Plus; auto.
+  Qed.
+  
 (** [] *)
 
 (** The fact that small-step reduction implies big-step evaluation is now
@@ -1256,7 +1340,17 @@ Proof.
 Theorem multistep__eval : forall t t',
   normal_form_of t t' -> exists n, t' = C n /\ t ==> n.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros. unfold normal_form_of in H. destruct H.
+  induction H. 
+  - unfold step_normal_form in H0. apply nf_is_value in H0.
+    destruct H0. exists n. split.
+    + reflexivity.
+    + apply E_Const.
+  - apply IHmulti in H0. destruct H0. destruct H0.
+    exists x0. split.
+    + apply H0.
+    + apply step__eval with y; auto. Qed.
+  
 (** [] *)
 
 (* ================================================================= *)
@@ -1327,7 +1421,32 @@ Inductive step : tm -> tm -> Prop :=
 (** **** Exercise: 3 stars, standard (combined_step_deterministic) *)
 Theorem combined_step_deterministic: (deterministic step) \/ ~ (deterministic step).
 Proof.
-  (* FILL IN HERE *) Admitted.
+  left. unfold deterministic. intros x y1 y2 H1 H2.
+  generalize dependent y2.
+  induction H1; intros y2 H2.
+  - inversion H2; subst.
+    * reflexivity.
+    * inversion H3.
+    * inversion H4.
+  - inversion H2; subst.
+    * inversion H1.
+    * f_equal. apply IHstep in H4. apply H4.
+    * destruct H3; inversion H1.
+  - inversion H2; subst.
+    * inversion H1.
+    * destruct H; inversion H5.
+    * f_equal. apply IHstep in H6. apply H6.
+  - inversion H2; subst.
+    * auto.
+    * inversion H4.
+  - inversion H2; subst.
+    * auto.
+    * inversion H4.
+  - inversion H2; subst.
+    * inversion H1.
+    * inversion H1.
+    * apply IHstep in H5. rewrite H5. auto.
+  Qed.
 
 (** [] *)
 
@@ -1336,7 +1455,13 @@ Theorem combined_strong_progress :
   (forall t, value t \/ (exists t', t --> t'))
   \/ ~ (forall t, value t \/ (exists t', t --> t')).
 Proof.
-  (* FILL IN HERE *) Admitted.
+  right. unfold not. intros.
+  specialize H with (P (C 0) tru).
+  destruct H.
+  - inversion H.
+  - destruct H. inversion H; subst.
+    + inversion H3.
+    + inversion H4. Qed.
 (** [] *)
 
 End Combined.
@@ -1801,12 +1926,30 @@ Definition stack_multistep st := multi (stack_step st).
 
 (* Copy your definition of s_compile here *)
 
-Definition compiler_is_correct_statement : Prop
-  (* REPLACE THIS LINE WITH ":= _your_definition_ ." *). Admitted.
+Fixpoint s_compile (e : aexp) : list sinstr :=
+  match e with
+  | ANum n => [SPush n]
+  | AId x => [SLoad x]
+  | APlus a1 a2 => s_compile a1 ++ s_compile a2 ++ [SPlus]
+  | AMinus a1 a2 => s_compile a1 ++ s_compile a2 ++ [SMinus]
+  | AMult a1 a2 => s_compile a1 ++ s_compile a2 ++ [SMult]
+  end.
+
+Definition compiler_is_correct_statement : Prop :=
+  forall st e n,
+    (stack_multistep st) (s_compile e, []) ([], nil) <-> multi (astep st) e (ANum n).
+
+(** FILL IN HERE *)
 
 Theorem compiler_is_correct : compiler_is_correct_statement.
 Proof.
-(* FILL IN HERE *) Admitted.
+  unfold compiler_is_correct_statement. intros.
+  split.
+  - unfold stack_multistep.
+    induction e.
+    
+
+
 (** [] *)
 
 (* ################################################################# *)
@@ -1896,7 +2039,10 @@ Theorem normalize_ex : exists e',
   (P (C 3) (P (C 2) (C 1)))
   -->* e' /\ value e'.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  eexists. split.
+  - normalize.
+  - apply v_const.
+  Qed.
 (** [] *)
 
 (** **** Exercise: 1 star, standard, optional (normalize_ex')
