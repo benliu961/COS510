@@ -200,7 +200,11 @@ Hint Unfold stuck : core.
 Example some_term_is_stuck :
   exists t, stuck t.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  unfold stuck. exists (scc tru).
+  split.
+  - unfold step_normal_form. unfold not. intros.
+    destruct H. inversion H; subst. inversion H1.
+  - unfold not. intros. inversion H; subst; inversion H0. inversion H2. Qed.
 (** [] *)
 
 (** However, although values and normal forms are _not_ the same in this
@@ -213,7 +217,18 @@ Proof.
 Lemma value_is_nf : forall t,
   value t -> step_normal_form t.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros. inversion H.
+  + unfold step_normal_form. unfold not. intros. inversion H0; subst.
+    - destruct H1. inversion H1.
+    - destruct H1. inversion H1.
+  + induction H0.
+    - unfold step_normal_form. unfold not. intros. destruct H0; subst.
+      inversion H0.
+    - unfold step_normal_form in *. unfold not in *. intros.
+      destruct H1. inversion H1; subst. unfold value in IHnvalue. apply IHnvalue.
+      * right. auto.
+      * exists t1'. auto. Qed.
+      
 
 (** (Hint: You will reach a point in this proof where you need to
     use an induction to reason about a term that is known to be a
@@ -401,7 +416,25 @@ Proof.
     + (* t1 can take a step *)
       destruct H as [t1' H1].
       exists (<{ if t1' then t2 else t3 }>). auto.
-  (* FILL IN HERE *) Admitted.
+  - (* T_Succ *)
+    destruct IHHT.
+    + left. right. apply (nat_canonical t1 HT) in H. auto.
+    + right. destruct H as [t1' H1]. exists (<{ succ t1' }>).
+      auto.
+  - (* T_Pred *)
+    destruct IHHT.
+    + right. apply (nat_canonical t1 HT) in H. destruct H.
+      * exists <{ 0 }>. auto.
+      * exists t. auto.  
+    + right. destruct H. exists (<{ pred x }>).
+      auto.
+  - (* T_Iszero *)
+    destruct IHHT.
+    + right. apply (nat_canonical t1 HT) in H. destruct H.
+      * exists <{ true }>. auto.
+      * exists <{ false }>. auto.
+    + right. destruct H. exists (<{ iszero x }>).
+      auto. Qed.
 (** [] *)
 
 (** **** Exercise: 3 stars, advanced (finish_progress_informal)
@@ -429,7 +462,58 @@ Proof.
       - If [t1] itself can take a step, then, by [ST_If], so can
         [t].
 
-    - (* FILL IN HERE *)
+    - If the last rule in the derivation is [T_Succ], then [t = succ t1], 
+      with [|-- t1 \in Nat]. By the IH, either [t1] is a value or else 
+      [t1] can step to some [t'].
+
+      - If [t1] is a value, then by the canonical forms lemmas
+        and the fact that [|-- t1 \in Nat] we have that [t1]
+        is a [nvalue]. Therefore, by construction we know that 
+        [succ t1] is also a [nvalue], which is what we wanted to show.
+      
+      - If [t1] itself can take a step, then, by [ST_Succ], so can
+        [t].
+    
+    - If the last rule in the derivation is [T_Pred], then [t = pred t1],
+      with [|-- t1 \in Nat]. By the IH, either [t1] is a value or else 
+      [t1] can step to some [t'].
+
+      - If [t1] is a value, then by the canonical forms lemmas
+        and the fact that [|-- t1 \in Nat] we have that [t1]
+        is a [nvalue]. By construction, we know that [t1] can 
+        be either [0] or [succ v], where [v] is a [nvalue].
+
+        - If [t1 = 0], then [t] steps to [0] by [ST_Pred0], which is 
+          what we wanted to show.
+
+        - If [t1 = succ v], then [t] steps to [v] by [ST_PredSucc], 
+          which is what we wanted to show.
+      
+      - If [t1] itself can take a step, then, by [ST_Pred], so can
+        [t].
+      
+    - If the last rule in the derivation is [T_Iszero], then [t = iszero t1],
+      with [|-- t1 \in Nat]. By the IH, either [t1] is a value or else 
+      [t1] can step to some [t'].
+
+      - If [t1] is a value, then by the canonical forms lemmas
+        and the fact that [|-- t1 \in Nat] we have that [t1]
+        is a [nvalue]. By construction, we know that [t1] can
+        be either [0] or [succ v], where [v] is a [nvalue].
+
+        - If [t1 = 0], then [t] steps to [true] by [ST_Iszero0], which is 
+          what we wanted to show.
+        
+        - If [t1 = succ v], then [t] steps to [false] by [ST_IszeroSucc],
+          which is what we wanted to show.
+      
+      - If [t1] itself can take a step, then, by [ST_Iszero], so can 
+        [t].
+
+    - All other cases ([T_True], [T_False], and [T_0]) are trivial
+      because the terms are values.
+    
+    Qed.
  *)
 (* Do not modify the following line: *)
 Definition manual_grade_for_finish_progress_informal : option (nat*string) := None.
@@ -470,7 +554,16 @@ Proof.
       + (* ST_IfFalse *) assumption.
       + (* ST_If *) apply T_If; try assumption.
         apply IHHT1; assumption.
-    (* FILL IN HERE *) Admitted.
+    - (* T_Succ *) inversion HE; subst; clear HE.
+      apply T_Succ. apply IHHT. assumption.
+    - (* T_Pred *) inversion HE; subst; clear HE.
+      + (* ST_Pred0 *) assumption.
+      + (* ST_PredSucc *) inversion HT; subst. assumption.
+      + (* ST_Pred *) apply T_Pred. apply IHHT. assumption.
+    - (* T_Iszero *) inversion HE; subst; clear HE.
+      + (* ST_Iszero0 *) auto.
+      + (* ST_IszeroSucc *) auto.
+      + (* ST_Iszero *) apply T_Iszero. apply IHHT. assumption. Qed.
 (** [] *)
 
 (** **** Exercise: 3 stars, advanced (finish_preservation_informal)
@@ -501,7 +594,55 @@ Proof.
         by the IH, [|-- t1' \in Bool].  The [T_If] rule then gives us
         [|-- if t1' then t2 else t3 \in T], as required.
 
-    - (* FILL IN HERE *)
+    - If the last rule in the derivation is [T_Succ], then [t = succ t1], 
+      with [|-- t1 \in Nat].
+
+      Inspecting the rules for the small-step reduction relation and
+      remembering that [t] has the form [succ ...], we see that the
+      only one that could have been used to prove [t --> t'] are
+      [ST_Succ].
+
+      If the last rule was [ST_Succ], then [t' = succ t1'], where
+      [t1 --> t1'].  By the IH, [|-- t1' \in Nat], and so [|-- succ t1' \in Nat],
+      by [T_Succ], as required.
+    
+    - If the last rule in the derivation is [T_Pred], then [t = pred t1],
+      with [|-- t1 \in Nat].
+
+      Inspecting the rules for the small-step reduction relation and 
+      remembering that [t] has the form [pred ...], we see that the
+      only ones that could have been used to prove [t --> t'] are
+      [ST_Pred0], [ST_PredSucc], or [ST_Pred].
+
+      - If the last rule was [ST_Pred0], then [t' = 0]. But we know
+        that [|-- 0 \in Nat], so we are done.
+      
+      - If the last rule was [ST_PredSucc], then [t' = v], where [t1 = succ v].
+        But we know that [|-- v \in Nat], so we are done.
+
+      - If the last rule was [ST_Pred], then [t' = pred t1'], where
+        [t1 --> t1']. By the IH, [|-- t1' \in Nat], and so [|-- pred t1' \in Nat],
+        by [T_Pred], as required.
+      
+    - If the last rule in the derivation is [T_Iszero], then [t = iszero t1],
+      with [|-- t1 \in Nat].
+
+      Inspecting the rules for the small-step reduction relation and 
+      remembering that [t] has the form [iszero ...], we see that the
+      only ones that could have been used to prove [t --> t'] are
+      [ST_Iszero0], [ST_IszeroSucc], or [ST_Iszero].
+
+      - If the last rule was [ST_Iszero0], then [t' = true]. But we know
+        that [|-- true \in Bool], so we are done.
+      
+      - If the last rule was [ST_IszeroSucc], then [t' = false], where [t1 = succ v].
+        But we know that [|-- false \in Bool], so we are done.
+
+      - If the last rule was [ST_Iszero], then [t' = iszero t1'], where
+        [t1 --> t1']. By the IH, [|-- t1' \in Nat], and so [|-- iszero t1' \in Bool],
+        by [T_Iszero], as required.
+
+    - All other cases are trivial because the terms are values and cannot step.
 *)
 (* Do not modify the following line: *)
 Definition manual_grade_for_finish_preservation_informal : option (nat*string) := None.
@@ -521,7 +662,20 @@ Theorem preservation' : forall t t' T,
   t --> t' ->
   |-- t' \in T.
 Proof with eauto.
-  (* FILL IN HERE *) Admitted.
+  intros. generalize dependent T. induction H0; intros.
+  - (* ST_IfTrue *) inversion H; subst. assumption.
+  - (* ST_IfFalse *) inversion H; subst. assumption.
+  - (* ST_If *) inversion H; subst. apply T_If; try apply IHstep; auto.
+  - (* ST_Succ *) inversion H; subst. apply T_Succ. apply IHstep. auto.
+  - (* ST_Pred0 *) inversion H; subst. apply T_0.
+  - (* ST_PredSucc *) inversion H; subst.
+    + inversion H0. apply T_0.
+    + inversion H0; subst. inversion H3; subst. auto.
+  - (* ST_Pred *) inversion H; subst. apply T_Pred. apply IHstep. auto.
+  - (* ST_Iszero0 *) inversion H; subst. apply T_True.
+  - (* ST_IszeroSucc *) inversion H; subst; inversion H0; subst; apply T_False.
+  - (* ST_Iszero *) inversion H; subst. apply T_Iszero. apply IHstep. auto. Qed.
+
 (** [] *)
 
 (** The preservation theorem is often called _subject reduction_,
@@ -570,7 +724,12 @@ Theorem subject_expansion:
   \/
   ~ (forall t t' T, t --> t' /\ |-- t' \in T -> |-- t \in T).
 Proof.
-  (* FILL IN HERE *) Admitted.
+  right. unfold not. intros.
+  specialize H with (t := <{ if true then 0 else true }>) (t' := <{ 0 }>) (T := Nat).
+  assert (<{ if true then 0 else true }> --> <{ 0 }> /\ |-- <{ 0 }> \in Nat).
+  { split; auto. }
+  apply H in H0. inversion H0. inversion H7. Qed.
+
 (** [] *)
 
 (** **** Exercise: 2 stars, standard (variation1)
@@ -586,11 +745,12 @@ Proof.
    else "becomes false." If a property becomes false, give a
    counterexample.
       - Determinism of [step]
-            (* FILL IN HERE *)
+            remains true
       - Progress
-            (* FILL IN HERE *)
+            becomes false
+            <{ succ true }> cannot step but is also not a value
       - Preservation
-            (* FILL IN HERE *)
+            remains true
 *)
 (* Do not modify the following line: *)
 Definition manual_grade_for_variation1 : option (nat*string) := None.
@@ -605,7 +765,10 @@ Definition manual_grade_for_variation1 : option (nat*string) := None.
 
    Which of the above properties become false in the presence of
    this rule?  For each one that does, give a counter-example.
-            (* FILL IN HERE *)
+      - Determinism of [step]
+            becomes false
+            <{ if true then false else true }> steps to both <{ false }> and <{ true }>
+
 *)
 (* Do not modify the following line: *)
 Definition manual_grade_for_variation2 : option (nat*string) := None.
@@ -683,7 +846,9 @@ Definition manual_grade_for_variation2 : option (nat*string) := None.
     achieve this simply by removing the rule from the definition of
     [step]?  Would doing so create any problems elsewhere?
 
-(* FILL IN HERE *)
+    We cannot achieve this simply by removing the rule from the definition
+    of [step]. This would break the Progress property because then [pred 0]
+    would be both not a value and it can't make a step.
 *)
 (* Do not modify the following line: *)
 Definition manual_grade_for_remove_pred0  : option (nat*string) := None.
@@ -699,7 +864,22 @@ Definition manual_grade_for_remove_pred0  : option (nat*string) := None.
     allow for nonterminating programs?  Why might we prefer the
     small-step semantics for stating preservation and progress?
 
-(* FILL IN HERE *)
+    Progress: 
+    forall t, T, [|-- t \in T] -> value t \/ (exists t', t ==> t')
+
+    Preservation:
+    forall t t' T, [|-- t \in T] -> t ==> t' -> [|-- t' \in T]
+
+    Progress doesn't allow for nonterminating programs because it requires
+    that the program reach a final result t'. Preservation doesn't allow for
+    nonterminating programs because it requires that a term reduces to a
+    term of the same type.
+
+    In the small-step semantics, preservation guarentees that intermidiate
+    steps are also the same type as the original term. In the big-step version,
+    it only requires the final result to be the same type as the original term.
+    Progress holds for nonterminating programs in the small-step semantics. 
+
 *)
 (* Do not modify the following line: *)
 Definition manual_grade_for_prog_pres_bigstep : option (nat*string) := None.

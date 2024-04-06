@@ -686,8 +686,8 @@ R36944:36959 PLF.Smallstep <> nf_same_as_value thm
 R36944:36959 PLF.Smallstep <> nf_same_as_value thm
 R37081:37087 PLF.Smallstep <> E_Const constr
 R37081:37087 PLF.Smallstep <> E_Const constr
-R37122:37131 PLF.Smallstep <> step__eval prfax
-R37122:37131 PLF.Smallstep <> step__eval prfax
+R37122:37131 PLF.Smallstep <> step__eval thm
+R37122:37131 PLF.Smallstep <> step__eval thm
 prf 37601:37618 Semantics multistep_eval_ind
 binder 37629:37629 <> t:101
 binder 37631:37631 <> v:102

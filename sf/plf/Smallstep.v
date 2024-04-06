@@ -1936,19 +1936,47 @@ Fixpoint s_compile (e : aexp) : list sinstr :=
   end.
 
 Definition compiler_is_correct_statement : Prop :=
-  forall st e n,
-    (stack_multistep st) (s_compile e, []) ([], nil) <-> multi (astep st) e (ANum n).
+  forall st e stk p,
+    stack_multistep st ((s_compile e) ++ p, stk) (p, aeval st e :: stk).
 
 (** FILL IN HERE *)
 
 Theorem compiler_is_correct : compiler_is_correct_statement.
 Proof.
-  unfold compiler_is_correct_statement. intros.
-  split.
-  - unfold stack_multistep.
-    induction e.
-    
-
+  unfold compiler_is_correct_statement. unfold stack_multistep.
+  intros. generalize dependent p. generalize dependent stk. generalize dependent st.
+  induction e; intros; simpl in *.
+  - eapply multi_step. 
+    + constructor.
+    + apply multi_refl.
+  - eapply multi_step.
+    + constructor.
+    + apply multi_refl.
+  - eapply multi_trans.
+    + rewrite <- app_assoc. rewrite <- (app_assoc (s_compile e2) [SPlus] p).
+      apply IHe1.
+    + eapply multi_trans.
+      * apply IHe2.
+      * eapply multi_step.
+        -- constructor.
+        -- apply multi_refl.
+  - eapply multi_trans. 
+    + rewrite <- app_assoc. rewrite <- (app_assoc (s_compile e2) [SMinus] p).
+      apply IHe1.
+    + eapply multi_trans.
+      * apply IHe2.
+      * eapply multi_step.
+        -- constructor.
+        -- apply multi_refl.
+  - eapply multi_trans.
+    + rewrite <- app_assoc. rewrite <- (app_assoc (s_compile e2) [SMult] p).
+      apply IHe1.
+    + eapply multi_trans.
+      * apply IHe2.
+      * eapply multi_step.
+        -- constructor.
+        -- apply multi_refl.
+  Qed.
 
 (** [] *)
 
