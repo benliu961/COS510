@@ -490,7 +490,28 @@ Check <{[x:=true] x}>.
 Inductive substi (s : tm) (x : string) : tm -> tm -> Prop :=
   | s_var1 :
       substi s x (tm_var x) s
-  (* FILL IN HERE *)
+  | s_var2 : forall y,
+      x <> y ->
+      substi s x (tm_var y) (tm_var y)
+  | s_abs1 : forall T t,
+      substi s x <{\x:T, t}> <{\x:T, t}>
+  | s_abs2 : forall y T t t',
+      x <> y ->
+      substi s x t t' ->
+      substi s x <{\y:T, t}> <{\y:T, t'}>
+  | s_app : forall t1 t1' t2 t2',
+      substi s x t1 t1' ->
+      substi s x t2 t2' ->
+      substi s x <{t1 t2}> <{t1' t2'}>
+  | s_true :
+      substi s x <{true}> <{true}>
+  | s_false :
+      substi s x <{false}> <{false}>
+  | s_if : forall t1 t1' t2 t2' t3 t3',
+      substi s x t1 t1' ->
+      substi s x t2 t2' ->
+      substi s x t3 t3' ->
+      substi s x <{if t1 then t2 else t3}> <{if t1' then t2' else t3'}>
 .
 
 Hint Constructors substi : core.
@@ -498,7 +519,36 @@ Hint Constructors substi : core.
 Theorem substi_correct : forall s x t t',
   <{ [x:=s]t }> = t' <-> substi s x t t'.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  split.
+  - generalize dependent t'.
+    induction t; intros; subst; simpl in *; eauto.
+    + destruct ((x0 =? s0)%string) eqn:Heq.
+      * apply String.eqb_eq in Heq. subst. constructor.
+      * apply String.eqb_neq in Heq. constructor. auto.
+    + destruct ((x0 =? s0)%string) eqn:Heq.
+      * apply String.eqb_eq in Heq. subst. constructor.
+      * apply String.eqb_neq in Heq. constructor; auto.
+  - generalize dependent t'.
+    induction t; intros; subst; simpl in *; eauto.
+    + destruct ((x0 =? s0)%string) eqn:Heq.
+      * apply String.eqb_eq in Heq. inversion H; subst.
+        -- auto.
+        -- contradiction H1. auto.
+      * apply String.eqb_neq in Heq. inversion H; subst.
+        -- contradiction Heq. auto.
+        -- auto.
+    + inversion H. subst. apply IHt1 in H2. apply IHt2 in H4. 
+      rewrite H2. rewrite H4. auto.
+    + destruct ((x0 =? s0)%string) eqn:Heq.
+      * apply String.eqb_eq in Heq. inversion H; subst; auto.
+        contradiction H4. auto.
+      * apply String.eqb_neq in Heq. inversion H; subst.
+        -- contradiction Heq. auto.
+        -- apply IHt in H5. rewrite H5. auto.
+    + inversion H; subst. auto.
+    + inversion H; subst. auto.
+    + inversion H; subst. apply IHt1 in H3. apply IHt2 in H5. apply IHt3 in H6.
+      rewrite H3. rewrite H5. rewrite H6. auto. Qed. 
 (** [] *)
 
 (* ================================================================= *)
@@ -692,13 +742,17 @@ Lemma step_example5 :
        <{idBBBB idBB idB}>
   -->* idB.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  eapply multi_step.
+  - apply ST_App1; auto.
+  - eapply multi_step.
+    + apply ST_AppAbs; auto.
+    + simpl. apply multi_refl. Qed.
 
 Lemma step_example5_with_normalize :
        <{idBBBB idBB idB}>
   -->* idB.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  normalize. Qed.
 (** [] *)
 
 (* ################################################################# *)
@@ -844,7 +898,13 @@ Example typing_example_2_full :
           (y (y x)) \in
     (Bool -> (Bool -> Bool) -> Bool).
 Proof.
-  (* FILL IN HERE *) Admitted.
+  apply T_Abs.
+  apply T_Abs.
+  apply T_App with <{ Bool }>.
+  - apply T_Var. reflexivity.
+  - apply T_App with <{ Bool }>.
+    + apply T_Var. reflexivity.
+    + apply T_Var. reflexivity. Qed.
 (** [] *)
 
 (** **** Exercise: 2 stars, standard (typing_example_3)
@@ -866,7 +926,13 @@ Example typing_example_3 :
                (y (x z)) \in
       T.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  exists <{ (Bool -> Bool) -> ((Bool -> Bool) -> (Bool -> Bool)) }>.
+  repeat apply T_Abs. eapply T_App.
+  - apply T_Var. reflexivity.
+  - eapply T_App.
+    + apply T_Var. reflexivity.
+    + apply T_Var. reflexivity. Qed.
+  
 (** [] *)
 
 (** We can also show that some terms are _not_ typable.  For example,

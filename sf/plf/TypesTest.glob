@@ -15,24 +15,24 @@ R712:716 PLF.Types <> <> lib
 R726:730 PLF.TypesTest Check <> mod
 def 734:742 <> Unnamed_thm
 R739:742 Coq.Init.Logic <> True ind
-R903:923 PLF.Types TM some_term_is_stuck prfax
+R903:923 PLF.Types TM some_term_is_stuck ex
 R927:933 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
 R943:944 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
 R938:942 PLF.Types TM tm ind
 binder 934:934 <> t:2
 R945:952 PLF.Types TM stuck def
 R954:954 PLF.TypesTest <> t:2 var
-R903:923 PLF.Types TM some_term_is_stuck prfax
+R903:923 PLF.Types TM some_term_is_stuck ex
 R927:933 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
 R943:944 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
 R938:942 PLF.Types TM tm ind
 binder 934:934 <> t:3
 R945:952 PLF.Types TM stuck def
 R954:954 PLF.TypesTest <> t:3 var
-R1006:1026 PLF.Types TM some_term_is_stuck prfax
+R1006:1026 PLF.Types TM some_term_is_stuck ex
 def 1029:1037 <> Unnamed_thm
 R1034:1037 Coq.Init.Logic <> True ind
-R1195:1208 PLF.Types TM value_is_nf prfax
+R1195:1208 PLF.Types TM value_is_nf thm
 R1223:1227 PLF.Types TM tm ind
 binder 1219:1219 <> t:4
 R1240:1243 Coq.Init.Logic <> ::type_scope:x_'->'_x not
@@ -40,7 +40,7 @@ R1230:1237 PLF.Types TM value def
 R1239:1239 PLF.TypesTest <> t:4 var
 R1244:1262 PLF.Types TM step_normal_form abbrev
 R1264:1264 PLF.TypesTest <> t:4 var
-R1195:1208 PLF.Types TM value_is_nf prfax
+R1195:1208 PLF.Types TM value_is_nf thm
 R1223:1227 PLF.Types TM tm ind
 binder 1219:1219 <> t:5
 R1240:1243 Coq.Init.Logic <> ::type_scope:x_'->'_x not
@@ -48,10 +48,10 @@ R1230:1237 PLF.Types TM value def
 R1239:1239 PLF.TypesTest <> t:5 var
 R1244:1262 PLF.Types TM step_normal_form abbrev
 R1264:1264 PLF.TypesTest <> t:5 var
-R1316:1329 PLF.Types TM value_is_nf prfax
+R1316:1329 PLF.Types TM value_is_nf thm
 def 1332:1340 <> Unnamed_thm
 R1337:1340 Coq.Init.Logic <> True ind
-R1499:1509 PLF.Types TM progress prfax
+R1499:1509 PLF.Types TM progress thm
 R1526:1530 PLF.Types TM tm ind
 binder 1522:1522 <> t:6
 R1538:1542 PLF.Types TM ty ind
@@ -71,7 +71,7 @@ binder 1588:1589 <> t':8
 R1600:1606 PLF.Types TM step ind
 R1608:1608 PLF.TypesTest <> t:6 var
 R1610:1611 PLF.TypesTest <> t':8 var
-R1499:1509 PLF.Types TM progress prfax
+R1499:1509 PLF.Types TM progress thm
 R1526:1530 PLF.Types TM tm ind
 binder 1522:1522 <> t:9
 R1538:1542 PLF.Types TM ty ind
@@ -91,11 +91,11 @@ binder 1588:1589 <> t':11
 R1600:1606 PLF.Types TM step ind
 R1608:1608 PLF.TypesTest <> t:9 var
 R1610:1611 PLF.TypesTest <> t':11 var
-R1664:1674 PLF.Types TM progress prfax
+R1664:1674 PLF.Types TM progress thm
 def 1677:1685 <> Unnamed_thm
 R1682:1685 Coq.Init.Logic <> True ind
 R1911:1954 PLF.Types TM manual_grade_for_finish_progress_informal def
-R2121:2135 PLF.Types TM preservation prfax
+R2121:2135 PLF.Types TM preservation thm
 R2155:2159 PLF.Types TM tm ind
 binder 2148:2148 <> t:12
 binder 2150:2151 <> t':13
@@ -112,7 +112,7 @@ R2205:2206 PLF.TypesTest <> t':13 var
 R2211:2221 PLF.Types TM has_type ind
 R2223:2224 PLF.TypesTest <> t':13 var
 R2226:2226 PLF.TypesTest <> T:14 var
-R2121:2135 PLF.Types TM preservation prfax
+R2121:2135 PLF.Types TM preservation thm
 R2155:2159 PLF.Types TM tm ind
 binder 2148:2148 <> t:15
 binder 2150:2151 <> t':16
@@ -129,11 +129,11 @@ R2205:2206 PLF.TypesTest <> t':16 var
 R2211:2221 PLF.Types TM has_type ind
 R2223:2224 PLF.TypesTest <> t':16 var
 R2226:2226 PLF.TypesTest <> T:17 var
-R2278:2292 PLF.Types TM preservation prfax
+R2278:2292 PLF.Types TM preservation thm
 def 2295:2303 <> Unnamed_thm
 R2300:2303 Coq.Init.Logic <> True ind
 R2537:2584 PLF.Types TM manual_grade_for_finish_preservation_informal def
-R2761:2776 PLF.Types TM preservation' prfax
+R2761:2776 PLF.Types TM preservation' thm
 R2796:2800 PLF.Types TM tm ind
 binder 2789:2789 <> t:18
 binder 2791:2792 <> t':19
@@ -150,7 +150,7 @@ R2846:2847 PLF.TypesTest <> t':19 var
 R2852:2862 PLF.Types TM has_type ind
 R2864:2865 PLF.TypesTest <> t':19 var
 R2867:2867 PLF.TypesTest <> T:20 var
-R2761:2776 PLF.Types TM preservation' prfax
+R2761:2776 PLF.Types TM preservation' thm
 R2796:2800 PLF.Types TM tm ind
 binder 2789:2789 <> t:21
 binder 2791:2792 <> t':22
@@ -167,10 +167,10 @@ R2846:2847 PLF.TypesTest <> t':22 var
 R2852:2862 PLF.Types TM has_type ind
 R2864:2865 PLF.TypesTest <> t':22 var
 R2867:2867 PLF.TypesTest <> T:23 var
-R2919:2934 PLF.Types TM preservation' prfax
+R2919:2934 PLF.Types TM preservation' thm
 def 2937:2945 <> Unnamed_thm
 R2942:2945 Coq.Init.Logic <> True ind
-R3115:3134 PLF.Types TM subject_expansion prfax
+R3115:3134 PLF.Types TM subject_expansion thm
 R3139:3139 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
 R3228:3233 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
 R3155:3159 PLF.Types TM tm ind
@@ -207,7 +207,7 @@ R3306:3306 PLF.TypesTest <> T:29 var
 R3311:3321 PLF.Types TM has_type ind
 R3323:3323 PLF.TypesTest <> t:27 var
 R3325:3325 PLF.TypesTest <> T:29 var
-R3115:3134 PLF.Types TM subject_expansion prfax
+R3115:3134 PLF.Types TM subject_expansion thm
 R3139:3139 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
 R3228:3233 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
 R3155:3159 PLF.Types TM tm ind
@@ -244,16 +244,16 @@ R3306:3306 PLF.TypesTest <> T:35 var
 R3311:3321 PLF.Types TM has_type ind
 R3323:3323 PLF.TypesTest <> t:33 var
 R3325:3325 PLF.TypesTest <> T:35 var
-R3378:3397 PLF.Types TM subject_expansion prfax
+R3378:3397 PLF.Types TM subject_expansion thm
 def 3400:3408 <> Unnamed_thm
 R3405:3408 Coq.Init.Logic <> True ind
 R3588:3617 PLF.Types TM manual_grade_for_variation1 def
 R3797:3826 PLF.Types TM manual_grade_for_variation2 def
 R4010:4041 PLF.Types TM manual_grade_for_remove_pred0 def
 R4253:4289 PLF.Types TM manual_grade_for_prog_pres_bigstep def
-R5252:5272 PLF.Types TM some_term_is_stuck prfax
-R5338:5351 PLF.Types TM value_is_nf prfax
-R5414:5424 PLF.Types TM progress prfax
-R5491:5505 PLF.Types TM preservation prfax
-R5573:5588 PLF.Types TM preservation' prfax
-R5660:5679 PLF.Types TM subject_expansion prfax
+R5252:5272 PLF.Types TM some_term_is_stuck ex
+R5338:5351 PLF.Types TM value_is_nf thm
+R5414:5424 PLF.Types TM progress thm
+R5491:5505 PLF.Types TM preservation thm
+R5573:5588 PLF.Types TM preservation' thm
+R5660:5679 PLF.Types TM subject_expansion thm

@@ -333,10 +333,10 @@ R4420:4421 PLF.SmallstepTest <> t':31 var
 R4475:4507 PLF.Smallstep Combined combined_strong_progress thm
 def 4510:4518 <> Unnamed_thm
 R4515:4518 Coq.Init.Logic <> True ind
-R4707:4725 PLF.Smallstep <> compiler_is_correct prfax
-R4707:4725 PLF.Smallstep <> compiler_is_correct prfax
+R4707:4725 PLF.Smallstep <> compiler_is_correct thm
+R4707:4725 PLF.Smallstep <> compiler_is_correct thm
 R4728:4756 PLF.Smallstep <> compiler_is_correct_statement def
-R4807:4825 PLF.Smallstep <> compiler_is_correct prfax
+R4807:4825 PLF.Smallstep <> compiler_is_correct thm
 def 4828:4836 <> Unnamed_thm
 R4833:4836 Coq.Init.Logic <> True ind
 R4993:5004 PLF.Smallstep <> normalize_ex thm
@@ -383,4 +383,4 @@ R6720:6734 PLF.Smallstep <> multistep__eval thm
 R6822:6857 PLF.Smallstep Combined combined_step_deterministic thm
 R6942:6974 PLF.Smallstep Combined combined_strong_progress thm
 R7038:7049 PLF.Smallstep <> normalize_ex thm
-R7236:7254 PLF.Smallstep <> compiler_is_correct prfax
+R7236:7254 PLF.Smallstep <> compiler_is_correct thm

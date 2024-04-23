@@ -146,7 +146,19 @@ Theorem progress' : forall t T,
 Proof.
   intros t.
   induction t; intros T Ht; auto.
-  (* FILL IN HERE *) Admitted.
+  - (* var *)
+    inversion Ht. subst. discriminate H1.
+  - right. inversion Ht; subst. remember H2. clear Heqh. apply IHt1 in H2. apply IHt2 in H4.
+    destruct H2; destruct H4; simpl in *.
+    + eapply (canonical_forms_fun t1 T2 T h) in H.
+      destruct H. destruct H. subst. eauto.
+    + destruct H0. eauto.
+    + destruct H. eauto.
+    + destruct H. eauto.
+  - right. inversion Ht; subst. remember H3. clear Heqh. apply IHt1 in H3. destruct H3.
+    + destruct (canonical_forms_bool t1); subst; eauto.
+    + destruct H. eauto. Qed.
+  
 (** [] *)
 
 (* ################################################################# *)
@@ -334,7 +346,22 @@ Proof.
   remember (x |-> U; Gamma) as Gamma'.
   generalize dependent Gamma.
   induction Ht; intros Gamma' G; simpl; eauto.
- (* FILL IN HERE *) Admitted.
+  - (* T_Var *)
+    rename x0 into y. destruct (eqb_spec x y); subst.
+    + (* x=y *)
+      rewrite update_eq in H.
+      injection H as H; subst.
+      apply weakening_empty. assumption.
+    + (* x<>y *)
+      apply T_Var. rewrite update_neq in H; auto.
+  - (* T_Abs *)
+    rename x0 into y.
+    destruct (eqb_spec x y); subst; apply T_Abs.
+    + (* x=y *)
+      rewrite update_shadow in Ht. assumption.
+    + (* x<>y *)
+      apply IHHt. rewrite update_permute; auto. Qed.
+      
 (** [] *)
 
 (* ================================================================= *)
@@ -417,13 +444,20 @@ Qed.
     Show this by giving a counter-example that does _not involve
     conditionals_. *)
 
-(* FILL IN HERE *)
+(* <{ if true then false else x }> *)
 
 Theorem not_subject_expansion:
   exists t t' T, t --> t' /\ (empty |-- t' \in T) /\ ~ (empty |-- t \in T).
 Proof.
   (* Write "exists <{ ... }>" to use STLC notation. *)
-  (* FILL IN HERE *) Admitted.
+  exists <{ if true then false else x }>.
+  exists <{ false }>.
+  exists <{ Bool }>.
+  split.
+  - apply ST_IfTrue.
+  - split.
+    + apply T_False.
+    + intros H. inversion H. subst. inversion H7. subst. inversion H2. Qed.  
 
 (* Do not modify the following line: *)
 Definition manual_grade_for_subject_expansion_stlc : option (nat*string) := None.
@@ -464,7 +498,14 @@ Theorem unique_types : forall Gamma e T T',
   Gamma |-- e \in T' ->
   T = T'.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros. generalize dependent T'.
+  induction H; intros; try (inversion H0; subst; reflexivity).
+  - inversion H0; subst. rewrite H in H3. inversion H3. auto.
+  - inversion H0; subst. apply IHhas_type in H6. rewrite H6. auto.
+  - inversion H1; subst. apply IHhas_type2 in H7. subst. 
+    apply IHhas_type1 in H5. inversion H5. auto.
+  - inversion H2; subst. auto. Qed.
+
 (** [] *)
 
 (* ################################################################# *)
@@ -593,7 +634,10 @@ Proof.
   generalize dependent T.
   induction H as [| | |y T1 t1 H H0 IHappears_free_in| | |];
          intros; try solve [inversion H0; eauto].
-  (* FILL IN HERE *) Admitted.
+  - (* afi_abs *)
+    inversion H1; subst.
+    apply IHappears_free_in in H7.
+    rewrite update_neq in H7; auto. Qed.
 (** [] *)
 
 (** From the [free_in_context] lemma, it immediately follows that any
@@ -708,11 +752,12 @@ and the following typing rule:
     false, give a counterexample.
 
       - Determinism of [step]
-(* FILL IN HERE *)
+becomes false
+<{(\x:Bool, x) true}> can reduce to either <{true}> or <{zap}>
       - Progress
-(* FILL IN HERE *)
+remains true
       - Preservation
-(* FILL IN HERE *)
+remains true
 *)
 
 (* Do not modify the following line: *)
@@ -736,11 +781,13 @@ Definition manual_grade_for_stlc_variation1 : option (nat*string) := None.
     false, give a counterexample.
 
       - Determinism of [step]
-(* FILL IN HERE *)
+remains true
       - Progress
-(* FILL IN HERE *)
+remains true
       - Preservation
-(* FILL IN HERE *)
+becomes false
+<{ foo }> can have type <{ Bool }> and reduce to <{ true }>, but 
+<{ foo }> can also have type <{ Bool->Bool }> and reduce to <{ foo }>. 
 *)
 
 (* Do not modify the following line: *)
@@ -756,11 +803,12 @@ Definition manual_grade_for_stlc_variation2 : option (nat*string) := None.
     false, give a counterexample.
 
       - Determinism of [step]
-(* FILL IN HERE *)
+remains true
       - Progress
-(* FILL IN HERE *)
+becomes false
+
       - Preservation
-(* FILL IN HERE *)
+remains true
 *)
 
 (* Do not modify the following line: *)
