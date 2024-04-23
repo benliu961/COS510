@@ -15,7 +15,7 @@ R711:714 PLF.Stlc <> <> lib
 R724:728 PLF.StlcTest Check <> mod
 def 732:740 <> Unnamed_thm
 R737:740 Coq.Init.Logic <> True ind
-R895:913 PLF.Stlc STLC substi_correct prfax
+R895:913 PLF.Stlc STLC substi_correct thm
 R930:936 PLF.Stlc STLC tm ind
 binder 926:926 <> s:2
 R944:956 Coq.Strings.String <> string ind
@@ -35,7 +35,7 @@ R1016:1016 PLF.StlcTest <> s:2 var
 R1018:1018 PLF.StlcTest <> x:3 var
 R1020:1020 PLF.StlcTest <> t:4 var
 R1022:1023 PLF.StlcTest <> t':5 var
-R895:913 PLF.Stlc STLC substi_correct prfax
+R895:913 PLF.Stlc STLC substi_correct thm
 R930:936 PLF.Stlc STLC tm ind
 binder 926:926 <> s:6
 R944:956 Coq.Strings.String <> string ind
@@ -55,10 +55,10 @@ R1016:1016 PLF.StlcTest <> s:6 var
 R1018:1018 PLF.StlcTest <> x:7 var
 R1020:1020 PLF.StlcTest <> t:8 var
 R1022:1023 PLF.StlcTest <> t':9 var
-R1075:1093 PLF.Stlc STLC substi_correct prfax
+R1075:1093 PLF.Stlc STLC substi_correct thm
 def 1096:1104 <> Unnamed_thm
 R1101:1104 Coq.Init.Logic <> True ind
-R1268:1285 PLF.Stlc STLC step_example5 prfax
+R1268:1285 PLF.Stlc STLC step_example5 thm
 R1290:1303 PLF.Stlc STLC multistep abbrev
 R1702:1712 PLF.Stlc STLC tm_abs constr
 R1714:1719 PLF.Stlc STLC x def
@@ -90,7 +90,7 @@ R1655:1660 PLF.Stlc STLC x def
 R1662:1673 PLF.Stlc STLC Ty_Bool constr
 R1676:1686 PLF.Stlc STLC tm_var constr
 R1688:1693 PLF.Stlc STLC x def
-R1268:1285 PLF.Stlc STLC step_example5 prfax
+R1268:1285 PLF.Stlc STLC step_example5 thm
 R1290:1303 PLF.Stlc STLC multistep abbrev
 R1702:1712 PLF.Stlc STLC tm_abs constr
 R1714:1719 PLF.Stlc STLC x def
@@ -122,10 +122,10 @@ R1655:1660 PLF.Stlc STLC x def
 R1662:1673 PLF.Stlc STLC Ty_Bool constr
 R1676:1686 PLF.Stlc STLC tm_var constr
 R1688:1693 PLF.Stlc STLC x def
-R1806:1823 PLF.Stlc STLC step_example5 prfax
+R1806:1823 PLF.Stlc STLC step_example5 thm
 def 1826:1834 <> Unnamed_thm
 R1831:1834 Coq.Init.Logic <> True ind
-R2004:2024 PLF.Stlc STLC typing_example_3 prfax
+R2004:2024 PLF.Stlc STLC typing_example_3 ex
 R2029:2035 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
 R2047:2051 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
 R2040:2046 PLF.Stlc STLC ty ind
@@ -155,7 +155,7 @@ R2360:2365 PLF.Stlc STLC x def
 R2369:2379 PLF.Stlc STLC tm_var constr
 R2381:2386 PLF.Stlc STLC z def
 R2399:2399 PLF.StlcTest <> T:10 var
-R2004:2024 PLF.Stlc STLC typing_example_3 prfax
+R2004:2024 PLF.Stlc STLC typing_example_3 ex
 R2029:2035 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
 R2047:2051 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
 R2040:2046 PLF.Stlc STLC ty ind
@@ -185,9 +185,9 @@ R2360:2365 PLF.Stlc STLC x def
 R2369:2379 PLF.Stlc STLC tm_var constr
 R2381:2386 PLF.Stlc STLC z def
 R2399:2399 PLF.StlcTest <> T:11 var
-R2451:2471 PLF.Stlc STLC typing_example_3 prfax
+R2451:2471 PLF.Stlc STLC typing_example_3 ex
 def 2474:2482 <> Unnamed_thm
 R2479:2482 Coq.Init.Logic <> True ind
-R3441:3459 PLF.Stlc STLC substi_correct prfax
-R3529:3546 PLF.Stlc STLC step_example5 prfax
-R3619:3639 PLF.Stlc STLC typing_example_3 prfax
+R3441:3459 PLF.Stlc STLC substi_correct thm
+R3529:3546 PLF.Stlc STLC step_example5 thm
+R3619:3639 PLF.Stlc STLC typing_example_3 ex

@@ -15,7 +15,7 @@ R715:722 PLF.StlcProp <> <> lib
 R732:736 PLF.StlcPropTest Check <> mod
 def 740:748 <> Unnamed_thm
 R745:748 Coq.Init.Logic <> True ind
-R928:945 PLF.StlcProp STLCProp progress' prfax
+R928:945 PLF.StlcProp STLCProp progress' thm
 R962:973 PLF.Stlc STLC tm ind
 binder 958:958 <> t:2
 R981:992 PLF.Stlc STLC ty ind
@@ -37,7 +37,7 @@ binder 1080:1081 <> t':4
 R1099:1112 PLF.Stlc STLC step ind
 R1114:1114 PLF.StlcPropTest <> t:2 var
 R1116:1117 PLF.StlcPropTest <> t':4 var
-R928:945 PLF.StlcProp STLCProp progress' prfax
+R928:945 PLF.StlcProp STLCProp progress' thm
 R962:973 PLF.Stlc STLC tm ind
 binder 958:958 <> t:5
 R981:992 PLF.Stlc STLC ty ind
@@ -59,10 +59,10 @@ binder 1080:1081 <> t':7
 R1099:1112 PLF.Stlc STLC step ind
 R1114:1114 PLF.StlcPropTest <> t:5 var
 R1116:1117 PLF.StlcPropTest <> t':7 var
-R1170:1187 PLF.StlcProp STLCProp progress' prfax
+R1170:1187 PLF.StlcProp STLCProp progress' thm
 def 1190:1198 <> Unnamed_thm
 R1195:1198 Coq.Init.Logic <> True ind
-R1448:1501 PLF.StlcProp STLCProp substitution_preserves_typing_from_typing_ind prfax
+R1448:1501 PLF.StlcProp STLCProp substitution_preserves_typing_from_typing_ind thm
 R1522:1537 PLF.Maps <> partial_map def
 R1539:1550 PLF.Stlc STLC ty ind
 binder 1514:1518 <> Gamma:8
@@ -97,7 +97,7 @@ R1798:1798 PLF.StlcPropTest <> x:9 var
 R1800:1800 PLF.StlcPropTest <> v:12 var
 R1802:1802 PLF.StlcPropTest <> t:11 var
 R1805:1805 PLF.StlcPropTest <> T:13 var
-R1448:1501 PLF.StlcProp STLCProp substitution_preserves_typing_from_typing_ind prfax
+R1448:1501 PLF.StlcProp STLCProp substitution_preserves_typing_from_typing_ind thm
 R1522:1537 PLF.Maps <> partial_map def
 R1539:1550 PLF.Stlc STLC ty ind
 binder 1514:1518 <> Gamma:14
@@ -132,11 +132,11 @@ R1798:1798 PLF.StlcPropTest <> x:15 var
 R1800:1800 PLF.StlcPropTest <> v:18 var
 R1802:1802 PLF.StlcPropTest <> t:17 var
 R1805:1805 PLF.StlcPropTest <> T:19 var
-R1857:1910 PLF.StlcProp STLCProp substitution_preserves_typing_from_typing_ind prfax
+R1857:1910 PLF.StlcProp STLCProp substitution_preserves_typing_from_typing_ind thm
 def 1913:1921 <> Unnamed_thm
 R1918:1921 Coq.Init.Logic <> True ind
 R2131:2178 PLF.StlcProp STLCProp manual_grade_for_subject_expansion_stlc def
-R2344:2364 PLF.StlcProp STLCProp unique_types prfax
+R2344:2364 PLF.StlcProp STLCProp unique_types thm
 R2385:2401 PLF.Stlc STLC context def
 binder 2377:2381 <> Gamma:20
 R2409:2420 PLF.Stlc STLC tm ind
@@ -157,7 +157,7 @@ R2506:2507 PLF.StlcPropTest <> T':23 var
 R2513:2515 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R2512:2512 PLF.StlcPropTest <> T:22 var
 R2516:2517 PLF.StlcPropTest <> T':23 var
-R2344:2364 PLF.StlcProp STLCProp unique_types prfax
+R2344:2364 PLF.StlcProp STLCProp unique_types thm
 R2385:2401 PLF.Stlc STLC context def
 binder 2377:2381 <> Gamma:24
 R2409:2420 PLF.Stlc STLC tm ind
@@ -178,10 +178,10 @@ R2506:2507 PLF.StlcPropTest <> T':27 var
 R2513:2515 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R2512:2512 PLF.StlcPropTest <> T:26 var
 R2516:2517 PLF.StlcPropTest <> T':27 var
-R2569:2589 PLF.StlcProp STLCProp unique_types prfax
+R2569:2589 PLF.StlcProp STLCProp unique_types thm
 def 2592:2600 <> Unnamed_thm
 R2597:2600 Coq.Init.Logic <> True ind
-R2772:2795 PLF.StlcProp STLCProp free_in_context prfax
+R2772:2795 PLF.StlcProp STLCProp free_in_context thm
 R2812:2824 Coq.Strings.String <> string ind
 binder 2808:2808 <> x:28
 R2832:2843 PLF.Stlc STLC tm ind
@@ -209,7 +209,7 @@ R2996:2996 PLF.StlcPropTest <> x:28 var
 R3001:3004 Coq.Init.Datatypes <> Some constr
 R3006:3017 PLF.Stlc STLC ty ind
 R3019:3020 PLF.StlcPropTest <> T':32 var
-R2772:2795 PLF.StlcProp STLCProp free_in_context prfax
+R2772:2795 PLF.StlcProp STLCProp free_in_context thm
 R2812:2824 Coq.Strings.String <> string ind
 binder 2808:2808 <> x:33
 R2832:2843 PLF.Stlc STLC tm ind
@@ -237,7 +237,7 @@ R2996:2996 PLF.StlcPropTest <> x:33 var
 R3001:3004 Coq.Init.Datatypes <> Some constr
 R3006:3017 PLF.Stlc STLC ty ind
 R3019:3020 PLF.StlcPropTest <> T':37 var
-R3072:3095 PLF.StlcProp STLCProp free_in_context prfax
+R3072:3095 PLF.StlcProp STLCProp free_in_context thm
 def 3098:3106 <> Unnamed_thm
 R3103:3106 Coq.Init.Logic <> True ind
 R3302:3342 PLF.StlcProp STLCProp manual_grade_for_stlc_variation1 def
@@ -403,11 +403,11 @@ R5434:5435 PLF.StlcPropTest <> t':57 var
 R5488:5505 PLF.StlcProp STLCArith progress prfax
 def 5508:5516 <> Unnamed_thm
 R5513:5516 Coq.Init.Logic <> True ind
-R6548:6568 PLF.StlcProp STLCProp unique_types prfax
-R6644:6667 PLF.StlcProp STLCProp free_in_context prfax
+R6548:6568 PLF.StlcProp STLCProp unique_types thm
+R6644:6667 PLF.StlcProp STLCProp free_in_context thm
 R6920:6934 PLF.StlcProp STLCArith subst prfax
 R7005:7023 PLF.StlcProp STLCArith weakening prfax
 R7097:7118 PLF.StlcProp STLCArith preservation prfax
 R7188:7205 PLF.StlcProp STLCArith progress prfax
-R7325:7342 PLF.StlcProp STLCProp progress' prfax
-R7448:7501 PLF.StlcProp STLCProp substitution_preserves_typing_from_typing_ind prfax
+R7325:7342 PLF.StlcProp STLCProp progress' thm
+R7448:7501 PLF.StlcProp STLCProp substitution_preserves_typing_from_typing_ind thm

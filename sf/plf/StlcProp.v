@@ -806,7 +806,7 @@ Definition manual_grade_for_stlc_variation2 : option (nat*string) := None.
 remains true
       - Progress
 becomes false
-
+<{ (\x:Bool->Bool, x) (\x:Bool, if x then false else true) true }> can no longer step.
       - Preservation
 remains true
 *)
