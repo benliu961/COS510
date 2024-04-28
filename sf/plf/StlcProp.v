@@ -1039,6 +1039,14 @@ Inductive step : tm -> tm -> Prop :=
          value v1 ->
          t2 --> t2' ->
          <{ v1 t2 }> --> <{ v1 t2' }>
+  | ST_If0_Zero : forall t2 t3,
+          <{ if0 (0) then t2 else t3 }> --> t2
+  | ST_If0_Nonzero : forall n t2 t3,
+          n <> 0 ->
+          <{ if0 (n) then t2 else t3 }> --> t3
+  | ST_If0 : forall t1 t1' t2 t3,
+          t1 --> t1' ->
+          <{ if0 t1 then t2 else t3 }> --> <{ if0 t1' then t2 else t3 }>
   | ST_Succ : forall t t',
          t --> t' ->
          <{ succ t }> --> <{ succ t' }>
@@ -1063,14 +1071,6 @@ Inductive step : tm -> tm -> Prop :=
   | ST_MultNat : forall n m p,
           p = n * m ->
           <{ n * m }> --> <{ p }>
-  | ST_If0_Zero : forall t2 t3,
-          <{ if0 (0) then t2 else t3 }> --> t2
-  | ST_If0_Nonzero : forall n t2 t3,
-          n <> 0 ->
-          <{ if0 (n) then t2 else t3 }> --> t3
-  | ST_If0 : forall t1 t1' t2 t3,
-          t1 --> t1' ->
-          <{ if0 t1 then t2 else t3 }> --> <{ if0 t1' then t2 else t3 }>
 where "t '-->' t'" := (step t t').
 
 Notation multistep := (multi step).
@@ -1191,26 +1191,6 @@ Proof.
       rewrite update_permute; auto.
 Qed.
 
-Lemma canonical_forms_nat : forall t,
-  empty |-- t \in Nat ->
-  value t ->
-  exists (n :nat), (t = n).
-Proof.
-  intros t HT HVal.
-  inversion HVal; subst.
-  - inversion HT; subst. Admitted.
-
-Lemma canonical_forms_fun : forall t T1 T2,
-  empty |-- t \in (T1 -> T2) ->
-  value t ->
-  exists x u, t = <{\x:T1, u}>.
-Proof.
-  intros t T1 T2 HT HVal.
-  (* destruct HVal as [x ? t1| |] ; inversion HT; subst.
-  exists x, t1. reflexivity. *)
-  Admitted.
-(* Qed. *)
-
 (* Preservation *)
 (* Hint: You will need to define and prove the same helper lemmas we used before *)
 
@@ -1233,9 +1213,6 @@ Proof with eauto.
   apply substitution_preserves_typing with T2...
   inversion HT1...
 Qed.
-    
-    
-Qed.
 
 (** [] *)
 
@@ -1245,7 +1222,10 @@ Qed.
 Theorem progress : forall t T,
   empty |-- t \in T ->
   value t \/ exists t', t --> t'.
-Proof with eauto. (* FILL IN HERE *) Admitted.
+Proof with eauto. 
+  intros t T Ht.
+  remember empty as Gamma.
+  induction Ht; subst Gamma; auto. Qed.
 (** [] *)
 
 End STLCArith.
