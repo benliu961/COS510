@@ -991,8 +991,25 @@ Coercion tm_const : nat >-> tm.
 Reserved Notation "'[' x ':=' s ']' t" (in custom stlc at level 20, x constr).
 
 (** **** Exercise: 5 stars, standard (STLCArith.subst) *)
-Fixpoint subst (x : string) (s : tm) (t : tm) : tm
-  (* REPLACE THIS LINE WITH ":= _your_definition_ ." *). Admitted.
+Fixpoint subst (x : string) (s : tm) (t : tm) : tm :=
+  match t with
+  | tm_var x' => 
+      if String.eqb x x' then s else t
+  | <{ \x' : T, t1 }> => 
+      if String.eqb x x' then t else <{ \x' : T, [x:=s] t1 }>
+  | <{ t1 t2 }> => 
+      <{ ([x:=s] t1) ([x:=s] t2) }>
+  | tm_const n => t
+  | <{ succ t }> => 
+      <{ succ ([x:=s] t) }>
+  | <{ pred t }> => 
+      <{ pred ([x:=s] t) }>
+  | <{ t1 * t2 }> => 
+      tm_mult <{ ([x:=s] t1) }> <{ ([x:=s] t2) }>
+  | <{ if0 t1 then t2 else t3 }> => 
+      <{ if0 ([x:=s] t1) then ([x:=s] t2) else ([x:=s] t3) }>
+  end
+where "'[' x ':=' s ']' t" := (subst x s t) (in custom stlc).
 
 (** (You'll need to add remove the period at the end of this
     definition and add
@@ -1002,15 +1019,58 @@ Fixpoint subst (x : string) (s : tm) (t : tm) : tm
     when you fill it in.) *)
 
 Inductive value : tm -> Prop :=
-  (* FILL IN HERE *)
-.
+  | v_abs : forall x T t,
+      value <{ \x : T, t }>
+  | v_nat : forall n,
+      value <{ n }>.
 
 Hint Constructors value : core.
 
 Reserved Notation "t '-->' t'" (at level 40).
 
 Inductive step : tm -> tm -> Prop :=
-  (* FILL IN HERE *)
+  | ST_AppAbs : forall x T t1 v2,
+         value v2 ->
+         <{ (\x : T, t1) v2 }> --> <{ [x:=v2]t1 }>
+  | ST_App1 : forall t1 t1' t2,
+         t1 --> t1' ->
+         <{ t1 t2 }> --> <{ t1' t2 }>
+  | ST_App2 : forall v1 t2 t2',
+         value v1 ->
+         t2 --> t2' ->
+         <{ v1 t2 }> --> <{ v1 t2' }>
+  | ST_Succ : forall t t',
+         t --> t' ->
+         <{ succ t }> --> <{ succ t' }>
+  | ST_SuccNat : forall n m,
+        m = n+1 ->
+         <{ succ n }> --> <{ (m) }>
+  | ST_Pred : forall t t',
+         t --> t' ->
+         <{ pred t }> --> <{ pred t' }>
+  | ST_Pred0 : 
+         <{ pred 0 }> --> <{ 0 }>
+  | ST_PredNat : forall n m,
+        m = n-1 ->
+         <{ pred n }> --> <{ (m) }>
+  | ST_Mult1 : forall t1 t1' t2,
+          t1 --> t1' ->
+          <{ t1 * t2 }> --> <{ t1' * t2 }>
+  | ST_Mult2 : forall v1 t2 t2',
+          value v1 ->
+          t2 --> t2' ->
+          <{ v1 * t2 }> --> <{ v1 * t2' }>
+  | ST_MultNat : forall n m p,
+          p = n * m ->
+          <{ n * m }> --> <{ p }>
+  | ST_If0_Zero : forall t2 t3,
+          <{ if0 (0) then t2 else t3 }> --> t2
+  | ST_If0_Nonzero : forall n t2 t3,
+          n <> 0 ->
+          <{ if0 (n) then t2 else t3 }> --> t3
+  | ST_If0 : forall t1 t1' t2 t3,
+          t1 --> t1' ->
+          <{ if0 t1 then t2 else t3 }> --> <{ if0 t1' then t2 else t3 }>
 where "t '-->' t'" := (step t t').
 
 Notation multistep := (multi step).
@@ -1022,7 +1082,15 @@ Hint Constructors step : core.
 
 Example Nat_step_example : exists t,
 <{(\x: Nat, \y: Nat, x * y ) 3 2 }> -->* t.
-Proof. (* FILL IN HERE *) Admitted.
+Proof. 
+  exists 6.
+  eapply multi_step.
+  - apply ST_App1. apply ST_AppAbs. constructor.
+  - simpl. eapply multi_step.
+    + apply ST_AppAbs. constructor.
+    + simpl. eapply multi_step.
+      * apply ST_MultNat. simpl. auto.
+      * apply multi_refl. Qed.
 
 (* Typing *)
 
@@ -1031,7 +1099,33 @@ Definition context := partial_map ty.
 Reserved Notation "Gamma '|--' t '\in' T" (at level 101, t custom stlc, T custom stlc at level 0).
 
 Inductive has_type : context -> tm -> ty -> Prop :=
-  (* FILL IN HERE *)
+  | T_Var : forall Gamma x T,
+      Gamma x = Some T ->
+      Gamma |-- x \in T
+  | T_Abs : forall Gamma x T1 T2 t1,
+      x |-> T2 ; Gamma |-- t1 \in T1 ->
+      Gamma |-- \x:T2, t1 \in (T2 -> T1)
+  | T_App : forall T1 T2 Gamma t1 t2,
+      Gamma |-- t1 \in (T2 -> T1) -> 
+      Gamma |-- t2 \in T2 -> 
+      Gamma |-- t1 t2 \in T1
+  | T_Nat : forall Gamma n,
+      Gamma |-- n \in Nat
+  | T_Succ : forall Gamma t,
+      Gamma |-- t \in Nat -> 
+      Gamma |-- succ t \in Nat
+  | T_Pred : forall Gamma t,
+      Gamma |-- t \in Nat -> 
+      Gamma |-- pred t \in Nat
+  | T_Mult : forall Gamma t1 t2,
+      Gamma |-- t1 \in Nat -> 
+      Gamma |-- t2 \in Nat -> 
+      Gamma |-- t1 * t2 \in Nat
+  | T_If0 : forall t1 t2 t3 T Gamma,
+      Gamma |-- t1 \in Nat ->
+      Gamma |-- t2 \in T ->
+      Gamma |-- t3 \in T ->
+      Gamma |-- if0 t1 then t2 else t3 \in T
 where "Gamma '|--' t '\in' T" := (has_type Gamma t T).
 
 Hint Constructors has_type : core.
@@ -1041,7 +1135,7 @@ Hint Constructors has_type : core.
 Example Nat_typing_example :
    empty |-- ( \x: Nat, \y: Nat, x * y ) 3 2 \in Nat.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  econstructor; econstructor; repeat constructor. Qed.
 
 (** [] *)
 
@@ -1055,11 +1149,67 @@ Lemma weakening : forall Gamma Gamma' t T,
      includedin Gamma Gamma' ->
      Gamma  |-- t \in T  ->
      Gamma' |-- t \in T.
-Proof. (* FILL IN HERE *) Admitted.
+Proof. 
+  intros Gamma Gamma' t T H Ht.
+  generalize dependent Gamma'.
+  induction Ht; eauto using includedin_update. Qed.
 
-(* FILL IN HERE *)
+Lemma weakening_empty : forall Gamma t T,
+     empty |-- t \in T  ->
+     Gamma |-- t \in T.
+Proof.
+  intros Gamma t T.
+  eapply weakening.
+  discriminate.
+Qed.
 
-(** [] *)
+Lemma substitution_preserves_typing : forall Gamma x U t v T,
+  x |-> U ; Gamma |-- t \in T ->
+  empty |-- v \in U   ->
+  Gamma |-- [x:=v]t \in T.
+Proof.
+  intros Gamma x U t v T Ht Hv.
+  generalize dependent Gamma. generalize dependent T.
+  induction t; intros T Gamma H;
+  (* in each case, we'll want to get at the derivation of H *)
+    inversion H; clear H; subst; simpl; eauto.
+  - (* var *)
+    rename s into y. destruct (eqb_spec x y); subst.
+    + (* x=y *)
+      rewrite update_eq in H2.
+      injection H2 as H2; subst.
+      apply weakening_empty. assumption.
+    + (* x<>y *)
+      apply T_Var. rewrite update_neq in H2; auto.
+  - (* abs *)
+    rename s into y, t into S.
+    destruct (eqb_spec x y); subst; apply T_Abs.
+    + (* x=y *)
+      rewrite update_shadow in H5. assumption.
+    + (* x<>y *)
+      apply IHt.
+      rewrite update_permute; auto.
+Qed.
+
+Lemma canonical_forms_nat : forall t,
+  empty |-- t \in Nat ->
+  value t ->
+  exists (n :nat), (t = n).
+Proof.
+  intros t HT HVal.
+  inversion HVal; subst.
+  - inversion HT; subst. Admitted.
+
+Lemma canonical_forms_fun : forall t T1 T2,
+  empty |-- t \in (T1 -> T2) ->
+  value t ->
+  exists x u, t = <{\x:T1, u}>.
+Proof.
+  intros t T1 T2 HT HVal.
+  (* destruct HVal as [x ? t1| |] ; inversion HT; subst.
+  exists x, t1. reflexivity. *)
+  Admitted.
+(* Qed. *)
 
 (* Preservation *)
 (* Hint: You will need to define and prove the same helper lemmas we used before *)
@@ -1069,7 +1219,23 @@ Theorem preservation : forall t t' T,
   empty |-- t \in T  ->
   t --> t'  ->
   empty |-- t' \in T.
-Proof with eauto. (* FILL IN HERE *) Admitted.
+Proof with eauto.
+  intros t t' T HT. generalize dependent t'.
+  remember empty as Gamma.
+  induction HT;
+       intros t' HE; subst;
+       try solve [inversion HE; subst; auto].
+   (* T_App *)
+  inversion HE; subst...
+    (* Most of the cases are immediate by induction,
+       and [eauto] takes care of them *)
+  (* ST_AppAbs *)
+  apply substitution_preserves_typing with T2...
+  inversion HT1...
+Qed.
+    
+    
+Qed.
 
 (** [] *)
 
