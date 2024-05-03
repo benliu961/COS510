@@ -1141,12 +1141,20 @@ Fixpoint subst (x : string) (s : tm) (t : tm) : tm :=
   (* Complete the following cases. *)
 
   (* pairs *)
-  (* FILL IN HERE *)
+  | <{ (t1, t2) }> =>
+      <{ (([x:=s] t1), ([x:=s] t2)) }>
+  | <{ t1.fst }> =>
+      <{ ([x:=s] t1) .fst }>
+  | <{ t1.snd }> =>
+      <{ ([x:=s] t1) .snd }>
   (* let *)
-  (* FILL IN HERE *)
+  | <{let y = t1 in t2}> =>
+      <{let y = [x:=s] t1 in { if String.eqb x y then t2 else <{ [x:=s] t2 }> } }>
   (* fix *)
-  (* FILL IN HERE *)
-  | _ => t  (* ... and delete this line when you finish the exercise *)
+  | <{ fix t1 }> =>
+      <{ fix [x:=s] t1 }>
+  (* | _ => t   *)
+  (* ... and delete this line when you finish the exercise *)
   end
 
 where "'[' x ':=' s ']' t" := (subst x s t) (in custom stlc).
@@ -1155,26 +1163,17 @@ where "'[' x ':=' s ']' t" := (subst x s t) (in custom stlc).
 Example substeg1 :
   <{ [z:=0] (let w = z in z) }> = <{ let w = 0 in 0 }>.
 Proof.
-(* 
-  reflexivity.
-*)
-(* FILL IN HERE *) Admitted.
+  reflexivity. Qed.
 
 Example substeg2 :
   <{ [z:=0] (let w = z in w) }> = <{ let w = 0 in w }>.
 Proof.
-(* 
-  reflexivity.
-*)
-(* FILL IN HERE *) Admitted.
+  reflexivity. Qed.
 
 Example substeg3 :
   <{ [z:=0] (let y = succ 0 in z) }> = <{ let y = succ 0 in 0 }>.
 Proof.
-(* 
-  reflexivity.
-*)
-(* FILL IN HERE *) Admitted.
+  reflexivity. Qed.
 
 (** [] *)
 
